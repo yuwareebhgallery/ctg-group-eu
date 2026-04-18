@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group - Impressum und Datenschutz">
+  <meta name="keywords" content="Impressum, Datenschutz, CTG Group">
+  <title>CTG - Impressum</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Inter Font von Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- 1. DESKTOP DESIGN (GENAU WIE INDEX.HTML & SERVICE-SEITE) --- */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Helvetica, Arial, sans-serif !important;
+      --font-heading: 'Inter', sans-serif;
+    }
+   
+    body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name {
+     font-family: var(--font-main) !important;
+    }
+   
+    body, p {
+      font-family: var(--font-main) !important;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000000;
+    }
+  .navbar-brand.company-name {
+    font-size: 1.2rem !important;
+    color: #cdc9a5 !important;
+    letter-spacing: 1px;
+  }
+  
+/* HIER ÜBERSCHREIBEN WIR DIE MAIN-HEADING – negativen Margin entfernen */
+    h1.main-heading {
+      color: #cdc9a5 !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 28px !important;
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 40px;
+      font-family: var(--font-main) !important;
+    }
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 13px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+    .ctg-footer li {
+      font-size: 14px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+      font-family: var(--font-main) !important;
+    }
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+      font-family: var(--font-main) !important;
+    }
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 11px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 12px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.0 !important;
+    }
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    /* Impressum Content Styles – konsistent mit Service-Seite */
+    .impressum-content h2 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-size: 2rem !important;
+      line-height: 1.3;
+    }
+    .impressum-content h3 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.4rem !important;
+    }
+    .address-box {
+      background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.08);
+    }
+    .privacy-box {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.1);
+    }
+    .data-list dt {
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 0.4rem;
+    }
+    .data-list dd {
+      margin-bottom: 1.2rem;
+      color: #555;
+    }
+    /* Language Switcher Flags in Navigation - OPTIMIZED */
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+    
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    
+    /* Smaller flags without underline */
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid #cdc9a5;
+      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
+    }
+    
+    /* Mobile Language Switcher - VERY SMALL TOP RIGHT */
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-right: 0;
+        justify-content: flex-end;
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-top: none;
+        position: absolute;
+        right: 60px; /* Space for toggler button */
+        top: 15px;
+      }
+      
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      
+      .language-switcher-nav img {
+        width: 16px; /* EXTRA SMALL for Mobile */
+        height: auto;
+        opacity: 0.8;
+      }
+      
+      .language-switcher-nav a.active img {
+        opacity: 1;
+        border: 1px solid #cdc9a5;
+        box-shadow: 0 0 2px rgba(205, 201, 165, 0.5);
+      }
+    }
+    
+    /* Mobile Navigation Toggler Adjustment */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        padding-bottom: 10px;
+      }
+      
+      .navbar-nav {
+        margin-bottom: 5px;
+      }
+      
+      /* Navigation Container for Mobile adjustment */
+      .navbar > .container {
+        position: relative;
+      }
+    }
+    /* --- 2. MOBILE-ONLY DESIGN (GENAU WIE SERVICE-SEITE) --- */
+    @media (max-width: 767px) {
+      .header-paragraph .paragraph-text-3 {
+        font-size: 11px !important;
+      }
+      .footer-desktop-version {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+      }
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+/* NAVIGATION MOBILE - FIRMA-NAME KLEINER */
+  .navbar-brand.company-name {
+    font-size: 0.55rem !important;
+	    color: #cdc9a5 !important;
+    letter-spacing: 1px;
+  }
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+      body, p, .lead, .text-muted {
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+      }
+      section.py-5, .container.my-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+      .impressum-content h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem !important;
+      }
+      .impressum-content h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 0.8rem !important;
+      }
+      .address-box, .privacy-box {
+        padding: 1rem !important;
+        margin: 1.5rem 0 !important;
+      }
+      .impressum-content > * {
+        margin-bottom: 1.8rem !important;
+      }
+      .impressum-content > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      .data-list dd {
+        margin-bottom: 1rem !important;
+      }
+      /* Einrückung des ersten Wortes nach Aufmacher (Mobile) */
+      .intro-paragraph strong:first-of-type {
+        margin-left: 1.5rem;
+      } 
+	  
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 13px !important;
+        color: #ffffff !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        margin-bottom: 10px !important;
+        margin-top: 18px !important;
+        display: block !important;
+        line-height: 1.1 !important;
+      }
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+      .footer-mobile-version li {
+        line-height: 1.05 !important;
+        margin-bottom: 5px !important;
+        font-size: 13px !important;
+        color: #aaa !important;
+      }
+      .footer-mobile-version .footer-bottom-fixed {
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        border-top: 1px solid #222 !important;
+        font-size: 11px !important;
+      }
+    }
+    .text-primary-custom {
+      color: var(--primary-color) !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation mit Flaggen -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand company-name" href="index.html">
+        Chumpol Trading Group Co. LTD.
+      </a>
+      
+      <!-- Language Switcher für Desktop (rechts neben der Navigation) -->
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="impressum.html" title="Deutsch" class="active">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsche Flagge">
+        </a>
+        <a href="en/impressum.html" title="English">
+          <img src="https://flagcdn.com/w20/gb.png" alt="Britische Flagge">
+        </a>
+      </div>
+      
+      <!-- Language Switcher für Mobile (oben rechts) -->
+      <div class="language-switcher-nav d-lg-none">
+        <a href="impressum.html" title="Deutsch" class="active">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsche Flagge">
+        </a>
+        <a href="en/impressum.html" title="English">
+          <img src="https://flagcdn.com/w20/gb.png" alt="Britische Flagge">
+        </a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="impressum.html">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- Header – exakt wie Service-Seite -->
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading" style="letter-spacing: 1.9px; line-height: 1.15; font-weight: light; font-size: 22px; color: #cdc9a5;">
+          <span class="heading-text-1">IMPRESSUM UND DATENSCHUTZRICHTLINIEN</span>
+        </h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2">
+            <strong class="paragraph-text-3">
+              ANSCHRIFT - FIRMENDATEN - IMPRESSUM
+            </strong>
+          </span>
+        </p>
+      </header>
+    </div>
+  </div>
+ 
+  <!-- Impressum Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto impressum-content">
+         
+          <h2 class="text-primary-custom">Impressum</h2>
+         
+        
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h3 class="text-primary-custom">Anschriften</h3>
+             
+              <div class="address-box">
+                <p class="fw-bold mb-2 text-primary-custom">Büro Bangkok</p>
+                <p class="mb-0">
+                  Kronos Sathorn Tower<br>
+                  46 Sathorn Nuea Rd., Silom Subdistrict<br>
+                  Bang Rak<br>
+                  10500 Bangkok<br>
+                  Thailand
+                </p>
+              </div>
+              <div class="address-box">
+                <p class="fw-bold mb-2 text-primary-custom">Büro Lampang</p>
+                <p class="mb-0">
+                  355/46 Boonwat Road<br>
+                  Muang Lampang<br>
+                  52100 Lampang<br>
+                  Thailand
+                </p>
+              </div>
+            </div>
+           
+            <div class="col-md-6">
+              <h3 class="text-primary-custom">Firmendaten & Kontakt</h3>
+             
+              <dl class="data-list">
+                <dt>Telefon</dt>
+                <dd>+66 (0) 88 777 0-244<br>+66 (0) 88 777 0-344</dd>
+               
+                <dt>E-Mail</dt>
+                <dd>info@ctg-group.eu<br>sale@ctg-group.eu</dd>
+               
+                <dt>Register</dt>
+                <dd>DBD: 0525560001568<br>Established: 2017</dd>
+               
+                <dt>Inhaber / CEO</dt>
+                <dd>Chumpol Bernhardt</dd>
+               
+                <dt>Geschäftsführung</dt>
+                <dd>Chumpol Bernhardt<br>
+                    Gerhard Holzapfel-Somchai (Managing Director Europe DACH)<br>
+                    Siriphap Whanatung (Managing Director Asia)</dd>
+               
+                <dt>Verantwortlich für den Inhalt</dt>
+                <dd>Mr. Somsak Anatung<br>
+				    139 Soi Thong<br>
+				    10 Sukhumvit Rd.<br>
+				    Bangkok 10110</dd>
+              </dl>
+              <p class="small text-muted mt-3">
+                Ein Unternehmen der Chumpol Bernhardt Group.
+              </p>
+            </div>
+          </div>
+         
+          <div class="privacy-box">
+<h2 class="text-primary-custom">Datenschutzerklärung</h2>
+<div class="text-muted" style="line-height: 1.6;">
+  <p class="fw-bold mb-3">
+    Datenschutzerklärung gemäß Datenschutz-Grundverordnung (DSGVO)
+  </p>
+  <p class="mb-3">
+    Der Schutz personenbezogener Daten hat für uns höchste Priorität.
+    Wir verarbeiten personenbezogene Daten in Deutschland und der Europäischen Union in Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO).
+  </p>
+
+  <h5>1. Verantwortlicher</h5>
+  <p class="mb-3">
+    Verantwortlich für die Verarbeitung personenbezogener Daten ist:<br>
+    <strong>Chumpol Trading Group Co. LTD.</strong><br>
+    355/46 Boonwat Road<br>
+    52100 Lampang<br>
+    Thailand<br>
+    Telefon: +66 (0) 88 777 0-244<br>
+    E-Mail: <a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a>
+  </p>
+
+  <h5>2. Allgemeines zur Datenverarbeitung</h5>
+  <p class="mb-3">
+    Wir erheben und verwenden personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Erhebung und Nutzung personenbezogener Daten erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften gestattet ist.
+  </p>
+  <p class="mb-3">
+    <strong>Besondere Kategorien personenbezogener Daten:</strong> Wir verarbeiten grundsätzlich keine besonderen Kategorien personenbezogener Daten im Sinne des Art. 9 Abs. 1 DSGVO (z. B. Gesundheitsdaten, Religionszugehörigkeit).
+  </p>
+  <p class="mb-3">
+    <strong>Datenquellen:</strong> Sofern wir Daten nicht direkt bei Ihnen erheben, stammen diese ggf. aus öffentlich zugänglichen Quellen (z. B. Handelsregister) oder wurden uns von Vertragspartnern zur Erfüllung eines Auftrags übermittelt.
+  </p>
+
+  <h5>3. Rechtsgrundlagen der Verarbeitung</h5>
+  <ul class="mb-3">
+    <li>Art. 6 Abs. 1 lit. a DSGVO – Einwilligung</li>
+    <li>Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung oder vorvertragliche Maßnahmen</li>
+    <li>Art. 6 Abs. 1 lit. c DSGVO – rechtliche Verpflichtung</li>
+    <li>Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse (z. B. Sicherheit der IT-Systeme, Direktwerbung für eigene ähnliche Produkte/Dienstleistungen im Rahmen der Bestandskundenwerbung)</li>
+  </ul>
+
+  <h5>4. Art der verarbeiteten Daten</h5>
+  <ul class="mb-3">
+    <li>Bestandsdaten (Name, Adresse)</li>
+    <li>Kontaktdaten (Telefonnummer, E-Mail-Adresse)</li>
+    <li>Vertrags- und Geschäftsdaten</li>
+    <li>Zahlungsdaten</li>
+    <li>Kommunikationsdaten</li>
+    <li>Technische Daten (IP-Adresse, Browser, Betriebssystem)</li>
+  </ul>
+
+  <h5>5. Zwecke der Datenverarbeitung</h5>
+  <ul class="mb-3">
+    <li>Abwicklung von Bestellungen und Verträgen</li>
+    <li>Bearbeitung von Anfragen</li>
+    <li>Erbringung unserer Dienstleistungen</li>
+    <li>Erfüllung gesetzlicher Verpflichtungen (z. B. handels- und steuerrechtliche Aufbewahrungspflichten)</li>
+    <li>Sicherstellung der IT-Sicherheit und des ordnungsgemäßen Betriebs unserer Website</li>
+    <li>Direktwerbung für eigene ähnliche Produkte oder Dienstleistungen (Bestandskundenwerbung), sofern kein Widerspruch vorliegt. Sie können jederzeit widersprechen (z. B. per E-Mail an info@ctg-group.eu mit Betreff „Widerspruch Werbung“).</li>
+  </ul>
+  <p class="mb-3">
+    Sofern Sie uns mit der Erbringung einer Leistung beauftragen oder ein Vertragsverhältnis mit uns eingehen, verarbeiten wir die hierfür erforderlichen personenbezogenen Daten automatisch. Dies umfasst insbesondere Bestands-, Kontakt-, Vertrags- und Zahlungsdaten. Die Verarbeitung erfolgt zur Durchführung vorvertraglicher Maßnahmen sowie zur Erfüllung eines Vertrages gemäß Art. 6 Abs. 1 lit. b DSGVO.
+  </p>
+
+  <h5>6. Weitergabe von Daten an Dritte & Empfänger</h5>
+  <p class="mb-3">
+    Eine Weitergabe personenbezogener Daten erfolgt nur, wenn:
+  </p>
+  <ul class="mb-3">
+    <li>Sie ausdrücklich eingewilligt haben (Art. 6 Abs. 1 lit. a DSGVO)</li>
+    <li>dies zur Vertragserfüllung erforderlich ist (Art. 6 Abs. 1 lit. b DSGVO)</li>
+    <li>eine gesetzliche Verpflichtung besteht (Art. 6 Abs. 1 lit. c DSGVO)</li>
+    <li>ein berechtigtes Interesse besteht und keine schutzwürdigen Interessen der betroffenen Person überwiegen (Art. 6 Abs. 1 lit. f DSGVO)</li>
+  </ul>
+  <p class="mb-3">
+    <strong>Konkrete Empfängergruppen können sein:</strong>
+  </p>
+  <ul class="mb-3">
+    <li>Zahlungsdienstleister (für die Abwicklung von Zahlungen)</li>
+    <li>Logistik- und Versanddienstleister (für die Vertragserfüllung)</li>
+    <li>IT-Dienstleister und Hosting-Provider (z. B. für Server- und E-Mail-Hosting)</li>
+    <li>Steuerberater, Wirtschaftsprüfer und Behörden (zur Erfüllung gesetzlicher Pflichten)</li>
+  </ul>
+  <p class="mb-3">
+    Wir schließen mit allen Auftragsverarbeitern, die für uns tätig werden, die gesetzlich vorgeschriebenen Verträge über Auftragsverarbeitung (AVV) gemäß Art. 28 DSGVO ab.
+  </p>
+  <p class="mb-3">
+    <strong>Datenübermittlung in Drittländer:</strong><br>
+    Im Rahmen des internationalen Handels und bei der Nutzung bestimmter Dienstleister kann eine Übermittlung personenbezogener Daten in Drittländer (außerhalb der EU/EWR) ohne angemessenes Datenschutzniveau erfolgen. Dies betrifft insbesondere:<br>
+    – Zahlungsdienstleister mit Sitz in den USA oder anderen Drittländern,<br>
+    – Cloud- und Hosting-Dienste mit Serverstandorten außerhalb der EU,<br>
+    – Sonstige IT-Tools oder Subunternehmer in Drittländern.<br><br>
+    Solche Übermittlungen erfolgen ausschließlich unter Beachtung der Art. 44 ff. DSGVO, insbesondere auf Basis von Angemessenheitsbeschlüssen der EU-Kommission, Standardvertragsklauseln (SCCs) der EU-Kommission oder anderen geeigneten Garantien. Auf Anfrage teilen wir Ihnen die konkreten Garantien mit.
+  </p>
+
+  <h5>7. Cookies, Tracking & Server-Logfiles</h5>
+  <p class="mb-3">
+    <strong>Cookies:</strong> Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Sie richten keinen Schaden an.
+  </p>
+  <ul class="mb-3">
+    <li><strong>Notwendige Cookies (Technisch erforderlich):</strong> Diese sind für den Betrieb der Website zwingend erforderlich und basieren auf Art. 6 Abs. 1 lit. b oder f DSGVO. Hierzu zählen z. B. Session-Cookies für den Warenkorb oder Login-Bereiche.</li>
+    <li><strong>Optionale Cookies (Analyse/Marketing):</strong> Für nicht-notwendige Cookies, insbesondere zu Analyse- oder Marketingzwecken, holen wir Ihre aktive Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) ein, bevor sie gesetzt werden. Sie können Ihre Einwilligung jederzeit über unsere Cookie-Einstellungen widerrufen.</li>
+  </ul>
+  <p class="mb-3">
+    <strong>Server-Logfiles:</strong> Unser Hosting-Provider erhebt automatisch Informationen in sogenannten Server-Logfiles (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, Browsertyp, referierende Website). Diese Daten dienen der technischen Sicherheit (z. B. zur Abwehr von Angriffen), der Analyse von Störungen und der Optimierung der Leistung. Sie werden nicht mit anderen Datenquellen zusammengeführt und nach spätestens 30 Tagen gelöscht (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO).
+  </p>
+
+  <h5>8. Speicherdauer & Löschung</h5>
+  <p class="mb-3">
+    Personenbezogene Daten werden nur so lange gespeichert, wie dies zur Erreichung der jeweiligen Verarbeitungszwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
+  </p>
+  <p class="mb-3">
+    Bei reinen Anfragen/Kontaktaufnahmen ohne Vertrag löschen wir die Daten in der Regel spätestens 6 Monate nach abschließender Bearbeitung, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.<br>
+    Bei Verträgen und Buchhaltungsrelevanten Daten gelten die gesetzlichen Fristen (z. B. 6 Jahre nach § 257 HGB für Handelsbriefe, 10 Jahre nach § 147 AO für steuerrelevante Unterlagen). Nach Ablauf werden die Daten gelöscht oder in ihrer Verarbeitung eingeschränkt (Sperrung) gemäß unserem Löschkonzept.
+  </p>
+
+  <h5>9. Rechte der betroffenen Personen</h5>
+  <p class="mb-3">
+    Sie haben jederzeit das Recht auf:
+  </p>
+  <ul class="mb-3">
+    <li><strong>Auskunft</strong> gemäß Art. 15 DSGVO über Ihre von uns verarbeiteten Daten.</li>
+    <li><strong>Berichtigung</strong> gemäß Art. 16 DSGVO unrichtiger oder Vervollständigung unvollständiger Daten.</li>
+    <li><strong>Löschung</strong> gemäß Art. 17 DSGVO ("Recht auf Vergessenwerden"), sofern nicht eine Ausnahmeregelung greift.</li>
+    <li><strong>Einschränkung der Verarbeitung</strong> gemäß Art. 18 DSGVO unter bestimmten Voraussetzungen.</li>
+    <li><strong>Datenübertragbarkeit</strong> gemäß Art. 20 DSGVO, d.h. Erhalt der Sie betreffenden Daten in einem strukturierten, gängigen und maschinenlesbaren Format.</li>
+    <li><strong>Widerspruch gegen die Verarbeitung</strong> gemäß Art. 21 DSGVO, insbesondere gegen die Verarbeitung aufgrund unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f) oder für Zwecke der Direktwerbung. Im letzteren Fall wird die Verarbeitung nach dem Widerspruch unverzüglich eingestellt.</li>
+    <li><strong>Widerruf einer erteilten Einwilligung</strong> gemäß Art. 7 Abs. 3 DSGVO mit Wirkung für die Zukunft. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt vom Widerruf unberührt.</li>
+  </ul>
+  <p class="mb-3">
+    Zur Ausübung Ihrer Rechte wenden Sie sich bitte an: <a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a>
+  </p>
+
+  <h5>10. Beschwerderecht</h5>
+  <p class="mb-3">
+    Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt.<br>
+    Insbesondere können Sie sich an die für Ihren Wohnsitz zuständige Aufsichtsbehörde wenden oder an die Berliner Beauftragte für Datenschutz und Informationsfreiheit (www.datenschutz-berlin.de).
+  </p>
+
+  <h5>11. Datensicherheit</h5>
+  <p class="mb-3">
+    Wir setzen technische und organisatorische Sicherheitsmaßnahmen (TOM) ein, um Ihre Daten gegen Manipulation, Verlust, Zerstörung oder unbefugten Zugriff zu schützen. Unsere Maßnahmen entsprechen dem Stand der Technik und werden regelmäßig überprüft. Dazu gehören insbesondere die Verschlüsselung der Datenübertragung via SSL/TLS.
+  </p>
+
+  <h5>12. Automatisierte Entscheidungsfindung / Profiling</h5>
+  <p class="mb-3">
+    Wir verwenden keine vollautomatisierte Entscheidungsfindung im Sinne des Art. 22 DSGVO, die rechtliche Wirkung entfaltet oder Sie in ähnlicher Weise erheblich beeinträchtigt.
+  </p>
+
+  <h5>13. Kontaktaufnahme</h5>
+  <p class="mb-3">
+    Bei einer Kontaktaufnahme per E-Mail oder Telefon werden die von Ihnen übermittelten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Telefonnummer, Inhalt der Anfrage) ausschließlich zum Zweck der Bearbeitung Ihres Anliegens verarbeitet.
+  </p>
+  <p class="mb-3">
+    Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der effizienten Bearbeitung von Anfragen). Die Daten werden gelöscht, sobald die Bearbeitung der Anfrage abgeschlossen ist und keine gesetzlichen Aufbewahrungspflichten bestehen (in der Regel spätestens 6 Monate danach).
+  </p>
+
+  <h5>14. Keine Nutzung bestimmter Dienste</h5>
+  <p class="mb-3">
+    Wir nutzen auf dieser Website:
+  </p>
+  <ul class="mb-3">
+    <li>keinen Newsletter-Versand,</li>
+    <li>keine Tracking- oder Analyse-Tools (z. B. Google Analytics),</li>
+    <li>keine Social-Media-Plugins oder eingebettete Social-Media-Inhalte,</li>
+    <li>kein Kontaktformular.</li>
+  </ul>
+  <p class="mb-3">
+    Eine Verarbeitung personenbezogener Daten erfolgt ausschließlich im Rahmen der in dieser Datenschutzerklärung beschriebenen Zwecke.
+  </p>
+
+  <h5>15. Datenschutzbeauftragter</h5>
+  <p class="mb-3">
+    Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen gemäß Art. 37 DSGVO nicht erfüllt sind.
+  </p>
+
+  <h5>16. Datenverarbeitung von Minderjährigen</h5>
+  <p class="mb-3">
+    Unsere Website richtet sich ausschließlich an volljährige Personen. Wir verarbeiten wissentlich keine personenbezogenen Daten von Kindern oder Jugendlichen unter 16 Jahren.
+  </p>
+  <p class="mb-3">
+    Sollten wir Kenntnis davon erlangen, dass personenbezogene Daten von Minderjährigen verarbeitet wurden, werden diese unverzüglich gelöscht.
+  </p>
+
+  <h5>17. Änderungen dieser Datenschutzerklärung</h5>
+  <p class="mb-0">
+    Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Die jeweils aktuelle Version ist auf unserer Website abrufbar. Bei wesentlichen Änderungen informieren wir Sie ggf. per E-Mail oder auf der Website.
+  </p>
+</div>
+  </section>
+ 
+  <!-- Desktop-Footer -->
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h5 class="footer-headline">BÜRO BANGKOK</h5>
+              <ul>
+                <li>Kronos Sathorn Tower</li>
+                <li>46 Sathorn Nuea Bang Rak</li>
+                <li>Bangkok 10500</li>
+                <span class="sub-label">TELEFON</span>
+                <li>☎ +66 (0) 88 777 0-244</li>
+                <li>☎ +66 (0) 88 777 0-344</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">BÜRO LAMPANG</h5>
+              <ul>
+                <li>355/46 Boonwat Road</li>
+                <li>Muang Lampang</li>
+                <li>52100 Lampang</li>
+                <span class="sub-label">E-MAIL</span>
+                <li>📧 info@ctg-group.eu</li>
+                <li>📧 sale@ctg-group.eu</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">SUPPORT</h5>
+              <ul>
+                <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+                <span class="sub-label">REGISTER</span>
+                <li>DBD: 0525560001568</li>
+                <li>Established: 2017</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">QUICK LINKS</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <span class="sub-label">FIRMA</span>
+                <li>Chumpol Bernhardt</li>
+                <li>CTG Group Co. LTD.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom-fixed">
+            &copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Mobile-Footer -->
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col"><h5 class="footer-headline">FIRMA</h5><ul><li>Chumpol Bernhardt</li><li>CTG Group Co. LTD.</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">BÜRO BANGKOK</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea</li><li>Bangkok 10500</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">BÜRO LAMPANG</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">REGISTER</h5><ul><li>DBD: 0525560001568</li><li>Established: 2017</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul>
+          <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+        </ul></div>
+        <div class="footer-col"><h5 class="footer-headline">E-MAIL</h5><ul><li>info@ctg-group.eu</li><li>sale@ctg-group.eu</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">TELEFON</h5><ul><li>☎ +66 (0) 88 777 0-244</li><li>☎ +66 (0) 88 777 0-344</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Impressum</a></li></ul></div>
+      </div>
+      <div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.</div>
+    </div>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

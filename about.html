@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group - Impressum und Datenschutz">
+  <meta name="keywords" content="Impressum, Datenschutz, CTG Group">
+  <title>CTG - Impressum</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Inter Font von Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- 1. DESKTOP DESIGN (GENAU WIE INDEX.HTML & SERVICE-SEITE) --- */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Helvetica, Arial, sans-serif !important;
+      --font-heading: 'Inter', sans-serif;
+    }
+   
+    body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name {
+     font-family: var(--font-main) !important;
+    }
+   
+    body, p {
+      font-family: var(--font-main) !important;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000000;
+    }
+  .navbar-brand.company-name {
+    font-size: 1.2rem !important;
+    color: #cdc9a5 !important;
+    letter-spacing: 1px;
+  }
+  
+/* HIER ÜBERSCHREIBEN WIR DIE MAIN-HEADING – negativen Margin entfernen */
+    h1.main-heading {
+      color: #cdc9a5 !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 28px !important;
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 40px;
+      font-family: var(--font-main) !important;
+    }
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 13px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+    .ctg-footer li {
+      font-size: 14px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+      font-family: var(--font-main) !important;
+    }
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+      font-family: var(--font-main) !important;
+    }
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 11px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 12px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.0 !important;
+    }
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    /* Impressum Content Styles – konsistent mit Service-Seite */
+    .impressum-content h2 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-size: 2rem !important;
+      line-height: 1.3;
+    }
+    .impressum-content h3 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.4rem !important;
+    }
+    .address-box {
+      background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.08);
+    }
+    .privacy-box {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.1);
+    }
+    .data-list dt {
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 0.4rem;
+    }
+    .data-list dd {
+      margin-bottom: 1.2rem;
+      color: #555;
+    }
+    /* --- 2. MOBILE-ONLY DESIGN (GENAU WIE SERVICE-SEITE) --- */
+    @media (max-width: 767px) {
+      .header-paragraph .paragraph-text-3 {
+        font-size: 11px !important;
+      }
+      .footer-desktop-version {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+      }
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+/* NAVIGATION MOBILE - FIRMA-NAME KLEINER */
+  .navbar-brand.company-name {
+    font-size: 0.97rem !important;
+	    color: #cdc9a5 !important;
+    letter-spacing: 1px;
+  }
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+      body, p, .lead, .text-muted {
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+      }
+      section.py-5, .container.my-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+      .impressum-content h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem !important;
+      }
+      .impressum-content h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 0.8rem !important;
+      }
+      .address-box, .privacy-box {
+        padding: 1rem !important;
+        margin: 1.5rem 0 !important;
+      }
+      .impressum-content > * {
+        margin-bottom: 1.8rem !important;
+      }
+      .impressum-content > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      .data-list dd {
+        margin-bottom: 1rem !important;
+      }
+      /* Einrückung des ersten Wortes nach Aufmacher (Mobile) */
+      .intro-paragraph strong:first-of-type {
+        margin-left: 1.5rem;
+      } 
+	  */
+	  
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 13px !important;
+        color: #ffffff !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        margin-bottom: 10px !important;
+        margin-top: 18px !important;
+        display: block !important;
+        line-height: 1.1 !important;
+      }
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+      .footer-mobile-version li {
+        line-height: 1.05 !important;
+        margin-bottom: 5px !important;
+        font-size: 13px !important;
+        color: #aaa !important;
+      }
+      .footer-mobile-version .footer-bottom-fixed {
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        border-top: 1px solid #222 !important;
+        font-size: 11px !important;
+      }
+    }
+    .text-primary-custom {
+      color: var(--primary-color) !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand company-name" href="index.html">
+        Chumpol Trading Group Co. LTD.
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- Header – exakt wie Service-Seite -->
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading" style="letter-spacing: 1.9px; line-height: 1.15; font-weight: light; font-size: 22px; color: #cdc9a5;">
+          <span class="heading-text-1">IMPRESSUM UND DATENSCHUTZRICHTLINIEN</span>
+        </h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2">
+            <strong class="paragraph-text-3">
+              ANSCHRIFT - FIRMENDATEN - IMPRESSUM
+            </strong>
+          </span>
+        </p>
+      </header>
+    </div>
+  </div>
+ 
+  <!-- Impressum Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto impressum-content">
+         
+          <h2 class="text-primary-custom">Impressum</h2>
+         
+          <p class="intro-paragraph"><strong>Angaben gemäß § 5 TMG und verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong></p>
+         
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h3 class="text-primary-custom">Anschriften</h3>
+             
+              <div class="address-box">
+                <p class="fw-bold mb-2 text-primary-custom">Büro Bangkok</p>
+                <p class="mb-0">
+                  Kronos Sathorn Tower<br>
+                  46 Sathorn Nuea Rd., Silom Subdistrict<br>
+                  Bang Rak<br>
+                  10500 Bangkok<br>
+                  Thailand
+                </p>
+              </div>
+              <div class="address-box">
+                <p class="fw-bold mb-2 text-primary-custom">Büro Lampang</p>
+                <p class="mb-0">
+                  355/46 Boonwat Road<br>
+                  Muang Lampang<br>
+                  52100 Lampang<br>
+                  Thailand
+                </p>
+              </div>
+            </div>
+           
+            <div class="col-md-6">
+              <h3 class="text-primary-custom">Firmendaten & Kontakt</h3>
+             
+              <dl class="data-list">
+                <dt>Telefon</dt>
+                <dd>+66 88 555 751-0<br>+66 88 555 751-1</dd>
+               
+                <dt>E-Mail</dt>
+                <dd>info@ctg-group.eu<br>sale@ctg-group.eu</dd>
+               
+                <dt>Register</dt>
+                <dd>DBD: 0525560001568<br>Established: 2017</dd>
+               
+                <dt>Inhaber / CEO</dt>
+                <dd>Chumpol Bernhardt</dd>
+               
+                <dt>Geschäftsführung</dt>
+                <dd>Chumpol Bernhardt<br>
+                    Gerhard Holzapfel-Somchai (Managing Director Europe DACH)<br>
+                    Siriphap Whanatung (Managing Director Asia)</dd>
+               
+                <dt>Verantwortlich für den Inhalt</dt>
+                <dd>Mr. Somsak Anatung</dd>
+              </dl>
+              <p class="small text-muted mt-3">
+                Ein Unternehmen der Chumpol Bernhardt Group.
+              </p>
+            </div>
+          </div>
+         
+          <div class="privacy-box">
+            <h2 class="text-primary-custom">Datenschutzrichtlinien</h2>
+           
+            <div class="text-muted" style="line-height: 1.6;">
+              <p class="fw-bold mb-3">Datenschutzerklärung für den internationalen Handel</p>
+              <p class="mb-3"><strong>Datenschutz und Vertraulichkeit:</strong> Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Informationen sicher und vertraulich zu behandeln.</p>
+              <p class="mb-3"><strong>Datenerhebung und -verwendung:</strong> Wir erheben und verwenden personenbezogene Daten zur Abwicklung Ihrer Bestellungen, Erbringung unserer Dienstleistungen und Bearbeitung Ihrer Anfragen. Diese Daten umfassen Ihren Namen, Adresse, E-Mail-Adresse, Telefonnummer, Zahlungsdetails sowie weitere relevante Informationen.</p>
+              <p class="mb-3"><strong>Datenweitergabe:</strong> Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, es sei denn, dies ist für die Bearbeitung Ihrer Bestellungen/Anfragen erforderlich oder gesetzlich vorgeschrieben.</p>
+              <p class="mb-3"><strong>Datensicherheit:</strong> Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder Veränderung.</p>
+              <p class="mb-3"><strong>Datenspeicherung:</strong> Wir speichern Ihre personenbezogenen Daten nur so lange, wie es zur Erfüllung der Erhebungszwecke notwendig ist, sofern keine gesetzlichen Aufbewahrungsfristen entgegenstehen.</p>
+              <p class="mb-3"><strong>Cookies und Tracking:</strong> Diese Website nutzt möglicherweise Cookies und ähnliche Technologien zur Verbesserung der Nutzererfahrung sowie für Analysezwecke. Cookie-Einstellungen können Sie in Ihrem Browser anpassen.</p>
+              <p class="mb-3"><strong>Rechte der Betroffenen:</strong> Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten. Kontaktieren Sie uns bitte zur Wahrnehmung dieser Rechte.</p>
+              <p class="mb-3"><strong>Kontakt:</strong> Bei Fragen oder Anliegen zum Datenschutz erreichen Sie uns unter info@ctg-group.eu.</p>
+              <p class="mb-3"><strong>Änderungen dieser Datenschutzerklärung:</strong> Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit anzupassen. Wesentliche Änderungen werden wir bekannt geben.</p>
+              <p class="mb-0"><strong>Anwendbares Recht:</strong> Diese Datenschutzerklärung unterliegt den Gesetzen des Landes, in dem unser Unternehmen ansässig ist.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Desktop-Footer -->
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h5 class="footer-headline">BÜRO BANGKOK</h5>
+              <ul>
+                <li>Kronos Sathorn Tower</li>
+                <li>46 Sathorn Nuea Bang Rak</li>
+                <li>Bangkok 10500</li>
+                <span class="sub-label">TELEFON</span>
+                <li>☎ +66 (0) 88 555 751-0</li>
+                <li>☎ +66 (0) 88 555 751-1</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">BÜRO LAMPANG</h5>
+              <ul>
+                <li>355/46 Boonwat Road</li>
+                <li>Muang Lampang</li>
+                <li>52100 Lampang</li>
+                <span class="sub-label">E-MAIL</span>
+                <li>📧 info@ctg-group.eu</li>
+                <li>📧 sale@ctg-group.eu</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">SUPPORT</h5>
+              <ul>
+                <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+                <span class="sub-label">REGISTER</span>
+                <li>DBD: 0525560001568</li>
+                <li>Established: 2017</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">QUICK LINKS</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Service</a></li>
+                <li><a href="about.html">Impressum</a></li>
+                <span class="sub-label">FIRMA</span>
+                <li>Chumpol Bernhardt</li>
+                <li>CTG Group Co. LTD.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom-fixed">
+            &copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Mobile-Footer -->
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col"><h5 class="footer-headline">FIRMA</h5><ul><li>Chumpol Bernhardt</li><li>CTG Group Co. LTD.</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">BÜRO BANGKOK</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea</li><li>Bangkok 10500</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">BÜRO LAMPANG</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">REGISTER</h5><ul><li>DBD: 0525560001568</li><li>Established: 2017</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul>
+          <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+        </ul></div>
+        <div class="footer-col"><h5 class="footer-headline">E-MAIL</h5><ul><li>info@ctg-group.eu</li><li>sale@ctg-group.eu</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">TELEFON</h5><ul><li>☎ +66 (0) 88 555 751-0</li><li>☎ +66 (0) 88 555 751-1</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="contact.html">Service</a></li><li><a href="about.html">Impressum</a></li></ul></div>
+      </div>
+      <div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.</div>
+    </div>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

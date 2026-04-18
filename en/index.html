@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group - Legal Notice and Data Protection">
+  <meta name="keywords" content="Legal Notice, Data Protection, CTG Group">
+  <title>CTG - Home</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- 1. DESKTOP DESIGN (EXACTLY LIKE INDEX.HTML & SERVICE PAGE) --- */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Helvetica, Arial, sans-serif !important;
+      --font-heading: 'Inter', sans-serif;
+    }
+   
+    body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name {
+     font-family: var(--font-main) !important;
+    }
+   
+    body, p {
+      font-family: var(--font-main) !important;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000000;
+    }
+  .navbar-brand.company-name {
+    font-size: 1.1rem !important;
+    color: #cdc9a5 !important;
+    letter-spacing: 1px;
+  }
+  
+    /* HERE WE OVERRIDE THE MAIN-HEADING – remove negative margin */
+    h1.main-heading {
+      color: #cdc9a5 !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+    /* Header Paragraph - MUCH LARGER ONLY FOR DESKTOP */
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 28px !important; /* DOUBLE SIZE FOR DESKTOP */
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+
+    /* Desktop remains unchanged */
+    h1.main-heading { 
+      color: #cdc9a5 !important; 
+      text-transform: uppercase; 
+      letter-spacing: 1.9px !important; 
+      font-size: 22px !important; 
+      margin-top: -70px; 
+      text-align: center; 
+    }
+
+    .transition-hover {
+      border-right: 3px solid var(--primary-color) !important;
+      border-bottom: 3px solid var(--primary-color) !important;
+      transition: all 0.3s ease;
+    }
+
+    /* Footer Desktop Standard */
+    .ctg-footer { background-color: #000 !important; color: #ffffff !important; padding: 60px 0 20px 0; margin-top: 40px; font-family: var(--font-main) !important; }
+    .footer-row { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; margin: 0 !important; }
+    .footer-col { flex: 0 0 auto; min-width: 180px; padding: 0 !important; }
+    .footer-headline { color: #ffffff !important; font-size: 13px !important; font-weight: bold !important; text-transform: uppercase; display: block; margin-bottom: 20px; text-align: left !important; letter-spacing: 1.5px !important; }
+    .ctg-footer ul { list-style: none !important; padding: 0 !important; margin: 0 !important; text-align: left !important; }
+    .ctg-footer li { font-size: 14px !important; color: #aaa !important; margin-bottom: 7px !important; line-height: 1.4 !important; font-family: var(--font-main) !important; }
+    .ctg-footer a { color: #aaa !important; text-decoration: none !important; font-family: var(--font-main) !important; }
+    .sub-label { display: block !important; color: #666 !important; font-size: 11px !important; margin: 20px 0 8px 0 !important; text-align: left !important; }
+    .footer-bottom-fixed { text-align: center !important; color: #444 !important; font-size: 12px !important; margin-top: 40px !important; border-top: 1px solid #111 !important; padding-top: 20px !important; line-height: 1.0 !important; }
+
+    /* VISIBILITY CONTROL (Desktop view) */
+    .footer-mobile-version { display: none !important; visibility: hidden !important; opacity: 0; height: 0; overflow: hidden; }
+
+    /* Style for list with blue arrows (Desktop) - CORRECTED */
+    .ctg-master-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 !important;
+    }
+    
+    .ctg-master-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px !important;
+      padding-left: 0;
+    }
+    
+    .ctg-master-list .bi-arrow-right-circle {
+      color: var(--primary-color) !important;
+      font-size: 1.4rem;
+      margin-right: 12px;
+      margin-top: 2px !important;
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
+    
+    .ctg-master-list div {
+      flex: 1;
+    }
+    
+    .ctg-master-list strong {
+      color: var(--primary-dark);
+      font-weight: 600;
+      display: inline-block !important;
+      margin-bottom: 5px !important;
+      width: 100%;
+    }
+
+    /* Line break after bold heading */
+    .ctg-master-list li strong:after {
+      content: "" !important;
+      display: block !important;
+      margin-bottom: 5px;
+    }
+
+    /* Make button font uniform */
+    .btn-offer {
+      font-weight: 700 !important;
+      letter-spacing: 1px !important;
+      text-transform: uppercase !important;
+      font-size: 14px !important;
+      font-family: var(--font-main) !important;
+    }
+
+    /* IMPROVED CARD STYLES */
+    .card {
+      border: none !important;
+      border-radius: 8px !important;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+      transform: translateY(0);
+      background: white !important;
+    }
+    
+    .card:hover {
+      transform: translateY(-6px) scale(1.02) !important;
+      box-shadow: 0 12px 24px rgba(12, 12, 112, 0.15) !important;
+    }
+
+    /* Improved card animations for desktop */
+    .card-icon-hover {
+      transition: all 0.3s ease !important;
+      color: var(--primary-color) !important;
+    }
+    
+    .card:hover .card-icon-hover {
+      color: white !important;
+      transform: scale(1.1) !important;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+    
+    /* ROUND CIRCLE FOR ICONS */
+    .d-inline-block.p-3.rounded-circle.bg-light {
+      background: linear-gradient(135deg, #f5f7ff 0%, #e8ecff 100%) !important;
+      transition: all 0.3s ease !important;
+      border: 2px solid rgba(12, 12, 112, 0.15) !important;
+      width: 70px !important;
+      height: 70px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 0 auto 15px auto !important;
+    }
+    
+    .card:hover .d-inline-block.p-3.rounded-circle.bg-light {
+      transform: scale(1.05) !important;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+      border-color: var(--primary-color) !important;
+      box-shadow: 0 6px 12px rgba(12, 12, 112, 0.2) !important;
+    }
+
+    /* Separator line for Mobile (not for Desktop) */
+    .mobile-separator-line {
+      display: none;
+    }
+
+    /* BLUE SEPARATOR LINE FOR DESKTOP - THIN */
+    .desktop-separator-line {
+      height: 1px !important;
+      background-color: var(--primary-color);
+      width: 100%;
+      margin: 25px 0 !important;
+      opacity: 0.5;
+    }
+
+    /* Offer Download Area - SPACING REDUCED FOR DESKTOP */
+    .offer-download {
+      padding: 1.5rem !important;
+      margin-top: 0.2rem !important; /* LESS SPACING ONLY FOR DESKTOP */
+      margin-bottom: 1.5rem !important;
+    }
+
+    /* Language Switcher Flags in Navigation - OPTIMIZED */
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+    
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    
+    /* Smaller flags without underline */
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid #cdc9a5;
+      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
+    }
+    
+    /* Mobile Language Switcher - VERY SMALL TOP RIGHT */
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-right: 0;
+        justify-content: flex-end;
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-top: none;
+        position: absolute;
+        right: 70px; /* Space for toggler button */
+        top: 15px;
+      }
+      
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      
+      .language-switcher-nav img {
+        width: 16px; /* EXTRA SMALL for Mobile */
+        height: auto;
+        opacity: 0.8;
+      }
+      
+      .language-switcher-nav a.active img {
+        opacity: 1;
+        border: 1px solid #cdc9a5;
+        box-shadow: 0 0 2px rgba(205, 201, 165, 0.5);
+      }
+    }
+    
+    /* Mobile Navigation Toggler Adjustment */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        padding-bottom: 10px;
+      }
+      
+      .navbar-nav {
+        margin-bottom: 5px;
+      }
+      
+      /* Navigation Container for Mobile adjustment */
+      .navbar > .container {
+        position: relative;
+      }
+    }
+    
+    /* --- 2. MOBILE-ONLY DESIGN (STRICT SEPARATION) --- */
+    @media (max-width: 767px) {
+      /* RADICALLY HIDE DESKTOP FOOTER */
+      .footer-desktop-version { 
+        display: none !important; 
+        visibility: hidden !important; 
+        opacity: 0 !important; 
+        height: 0 !important; 
+        margin: 0 !important; 
+        padding: 0 !important;
+        overflow: hidden !important;
+      }
+  
+      /* FIX: Icon visibility for .btn-offer on Mobile */
+      .btn-offer i {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
+      /* ACTIVATE MOBILE FOOTER */
+      .footer-mobile-version { 
+        display: block !important; 
+        visibility: visible !important; 
+        opacity: 1 !important; 
+        height: auto !important; 
+        overflow: visible !important;
+      }
+
+      /* 1. UPPER TEXT LARGER +2PX AND WHITE */
+      h1.main-heading { 
+        margin-top: 15px !important; 
+        font-size: 16px !important;
+        font-weight: 700 !important; 
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+      
+      /* Second text gray */
+      .header-paragraph .paragraph-text-3 {
+        color: #888 !important;
+        font-size: 11px !important;
+        letter-spacing: -0.1px !important;
+      }
+
+      /* NAVIGATION MOBILE - COMPANY NAME SMALLER */
+      .navbar-brand.company-name {
+        font-size: 0.80rem !important;
+      }
+
+      body, p, .lead { 
+        font-size: 12px !important; 
+        line-height: 1.3 !important;
+        font-weight: 300 !important;
+      }
+      
+      .transition-hover { 
+        border: none !important; 
+      }
+
+      /* BLUE SEPARATOR LINE HIDDEN ON MOBILE */
+      .desktop-separator-line {
+        display: none !important;
+      }
+
+      /* MOBILE SEPARATOR LINE - THIN WITH MORE MARGINS */
+      .mobile-separator-line {
+        display: block !important;
+        height: 1px !important;
+        background-color: var(--primary-color);
+        width: calc(100% - 40px) !important;
+        margin: 15px 20px !important;
+        opacity: 0.3;
+      }
+
+      /* First heading left-aligned */
+      .fs-2.fw-normal.text-start.mb-5 {
+        text-align: left !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        width: 100%;
+        margin-bottom: 30px !important;
+        font-size: 1.4rem !important;
+      }
+      
+      /* Paragraphs under first heading left-aligned */
+      .col-lg-12 p,
+      .col-lg-12 .lead {
+        text-align: left !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        width: 100%;
+      }
+
+      /* Round arrows in top text smaller and CENTER ALIGNED */
+      .ctg-master-list .bi-arrow-right-circle {
+        font-size: 1.0rem !important;
+        margin-right: 8px !important;
+        margin-top: 1px !important;
+        line-height: 1.2;
+      }
+      
+      .ctg-master-list li {
+        margin-bottom: 12px !important;
+        align-items: flex-start !important;
+      }
+
+      .ctg-master-list strong {
+        display: inline-block !important;
+        margin-bottom: 3px !important;
+        width: 100%;
+      }
+
+      /* LINE BREAK ALSO ON MOBILE */
+      .ctg-master-list li strong:after {
+        content: "" !important;
+        display: block !important;
+        margin-bottom: 3px;
+      }
+
+      /* MARKET ACCESS AREA */
+      .text-correction {
+        position: relative;
+        padding: 0 !important;
+        margin: 15px 0 10px 0 !important;
+        border: none !important;
+        background-color: transparent !important;
+      }
+
+      /* Mobile Footer Optimization */
+      .footer-mobile-version.ctg-footer { 
+        padding: 25px 0 5px 0 !important; 
+        margin-top: 15px !important; 
+      }
+      
+      .footer-mobile-version .footer-row { 
+        display: block !important; 
+      }
+      
+      .footer-mobile-version .footer-col { 
+        width: 100% !important; 
+        margin-bottom: 15px !important;
+        padding-left: 15px !important; 
+      }
+
+      .footer-mobile-version .footer-headline { 
+        font-size: 13px !important; 
+        color: #ffffff !important; 
+        font-weight: bold !important; 
+        text-transform: uppercase !important; 
+        letter-spacing: 1.5px !important; 
+        margin-bottom: 10px !important;
+        margin-top: 18px !important;
+        display: block !important;
+        line-height: 1.1 !important;
+      }
+      
+      .footer-mobile-version .footer-col:first-child .footer-headline { 
+        margin-top: 0 !important; 
+      }
+
+      .footer-mobile-version li { 
+        line-height: 1.05 !important; 
+        margin-bottom: 5px !important;
+        font-size: 13px !important;
+        color: #aaa !important;
+      }
+
+      .footer-mobile-version .footer-bottom-fixed { 
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        border-top: 1px solid #222 !important;
+        font-size: 11px !important;
+      }
+
+      /* SPACING CURRENT OFFER REDUCED */
+      section.py-5 {
+        padding-bottom: 0.5rem !important;
+      }
+      
+      /* OFFER FOR MOBILE - MAINTAIN SPACING, ENSURE ICONS */
+      .offer-download {
+        margin-top: 0.5rem !important; /* MOBILE SPACING UNCHANGED */
+        margin-bottom: 0.5rem !important;
+        padding: 0.8rem !important;
+      }
+
+      /* ENSURE BUTTON ICONS ARE VISIBLE ON MOBILE */
+      .btn-offer i {
+        display: inline-block !important; /* IMPORTANT: Make icon visible */
+        margin-right: 8px !important;
+        font-size: 14px !important;
+      }
+
+       /* HINTERGRUNDBILD MIT KORREKTER SCHRIFT */
+      .row.offer-row {
+        background-image: url('../pngtree_2489207-origHandy.jpg') !important;
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        margin: 5px 0 !important;
+        padding: 20px 15px !important;
+        border-radius: 6px;
+        border: none !important;
+        min-height: 120px;
+        position: relative;
+        overflow: hidden;
+      }
+    
+      /* FIX: ULTRA-FINE FONT WEIGHT FOR BACKGROUND TEXT ON MOBILE */
+      .paragraph.lighter-p {
+        position: relative !important;
+        z-index: 2 !important;
+        color: #ffffff !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        font-weight: 300 !important; /* MINIMUM WEIGHT TO REMOVE "CLUMSY" LOOK */
+        text-align: left !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+      }
+
+      /* CARD ADJUSTMENTS FOR MOBILE */
+      .card {
+        border: none !important;
+        border-radius: 10px !important;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+        margin-bottom: 12px !important;
+        transform: translateY(0);
+      }
+      
+      .card:hover {
+        transform: translateY(-5px) scale(1.02) !important;
+        box-shadow: 0 10px 20px rgba(12, 12, 112, 0.2) !important;
+      }
+      
+      .card-body {
+        padding: 1rem !important;
+        background: white !important;
+        text-align: center !important;
+      }
+      
+      .card-title {
+        color: var(--primary-color) !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+        transition: color 0.3s ease !important;
+        text-align: center !important;
+      }
+      
+      .card:hover .card-title {
+        color: var(--primary-dark) !important;
+      }
+      
+      .card-text-small {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+        color: #555 !important;
+        transition: color 0.3s ease !important;
+        text-align: left !important;
+        margin-top: 8px !important;
+      }
+      
+      /* Icons for Mobile */
+      .d-inline-block.p-3.rounded-circle.bg-light {
+        background: linear-gradient(135deg, #f5f7ff 0%, #e8ecff 100%) !important;
+        transition: all 0.3s ease !important;
+        border: 2px solid rgba(12, 12, 112, 0.1) !important;
+        width: 55px !important;
+        height: 55px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto 10px auto !important;
+      }
+      
+      .card:hover .d-inline-block.p-3.rounded-circle.bg-light {
+        transform: scale(1.08) !important;
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+        border-color: var(--primary-color) !important;
+        box-shadow: 0 6px 12px rgba(12, 12, 112, 0.2) !important;
+      }
+      
+      .bi {
+        transition: all 0.3s ease !important;
+        color: var(--primary-color) !important;
+        font-size: 1.3rem !important;
+      }
+      
+      .card:hover .bi {
+        color: white !important;
+        transform: scale(1.1) !important;
+        filter: drop-shadow(0 2px 3px rgba(12, 12, 112, 0.3));
+      }
+      
+      /* Card Container */
+      .row.g-4 {
+        margin-top: 8px !important;
+        gap: 0.5rem !important;
+      }
+      
+      /* Spacing after cards reduced */
+      section.py-5:last-of-type {
+        padding-bottom: 0.8rem !important;
+      }
+      
+      /* BUTTONS FOR MOBILE - ENSURE ICONS */
+      .btn-offer {
+        border-radius: 6px !important;
+        padding: 12px 20px !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+        transition: all 0.3s ease !important;
+        margin: 5px !important;
+        min-width: 160px !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+        text-align: center !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 46px;
+      }
+      
+      .btn-offer i {
+        margin-right: 8px !important;
+        font-size: 14px !important;
+        display: inline-block !important; /* IMPORTANT: Show icon */
+      }
+      
+      .btn-offer:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 8px 16px rgba(12, 12, 112, 0.3) !important;
+      }
+
+      /* PRIMARY BUTTON FOR MOBILE */
+      .btn-offer.primary-btn {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+        color: white !important;
+        border: none !important;
+      }
+      
+      .btn-offer.primary-btn:hover {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, #070738 100%) !important;
+      }
+
+      /* SECONDARY BUTTON FOR MOBILE - WICHTIG: Gleiche Größe wie primary */
+      .btn-offer.secondary-btn {
+        background: #ffffff !important;
+        color: var(--primary-color) !important;
+        border: 2px solid var(--primary-color) !important;
+        min-width: 160px !important; /* GLEICHE BREITE WIE PRIMARY */
+      }
+      
+      .btn-offer.secondary-btn:hover {
+        background: var(--primary-color) !important;
+        color: white !important;
+        border-color: var(--primary-color) !important;
+      }
+
+      /* BUTTON CONTAINER */
+      .offer-download .d-flex {
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+      }
+
+      /* SPACING ABOVE CARDS */
+      section.py-5:has(.row.g-4) {
+        padding-top: 1.5rem !important;
+      }
+
+      /* SPECIAL ANIMATION FOR CARDS */
+      .card {
+        animation: subtleBounce 0.5s ease-out;
+      }
+      
+      @keyframes subtleBounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+
+      /* CURRENT OFFER - CENTER ALIGN TEXT */
+      .offer-download .text-center {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      
+      .offer-download h2 {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      
+      .offer-download p {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+
+    /* Common styles for both versions - GLEICH WIE DEUTSCHE VERSION */
+    .btn-offer {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+      color: white !important;
+      border: none !important;
+      padding: 12px 28px !important;
+      border-radius: 4px !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px !important;
+      text-transform: uppercase !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 0 8px 8px 0 !important;
+      transition: all 0.3s ease !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+      font-family: var(--font-main) !important;
+      min-width: 180px !important; /* WICHTIG: GLEICHE BREITE FÜR BEIDE BUTTONS */
+    }
+    
+    .btn-offer:hover {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #070738 100%) !important;
+      color: white !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+    }
+    
+    /* SECONDARY BUTTON STYLES - EXAKT WIE IN DER DEUTSCHEN VERSION */
+    .btn-offer-secondary {
+      min-width: 180px !important;
+      height: 46px;
+      background: white !important;
+      color: var(--primary-color) !important;
+      border: 2px solid var(--primary-color) !important;
+    }
+    
+    .btn-offer-secondary:hover {
+      background: var(--primary-color) !important;
+      color: white !important;
+    }
+    
+    .offer-download h2 {
+      color: var(--primary-color) !important;
+      font-size: 20px !important;
+      margin-bottom: 8px !important;
+      font-weight: 700 !important;
+    }
+    
+    .offer-download p {
+      color: #666 !important;
+      margin-bottom: 15px !important;
+      font-size: 14px !important;
+      font-family: var(--font-main) !important;
+    }
+
+    /* Standard spacing for text blocks */
+    .mb-4 {
+      margin-bottom: 1.5rem !important;
+    }
+    
+    .mb-5 {
+      margin-bottom: 2rem !important;
+    }
+
+    /* NORMAL PARAGRAPHS WITHOUT SPECIAL CLASS */
+    .normal-text {
+      font-family: var(--font-main) !important;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+  <style>
+  /* FINAL BUTTON SIZE – DO NOT OVERRIDE */
+  .btn-offer {
+    min-width: 200px !important;
+    height: 46px !important;
+    box-sizing: border-box;
+  }
+  </style>
+</head>
+<body>
+  <!-- Navigation - EXACTLY LIKE SERVICE -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand company-name" href="index.html">
+        Chumpol Trading Group Co. LTD.
+      </a>
+      
+      <!-- Language Switcher for Desktop (right next to navigation) -->
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="../index.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="German flag">
+        </a>
+        <a href="index.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="British flag">
+        </a>
+      </div>
+      
+      <!-- Language Switcher for Mobile (top right) -->
+      <div class="language-switcher-nav d-lg-none">
+        <a href="../index.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="German flag">
+        </a>
+        <a href="index.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="British flag">
+        </a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impressum.html">Legal Notice</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading" style="letter-spacing: 1.9px; line-height: 1.15; font-weight: light; font-size: 22px; color: #cdc9a5;">
+          <span class="heading-text-1">YOUR GLOBAL DIRECT DISTRIBUTION PARTNER</span>
+        </h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2">
+            <strong class="paragraph-text-3">
+              Chumpol Trading Group Co. LTD.
+            </strong>
+          </span>
+        </p>
+      </header>
+    </div>
+  </div>
+
+  <section class="py-5" style="padding-bottom: 0.5rem !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto">
+          <h1 class="fs-2 fw-normal text-start mb-5" style="color: #0c0c70 !important; line-height: 1.3;">
+            Welcome to the age of efficiency enhancement through direct sourcing from the source without detours or third parties.
+          </h1>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- FIRST PARAGRAPH WITHOUT LEAD CLASS FOR SAME FONT SIZE -->
+              <p class="normal-text mb-4">
+                In the globally networked mobile communications industry, specialized distributors play a key role in the value chain. <strong>Chumpol Trading Group Co. LTD.</strong> has been your reliable distribution partner as a trade supplier for the European market with smartphones and electronics for many years.
+              </p>
+              
+              <p class="normal-text mb-4">
+                As a distributor for the DACH region (Germany, Austria and Switzerland), we employ international staff to completely eliminate language barriers and ensure smooth communication.
+              </p>
+
+              <p class="normal-text mb-4">
+                Thanks to in-depth industry knowledge, many years of experience and a global supplier network, we guarantee you the highest quality, predictability and reliability. Our service portfolio goes far beyond mere procurement:
+              </p>
+
+              <ul class="ctg-master-list">
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <div>
+                    <strong>Exclusive direct partnerships:</strong> We work exclusively and directly with the original manufacturers and source our smartphones as new goods directly from the production companies on site. As a link between production and trade, we exclusively supply the trade and maintain long-term distributor contracts with the manufacturers for this purpose.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <div>
+                    <strong>Market-compliant goods:</strong> All products are intended by the manufacturer for the German/European market, CE-certified, comply with EU specifications and are freely marketable.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <div>
+                    <strong>Local warranty processing:</strong> Our smartphones come with the usual manufacturer's warranty, which can be claimed directly on site in Europe in the event of a warranty claim. Warranty processing is carried out in the respective country by authorized specialist retailers.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <div>
+                    <strong>Direct shipping & dropshipping:</strong> Without detours and third-party involvement directly from the factory – for maximum margins and consistent prices. On request, we take over fulfillment and shipping directly to your end customers, so you can reduce warehouse costs and expand your service.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <div>
+                    <strong>Portfolio & brand management:</strong> Regular product updates and access to the latest market launches secure your competitive advantage. We work closely with Apple, Samsung, Asus, Xiaomi and Huawei and offer you selected top models from these leading manufacturers.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <div>
+                    <strong>Full-service support:</strong> Individual advice, transparent processes and personal contacts accompany you from inquiry to delivery.
+                  </div>
+                </li>
+              </ul>
+
+              <p class="normal-text mb-4">
+                Through our flexible solutions, we adapt exactly to your requirements, whether you want to order large volumes or purchase smaller contingents of our premium models. With CTG, you optimize your stocks, protect your working capital and focus entirely on growing your business.
+              </p>
+
+              <!-- THE TWO TEXT BLOCKS AS REQUESTED -->
+              <p class="normal-text mb-4">
+                <strong>Trust in Chumpol Trading Group Co. LTD.:</strong> We connect manufacturers and trading partners worldwide and thus create transparent, efficient and cost-effective processes – from the production site to you or your customer.
+              </p>
+
+              <p class="normal-text mb-4">
+                As a full-service distributor, we guarantee more than hardware. We offer strategic partnerships with SAP support and process design up to market-appropriate positioning. Rely on our expertise for sustainable growth of your sales channels.
+              </p>
+
+              <!-- PARTNER LIST -->
+              <div class="bg-light p-4 rounded-3 border-start border-primary border-4 mb-4" style="border-left-color: #0c0c70 !important;">
+                <p class="fw-bold mb-3">Through industry-leading efficiency and innovative sales solutions, we enable our partners to:</p>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">► Minimization of operational costs through automated supply chains</li>
+                  <li class="mb-2">► Scalability without warehouse investments (via dropshipping)</li>
+                  <li class="mb-2">► Risk reduction through just-in-time logistics</li>
+                  <li class="mb-2">► Local warranty processing in Europe</li>
+                  <li>► Competitive advantages through exclusive market access</li>
+                </ul>
+              </div>
+
+              <!-- BLUE SEPARATOR LINE INSERTED HERE -->
+              <div class="desktop-separator-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separator line between text and offer (only for Mobile) -->
+  <div class="mobile-separator-line"></div>
+
+  <!-- Offer Download Form -->
+  <section class="container my-1 offer-download">
+    <div class="text-center">
+      <h2>Current Offer:</h2>
+      <p>Our offer as PDF or for online viewing</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <<a href="leistungsverzeichnis.pdf?download=1" class="btn btn-offer primary-btn">
+  <i class="bi bi-download me-2"></i>DOWNLOAD PDF
+</a>
+        <a href="leistungsverzeichnis.pdf" class="btn btn-offer secondary-btn" target="_blank">
+  <i class="bi bi-eye me-2"></i>ONLINEANSICHT
+</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Background image area -->
+  <div class="row offer-row" id="book">
+    <div class="col-xs-12">
+      <p class="paragraph lighter-p">
+        <span class="paragraph-text-3">
+          With us you get much more than just products. We are your reliable link between production and trade, you benefit from a global network at home and abroad.
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Execution cards with animation -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm transition-hover p-2">
+                <div class="card-body text-center">
+                  <div class="mb-3 d-inline-block p-3 rounded-circle bg-light">
+                    <i class="bi bi-truck card-icon-hover" style="font-size: 2rem;"></i>
+                  </div>
+                  <h5 class="card-title fw-bold mb-3">Direct Shipping</h5>
+                  <p class="card-text text-muted card-text-small">Our transport service/distribution is aimed at retailers and wholesalers and is carried out by direct shipping without detours via third-party companies. Trade agreements and an optimized transport route are used to ensure price stability and margin optimization.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm transition-hover p-2">
+                <div class="card-body text-center">
+                  <div class="mb-3 d-inline-block p-3 rounded-circle bg-light">
+                    <i class="bi bi-box-seam card-icon-hover" style="font-size: 2rem;"></i>
+                  </div>
+                  <h5 class="card-title fw-bold mb-3">Dropshipping</h5>
+                  <p class="card-text text-muted card-text-small">Our dropshipping solutions help you optimize delivery times, warehouse planning and management, rationalize warehouse planning and improve overall administrative efficiency. Dropshipping saves storage and administrative costs.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm transition-hover p-2">
+                <div class="card-body text-center">
+                  <div class="mb-3 d-inline-block p-3 rounded-circle bg-light">
+                    <i class="bi bi-check-circle card-icon-hover" style="font-size: 2rem;"></i>
+                  </div>
+                  <h5 class="card-title fw-bold mb-3">Portfolio & Warranty</h5>
+                  <p class="card-text text-muted card-text-small">Stay up to date through the manufacturer's distribution. As a partner, you can already help shape the launch of new products in the early phase. All products have full manufacturer's warranty, which can be processed directly on site in Europe in the event of a warranty claim.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm transition-hover p-2">
+                <div class="card-body text-center">
+                  <div class="mb-3 d-inline-block p-3 rounded-circle bg-light">
+                    <i class="bi bi-receipt card-icon-hover" style="font-size: 2rem;"></i>
+                  </div>
+                  <h5 class="card-title fw-bold mb-3">Incoterms</h5>
+                  <p class="card-text text-muted card-text-small">The Incoterms "DDP" (Delivered Duty Paid), including goods insurance to the value of the goods, ensure smooth transport of the goods without you having to worry about the import process.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm transition-hover p-2">
+                <div class="card-body text-center">
+                  <div class="mb-3 d-inline-block p-3 rounded-circle bg-light">
+                    <i class="bi bi-airplane card-icon-hover" style="font-size: 2rem;"></i>
+                  </div>
+                  <h5 class="card-title fw-bold mb-3">Delivery</h5>
+                  <p class="card-text text-muted card-text-small">Enjoy reliable, fast and timely deliveries throughout Europe, directly to your delivery address. Our reliable air freight service ensures efficient transport and guarantees timely arrival.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm transition-hover p-2">
+                <div class="card-body text-center">
+                  <div class="mb-3 d-inline-block p-3 rounded-circle bg-light">
+                    <i class="bi bi-people card-icon-hover" style="font-size: 2rem;"></i>
+                  </div>
+                  <h5 class="card-title fw-bold mb-3">Business Relationship</h5>
+                  <p class="card-text text-muted card-text-small">Our partners are the driving force. Benefit from a stable business relationship that offers you a global network, an extensive product range and highest customer satisfaction in a win-win relationship.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desktop-Footer (hidden on Mobile) -->
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h5 class="footer-headline">BANGKOK OFFICE</h5>
+              <ul>
+                <li>Kronos Sathorn Tower</li>
+                <li>46 Sathorn Nuea Bang Rak</li>
+                <li>Bangkok 10500</li>
+                <span class="sub-label">PHONE</span>
+                <li>☎ +66 (0) 88 777 0-244</li>
+                <li>☎ +66 (0) 88 777 0-344</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">LAMPANG OFFICE</h5>
+              <ul>
+                <li>355/46 Boonwat Road</li>
+                <li>Muang Lampang</li>
+                <li>52100 Lampang</li>
+                <span class="sub-label">EMAIL</span>
+                <li>📧 info@ctg-group.eu</li>
+                <li>📧 sale@ctg-group.eu</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">SUPPORT</h5>
+              <ul>
+                <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+                <span class="sub-label">REGISTER</span>
+                <li>DBD: 0525560001568</li>
+                <li>Established: 2017</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">QUICK LINKS</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="impressum.html">Legal Notice</a></li>
+                <span class="sub-label">COMPANY</span>
+                <li>Chumpol Bernhardt</li>
+                <li>CTG Group Co. LTD.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom-fixed">
+            &copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile-Footer (hidden on Desktop) -->
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col"><h5 class="footer-headline">COMPANY</h5><ul><li>Chumpol Bernhardt</li><li>CTG Group Co. LTD.</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">BANGKOK OFFICE</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea</li><li>Bangkok 10500</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">LAMPANG OFFICE</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">REGISTER</h5><ul><li>DBD: 0525560001568</li><li>Established: 2017</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul>
+          <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+        </ul></div>
+        <div class="footer-col"><h5 class="footer-headline">EMAIL</h5><ul><li>info@ctg-group.eu</li><li>sale@ctg-group.eu</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">PHONE</h5><ul><li>☎ +66 (0) 88 777 0-244</li><li>☎ +66 (0) 88 777 0-344</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Legal Notice</a></li></ul></div>
+      </div>
+      <div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle (incl. Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

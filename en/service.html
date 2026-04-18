@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group - Legal Notice and Data Protection">
+  <meta name="keywords" content="Legal Notice, Data Protection, CTG Group">
+  <title>CTG - Legal Notice</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- Inter Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- 1. DESKTOP DESIGN (EXACTLY LIKE INDEX.HTML & SERVICE PAGE) --- */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Helvetica, Arial, sans-serif !important;
+      --font-heading: 'Inter', sans-serif;
+    }
+   
+    body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name {
+     font-family: var(--font-main) !important;
+    }
+   
+    body, p {
+      font-family: var(--font-main) !important;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000000;
+    }
+  .navbar-brand.company-name {
+    font-size: 1.1rem !important;
+    color: #cdc9a5 !important;
+    letter-spacing: 1px;
+  }
+  
+/* HERE WE OVERRIDE THE MAIN-HEADING – remove negative margin */
+    h1.main-heading {
+      color: #cdc9a5 !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+    /* Header Paragraph - MUCH LARGER ONLY FOR DESKTOP */
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 28px !important; /* DOUBLE SIZE FOR DESKTOP */
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+    /* Footer Desktop Standard - EXACTLY LIKE INDEX */
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 40px;
+      font-family: var(--font-main) !important;
+    }
+   
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+   
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+   
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 13px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+   
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+   
+    .ctg-footer li {
+      font-size: 14px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+      font-family: var(--font-main) !important;
+    }
+   
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+      font-family: var(--font-main) !important;
+    }
+   
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 11px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+   
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 12px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.0 !important;
+    }
+    /* VISIBILITY CONTROL (Desktop view) - EXACTLY LIKE INDEX */
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+    /* Service Content Styles */
+    .service-content h1 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    .service-content h3 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      font-size: 1.75rem !important;
+    }
+    .service-content h4 {
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    /* MODERN HIGHLIGHT FOR BLUE BOX */
+    .highlight-box {
+      background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%) !important;
+      border-left: 4px solid var(--primary-color) !important;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.08);
+      margin-top: 1.5rem;
+    }
+    .custom-checklist {
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin-top: 0.8rem;
+    }
+    .custom-checklist li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0.6rem;
+    }
+    .custom-checklist li i {
+      color: var(--primary-color);
+      margin-right: 0.8rem;
+      font-size: 1.1rem;
+      margin-top: 0.2rem;
+    }
+    /* Service Points from index.html */
+    .service-detail-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .service-detail-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      background: #fafbff;
+      border-radius: 6px;
+      border-left: 3px solid var(--primary-color);
+    }
+    .service-detail-list .bi {
+      color: var(--primary-color);
+      margin-right: 0.8rem;
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
+    }
+    /* SPACING REDUCED */
+    .service-section {
+      margin-bottom: 1.5rem !important;
+    }
+    .col-md-6 {
+      margin-bottom: 1.5rem !important;
+    }
+    /* NEW SUPPORT FEATURES LIST */
+    .support-features {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+    .support-features li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .support-features li:before {
+      content: "•";
+      color: var(--primary-color);
+      font-weight: bold;
+      font-size: 1.2rem;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+    /* NORMAL TEXT SECTION WITHOUT BORDER */
+    .plain-text-section {
+      margin: 1.5rem 0;
+    }
+    /* NEW SEPARATE TEXT SECTION FOR INDIVIDUAL SOLUTIONS */
+    .special-feature-section {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);
+      border-left: 4px solid #0c0c70;
+      border-right: 1px solid #d1e0ff;
+      border-top: 1px solid #d1e0ff;
+      border-bottom: 1px solid #d1e0ff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.1);
+    }
+    /* UNIFORM SPACING AND LEFT ALIGNMENT FOR MOBILE */
+    @media (max-width: 767px) {
+      .service-content > * {
+        margin-bottom: 1.8rem !important; /* Uniform spacing between all main blocks */
+      }
+      .service-content > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      .service-content h3 {
+        margin-top: 0 !important;
+        margin-bottom: 0.8rem !important;
+      }
+      .service-content p,
+      .service-content ul {
+        margin-bottom: 0.8rem !important;
+      }
+      .service-content ul:last-child {
+        margin-bottom: 0 !important;
+      }
+      .service-content h1 + p {
+        margin-top: -0.5rem !important; /* Tighter to introductory text */
+        margin-bottom: 2rem !important;
+      }
+      .highlight-box,
+      .special-feature-section,
+      .plain-text-section,
+      .service-detail-list {
+        margin-bottom: 1.8rem !important;
+      }
+      .ps-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .service-content h3,
+      .service-content p,
+      .service-content ul,
+      .highlight-box,
+      .special-feature-section,
+      .plain-text-section,
+      .service-detail-list {
+        text-align: left !important;
+      }
+      /* Header Paragraph - SMALLER FOR MOBILE */
+      .header-paragraph .paragraph-text-3 {
+        color: #888 !important;
+        font-size: 11px !important;
+        letter-spacing: -0.1px !important;
+        font-weight: 600 !important;
+        line-height: 1.2 !important;
+        margin-top: 5px !important;
+      }
+     
+      /* RADICALLY HIDE DESKTOP FOOTER - EXACTLY LIKE INDEX */
+      .footer-desktop-version {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+      }
+     
+      /* ACTIVATE MOBILE FOOTER - EXACTLY LIKE INDEX */
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+/* NAVIGATION MOBILE - COMPANY NAME SMALLER */
+  .navbar-brand.company-name {
+    font-size: 0.80rem !important;
+	    color: #cdc9a5 !important;
+    letter-spacing: 1px;
+  }
+      /* 1. UPPER TEXT - EXACTLY LIKE INDEX */
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+      /* TEXT SIZE MOBILE - EXACTLY LIKE INDEX */
+      body, p, .lead, .text-muted {
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+      }
+      /* SERVICE CONTENT MOBILE ADJUSTMENTS */
+      section.py-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+      .service-content h1 {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.8rem !important;
+        margin-top: 0.3rem !important;
+      }
+      .service-content h3 {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+      .service-content h4 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.4rem !important;
+      }
+      .col-md-6 {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+      }
+      /* MOBILE FOOTER - EXACTLY LIKE INDEX */
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+     
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+     
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 13px !important;
+        color: #ffffff !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        margin-bottom: 10px !important;
+        margin-top: 18px !important;
+        display: block !important;
+        line-height: 1.1 !important;
+      }
+     
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+      .footer-mobile-version li {
+        line-height: 1.05 !important;
+        margin-bottom: 5px !important;
+        font-size: 13px !important;
+        color: #aaa !important;
+      }
+      .footer-mobile-version .footer-bottom-fixed {
+        margin-top: 15px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        border-top: 1px solid #222 !important;
+        font-size: 11px !important;
+      }
+    }
+    /* Common styles for both versions */
+    .text-primary-custom {
+      color: var(--primary-color) !important;
+    }
+    
+    /* Language Switcher Flags in Navigation - OPTIMIZED */
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+    
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    
+    /* Smaller flags without underline */
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid #cdc9a5;
+      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
+    }
+    
+    /* Mobile Language Switcher - VERY SMALL TOP RIGHT */
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-right: 0;
+        justify-content: flex-end;
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-top: none;
+        position: absolute;
+        right: 60px; /* Space for toggler button */
+        top: 15px;
+      }
+      
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      
+      .language-switcher-nav img {
+        width: 16px; /* EXTRA SMALL for Mobile */
+        height: auto;
+        opacity: 0.8;
+      }
+      
+      .language-switcher-nav a.active img {
+        opacity: 1;
+        border: 1px solid #cdc9a5;
+        box-shadow: 0 0 2px rgba(205, 201, 165, 0.5);
+      }
+    }
+    
+    /* Mobile Navigation Toggler Adjustment */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        padding-bottom: 10px;
+      }
+      
+      .navbar-nav {
+        margin-bottom: 5px;
+      }
+      
+      /* Navigation Container for Mobile adjustment */
+      .navbar > .container {
+        position: relative;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation - EXACTLY LIKE INDEX -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand company-name" href="index.html">
+        Chumpol Trading Group Co. LTD.
+      </a>
+      
+      <!-- Language Switcher for Desktop (right next to navigation) -->
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="../index.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="German flag">
+        </a>
+        <a href="index.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="British flag">
+        </a>
+      </div>
+      
+      <!-- Language Switcher for Mobile (top right) -->
+      <div class="language-switcher-nav d-lg-none">
+        <a href="../index.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="German flag">
+        </a>
+        <a href="index.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="British flag">
+        </a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impressum.html">Legal Notice</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- Header - EXACTLY LIKE INDEX -->
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading" style="letter-spacing: 1.9px; line-height: 1.15; font-weight: light; font-size: 22px; color: #cdc9a5;">
+          <span class="heading-text-1">OUR SERVICE PERSPECTIVE</span>
+        </h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2">
+            <strong class="paragraph-text-3">
+              SERVICE AND PERFORMANCE
+            </strong>
+          </span>
+        </p>
+      </header>
+    </div>
+  </div>
+ 
+  <!-- Service Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto service-content">
+         
+          <h1 class="fs-2 fw-normal text-start mb-4" style="color: var(--primary-color) !important; line-height: 1.3;">
+            <strong>Our Service</strong> – Your strategic advantage in the global market
+          </h1>
+         
+          <p>At Chumpol Trading Group (CTG), we combine state-of-the-art logistics solutions, exclusive product portfolios and holistic full-service concepts. We see ourselves not only as a supplier, but as a strategic partner for your sustainable growth.</p>
+         
+          <div class="row g-4 service-section">
+            <div class="col-md-6">
+              <div class="ps-3">
+                <h3 class="h4 fw-bold text-primary-custom">Direct shipping from factory DDP</h3>
+                <p>
+                  Maximum security through our <strong>DDP Incoterms</strong> (Delivered Duty Paid).
+                  We take full responsibility for the entire goods flow from the factory.
+                  This includes not only transport, but the complete handling of all
+                  customs formalities, taxes and comprehensive goods insurance up to your delivery address.
+                </p>
+                <p class="small text-muted">
+                  Through our cooperation with global air freight leaders and final
+                  last-mile delivery by <strong>DHL</strong>, we guarantee planning reliability
+                  in a volatile industry.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="ps-3">
+                <h3 class="h4 fw-bold text-primary-custom">Exclusive brand partnerships</h3>
+                <p>
+                  Gain access to the premium brands of the mobile communications world:
+                  <strong>Apple, Samsung, Asus, Xiaomi</strong> and <strong>Huawei</strong>.
+                  Our global sourcing team ensures daily stock updates.
+                </p>
+                <p class="small text-muted">
+                  You gain access to the latest flagship models and limited editions -
+                  always factory new, in original packaging and fully CE-certified for the European market.
+                </p>
+              </div>
+            </div>
+            <!-- International Support Section -->
+            <div class="col-12">
+              <h3 class="h4 fw-bold text-primary-custom">International support without language barriers</h3>
+              <p>
+                In a globalised world, we rely on personal contact in your native language.
+                Our international team consists of employees who speak your language. This
+                ensures smooth communication in German, English, Thai and other relevant
+                business languages. This multilingual expertise ensures that contracts, specifications
+                and delivery agreements are precisely formulated and legally implemented. A fixed
+                key account manager accompanies you through the entire cycle, from the first sample order
+                to the roll-out of large volume contingents.
+              </p>
+            </div>
+            <!-- Strategic partnerships – without border -->
+            <div class="col-12 plain-text-section">
+              <h3 class="h4 fw-bold text-primary-custom">Strategic partnerships at the production site</h3>
+              <p>
+                Our unique positioning model is based on direct presence at the most important
+                production sites of the mobile communications industry. This proximity to manufacturers enables us
+                not only short decision-making paths, but also a deep understanding of production processes,
+                quality controls and supply chains.
+              </p>
+              <p>
+                As a strategic partner with locations in close proximity to leading production centres,
+                we act as an efficient bridge between manufacturing and distribution. This positioning
+                ensures maximum transparency, direct access to new product launches and the ability to
+                quickly respond to market changes - a decisive competitive advantage in the dynamic
+                electronics industry.
+              </p>
+            </div>
+            <!-- Personal Full-Service Support (left) -->
+            <div class="col-md-6">
+              <div class="ps-3">
+                <h3 class="h4 fw-bold text-primary-custom">Personal full-service support</h3>
+                <p>
+                  Our support concept goes far beyond mere order processing. We offer
+                  comprehensive support in all business phases, including:
+                </p>
+                <ul class="support-features">
+                  <li><strong>Tracking</strong> of shipments with proactive notification of deviations</li>
+                  <li><strong>Individual price scales</strong> based on your procurement volume and market potential</li>
+                  <li><strong>After-sales support</strong> with dedicated contacts for warranty and service issues</li>
+                  <li><strong>Process optimisation</strong> of your entire supply chain for maximum efficiency</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Wish Dropshipping & Fulfillment (right) -->
+            <div class="col-md-6">
+              <div class="ps-3">
+                <h3 class="h4 fw-bold text-primary-custom">Wish Dropshipping & Fulfillment</h3>
+                <ul class="list-unstyled mt-3 custom-checklist">
+                  <li>
+                    <i class="bi bi-check2-all"></i>
+                    <span><strong>Capital saving:</strong> No high investments in own warehouse personnel or space.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-all"></i>
+                    <span><strong>Speed:</strong> Automated processes shorten the time from order to delivery.</span>
+                  </li>
+                  <li>
+				  <i class="bi bi-check2-all"></i>
+                    <span><strong>No overstocks or write-offs - you react flexibly to demand and market changes.</span>
+                  </li>
+                  <li>
+				  <i class="bi bi-check2-all"></i>
+                    <span>Correct planning security: Your logistics changes from a fixed cost structure to a variable, revenue-dependent service.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-all"></i>
+                    <span>Competitive advantage: Ideal for e-commerce platforms that want to offer a wide range "Just-in-Time".</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Continuous price and process optimisation -->
+            <div class="col-12">
+              <div class="highlight-box">
+                <h3 class="h4 fw-bold text-primary-custom">Continuous price and process optimisation</h3>
+                <p class="mb-0">
+                  Our work does not end with shipping. Through long-standing manufacturer contacts and a deep understanding
+                  of global supply chains, we work daily to optimise your purchasing prices. Our automated
+                  order management system minimises administrative error sources and speeds up processing so that you
+                  can maximise your margins in the highly competitive market environment.
+                </p>
+              </div>
+            </div>
+            <!-- Extended services -->
+            <div class="col-12">
+              <h3 class="h4 fw-bold text-primary-custom">Our extended services in detail</h3>
+              <ul class="service-detail-list">
+                <li>
+                  <i class="bi bi-shield-check"></i>
+                  <div>
+                    <strong>Exclusive direct partnerships with manufacturers:</strong> As a strategic partner
+                    of established market leaders, we do not act as a classic middleman, but as an
+                    authorised distribution channel. Our cooperations are based on long-term framework agreements,
+                    which guarantee continuous availability, market-conform conditions and exclusive access to
+                    new product launches. These direct relationships enable transparent supply chains and maximum product authenticity.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-award"></i>
+                  <div>
+                    <strong>Complete market conformity and certification:</strong> Every product we offer
+                    undergoes rigorous compliance checks and is original new goods. All smartphones comply with EU specifications and CE directives and are specially manufactured by the manufacturer for the German economic area.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt"></i>
+                  <div>
+                    <strong>Local warranty processing and after-sales support:</strong> The local specialist trade is the primary contact for processing warranty claims of your customers. The devices are subject to the standard manufacturer's warranty, which can be claimed directly on site in the respective country if required.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-truck"></i>
+                  <div>
+                    <strong>Integrated direct shipping and dropshipping management:</strong> Our logistical
+                    ecosystem eliminates intermediate storage and reduces capital commitment. Through automated
+                    interfaces to leading shipping service providers, we enable just-in-time delivery
+                    of your end customers - either under your own brand appearance or as a neutral shipping solution.
+                    This scalable model supports both established retailers and growing e-commerce companies.
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-graph-up"></i>
+                  <div>
+                    <strong>Strategic portfolio and brand management:</strong> Our analytics team monitors
+                    continuously market trends, price movements and product life cycles. These insights flow
+                    into regular portfolio optimisations, with which we strengthen your competitiveness.
+                    We identify sales potential for new product categories at an early stage and support you
+                    in the market-appropriate positioning of your assortments.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Individual solutions -->
+            <div class="col-12">
+              <div class="special-feature-section">
+                <h3 class="h4 fw-bold text-primary-custom">Individual solutions for your business model</h3>
+                <p>
+                  We understand that every customer has unique requirements. Therefore, we develop
+                  tailor-made solutions that are precisely tailored to your business model, your target group and your
+                  growth goals. Whether you want to scale as an established retailer or
+                  start as a start-up in e-commerce - we find the optimal partnership structure
+                  for your success.
+                </p>
+                <p class="mb-0 text-muted">
+                  Contact us for a personal consultation on how we can convert your specific
+                  requirements into a sustainable competitive strategy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Desktop-Footer -->
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h5 class="footer-headline">BANGKOK OFFICE</h5>
+              <ul>
+                <li>Kronos Sathorn Tower</li>
+                <li>46 Sathorn Nuea Bang Rak</li>
+                <li>Bangkok 10500</li>
+                <span class="sub-label">PHONE</span>
+                <li>☎ +66 (0) 88 777 0-244</li>
+                <li>☎ +66 (0) 88 777 0-344</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">LAMPANG OFFICE</h5>
+              <ul>
+                <li>355/46 Boonwat Road</li>
+                <li>Muang Lampang</li>
+                <li>52100 Lampang</li>
+                <span class="sub-label">E-MAIL</span>
+                <li>📧 info@ctg-group.eu</li>
+                <li>📧 sale@ctg-group.eu</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">SUPPORT</h5>
+              <ul>
+                <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+                <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+                <span class="sub-label">REGISTER</span>
+                <li>DBD: 0525560001568</li>
+                <li>Established: 2017</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 class="footer-headline">QUICK LINKS</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="impressum.html">Legal Notice</a></li>
+                <span class="sub-label">COMPANY</span>
+                <li>Chumpol Bernhardt</li>
+                <li>CTG Group Co. LTD.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom-fixed">
+            &copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile-Footer -->
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col"><h5 class="footer-headline">COMPANY</h5><ul><li>Chumpol Bernhardt</li><li>CTG Group Co. LTD.</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">BANGKOK OFFICE</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea</li><li>Bangkok 10500</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">LAMPANG OFFICE</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">REGISTER</h5><ul><li>DBD: 0525560001568</li><li>Established: 2017</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul>
+          <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-group.eu</li>
+          <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-group.eu</li>
+        </ul></div>
+        <div class="footer-col"><h5 class="footer-headline">E-MAIL</h5><ul><li>info@ctg-group.eu</li><li>sale@ctg-group.eu</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">PHONE</h5><ul><li>☎ +66 (0) 88 777 0-244</li><li>☎ +66 (0) 88 777 0-344</li></ul></div>
+        <div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Legal Notice</a></li></ul></div>
+      </div>
+      <div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.</div>
+    </div>
+  </footer>
+  <!-- Bootstrap 5 JS Bundle (incl. Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
