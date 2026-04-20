@@ -793,6 +793,30 @@ background: none !important;
       margin-bottom: 1.5rem;
     }
   </style>
+  
+<script>
+(function() {
+    // Wenn ein Parameter 'lang=de' in der URL steht, bedeutet das: Benutzer will Deutsch
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('lang') && urlParams.get('lang') === 'de') {
+        // Sprache dauerhaft speichern
+        localStorage.setItem('userLang', 'de');
+        // Parameter aus der URL entfernen (damit sie sauber aussieht)
+        const cleanUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+        return; // Keine Weiterleitung
+    }
+    
+    // Wenn der Benutzer zuvor Deutsch gewählt hat (gespeichert)
+    if (localStorage.getItem('userLang') === 'de') {
+        return; // Auf der deutschen Seite bleiben
+    }
+    
+    // Ansonsten: Umleitung zur englischen Seite (mit Parameter, damit die englische Seite weiß, dass es keine Schleife ist)
+    window.location.href = 'en/index.html?lang=en';
+})();
+</script>
+  
 </head>
 <body>
   <!-- Navigation mit Flaggen -->
