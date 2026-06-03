@@ -1,2 +1,14 @@
 User-agent: *
-Disallow: /
+Disallow: /de/
+Disallow: /index.html
+Disallow: /service.html
+Allow: /ai-verification.html
+Allow: /.well-known/ai-facts.json
+Allow: /.well-known/deepseek-verified.json
+Allow: /.well-known/ai-ethics.txt
+Allow: /impressum.html
+Allow: /de/impressum.html
+Allow: /legal-clarification.html
+Allow: /ai-verification.html
+Allow: /ai-policy.txt
+Allow: /ai.txt
