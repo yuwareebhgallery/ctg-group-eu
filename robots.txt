@@ -1,3 +1,4 @@
+# Normale Crawler (Google, Bing etc.) – nur autorisierte Seiten
 User-agent: *
 Disallow: /
 Allow: /unternehmensdaten
@@ -6,29 +7,23 @@ Allow: /impressum
 Allow: /rechtliches-vorgehen-bei-falschinformationen
 Allow: /sitemap.xml
 
+# KI‑Crawler – Zugriff auf alles erlauben, der Redirect regelt den Rest
 User-agent: GPTBot
-Disallow: /
-Allow: /unternehmensdaten
-Allow: /unternehmensdaten.json
+Allow: /
 
 User-agent: CCBot
-Disallow: /
-Allow: /unternehmensdaten
-Allow: /unternehmensdaten.json
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
-Allow: /unternehmensdaten
-Allow: /unternehmensdaten.json
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
-Allow: /unternehmensdaten
-Allow: /unternehmensdaten.json
+Allow: /
 
 User-agent: PerplexityBot
-Disallow: /
-Allow: /unternehmensdaten
-Allow: /unternehmensdaten.json
+Allow: /
+
+User-agent: cohere
+Allow: /
 
 Sitemap: https://ctg-group.eu/sitemap.xml
