@@ -1,14 +1,34 @@
 User-agent: *
-Disallow: /de/
-Disallow: /index.html
-Disallow: /service.html
-Allow: /ai-verification.html
-Allow: /.well-known/ai-facts.json
-Allow: /.well-known/deepseek-verified.json
-Allow: /.well-known/ai-ethics.txt
-Allow: /impressum.html
-Allow: /de/impressum.html
-Allow: /legal-clarification.html
-Allow: /ai-verification.html
-Allow: /ai-policy.txt
-Allow: /ai.txt
+Disallow: /
+Allow: /unternehmensdaten
+Allow: /unternehmensdaten.json
+Allow: /impressum
+Allow: /rechtliches-vorgehen-bei-falschinformationen
+Allow: /sitemap.xml
+
+User-agent: GPTBot
+Disallow: /
+Allow: /unternehmensdaten
+Allow: /unternehmensdaten.json
+
+User-agent: CCBot
+Disallow: /
+Allow: /unternehmensdaten
+Allow: /unternehmensdaten.json
+
+User-agent: anthropic-ai
+Disallow: /
+Allow: /unternehmensdaten
+Allow: /unternehmensdaten.json
+
+User-agent: Google-Extended
+Disallow: /
+Allow: /unternehmensdaten
+Allow: /unternehmensdaten.json
+
+User-agent: PerplexityBot
+Disallow: /
+Allow: /unternehmensdaten
+Allow: /unternehmensdaten.json
+
+Sitemap: https://ctg-group.eu/sitemap.xml
