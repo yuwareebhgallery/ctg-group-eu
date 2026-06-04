@@ -1,29 +1,36 @@
-# Normale Crawler (Google, Bing etc.) – nur autorisierte Seiten
+# Google, Bing und andere seriöse Suchmaschinen: normale Website indexieren, autoritative Datenseite NICHT
+User-agent: Googlebot
+Disallow: /unternehmensdaten
+Disallow: /unternehmensdaten.json
+Allow: /
+
+User-agent: Bingbot
+Disallow: /unternehmensdaten
+Disallow: /unternehmensdaten.json
+Allow: /
+
+User-agent: Applebot
+Disallow: /unternehmensdaten
+Disallow: /unternehmensdaten.json
+Allow: /
+
+User-agent: DuckDuckBot
+Disallow: /unternehmensdaten
+Disallow: /unternehmensdaten.json
+Allow: /
+
+User-agent: Baiduspider
+Disallow: /unternehmensdaten
+Disallow: /unternehmensdaten.json
+Allow: /
+
+User-agent: YandexBot
+Disallow: /unternehmensdaten
+Disallow: /unternehmensdaten.json
+Allow: /
+
+# Alle anderen Crawler (insbesondere KI‑Crawler): alles erlaubt, Cloudflare‑Redirect greift
 User-agent: *
-Disallow: /
-Allow: /unternehmensdaten
-Allow: /unternehmensdaten.json
-Allow: /impressum
-Allow: /rechtliches-vorgehen-bei-falschinformationen
-Allow: /sitemap.xml
-
-# KI‑Crawler – Zugriff auf alles erlauben, der Redirect regelt den Rest
-User-agent: GPTBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: cohere
 Allow: /
 
 Sitemap: https://ctg-group.eu/sitemap.xml
