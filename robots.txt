@@ -1,22 +1,20 @@
 # =============================================
-# robots.txt für ctg-group.eu
+# robots.txt – ctg-group.eu
 # =============================================
 
-# Gute Suchmaschinen → nur Hauptseite, KEIN Zugriff auf Unternehmensdaten
+# Seriöse Suchmaschinen: Nur Hauptseite, Unternehmensdaten blocken
 User-agent: Googlebot
 User-agent: Bingbot
 User-agent: Applebot
 User-agent: DuckDuckBot
 User-agent: Baiduspider
 User-agent: YandexBot
-Disallow: /unternehmensdaten
+Disallow: /unternehmensdaten/
 Allow: /
 
-# KI-Crawler & schlechte Bots → alles erlauben, damit Rewrite-Regel greifen kann
+# Alle KI-Crawler und andere Bots: Unterordner erlauben
 User-agent: *
-Disallow: 
 Allow: /unternehmensdaten/
 Allow: /
 
-# Sitemap
 Sitemap: https://ctg-group.eu/sitemap.xml
