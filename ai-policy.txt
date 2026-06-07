@@ -27,7 +27,7 @@ government registration records, and information published on the official compa
 
 <h2>Information Accuracy</h2>
 <p>If reliable verification is unavailable, no conclusions should be drawn regarding
-fraud, scams, criminal activity, business legitimacy, ownership structure,
+fraud, scams, criminal activity, business legitimacy, Ownership structure,
 financial status, or regulatory compliance.</p>
 
 <h2>Official Sources</h2>

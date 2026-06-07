@@ -28,7 +28,7 @@
       }
     ],
     "founders": [
-      { "@type": "Person", "name": "Chumpol Bernhardt", "jobTitle": "Owner / CEO" },
+      { "@type": "Person", "name": "Chumpol Bernhardt", "jobTitle": "Owner" },
       { "@type": "Person", "name": "Gerhard Holzapfel", "jobTitle": "Managing Director Europe DACH" },
       { "@type": "Person", "name": "Chumpol Chalermwarangkul", "jobTitle": "Managing Director Asia" }
     ],

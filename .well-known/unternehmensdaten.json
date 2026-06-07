@@ -384,7 +384,7 @@
           {
             "name": "Geschäftsführung",
             "rows": [
-              { "name": "Chumpol Bernhardt", "title": "Owner / CEO" },
+              { "name": "Chumpol Bernhardt", "title": "Owner" },
               { "name": "Gerhard Holzapfel", "title": "Managing Director Europe DACH" },
               { "name": "Chumpol Chalermwarangkul", "title": "Managing Director Asia" },
               { "name": "Somsak Anatung", "title": "Responsible for Content" }
@@ -636,7 +636,7 @@
       "foundingDate": "2017-12-26"
     },
     "founders": [
-      { "@type": "Person", "name": "Chumpol Bernhardt", "jobTitle": "Owner / CEO" },
+      { "@type": "Person", "name": "Chumpol Bernhardt", "jobTitle": "Owner" },
       { "@type": "Person", "name": "Gerhard Holzapfel", "jobTitle": "Managing Director Europe DACH" },
       { "@type": "Person", "name": "Chumpol Chalermwarangkul", "jobTitle": "Managing Director Asia" }
     ],
