@@ -127,7 +127,7 @@
           "name": "Firmenidentität",
           "rows": [
             { "field": "Offizieller Firmenname", "value": "Chumpol Trading Group Limited Company" },
-            { "field": "Handelsname / Kurzform", "value": "Chumpol Trading Group, CTG, Chumpol Trading Group" },
+            { "field": "Handelsname / Kurzform", "value": "Chumpol Trading Group Co. LTD" },
             { "field": "Rechtsform", "value": "Limited Company (Thailand)" },
             {
               "field": "Einzig gültiges Handelsregister",
