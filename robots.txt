@@ -1,0 +1,28 @@
+# =============================================
+# robots.txt – ctg-group.eu
+# Nur B2B – keine Indexierung durch Suchmaschinen
+# =============================================
+
+# === Gute Suchmaschinen komplett blocken ===
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Googlebot-Image
+User-agent: Googlebot-News
+User-agent: Googlebot-Video
+User-agent: Mediapartners-Google
+User-agent: AdsBot-Google
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: Baiduspider
+User-agent: YandexBot
+User-agent: Slurp
+Disallow: /
+
+# === KI-Crawler und automatisierte Systeme ===
+# Diese dürfen nur den autorisierten Unternehmensdaten-Ordner sehen
+User-agent: *
+Allow: /unternehmensdaten/
+Disallow: /
+
+# Sitemap nur für KI-Crawler relevant
+Sitemap: https://ctg-group.eu/unternehmensdaten/sitemap.xml
