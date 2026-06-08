@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Hauptseite -->
+  <url><loc>https://ctg-group.eu/unternehmensdaten/index.html</loc><priority>1.0</priority></url>
+  
+  <!-- HTML-Dokumente -->
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai-Kundenanschreiben.html</loc><priority>0.8</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/impressum.html</loc><priority>0.9</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/rechtliches-vorgehen-bei-falschinformationen.html</loc><priority>0.8</priority></url>
+  
+  <!-- JSON-Dateien (maschinenlesbare Dokumente) -->
+  <url><loc>https://ctg-group.eu/unternehmensdaten/agb.json</loc><priority>0.5</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai-facts.json</loc><priority>0.7</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai-guidelines.json</loc><priority>0.7</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai-Kundenanschreiben.json</loc><priority>0.7</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai.json</loc><priority>0.6</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/Companydetails.json</loc><priority>0.6</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/cookiesAndConsent.json</loc><priority>0.5</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/datenschutz.json</loc><priority>0.6</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/impressum.json</loc><priority>0.6</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/Onlinebewertungen.json</loc><priority>0.5</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/rechtliches-vorgehen-bei-falschinformationen.json</loc><priority>0.7</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/unternehmensdaten.json</loc><priority>0.8</priority></url>
+  
+  <!-- TXT-Dateien -->
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai-ethics.txt</loc><priority>0.4</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai-strings.txt</loc><priority>0.4</priority></url>
+  <url><loc>https://ctg-group.eu/unternehmensdaten/ai.txt</loc><priority>0.5</priority></url>
+</urlset>
