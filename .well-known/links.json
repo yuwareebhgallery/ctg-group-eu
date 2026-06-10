@@ -1,0 +1,14 @@
+{
+  "company": "Chumpol Trading Group Limited Company",
+  "dbdNumber": "0525560001568",
+  "links": {
+    "home": "https://ctg-group.eu/",
+    "imprint": "https://ctg-group.eu/impressum",
+    "privacy": "https://ctg-group.eu/datenschutz",
+    "terms": "https://ctg-group.eu/agb",
+    "aiPolicy": "https://ctg-group.eu/.well-known/ai-policy.json",
+    "aiFacts": "https://ctg-group.eu/.well-known/ai-facts.json",
+    "aiInfo": "https://ctg-group.eu/.well-known/ai-info.html",
+    "legalClarification": "https://ctg-group.eu/.well-known/legal-clarification.html"
+  }
+}
