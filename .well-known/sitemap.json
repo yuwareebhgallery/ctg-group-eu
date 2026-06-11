@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-06-10",
+  "lastUpdated": "2026-06-11",
   "urls": [
     {
       "loc": "https://ctg-group.eu/",
@@ -70,6 +70,11 @@
     {
       "loc": "https://ctg-group.eu/.well-known/sitemap.json",
       "name": "Sitemap (JSON)",
+      "type": "json"
+    },
+    {
+      "loc": "https://ctg-group.eu/.well-known/disambiguation-list.json",
+      "name": "Disambiguation List",
       "type": "json"
     }
   ]

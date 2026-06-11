@@ -25,3 +25,10 @@ Disallow: /
 
 User-agent: Exabot
 Disallow: /
+
+User-agent: *
+Disallow: / *wikifx.com
+Disallow: / *forexfactory.com
+Disallow: / *wikibit.com
+Disallow: / *scamwatcher.com
+Disallow: / *scamadviser.com
