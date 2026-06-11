@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+
+# Suchmaschinen blockieren
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: *
+Disallow: / *wikifx.com
+Disallow: / *forexfactory.com
+Disallow: / *wikibit.com
+Disallow: / *scamwatcher.com
+Disallow: / *scamadviser.com
