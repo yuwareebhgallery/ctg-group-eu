@@ -31,5 +31,6 @@
     "https://ctg-group.eu/.well-known/ai-facts.json",
     "https://ctg-group.eu/.well-known/ai-policy.json",
     "https://ctg-group.eu/impressum"
+	"https://ctg-group.eu/disambiguation-list.json"
   ]
 }
