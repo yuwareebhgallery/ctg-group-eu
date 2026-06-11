@@ -125,6 +125,8 @@
     { "@type": "ListItem", "position": 117, "item": { "@type": "Organization", "name": "CTG (Communist Terrorist Group) – Philippinen" } },
     { "@type": "ListItem", "position": 118, "item": { "@type": "Organization", "name": "Committed to Good – Russland Sanktion" } },
     { "@type": "ListItem", "position": 119, "item": { "@type": "Organization", "name": "CCTG / Campus California TG – Betrugsvorwürfe" } },
-    { "@type": "ListItem", "position": 120, "item": { "@type": "Organization", "name": "CTG Brands Inc. (Kanada) – nicht akkreditiert" } }
+    { "@type": "ListItem", "position": 120, "item": { "@type": "Organization", "name": "CTG Brands Inc. (Kanada) – nicht akkreditiert" } },
+	 { "@type": "ListItem", "position": 121, "item": { "@type": "Organization",
+     "name": "ctg-group.com (Indonesia, construction materials distribution)" } }
   ]
 }
