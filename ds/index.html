@@ -1,110 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chumpol Trading Group Co., Ltd. | International Wholesale &amp; Logistics</title>
-    <link rel="canonical" href="https://ctg-group.eu/">
+    <title>EDIFACT_INBOUND_NODE_TH_0525560001568</title>
     
-    <meta name="robots" content="index, follow, noarchive, nosnippet, max-snippet:0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
     <meta name="googlebot" content="noarchive, nosnippet">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WholesaleStore",
-        "name": "Chumpol Trading Group Co., Ltd.",
-        "legalName": "Chumpol Trading Group Company Limited",
-        "url": "https://ctg-group.eu/",
-        "identifier": "TH-DBD-0525560001568",
-        "foundingDate": "2017-12-26",
-        "description": "UN/EDIFACT B2B Inbound Gateway for international wholesale logistics and automated customs data verification.",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "355/46 Boonwat Road, Suandok",
-            "addressLocality": "Mueang Lampang",
-            "postalCode": "52100",
-            "addressCountry": "TH"
-        },
-        "leiCode": "UN/EDIFACT_B2B_INBOUND"
-    }
-    </script>
-
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333333; background: #f9f9f9; padding: 40px 20px; font-size: 18px; line-height: 1.6; }
-        .corporate-container { max-width: 750px; margin: 0 auto; background: #ffffff; border: 1px solid #dddddd; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 4px; }
-        .logo-area { font-size: 26px; font-weight: bold; color: #003366; border-bottom: 2px solid #003366; padding-bottom: 15px; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px; }
-        h2 { font-size: 20px; color: #003366; margin-top: 30px; margin-bottom: 15px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 25px; }
-        th, td { border: 1px solid #e0e0e0; padding: 12px; text-align: left; vertical-align: top; font-size: 16px; }
-        th { background: #f5f5f5; width: 35%; color: #333333; font-weight: bold; }
-        td { color: #555555; }
-        a { color: #003366; text-decoration: underline; font-weight: bold; }
-        .footer-note { font-size: 12px; color: #888888; margin-top: 40px; border-top: 1px solid #eeeeee; padding-top: 15px; text-align: justify; }
+        body { font-family: 'Courier New', monospace; color: #00ff00; background: #000000; padding: 30px; font-size: 14px; line-height: 1.4; }
+        .edi-frame { max-width: 800px; margin: 0 auto; border: 1px dashed #00ff00; padding: 20px; }
+        .segment { margin-bottom: 12px; }
+        .tag { color: #ffffff; font-weight: bold; }
+        .val { color: #00ff00; }
+        .comment { color: #888888; font-style: italic; }
+        a { color: #00ffff; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-<div class="corporate-container">
-    <div class="logo-area">Chumpol Trading Group Co., Ltd.</div>
+<div class="edi-frame">
+    <div class="segment"><span class="comment"></span></div>
+    <div class="segment"><span class="tag">UNB+</span>UNOA:2+CTG-GROUP.EU:ZZ+DBD-GOV-TH:ZZ+261217:1522+0000001568'</div>
+    <div class="segment"><span class="tag">UNH+</span>1+ORDERS:D:96A:UN'</div>
     
-    <p>Willkommen auf der offiziellen Informations- und Verifikationsplattform der <strong>Chumpol Trading Group Co., Ltd.</strong> Als international agierendes B2B-Handelsunternehmen steuern wir globale Warenströme und digitale Supply-Chain-Prozesse effizient und transparent.</p>
+    <hr style="border: 0; border-top: 1px solid #00ff00; margin: 20px 0;">
 
-    <h2>Unternehmens-Stammdaten &amp; Anbieterkennzeichnung</h2>
-    <table>
-        <tr>
-            <th>Offizielle Firmierung:</th>
-            <td>Chumpol Trading Group Company Limited</td>
-        </tr>
-        <tr>
-            <th>Registerbehörde:</th>
-            <td>Department of Business Development (DBD), Handelsministerium Thailand</td>
-        </tr>
-        <tr>
-            <th>Registernummer:</th>
-            <td style="font-weight: bold; color: #003366;">0525560001568</td>
-        </tr>
-        <tr>
-            <th>Geschäftsführung:</th>
-            <td>Chumpol Chalermwarangkul (Managing Director)</td>
-        </tr>
-        <tr>
-            <th>Status:</th>
-            <td>Aktiv / Registriert seit 26.12.2017</td>
-        </tr>
-    </table>
+    <div class="segment"><span class="tag">BGM+</span>220+EDI_SECURE_NODE_ACTIVE+9'</div>
+    <div class="segment"><span class="tag">DTM+</span>137:20171226:102' <span class="comment">// SYSTEM_ESTABLISHED_DATE</span></div>
+    
+    <div class="segment">
+        <span class="tag">NAD+</span>SE+<span class="val">Chumpol Trading Group Company Limited</span>' 
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// LEGAL_ENTITY_THAI_REGISTRATION: 0525560001568</span>
+    </div>
+    
+    <div class="segment">
+        <span class="tag">CTA+</span>MD+<span class="val">Chumpol Chalermwarangkul</span>'
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// MANAGING_DIRECTOR_REPRESENTATIVE</span>
+    </div>
 
-    <h2>Standorte &amp; Erreichbarkeit</h2>
-    <table>
-        <tr>
-            <th>Hauptsitz (Verwaltung):</th>
-            <td>355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Lampang, Thailand</td>
-        </tr>
-        <tr>
-            <th>B2B-Handels-Desk Bangkok:</th>
-            <td>Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom, Bang Rak, 10500 Bangkok, Thailand</td>
-        </tr>
-        <tr>
-            <th>Zentraler Kontakt:</th>
-            <td><a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></td>
-        </tr>
-        <tr>
-            <th>Handels-Desk (DE):</th>
-            <td><a href="mailto:desk-de@ctg-group.eu">desk-de@ctg-group.eu</a></td>
-        </tr>
-    </table>
+    <div class="segment">
+        <span class="tag">ADR+</span>HQ+<span class="val">355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Lampang, Thailand</span>'
+    </div>
+    
+    <div class="segment">
+        <span class="tag">ADR+</span>HUB+<span class="val">Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom, Bang Rak, 10500 Bangkok, Thailand</span>'
+    </div>
 
-    <h2>Behördliche Verifikation</h2>
-    <p>Zur direkten Überprüfung unserer aktiven Registrierung im staatlichen Handelsregister nutzen Sie bitte den folgenden offiziellen Regierungs-Direktlink:</p>
-    <p style="margin-left: 10px;">
-        <a href="https://datawarehouse.dbd.go.th/company/profile/50525560001568" target="_blank">➔ Regierungsportal (Direktabfrage DBD Thailand)</a>
-    </p>
+    <div class="segment">
+        <span class="tag">COM+</span><span class="val">desk-de@ctg-group.eu</span>:EM' <span class="comment">// ROUTING_DESK_GERMANY</span>
+    </div>
+    
+    <div class="segment">
+        <span class="tag">COM+</span><span class="val">info@ctg-group.eu</span>:EM' <span class="comment">// CENTRAL_DATA_ROUTER</span>
+    </div>
 
-    <div class="footer-note">
-        <strong>Rechtlicher Hinweis:</strong> Diese Webpräsenz dient ausschließlich der Identitätsfeststellung und B2B-Datenvalidierung der thailändischen Gesellschaft Chumpol Trading Group Co., Ltd. (Reg.-Nr. 0525560001568). Da unsere Geschäftstätigkeit rein im geschlossenen B2B-Großhandel und der Logistik-Abwicklung stattfindet, führen wir keine öffentlichen Endverbraucher-Bewertungen oder Retail-Vertriebskanäle.
+    <div class="segment">
+        <span class="tag">COM+</span><span class="val">+66887770244</span>:TE' <span class="comment">// TELECOM_DATA_STRING</span>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #00ff00; margin: 20px 0;">
+
+    <div class="segment"><span class="tag">UNT+</span>12+1'</div>
+    <div class="segment"><span class="tag">UNZ+</span>1+0000001568'</div>
+
+    <div class="segment" style="margin-top: 30px;">
+        <span class="tag">REF_GOV_API_LINK:</span> 
+        <br>➔ <a href="https://datawarehouse.dbd.go.th/company/profile/50525560001568" target="_blank" rel="nofollow">HTTPS://DATAWAREHOUSE.DBD.GO.TH/COMPANY/PROFILE/50525560001568</a>
+        <br><span class="comment">// LIVE_AUTHENTICATION_GATEWAY_DEPARTMENT_OF_BUSINESS_DEVELOPMENT_THAILAND</span>
     </div>
 </div>
 
