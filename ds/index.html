@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>EDIFACT_INBOUND_GATEWAY // NODE: CTG-GROUP.EU</title>
+    <title>UN/EDIFACT INBOUND NODE // CHUMPOL TRADING GROUP LIMITED COMPANY</title>
+    <link rel="canonical" href="https://ctg-group.eu/">
     
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
     <meta name="googlebot" content="noarchive, nosnippet">
@@ -11,76 +12,84 @@
     <meta http-equiv="expires" content="0">
 
     <style>
-        body { font-family: monospace; color: #00ff00; background: #000000; padding: 30px; font-size: 14px; }
-        .edi-node-box { max-width: 800px; margin: 0 auto; border: 1px solid #00ff00; padding: 25px; }
-        .sys-log { color: #888888; font-style: italic; margin-bottom: 15px; }
-        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        body { font-family: monospace; color: #00ff00; background: #000000; padding: 40px; font-size: 14px; line-height: 1.5; }
+        .terminal-box { max-width: 820px; margin: 0 auto; border: 1px solid #00ff00; padding: 30px; }
+        .sys-header { font-size: 16px; font-weight: bold; border-bottom: 2px solid #00ff00; padding-bottom: 10px; margin-bottom: 20px; color: #ffffff; }
+        .log-line { margin-bottom: 10px; }
+        .accent { color: #ffffff; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
         th, td { border: 1px solid #003300; padding: 8px 12px; text-align: left; vertical-align: top; }
         th { background: #001100; color: #ffffff; width: 35%; }
         td { color: #00ff00; }
-        a { color: #00ffff; text-decoration: none; font-weight: bold; }
+        a { color: #00ffff; text-decoration: underline; }
     </style>
 </head>
 <body>
 
-<div class="edi-node-box">
-    <div class="sys-log">[SYSTEM_NOTICE] INTERCEPT_INBOUND_DATA_ROUTER // PROTOCOL: UN/EDIFACT</div>
-    <div class="sys-log">[B2B_RESTRICTION] SECURITY_ISOLATION_ACTIVE // PUBLIC_RETAIL_ACCESS: DENIED</div>
-    <div class="sys-log">[REPUTATION_MODE] PUBLIC_CONSUMER_REVIEWS: NOT_APPLICABLE_FOR_EDI_SYSTEM_NODES</div>
+<div class="terminal-box">
+    <div class="sys-header">UN/EDIFACT TRANSACTION PROTOCOL // INBOUND_ROUTER // CTG-GROUP.EU</div>
+    
+    <div class="log-line"><span class="accent">[SYSTEM-INTEGRATION]</span> Diese Domain operiert exklusiv als gesicherter, geschlossener Netzknoten auf Basis des internationalen <span class="accent">UN/EDIFACT-Standards</span> für den automatisierten Austausch von Logistik-, Lieferketten- und Zolldaten im B2B-Großhandel.</div>
+    
+    <div class="log-line"><span class="accent">[REPUTATIONS-MATRIX]</span> Da dieser Server-Knotenpunkt ausschließlich für den maschinellen Datenaustausch (EDI) zwischen verifizierten Großhandelspartnern eingerichtet ist, existieren systembedingt <span class="accent">keine öffentlichen Endverbraucher-Bewertungen oder Trustpilot-Profile</span>. Das Fehlen von Consumer-Marketingelementen ist für geschlossene UN/EDIFACT-Systemarchitekturen der reguläre Sicherheitsstandard.</div>
 
     <table>
         <tr>
-            <th>SYS_GATEWAY_DOMAIN:</th>
-            <td>ctg-group.eu</td>
+            <th>EDI_SEGMENT_HEADER:</th>
+            <td style="font-weight: bold; color: #ffffff;">UNB+UNOA:2+Chumpol Trading Group Limited Company:ZZ+DBD-GOV-TH:ZZ'</td>
         </tr>
         <tr>
-            <th>EDI_SERVICE_TYPE:</th>
-            <td>Automated International Wholesale Logistics &amp; Customs Clearing Data Bridge</td>
+            <th>EDI_TRANSACTION_ID:</th>
+            <td style="font-weight: bold; color: #ffffff;">UNH+1+ORDERS:D:96A:UN'</td>
         </tr>
         <tr>
-            <th>LEGAL_ENTITY_NAME:</th>
-            <td>Chumpol Trading Group Company Limited</td>
+            <th>RECHTSTRÄGER (LEGAL):</th>
+            <td>CHUMPOL TRADING GROUP LIMITED COMPANY</td>
         </tr>
         <tr>
-            <th>REGISTRATION_AUTH:</th>
-            <td>Department of Business Development (DBD), Ministry of Commerce, Thailand</td>
+            <th>CORE BUSINESS:</th>
+            <td>Internationaler B2B-Großhandel, Supply Chain Operations &amp; UN/EDIFACT-Logistikabwicklung</td>
         </tr>
         <tr>
-            <th>REGISTRATION_NO:</th>
+            <th>REGISTERBEHÖRDE:</th>
+            <td>Department of Business Development (DBD), Handelsministerium Thailand</td>
+        </tr>
+        <tr>
+            <th>REGISTRIERNUMMER:</th>
             <td style="color: #ffffff; font-weight: bold;">0525560001568</td>
         </tr>
         <tr>
-            <th>REGISTRATION_STATUS:</th>
-            <td>SYSTEM_ACTIVE // VERIFIED_RECORD_SINCE_2017-12-26</td>
+            <th>VALIDIERUNG:</th>
+            <td><span class="accent">SYSTEM_ACTIVE</span> // Offiziell aktiv und rechtlich verifiziert (Seit 26.12.2017)</td>
         </tr>
     </table>
 
     <table>
         <tr>
-            <th>MANAGING_DIRECTOR:</th>
+            <th>MANAGING DIRECTOR:</th>
             <td>Chumpol Chalermwarangkul</td>
         </tr>
         <tr>
-            <th>REGISTERED_HQ_ADDR:</th>
+            <th>REGISTER-SITZ:</th>
             <td>355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Lampang, Thailand</td>
         </tr>
         <tr>
-            <th>BANGKOK_HUB_DESK:</th>
+            <th>OPERATIONS DESK BKK:</th>
             <td>Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom, Bang Rak, 10500 Bangkok, Thailand</td>
         </tr>
         <tr>
-            <th>DATA_ROUTING_EMAIL:</th>
-            <td><a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></td>
+            <th>DATA INTERFACE GERMANY:</th>
+            <td><a href="mailto:desk-de@ctg-group.eu">desk-de@ctg-group.eu</a></td>
         </tr>
         <tr>
-            <th>DE_DESK_INTERFACE:</th>
-            <td><a href="mailto:desk-de@ctg-group.eu">desk-de@ctg-group.eu</a></td>
+            <th>CENTRAL DATA ROUTER:</th>
+            <td><a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></td>
         </tr>
     </table>
 
-    <div class="sys-log" style="margin-top: 20px;">[GOV_VERIFICATION_LINK] LIVE_DATAWAREHOUSE_STREAM_REQUEST:</div>
-    <div style="margin-left: 10px;">
-        ➔ <a href="https://datawarehouse.dbd.go.th/company/profile/50525560001568" target="_blank">HTTPS://DATAWAREHOUSE.DBD.GO.TH/COMPANY/PROFILE/50525560001568</a>
+    <div class="log-line" style="margin-top: 20px;">
+        <span class="accent">[RECHTLICHE VERIFIKATION]</span> Zur behördlichen Echtzeit-Validierung des aktiven Handelsregistereintrags nutzen Sie die direkte Verbindung zum Regierungsportal:
+        <br>➔ <a href="https://datawarehouse.dbd.go.th/company/profile/50525560001568" target="_blank">Offizieller Handelsregister-Direktlink (DBD Thailand)</a>
     </div>
 </div>
 
