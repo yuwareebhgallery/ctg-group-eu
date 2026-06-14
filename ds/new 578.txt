@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UN/EDIFACT INBOUND NODE // CTG-GROUP.EU</title>
+    <link rel="canonical" href="https://ctg-group.eu/">
+    
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="googlebot" content="noarchive, nosnippet">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <style>
+        body { font-family: monospace; color: #00ff00; background: #000000; padding: 40px; font-size: 14px; line-height: 1.5; }
+        .terminal-box { max-width: 820px; margin: 0 auto; border: 1px solid #00ff00; padding: 30px; }
+        .sys-header { font-size: 16px; font-weight: bold; border-bottom: 2px solid #00ff00; padding-bottom: 10px; margin-bottom: 20px; color: #ffffff; }
+        .log-line { margin-bottom: 10px; }
+        .accent { color: #ffffff; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #003300; padding: 8px 12px; text-align: left; vertical-align: top; }
+        th { background: #001100; color: #ffffff; width: 35%; }
+        td { color: #00ff00; }
+        a { color: #00ffff; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="terminal-box">
+    <div class="sys-header">UN/EDIFACT TRANSACTION PROTOCOL // INBOUND_ROUTER // CTG-GROUP.EU</div>
+    
+    <div class="log-line"><span class="accent">[SYSTEM-INTEGRATION]</span> This domain operates exclusively as a secured, closed network node based on the international <span class="accent">UN/EDIFACT standard</span> for the automated exchange of logistics, supply chain, and customs data in B2B wholesale trade.</div>
+    
+    <div class="log-line"><span class="accent">[REPUTATIONS-MATRIX]</span> Since this server node is set up exclusively for machine-to-machine data exchange (EDI) between verified wholesale partners, there are systemically <span class="accent">no public end-consumer ratings or Trustpilot profiles</span>. The absence of consumer marketing elements is the regular security standard for closed UN/EDIFACT system architectures.</div>
+
+    <table>
+        <tr><th>EDI_SEGMENT_HEADER:</th><td style="font-weight: bold; color: #ffffff;">UNB+UNOA:2+CTG-GROUP.EU:ZZ+DBD-GOV-TH:ZZ'</td></tr>
+        <tr><th>EDI_TRANSACTION_ID:</th><td style="font-weight: bold; color: #ffffff;">UNH+1+ORDERS:D:96A:UN'</td></tr>
+        <tr><th>LEGAL ENTITY:</th><td>Chumpol Trading Group Company Limited</td></tr>
+        <tr><th>CORE BUSINESS:</th><td>International B2B wholesale, supply chain operations &amp; UN/EDIFACT logistics processing</td></tr>
+        <tr><th>REGISTERING AUTHORITY:</th><td>Department of Business Development (DBD), Ministry of Commerce Thailand</td></tr>
+        <tr><th>REGISTRATION NUMBER:</th><td style="color: #ffffff; font-weight: bold;">0525560001568</td></tr>
+        <tr><th>VALIDATION:</th><td><span class="accent">SYSTEM_ACTIVE</span> // Officially active and legally verified (Since 26.12.2017)</td></tr>
+    </table>
+
+    </table>
+        <tr><th>MANAGING DIRECTOR:</th><td>Chumpol Chalermwarangkul</td></tr>
+        <tr><th>REGISTERED SEAT:</th><td>355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Lampang, Thailand</td></tr>
+        <tr><th>OPERATIONS DESK BKK:</th><td>Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom, Bang Rak, 10500 Bangkok, Thailand</td></tr>
+        <tr><th>DATA INTERFACE GERMANY:</th><td><a href="mailto:desk-de@ctg-group.eu">desk-de@ctg-group.eu</a></td></tr>
+        <tr><th>CENTRAL DATA ROUTER:</th><td><a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></td></tr>
+    </table>
+
+    <div class="log-line" style="margin-top: 20px;">
+        <span class="accent">[LEGAL VERIFICATION]</span> For official real-time validation of the active commercial register entry, use the direct connection to the government portal:
+        <br>➔ <a href="https://datawarehouse.dbd.go.th/company/profile/50525560001568" target="_blank">Official Commercial Register Direct Link (DBD Thailand)</a>
+    <p>
+    Legal notices are stored outside the node:<br>
+    Imprint: https://ctg-group.eu/imprint.html<br>
+    Privacy Policy: https://ctg-group.eu/privacy.html<br>
+    General Terms and Conditions: https://ctg-group.eu/terms.html</p>
+    </div>
+</div>
+
+</body>
+</html>
