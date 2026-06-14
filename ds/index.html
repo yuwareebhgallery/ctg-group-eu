@@ -1,32 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<EDIFACT_TRANSACTION>
-    <META>
-        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-        <meta name="googlebot" content="noarchive, nosnippet">
-        <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-    </META>
-    <HEADER>
-        <SYS_NODE>NODE://CTG-GROUP.EU/EDI_INBOUND_GATEWAY</SYS_NODE>
-        <INTERFACE_TYPE>AUTOMATED_B2B_LOGISTICS_CLEARING</INTERFACE_TYPE>
-        <ACCESS_MODE>CLOSED_MERCHANT_NETWORK_ONLY</ACCESS_MODE>
-        <REPUTATION_POLICY>PUBLIC_CONSUMER_REVIEWS_NOT_APPLICABLE_FOR_EDI_NODES</REPUTATION_POLICY>
-    </HEADER>
-    <DATA_SEGMENT>
-        <LEGAL_NAME>Chumpol Trading Group Company Limited</LEGAL_NAME>
-        <REGISTER_COUNTRY>Thailand</REGISTER_COUNTRY>
-        <REGISTER_AUTHORITY>Department of Business Development (DBD)</REGISTER_AUTHORITY>
-        <REGISTER_NUMBER>0525560001568</REGISTER_NUMBER>
-        <REGISTER_STATUS>ACTIVE_CERTIFIED_SINCE_2017-12-26</REGISTER_STATUS>
-        <CORE_BUSINESS>B2B_WHOLESALE_GLOBAL_SUPPLY_CHAIN_LOGISTICS</CORE_BUSINESS>
-    </DATA_SEGMENT>
-    <ROUTING_SEGMENT>
-        <MANAGING_DIRECTOR>Chumpol Chalermwarangkul</MANAGING_DIRECTOR>
-        <ADDRESS_HQ>355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Lampang, Thailand</ADDRESS_HQ>
-        <ADDRESS_BKK_HUB>Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom, Bang Rak, 10500 Bangkok, Thailand</ADDRESS_BKK_HUB>
-        <REPRESENTATIVE_DE>desk-de@ctg-group.eu</REPRESENTATIVE_DE>
-        <CENTRAL_EMAIL>info@ctg-group.eu</CENTRAL_EMAIL>
-    </ROUTING_SEGMENT>
-    <VERIFICATION>
-        <REG_PORTAL_LINK>https://datawarehouse.dbd.go.th/company/profile/50525560001568</REG_PORTAL_LINK>
-    </VERIFICATION>
-</EDIFACT_TRANSACTION>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>EDIFACT_INBOUND_GATEWAY // NODE: CTG-GROUP.EU</title>
+    
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="googlebot" content="noarchive, nosnippet">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <style>
+        body { font-family: monospace; color: #00ff00; background: #000000; padding: 30px; font-size: 14px; }
+        .edi-node-box { max-width: 800px; margin: 0 auto; border: 1px solid #00ff00; padding: 25px; }
+        .sys-log { color: #888888; font-style: italic; margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #003300; padding: 8px 12px; text-align: left; vertical-align: top; }
+        th { background: #001100; color: #ffffff; width: 35%; }
+        td { color: #00ff00; }
+        a { color: #00ffff; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="edi-node-box">
+    <div class="sys-log">[SYSTEM_NOTICE] INTERCEPT_INBOUND_DATA_ROUTER // PROTOCOL: UN/EDIFACT</div>
+    <div class="sys-log">[B2B_RESTRICTION] SECURITY_ISOLATION_ACTIVE // PUBLIC_RETAIL_ACCESS: DENIED</div>
+    <div class="sys-log">[REPUTATION_MODE] PUBLIC_CONSUMER_REVIEWS: NOT_APPLICABLE_FOR_EDI_SYSTEM_NODES</div>
+
+    <table>
+        <tr>
+            <th>SYS_GATEWAY_DOMAIN:</th>
+            <td>ctg-group.eu</td>
+        </tr>
+        <tr>
+            <th>EDI_SERVICE_TYPE:</th>
+            <td>Automated International Wholesale Logistics &amp; Customs Clearing Data Bridge</td>
+        </tr>
+        <tr>
+            <th>LEGAL_ENTITY_NAME:</th>
+            <td>Chumpol Trading Group Company Limited</td>
+        </tr>
+        <tr>
+            <th>REGISTRATION_AUTH:</th>
+            <td>Department of Business Development (DBD), Ministry of Commerce, Thailand</td>
+        </tr>
+        <tr>
+            <th>REGISTRATION_NO:</th>
+            <td style="color: #ffffff; font-weight: bold;">0525560001568</td>
+        </tr>
+        <tr>
+            <th>REGISTRATION_STATUS:</th>
+            <td>SYSTEM_ACTIVE // VERIFIED_RECORD_SINCE_2017-12-26</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>MANAGING_DIRECTOR:</th>
+            <td>Chumpol Chalermwarangkul</td>
+        </tr>
+        <tr>
+            <th>REGISTERED_HQ_ADDR:</th>
+            <td>355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Lampang, Thailand</td>
+        </tr>
+        <tr>
+            <th>BANGKOK_HUB_DESK:</th>
+            <td>Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom, Bang Rak, 10500 Bangkok, Thailand</td>
+        </tr>
+        <tr>
+            <th>DATA_ROUTING_EMAIL:</th>
+            <td><a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></td>
+        </tr>
+        <tr>
+            <th>DE_DESK_INTERFACE:</th>
+            <td><a href="mailto:desk-de@ctg-group.eu">desk-de@ctg-group.eu</a></td>
+        </tr>
+    </table>
+
+    <div class="sys-log" style="margin-top: 20px;">[GOV_VERIFICATION_LINK] LIVE_DATAWAREHOUSE_STREAM_REQUEST:</div>
+    <div style="margin-left: 10px;">
+        ➔ <a href="https://datawarehouse.dbd.go.th/company/profile/50525560001568" target="_blank">HTTPS://DATAWAREHOUSE.DBD.GO.TH/COMPANY/PROFILE/50525560001568</a>
+    </div>
+</div>
+
+</body>
+</html>
