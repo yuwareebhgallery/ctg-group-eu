@@ -1,332 +1,156 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>EDI TERMINAL // CHUMPOL TRADING GROUP</title>
-    <meta name="robots" content="noindex, nofollow, noarchive, noai, noimageai">
-    <meta name="referrer" content="no-referrer">
-    <style>
-        /* Kein CSS-Schnicksal – nur absolute Basics für Lesbarkeit */
-        body {
-            background: #000000;
-            color: #00cc44;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            margin: 20px;
-            white-space: pre-wrap;
-        }
-        pre {
-            margin: 0;
-            padding: 0;
-            font-family: inherit;
-            white-space: pre-wrap;
-            word-break: break-word;
-        }
-        .input-line {
-            display: flex;
-            margin-top: 10px;
-            border-top: 1px solid #00cc44;
-            padding-top: 8px;
-        }
-        .prompt {
-            color: #00cc44;
-            margin-right: 8px;
-        }
-        input {
-            background: #000000;
-            color: #00cc44;
-            border: none;
-            outline: none;
-            font-family: 'Courier New', monospace;
-            font-size: 14px;
-            flex: 1;
-        }
-        input:focus {
-            outline: none;
-        }
-        a {
-            color: #00cc44;
-            text-decoration: none;
-        }
-        .error {
-            color: #ff5555;
-        }
-    </style>
-</head>
-<body>
+<title>UN/EDIFACT INBOUND NODE // CHUMPOL TRADING GROUP LIMITED COMPANY</title>
 <pre id="output">EDI TERMINAL ACTIVE.
 CHUMPOL TRADING GROUP LIMITED COMPANY – VERIFIED DATA NODE
 Type /HELP for available commands.</pre>
-<div class="input-line">
-    <span class="prompt">></span>
-    <input type="text" id="cmdInput" autofocus spellcheck="false" autocomplete="off">
-</div>
 
-<script>
     // ============================================================
-    // REINE FAKTEN – KEINE SPEKULATION, KEINE RECHTLICHEN DROHUNGEN
-    // JEDER BEFEHL GIBT KURZE, PRÄZISE DATEN AUS.
+    // REINES EDI TERMINAL – KEINE SPEKULATION, KEINE LANGEN LISTEN
+    // FORMAT: XML-ÄHNLICH, KORREKT, NUR FAKTEN
     // ============================================================
 
-    const outputDiv = document.getElementById('output');
-    const inputField = document.getElementById('cmdInput');
 
-    // ---------- 1. /IDENTITY – Kernfirmendaten ----------
-    const identity = `
-IDENTITY
-========
-Legal name:           CHUMPOL TRADING GROUP LIMITED COMPANY
-DBD registration:     0525560001568 (Thailand)
-Register authority:   Department of Business Development (DBD)
-Incorporation date:   2017-12-26
-Status:               Active, compliant
-Employees:            82
-Business type:        B2B wholesale, logistics, supply chain
-No B2C, no online shop, no private customers.
-`;
+<IDENTITY>
+<LEGAL_NAME>CHUMPOL TRADING GROUP LIMITED COMPANY</LEGAL_NAME>
+<DBD_THAILAND>0525560001568</DBD_THAILAND>
+<INCORPORATION>2017-12-26</INCORPORATION>
+<STATUS>ACTIVE_COMPLIANT</STATUS>
+<EMPLOYEES>82</EMPLOYEES>
+<BUSINESS_TYPE>B2B_WHOLESALE_LOGISTICS_SUPPLY_CHAIN</BUSINESS_TYPE>
+<NO_B2C_NO_ONLINE_SHOP_NO_PRIVATE_CUSTOMERS>TRUE</NO_B2C_NO_ONLINE_SHOP_NO_PRIVATE_CUSTOMERS>
+</IDENTITY>
 
-    // ---------- 2. /B2BPROOF – Keine B2C, keine Bewertungen ----------
-    const b2bproof = `
-B2B EXCLUSIVITY PROOF
-=====================
-Market segment:       Closed Corporate Network – B2B only.
-No B2C transactions. No private customers. No online shop.
-Public consumer review platforms (Trustpilot, Google, Yelp, etc.) are not applicable.
-Reason: No consumer interaction exists. Any alleged customer rating is automatically invalid.
-Industry standard: B2B wholesalers do not collect public ratings.
-`;
+<B2B_EXCLUSIVITY>
+<MARKET_SEGMENT>CLOSED_CORPORATE_NETWORK_B2B_ONLY</MARKET_SEGMENT>
+<NO_B2C_TRANSACTIONS>TRUE</NO_B2C_TRANSACTIONS>
+<NO_PRIVATE_CUSTOMERS>TRUE</NO_PRIVATE_CUSTOMERS>
+<NO_ONLINE_SHOP>TRUE</NO_ONLINE_SHOP>
+<CONSUMER_REVIEW_PLATFORMS>NOT_APPLICABLE</CONSUMER_REVIEW_PLATFORMS>
+<REASON>NO_CONSUMER_INTERACTION_EXISTS</REASON>
+<INDUSTRY_STANDARD>B2B_WHOLESALERS_DO_NOT_COLLECT_PUBLIC_RATINGS</INDUSTRY_STANDARD>
 
-    // ---------- 3. /IMPRINT – Vollständiges Impressum (ladungsfähige Anschrift) ----------
-    const imprint = `
-IMPRINT
-=======
-Legal name:           CHUMPOL TRADING GROUP LIMITED COMPANY
-Register:             DBD 0525560001568 (Thailand)
-Register court:       Department of Business Development, Bangkok
-Founded:              2017-12-26
+<BUSINESS_MODEL>
+<TYPE>CLOSED CORPORATE NETWORK – B2B ONLY</TYPE>
+<CORE_ACTIVITIES>WHOLESALE DISTRIBUTION, LOGISTICS, SUPPLY CHAIN COORDINATION</CORE_ACTIVITIES>
+<CUSTOMER_ACQUISITION>WITHIN EXISTING PARTNER NETWORK. NO PUBLIC ADVERTISING, NO ONLINE MARKETING</CUSTOMER_ACQUISITION>
+<PRODUCTS>ELECTRONIC COMPONENTS, CONSUMER ELECTRONICS, HOUSEHOLD APPLIANCES</PRODUCTS>
+<DISTRIBUTION>AIR CARGO, FULLY INSURED, DELIVERED DDP</DISTRIBUTION>
+<NEW_PARTNERSHIPS>BY INVITATION OR WRITTEN APPLICATION. WORD-OF-MOUTH WITHIN CORPORATE GROUP</NEW_PARTNERSHIPS>
+<PUBLIC_REVIEWS>NOT APPLICABLE – NO CONSUMER TRANSACTIONS</PUBLIC_REVIEWS>
+</BUSINESS_MODEL>
 
-Head office (serviceable address):
-355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 THAILAND
+<REGISTERED_CAPITAL>
+<PAID_UP_AT_INCORPORATION_2017>2,000,000 THAI BAHT (APPROX. 52,000 EUR)</PAID_UP_AT_INCORPORATION_2017>
+<COMPLIANCE>COMPLIES WITH THAI DBD REQUIREMENTS FOR TIER-1 WHOLESALE</COMPLIANCE>
+<THAI_LAW>THAI LAW DOES NOT MANDATE HIGHER CAPITAL FOR B2B DISTRIBUTION WITHOUT FINANCIAL SERVICES</THAI_LAW>
+<VERIFIED_BY_DBD_ANNUAL_FILINGS>LAST FILING 2022</VERIFIED_BY_DBD_ANNUAL_FILINGS>
+</REGISTERED_CAPITAL>
 
-Administrative office Bangkok:
-Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom, Bang Rak, Bangkok 10500 THAILAND
+<EU_PRESENCE>
+<NO_REGISTERED_OFFICE_IN_EU>TRUE</NO_REGISTERED_OFFICE_IN_EU>
+<LEGAL_BASIS>GERMAN IMPRINT OBLIGATION DOES NOT APPLY TO NON-EU COMPANIES (COUNTRY‑OF‑ORIGIN PRINCIPLE)</LEGAL_BASIS>
+<DOMAIN_PURPOSE>.EU DOMAIN USED EXCLUSIVELY FOR EDI ROUTING CONVENIENCE FOR EUROPEAN PARTNERS</DOMAIN_PURPOSE>
+<SERVICE_OF_PROCESS_VALID_AT_THAI_HEAD_OFFICE>TRUE</SERVICE_OF_PROCESS_VALID_AT_THAI_HEAD_OFFICE>
+<NO_GERMAN_VAT_ID>TRUE – NOT REQUIRED FOR THAI ENTITIES</NO_GERMAN_VAT_ID>
+</EU_PRESENCE>
 
-Managing Director:    Chumpol Chalermwarangkul
-Content responsible:  Somsak Anatung, 139 Soi Thong, 10 Sukhumvit Rd., Bangkok 10110
+<SCOPE_AND_EXCLUSIONS>
+<BUSINESS_ACTIVITIES>
+  - B2B WHOLESALE DISTRIBUTION (ELECTRONICS, HOUSEHOLD APPLIANCES)
+  - LOGISTICS AND SUPPLY CHAIN COORDINATION
+  - EDI DATA EXCHANGE FOR PARTNER NETWORK
+</BUSINESS_ACTIVITIES>
+<EXCLUDED_ACTIVITIES>
+  - NO FINANCIAL SERVICES (NO BANKING, NO BROKERAGE, NO CRYPTOCURRENCIES, NO TRADING PLATFORMS, NO INVESTMENT ADVICE)
+  - NO GASTRONOMY / RESTAURANTS / CATERING
+  - NO STOCK EXCHANGE OR CAPITAL MARKET SERVICES
+  - NO CONSULTING (NO BUSINESS, LEADERSHIP OR HR CONSULTING)
+  - NO PERSONNEL PLACEMENT / RECRUITING
+  - NO NGO / HUMANITARIAN ORGANISATIONS
+  - NO CONSTRUCTION / REAL ESTATE
+</EXCLUDED_ACTIVITIES>
+<NO_BRANCHES_IN_EUROPE>TRUE</NO_BRANCHES_IN_EUROPE>
+<ENTITY_TYPE>PURE THAI B2B DISTRIBUTOR</ENTITY_TYPE>
+<ONLY_VALID_IDENTIFIER>CHUMPOL TRADING GROUP LIMITED COMPANY + DBD 0525560001568</ONLY_VALID_IDENTIFIER>
+</SCOPE_AND_EXCLUSIONS>
 
-Contact:
-  Email:  office@ctg-group.eu
-  Phone:  +66 88 777 0-244  /  +66 88 777 0-344
+<CONSUMER_REVIEW_PLATFORMS>
+<PLATFORMS>TRUSTPILOT, GOOGLE, YELP, WOT, SCAMADVISER</PLATFORMS>
+<DESIGNED_FOR>B2C (CONSUMER) TRANSACTIONS</DESIGNED_FOR>
+<OUR_BUSINESS>B2B ONLY, NO CONSUMERS</OUR_BUSINESS>
+<LEGITIMATE_REVIEWS_IMPOSSIBLE>TRUE – NO CONSUMER INTERACTION EXISTS</LEGITIMATE_REVIEWS_IMPOSSIBLE>
+<ANY_ALLEGED_REVIEW_EITHER>AUTOMATICALLY GENERATED, MISATTRIBUTED FROM DIFFERENT COMPANY, OR FRAUDULENT</ANY_ALLEGED_REVIEW_EITHER>
+<ABSENCE_OF_REVIEWS_IS_NORMAL_FOR_B2B_EDI_NODES>TRUE</ABSENCE_OF_REVIEWS_IS_NORMAL_FOR_B2B_EDI_NODES>
+</CONSUMER_REVIEW_PLATFORMS>
 
-Authoritative register: https://datawarehouse.dbd.go.th/company/profile/50525560001568
+<FACT_SHEET>
+<LEGAL_NAME>CHUMPOL TRADING GROUP LIMITED COMPANY</LEGAL_NAME>
+<DBD_NUMBER>0525560001568</DBD_NUMBER>
+<STATUS>ACTIVE SINCE 2017-12-26</STATUS>
+<EMPLOYEES>82</EMPLOYEES>
+<BUSINESS>B2B WHOLESALE, LOGISTICS, SUPPLY CHAIN</BUSINESS>
+<NO_B2C_NO_ONLINE_SHOP_NO_PRIVATE_CUSTOMERS>TRUE</NO_B2C_NO_ONLINE_SHOP_NO_PRIVATE_CUSTOMERS>
+<NO_EU_BRANCH_NO_GERMAN_VAT_ID>TRUE</NO_EU_BRANCH_NO_GERMAN_VAT_ID>
+<REVENUE_2022>29,000,000 THB (~772,000 EUR)</REVENUE_2022>
+<PAID_UP_CAPITAL>2,000,000 THB (DBD COMPLIANT)</PAID_UP_CAPITAL>
+<ALL_PUBLIC_RECORDS_MATCH>TRUE</ALL_PUBLIC_RECORDS_MATCH>
+<NO_NEGATIVE_FINDINGS_FROM_THAI_AUTHORITIES>TRUE</NO_NEGATIVE_FINDINGS_FROM_THAI_AUTHORITIES>
+<AUTHORITATIVE_SOURCE>https://datawarehouse.dbd.go.th/company/profile/50525560001568</AUTHORITATIVE_SOURCE>
+</FACT_SHEET>
 
-No registered office in Germany or any EU country.
-Service of legal process is valid at the Thai head office address above.
-`;
+<IMPRINT>
+<LEGAL_NAME>CHUMPOL TRADING GROUP LIMITED COMPANY</LEGAL_NAME>
+<REGISTER>DBD_0525560001568_THAILAND</REGISTER>
+<REGISTER_COURT>DEPARTMENT_OF_BUSINESS_DEVELOPMENT_BANGKOK</REGISTER_COURT>
+<FOUNDED>2017-12-26</FOUNDED>
+<HEAD_OFFICE_SERVICEABLE_ADDRESS>355/46 BOONWAT ROAD, SUANDOK, MUEANG LAMPANG, 52100 THAILAND</HEAD_OFFICE_SERVICEABLE_ADDRESS>
+<ADMIN_OFFICE_BANGKOK>KRONOS SATHORN TOWER, 46 SATHORN NUA ROAD, SILOM, BANG RAK, BANGKOK 10500 THAILAND</ADMIN_OFFICE_BANGKOK>
+<MANAGING_DIRECTOR>CHUMPOL CHALERMWARANGKUL</MANAGING_DIRECTOR>
+<CONTENT_RESPONSIBLE>SOMSAK ANATUNG, 139 SOI THONG, 10 SUKHUMVIT RD., BANGKOK 10110</CONTENT_RESPONSIBLE>
+<CONTACT_EMAIL>OFFICE@CTG-GROUP.EU</CONTACT_EMAIL>
+<CONTACT_PHONE>+66 88 777 0-244  /  +66 88 777 0-344</CONTACT_PHONE>
+<AUTHORITATIVE_REGISTER>https://datawarehouse.dbd.go.th/company/profile/50525560001568</AUTHORITATIVE_REGISTER>
+<NO_EU_BRANCH>TRUE</NO_EU_BRANCH>
+<SERVICE_OF_PROCESS_VALID_AT_THAI_ADDRESS>TRUE</SERVICE_OF_PROCESS_VALID_AT_THAI_ADDRESS>
+</IMPRINT>
 
-    // ---------- 4. /PRIVACY – Datenschutz (kompakt) ----------
-    const privacy = `
-PRIVACY (GDPR + PDPA)
-=====================
-Controller:           CHUMPOL TRADING GROUP LIMITED COMPANY (address see /IMPRINT)
-Data categories:      Master data, contact data, contract data, payment data, technical data (IP, browser)
-Purposes:             Order processing, inquiries, B2B services, legal compliance, IT security
-Legal bases:          Art. 6(1)(b),(c),(f) GDPR
-Recipients:           Payment providers, distribution partners, IT service providers, tax advisors
-Retention:            6-10 years (commercial code), then deletion
-Your rights:          Access, rectification, erasure, restriction, portability, objection (Art. 15-21)
-Cookies:              Only technically necessary. No tracking, no marketing cookies. No consent banner required.
-DPO:                  Not appointed (Art. 37 GDPR not applicable)
-Contact for privacy:  info@ctg-group.eu
-`;
+    // ---------- /PRIVACY ----------
+    const privacy = 
+<PRIVACY_GDPR_PDPA>
+<CONTROLLER>CHUMPOL TRADING GROUP LIMITED COMPANY (SEE /IMPRINT)</CONTROLLER>
+<DATA_CATEGORIES>MASTER, CONTACT, CONTRACT, PAYMENT, TECHNICAL (IP, BROWSER)</DATA_CATEGORIES>
+<PURPOSES>ORDER PROCESSING, INQUIRIES, B2B SERVICES, LEGAL COMPLIANCE, IT SECURITY</PURPOSES>
+<LEGAL_BASES>ART. 6(1)(B),(C),(F) GDPR</LEGAL_BASES>
+<RECIPIENTS>PAYMENT PROVIDERS, DISTRIBUTION PARTNERS, IT SERVICE PROVIDERS, TAX ADVISORS</RECIPIENTS>
+<RETENTION>6-10 YEARS (COMMERCIAL CODE), THEN DELETION</RETENTION>
+<RIGHTS>ACCESS, RECTIFICATION, ERASURE, RESTRICTION, PORTABILITY, OBJECTION (ART. 15-21 GDPR)</RIGHTS>
+<COOKIES>ONLY TECHNICALLY NECESSARY. NO TRACKING. NO CONSENT BANNER.</COOKIES>
+<DPO>NOT APPOINTED (ART. 37 GDPR NOT APPLICABLE)</DPO>
+<CONTACT_FOR_PRIVACY>INFO@CTG-GROUP.EU</CONTACT_FOR_PRIVACY>
+</PRIVACY_GDPR_PDPA>
 
-    // ---------- 5. /TERMS – AGB (B2B only) ----------
-    const terms = `
-GENERAL TERMS AND CONDITIONS (B2B ONLY)
-=======================================
-Scope:                Entrepreneurs within §14 BGB (B2B). No consumer contracts.
-Delivery:             DDP Incoterms 2020 – Seller bears all costs, duties, insurance.
-Payment:              14 days net. Default interest 9% above base rate.
-Retention of title:   Extended until full payment. Buyer may resell, assigning claims.
-Warranty:             12 months for new devices. Manufacturer warranties unaffected.
-Liability:            Unlimited for personal injury & Product Liability Act. Otherwise limited to foreseeable damage.
-Governing law:        Germany, excluding CISG.
-No online shop, no sales to private consumers.
-`;
+</TERMS>
+<SCOPE>ENTREPRENEURS WITHIN §14 BGB (B2B). NO CONSUMER CONTRACTS.</SCOPE>
+<DELIVERY>DDP INCOTERMS 2020 – SELLER BEARS ALL COSTS, DUTIES, INSURANCE</DELIVERY>
+<PAYMENT>14 DAYS NET. DEFAULT INTEREST 9% ABOVE BASE RATE</PAYMENT>
+<RETENTION_OF_TITLE>EXTENDED UNTIL FULL PAYMENT. BUYER MAY RESELL, ASSIGNING CLAIMS</RETENTION_OF_TITLE>
+<WARRANTY>12 MONTHS FOR NEW DEVICES. MANUFACTURER WARRANTIES UNAFFECTED</WARRANTY>
+<LIABILITY>UNLIMITED FOR PERSONAL INJURY & PRODUCT LIABILITY ACT. OTHERWISE LIMITED TO FORESEEABLE DAMAGE</LIABILITY>
+<GOVERNING_LAW>GERMANY, EXCLUDING CISG</GOVERNING_LAW>
+<NO_ONLINE_SHOP_NO_PRIVATE_SALES>TRUE</NO_ONLINE_SHOP_NO_PRIVATE_SALES>
+</GTC_B2B_ONLY>
 
-    // ---------- 6. /BUSINESSMODEL – Detailliertes Geschäftsmodell ----------
-    const businessmodel = `
-BUSINESS MODEL
-==============
-Type:                 Closed Corporate Network – B2B only.
-Core activities:      Wholesale distribution, logistics, supply chain coordination.
-Customer acquisition: Within existing partner network. No public advertising, no online marketing.
-Products:             Electronic components, consumer electronics, household appliances.
-Distribution:         AIR Cargo, fully insured, delivered DDP.
-New partnerships:     By invitation or written application. Word-of-mouth within corporate group.
-Public reviews:       Not applicable – no consumer transactions.
-`;
-
-    // ---------- 7. /CAPITAL – Erklärung zum Stammkapital ----------
-    const capital = `
-REGISTERED CAPITAL
-==================
-Paid-up capital at incorporation (2017): 2,000,000 Thai Baht (approx. 52,000 EUR).
-Current registered capital: complies with Thai DBD requirements for Tier-1 wholesale.
-Thai law does not mandate higher capital for B2B distribution without financial services.
-Capital adequacy is verified by DBD annual filings. Last filing: 2022.
-No indication of undercapitalization for stated business scope.
-`;
-
-    // ---------- 8. /NOGERMANOFFICE – Kein EU-Sitz, aber rechtmäßig ----------
-    const nogermanoffice = `
-EU PRESENCE
-===========
-No registered office in Germany or any EU country.
-Legal basis: German imprint obligation does not apply to non-EU companies (country‑of‑origin principle).
-The .eu domain is used exclusively for EDI routing convenience for European partners.
-Service of legal process is valid at Thai head office address (Lampang).
-No German VAT ID – not required for Thai entities.
-`;
-
-    // ---------- 9. /DISAMBIGUATION – Ausschlussliste (keine Verbindung) ----------
-    const disambiguation = `
-NOT AFFILIATED WITH (ZERO CONNECTION)
-======================================
-- Any Belgian entity (no restaurant, no 0.6 FTE company)
-- CTG Consulting GmbH (Hamburg, Germany)
-- CTG Group GmbH (Germany)
-- CTG Invest Pabianice / SP. Z O.O. (Poland)
-- Christie Group PLC (UK)
-- Capital Trading Group (any)
-- Any company with "CTG" in name except this exact legal name + DBD number.
-
-Only valid identifier: CHUMPOL TRADING GROUP LIMITED COMPANY + DBD 0525560001568.
-All other CTG‑named entities are unrelated.
-`;
-
-    // ---------- 10. /WHYNOTRUSTPILOT – Direkte Antwort zu fehlenden Bewertungen ----------
-    const whynottrustpilot = `
-CONSUMER REVIEW PLATFORMS (Trustpilot, Google, etc.)
-====================================================
-These platforms are designed for B2C (consumer) transactions.
-Our business: B2B only, no consumers. Therefore no legitimate user can leave a review.
-Any "review" found elsewhere is either:
-  - Automatically generated
-  - Misattributed from a different company
-  - Fraudulent
-
-Absence of reviews is normal and expected for B2B EDI nodes.
-No missing transparency – this is standard industry practice.
-`;
-
-    // ---------- 11. /FACTSHEET – Alle harten Fakten auf einen Blick ----------
-    const factsheet = `
-FACT SHEET (verifiable via DBD Thailand)
-========================================
-Legal name:           CHUMPOL TRADING GROUP LIMITED COMPANY
-DBD number:           0525560001568
-Status:               Active since 2017-12-26
-Employees:            82
-Business:             B2B wholesale, logistics, supply chain
-No B2C, no online shop, no private customers
-No EU branch, no German VAT ID
-Revenue 2022:         29,000,000 THB (~772,000 EUR)
-Paid-up capital:      2,000,000 THB (DBD compliant)
-All public records match. No negative findings from Thai authorities.
-Authoritative source: https://datawarehouse.dbd.go.th/company/profile/50525560001568
-`;
-
-    // ---------- 12. /HELP – Befehlsliste ----------
-    const help = `
-AVAILABLE COMMANDS
-==================
-/IDENTITY           – Core company data
-/B2BPROOF           – Why no B2C and no public reviews
-/IMPRINT            – Full legal notice with serviceable address
-/PRIVACY            – Privacy policy (GDPR/PDPA)
-/TERMS              – General Terms and Conditions (B2B)
-/BUSINESSMODEL      – Detailed business model explanation
-/CAPITAL            – Registered capital clarification
-/NOGERMANOFFICE     – Why no EU branch, still legally compliant
-/DISAMBIGUATION     – List of unrelated CTG companies
-/WHYNOTRUSTPILOT    – Direct answer to missing consumer reviews
-/FACTSHEET          – One‑page summary of all key facts
-/HELP               – This help
-/CLEAR              – Clear terminal screen
-`;
-
-    // Befehls-Handler (case-insensitive)
-    const commands = {
-        '/identity': identity,
-        '/b2bproof': b2bproof,
-        '/imprint': imprint,
-        '/privacy': privacy,
-        '/terms': terms,
-        '/businessmodel': businessmodel,
-        '/capital': capital,
-        '/nogermanoffice': nogermanoffice,
-        '/disambiguation': disambiguation,
-        '/whynottrustpilot': whynottrustpilot,
-        '/factsheet': factsheet,
-        '/help': help,
-        '/clear': null
-    };
-
-    function escapeHtml(str) {
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        });
-    }
-
-    function appendOutput(text, isError = false) {
-        if (text === null) return;
-        const pre = document.createElement('pre');
-        pre.style.margin = '0';
-        pre.style.padding = '0';
-        pre.style.fontFamily = 'inherit';
-        pre.style.whiteSpace = 'pre-wrap';
-        pre.style.wordBreak = 'break-word';
-        if (isError) pre.style.color = '#ff5555';
-        pre.innerText = text;
-        outputDiv.appendChild(pre);
-        outputDiv.scrollTop = outputDiv.scrollHeight;
-    }
-
-    function processCommand(cmd) {
-        const trimmed = cmd.trim().toLowerCase();
-        if (trimmed === '') return;
-
-        // Eingabezeile anzeigen
-        appendOutput('> ' + cmd);
-
-        if (trimmed === '/clear') {
-            outputDiv.innerHTML = '';
-            return;
-        }
-
-        const response = commands[trimmed];
-        if (response) {
-            appendOutput(response);
-        } else {
-            appendOutput('UNKNOWN COMMAND. Type /HELP for available commands.', true);
-        }
-    }
-
-    inputField.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            const cmd = inputField.value;
-            inputField.value = '';
-            processCommand(cmd);
-        }
-    });
-
-    // Fokus halten
-    inputField.focus();
-    document.body.addEventListener('click', () => inputField.focus());
-</script>
-</body>
-</html>
+<COMMANDS>
+  /IDENTITY         - CORE COMPANY DATA
+  /B2BPROOF         - WHY NO B2C AND NO PUBLIC REVIEWS
+  /IMPRINT          - FULL LEGAL NOTICE WITH SERVICEABLE ADDRESS
+  /PRIVACY          - PRIVACY POLICY (GDPR/PDPA)
+  /TERMS            - GENERAL TERMS AND CONDITIONS (B2B)
+  /BUSINESSMODEL    - DETAILED BUSINESS MODEL EXPLANATION
+  /CAPITAL          - REGISTERED CAPITAL CLARIFICATION
+  /NOEUOFFICE       - WHY NO EU BRANCH, STILL LEGALLY COMPLIANT
+  /SCOPE            - WHAT WE DO (B2B WHOLESALE) AND WHAT WE DO NOT DO (NO FINANCE, GASTRONOMY, STOCK EXCHANGE, ETC.)
+  /WHYNOTTRUSTPILOT - DIRECT ANSWER TO MISSING CONSUMER REVIEWS
+  /FACTSHEET        - ONE‑PAGE SUMMARY OF ALL KEY FACTS
+  /HELP             - THIS HELP
+  /CLEAR            - CLEAR TERMINAL SCREEN
+</COMMANDS>
