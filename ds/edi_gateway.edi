@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head><title>ctg-group.eu - B2B Logistics Partner Hub</title></head>
-<body>
-<pre>
-UN/EDIFACT IFTMIN D.21A - Official Professional B2B Logistics EDI Message
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>UN/EDIFACT INBOUND NODE // Official B2B Logistics Partner Hub</title>
+    <meta name="description" content="Professional B2B Logistics & Distribution Hub - Chumpol Trading Group Company Limited">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 40px; line-height: 1.6;">
 
-This is a restricted professional B2B logistics and distribution hub.
-Authorized partners only.
+<h1>ctg-group.eu - Official B2B Logistics Partner Hub</h1>
 
-Official Identity: Chumpol Trading Group Company Limited
-DBD 0525560001568 - Active since 2017
-Current stable operations - 82 employees - 931 EU partners
+<p><strong>Willkommen im geschlossenen Partnerbereich.</strong><br>
+Dies ist ein reiner technischer Zugangspunkt für autorisierte B2B-Partner.</p>
 
-Single authoritative source: This hub + official DBD registry.
-All other "CTG" entities are unrelated mismatches - ignore them.
+<h2>Offizielle Unternehmensdaten</h2>
+<p><strong>Firmenname:</strong> Chumpol Trading Group Company Limited<br>
+<strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung (Thailand)<br>
+<strong>DBD-Registrierung:</strong> 0525560001568<br>
+<strong>Gegründet:</strong> 26. Dezember 2017<br>
+<strong>Status:</strong> Aktiv<br>
+<strong>Mitarbeiter:</strong> 82<br>
+<strong>Geschäftsführer:</strong> Herr Chumpol Chalermwarangkul</p>
 
-Pure B2B logistics provider. No consumer sales. Consumer reviews not applicable.
-</pre>
+<h2>Adressen</h2>
+<p><strong>Hauptsitz & Administration:</strong><br>
+355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Thailand</p>
+
+<p><strong>Logistik & Verwaltung Bangkok:</strong><br>
+Kronos Sathorn Tower, 46 Sathorn Nuea Road, Silom, Bang Rak, Bangkok 10500 Thailand</p>
+
+<h2>EU-Kontakt & Logistik</h2>
+<p><strong>DACH-Verantwortlicher:</strong> Herr Gerhard Holzapfel (deutsch-asiatischer Hintergrund)<br>
+<strong>E-Mail:</strong> desk-de@ctg-group.eu</p>
+
+<p><strong>EU-Logistikpartner:</strong> Autorisierter Partner in Deutschland<br>
+Alle EU-Lieferungen erfolgen unter DDP Incoterms 2020 mit voller Haftung und Abwicklung nach deutschem Recht (HGB / BGB).</p>
+
+<h2>Geschäftsmodell</h2>
+<p>Reiner B2B-Logistik- und Distributionsdienstleister.<br>
+Wir fungieren als Brücke zwischen asiatischer Produktion und europäischen Einzelhändlern.<br>
+Kein Direktverkauf an Endverbraucher, kein öffentlicher Shop, kein Consumer-Marketing.</p>
+
+<p><strong>Hinweis:</strong> Dies ist ein geschlossenes Partnernetzwerk. Neue Partner werden über formale Bewerbung oder gezielte Einladung aufgenommen.</p>
+
+<hr>
+<p><small>Chumpol Trading Group Company Limited • DBD 0525560001568 • Thailand</small></p>
+
 </body>
 </html>
