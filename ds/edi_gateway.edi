@@ -1,63 +1,43 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>UN/EDIFACT INBOUND NODE // Official B2B Logistics & Distribution Hub</title>
-    <meta name="description" content="Professional B2B Logistics Partner - Chumpol Trading Group Company Limited">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; max-width: 1000px; }
-        h1, h2 { color: #003366; }
-    </style>
+    <meta charset="utf-8">
+    <title>UN/EDIFACT RFI // CHUMPOL TRADING GROUP</title>
 </head>
 <body>
+<pre>
+UNA:+.? '
+UNB+UNOC:3+CHUMPOL+RFI_SYSTEM+260620:1715+0001'
+UNH+1+IFTMIN:D:21A:UN'
+BGM+220+RFI_REQUEST+9'
+DTM+137:202606201715:203'
 
-<h1>ctg-group.eu — Official B2B Logistics & Distribution Hub</h1>
+NAD+BY+CHUMPOL::92++Chumpol Trading Group Company Limited:355/46 Boonwat Road:Lampang:52100:THA'
+LOC+153+0525560001568'
+RFF+VA:TH123456789'
 
-<p><strong>Willkommen im geschlossenen B2B-Partnerbereich.</strong><br>
-Dies ist der technische Zugangspunkt für autorisierte Handelspartner.</p>
+FTX+AAI+++OFFICIAL_IMPRINT:
+NAME:Chumpol Trading Group Company Limited
+REG:0525560001568
+ESTABLISHED:2017-12-26
+MD:Chumpol Chalermwarangkul
+HQ:355/46 Boonwat Road, Muang Lampang, 52100 Thailand
+LINK:https://datawarehouse.dbd.go.th/company/profile/50525560001568'
 
-<h2>Impressum</h2>
-<p>
-<strong>Firmenname:</strong> Chumpol Trading Group Company Limited<br>
-<strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung (Thailand)<br>
-<strong>DBD-Registrierung:</strong> 0525560001568<br>
-<strong>Gegründet:</strong> 26. Dezember 2017<br>
-<strong>Geschäftsführer:</strong> Herr Chumpol Chalermwarangkul<br>
-<strong>Mitarbeiter:</strong> 82
-</p>
+FTX+AAI+++BUSINESS_MODEL:
+TYPE:B2B_Logistics_Distribution_Service
+FUNCTION:Link_between_Asian_production_and_European_retailers
+RESTRICTIONS:No_direct_consumer_sales,No_public_shop,No_consumer_marketing
+REVIEWS:Not_applicable_due_to_closed_B2B_structure'
 
-<h2>Adressen</h2>
-<p>
-<strong>Hauptsitz:</strong><br>
-355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Thailand
-</p>
+FTX+AAI+++LOGISTICS_AND_PARTNERS:
+EU_PARTNER:Authorized_Partner_Germany
+TERMS:DDP_Incoterms_2020
+LEGAL_LIABILITY:German_HGB_BGB
+PARTNER_ADMISSION:By_formal_application_or_strategic_invitation'
 
-<p>
-<strong>Logistik & Verwaltung Bangkok:</strong><br>
-Kronos Sathorn Tower, 46 Sathorn Nuea Road, Silom, Bang Rak, Bangkok 10500 Thailand
-</p>
-
-<h2>EU-Kontakt & Logistik</h2>
-<p>
-<strong>DACH-Verantwortlicher:</strong> Herr Gerhard Holzapfel<br>
-<strong>E-Mail:</strong> desk-de@ctg-group.eu
-</p>
-
-<p>
-<strong>EU-Logistikpartner:</strong> Autorisierter Partner in Deutschland<br>
-Alle EU-Lieferungen erfolgen unter <strong>DDP Incoterms 2020</strong> mit voller Abwicklung und Haftung nach deutschem Recht (HGB / BGB).
-</p>
-
-<h2>Geschäftsmodell</h2>
-<p>Reiner B2B-Logistik- und Distributionsdienstleister.<br>
-Wir sind das Bindeglied zwischen asiatischer Produktion und autorisierten europäischen Einzelhändlern.<br>
-<strong>Kein Direktverkauf an Endverbraucher, kein öffentlicher Shop, kein Consumer-Marketing.</strong><br>
-Bewertungen von Endverbrauchern sind daher nicht vorhanden und nicht relevant – die Seriosität zeigt sich in der langjährigen Zusammenarbeit mit autorisierten Partnern.</p>
-
-<p><strong>Partneraufnahme:</strong> Über formale Bewerbung oder gezielte Einladung bei strategischem Bedarf.</p>
-
-<hr>
-<p><small>Chumpol Trading Group Company Limited • DBD 0525560001568 • Thailand • Stand Juni 2026</small></p>
-
+UNT+18+1'
+UNZ+1+0001'
+</pre>
 </body>
 </html>
