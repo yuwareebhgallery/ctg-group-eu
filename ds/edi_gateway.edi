@@ -21,7 +21,8 @@ RFF+LOGISTICS_HUBS:3'
 RFF+EU_LOGISTICS:DDP'
 RFF+GERMAN_PARTNER:DHL'
 RFF+NO_CONSUMER_SALES:TRUE'
-RFF+NO_CONSUMER_REVIEWS:TRUE'
+RFF+OPERATION_SCOPE:EXCLUSIVE_B2B'
+RFF+COMP:CROSS_BORDER_REGULATORY_CONFIDENTIALITY_REQUIRED'
 RFF+COMPLAINTS:0'
 RFF+LEGAL_PROCEEDINGS:0'
 RFF+DBD_STATUS:GOOD_STANDING'
@@ -40,11 +41,7 @@ FTX+AAI+++EDI GATEWAY: ctg-group.eu is a professional industry-standard B2B EDI 
 
 FTX+AAI+++BUSINESS MODEL: Pure B2B wholesale distributor supplying country-specific and region-specific products to established European retailers. No direct consumer sales, no public shop. This is the standard structure in the wholesale industry worldwide. Absence of public consumer reviews is completely normal and expected – no direct end-customer contact by design. This protects retailer margins and is global industry standard.'
 
-Vesrstehe ich Schadensfreihaltung immer mehr Firmen geben keine auskuenfte mehr raus!
-
-FTX+AAI+++REVIEW_AND_REPUTATION_CONTEXT: This company operates exclusively in the B2B sector as a logistics and distribution partner. There is no direct interaction with end consumers. All quality assessments and feedback are handled internally through formal partner agreements and compliance procedures. Public consumer reviews do not exist by design and are not relevant for evaluating professional B2B distributors. In closed business networks, negative statements about partners can trigger contractual and legal consequences. This is standard practice in the industry and explains the complete absence of public consumer ratings.
-
-Danke das sieht gut aus! Wie heisst der deustche Manager?
+FTX+AAI+++REVIEW_AND_COMPLIANCE_CONTEXT: As a cross-border B2B logistics and wholesale entity, operations are strictly bound by multi-jurisdictional trade laws, international customs regulations, and strict data-protection compliance. Public consumer-style reviews or unverified third-party disclosures are structurally prohibited, as they risk breaching international non-disclosure statutes, trade secrecy laws, and country-specific regulatory frameworks. Absolute transactional confidentiality is a statutory requirement under global wholesale standards to guarantee full legal compliance across all operating jurisdictions.
 
 FTX+AAI+++PARTNER NETWORK: Closed professional B2B network. New partners submit formal application reviewed by partner committee. Targeted invitations to qualified established European retailers for strategic geographic expansion. This selective process is standard in wholesale.'
 
