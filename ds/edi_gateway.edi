@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UN/EDIFACT INBOUND NODE // Official B2B Logistics Partner Hub</title>
-    <meta name="description" content="Professional B2B Logistics & Distribution Hub - Chumpol Trading Group Company Limited">
-
+    <title>EDI GATEWAY B2B — ctg-group.eu | UN/EDIFACT IFTMIN</title>
     <style>
         :root {
-            --bg: #0a0c0f;
-            --panel-bg: #0f1419;
-            --border: #1e2a36;
-            --border-active: #3a5068;
-            --text: #b0c4d8;
-            --text-bright: #d4e0ec;
-            --text-dim: #6b7d8e;
-            --green: #3cb878;
-            --green-glow: #2a9d5c;
-            --amber: #d4952a;
-            --amber-glow: #b87a1e;
-            --red: #c94a4a;
-            --red-glow: #a83838;
-            --blue: #4a8ec9;
-            --blue-glow: #3575a8;
-            --cyan: #3ca8b8;
-            --segment-bg: #111820;
-            --segment-hover: #17202b;
-            --input-bg: #0d1117;
-            --font-mono: 'SF Mono', 'Cascadia Code', 'Consolas', 'Monaco', 'Lucida Console',
-                'DejaVu Sans Mono', 'Courier New', monospace;
-            --font-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+            --bg: #060b0f;
+            --surface: #0c1319;
+            --surface2: #111a22;
+            --border: #1e2e3c;
+            --border-light: #2a3d4e;
+            --text: #b6c8d6;
+            --text-bright: #e0ecf5;
+            --text-dim: #5e7485;
+            --accent-green: #3cb878;
+            --accent-green-bright: #5ce098;
+            --accent-amber: #d4952a;
+            --accent-amber-bright: #e8b04a;
+            --accent-blue: #4a8ec9;
+            --accent-red: #c94a4a;
+            --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+            --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
         * {
@@ -44,146 +36,143 @@
             font-family: var(--font-mono);
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             padding: 20px;
             background-image:
-                radial-gradient(ellipse at 50% 5%, rgba(30, 60, 90, 0.25) 0%, transparent 70%),
-                radial-gradient(ellipse at 85% 20%, rgba(40, 80, 50, 0.08) 0%, transparent 60%);
-            background-attachment: fixed;
+                radial-gradient(ellipse at 30% 10%, rgba(20, 50, 40, 0.15) 0%, transparent 55%),
+                radial-gradient(ellipse at 70% 80%, rgba(30, 60, 80, 0.1) 0%, transparent 55%);
         }
 
-        /* SCANLINE OVERLAY */
-        body::before {
+        .main-container {
+            width: 100%;
+            max-width: 1160px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: var(--surface);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* SCANLINE EFFECT */
+        .main-container::after {
             content: '';
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: 9999;
-            background: repeating-linear-gradient(0deg,
-                    transparent,
-                    transparent 2px,
-                    rgba(0, 0, 0, 0.015) 2px,
-                    rgba(0, 0, 0, 0.015) 4px);
+            background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0, 0, 0, 0.03) 3px, rgba(0, 0, 0, 0.03) 6px);
+            z-index: 2;
+            border-radius: 10px;
         }
 
-        .main-container {
-            width: 100%;
-            max-width: 1100px;
+        .content-wrapper {
+            position: relative;
+            z-index: 3;
             display: flex;
             flex-direction: column;
             gap: 16px;
-            position: relative;
-            z-index: 1;
+            padding: 20px;
         }
 
         /* HEADER */
-        .header {
+        .gateway-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 14px 20px;
-            background: var(--panel-bg);
-            border: 1px solid var(--border);
-            border-radius: 6px;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 15px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
         }
-        .header-left {
+        .header-brand {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
         }
-        .logo-icon {
-            width: 38px;
-            height: 38px;
-            background: #1a2a1a;
-            border: 2px solid var(--green);
-            border-radius: 4px;
+        .edi-icon {
+            width: 44px;
+            height: 44px;
+            background: #0a1a14;
+            border: 2px solid var(--accent-green);
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 18px;
-            color: var(--green);
-            text-shadow: 0 0 8px var(--green-glow);
-            flex-shrink: 0;
+            font-size: 22px;
+            color: var(--accent-green);
+            text-shadow: 0 0 10px #2a9d5c;
+            box-shadow: 0 0 14px rgba(60, 184, 120, 0.15);
         }
         .header-title {
             font-family: var(--font-sans);
             font-weight: 700;
-            font-size: 15px;
+            font-size: 1.2rem;
             color: var(--text-bright);
-            letter-spacing: 0.4px;
+            letter-spacing: 0.3px;
+            line-height: 1.3;
         }
-        .header-subtitle {
-            font-size: 10px;
+        .header-sub {
+            font-size: 0.7rem;
             color: var(--text-dim);
             letter-spacing: 1.2px;
             text-transform: uppercase;
         }
-        .header-status {
+        .badge-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            padding: 5px 12px;
+            border-radius: 4px;
+            background: #0d1a14;
+            color: var(--accent-green);
+            border: 1px solid #1a382a;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .badge.amber {
+            background: #1a160d;
+            color: var(--accent-amber);
+            border-color: #382a1a;
+        }
+
+        /* AUTH PANEL */
+        .auth-panel {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+        .auth-panel.authenticated {
+            border-color: #1a382a;
+            box-shadow: 0 0 0 2px rgba(60, 184, 120, 0.08);
+        }
+        .auth-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-amber);
+            font-weight: 700;
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 11px;
-            color: var(--green);
         }
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--green);
-            box-shadow: 0 0 8px var(--green-glow);
-            animation: pulse-dot 2s infinite;
-        }
-        @keyframes pulse-dot {
-            0%,
-            100% {
-                box-shadow: 0 0 6px var(--green-glow);
-            }
-            50% {
-                box-shadow: 0 0 16px var(--green-glow), 0 0 24px rgba(60, 184, 120, 0.3);
-            }
-        }
-        .header-badge {
-            font-size: 9px;
-            padding: 4px 10px;
-            border-radius: 3px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 600;
-            background: #0d1a12;
-            color: var(--green);
-            border: 1px solid #1a3a28;
-        }
-
-        /* LOGIN PANEL */
-        .login-panel {
-            background: var(--panel-bg);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            transition: all 0.4s ease;
-        }
-        .login-panel.logged-in {
-            border-color: #1a3a28;
-            box-shadow: 0 0 0 1px rgba(60, 184, 120, 0.12);
-        }
-        .login-label {
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--amber);
-            font-weight: 600;
-        }
-        .login-row {
+        .auth-row {
             display: flex;
             gap: 10px;
             align-items: center;
@@ -191,140 +180,137 @@
         }
         .sql-input {
             flex: 1;
-            min-width: 280px;
-            background: var(--input-bg);
+            min-width: 260px;
+            background: #050a0f;
             border: 1px solid var(--border);
             color: var(--text-bright);
             font-family: var(--font-mono);
-            font-size: 13px;
+            font-size: 0.8rem;
             padding: 12px 16px;
-            border-radius: 4px;
+            border-radius: 5px;
             outline: none;
-            transition: border-color 0.3s;
+            transition: border 0.2s, box-shadow 0.2s;
             letter-spacing: 0.3px;
         }
         .sql-input:focus {
-            border-color: var(--blue);
-            box-shadow: 0 0 0 3px rgba(74, 142, 201, 0.08);
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(74, 142, 201, 0.1);
         }
         .sql-input::placeholder {
-            color: #3a4a5a;
+            color: #2d4050;
             font-style: italic;
         }
         .btn {
-            padding: 12px 22px;
-            border-radius: 4px;
+            padding: 11px 20px;
+            border-radius: 5px;
             font-family: var(--font-sans);
             font-weight: 600;
-            font-size: 12px;
+            font-size: 0.7rem;
             letter-spacing: 0.8px;
             text-transform: uppercase;
             cursor: pointer;
             border: 1px solid transparent;
-            transition: all 0.25s;
+            transition: all 0.2s;
             white-space: nowrap;
+            background: #0f1a20;
+            color: #90b8cc;
         }
-        .btn-login {
-            background: #1a2f3a;
+        .btn-connect {
             border-color: #2a5068;
             color: #7cc8f0;
+            background: #0f1a24;
         }
-        .btn-login:hover {
-            background: #1f3847;
-            border-color: var(--blue);
-            box-shadow: 0 0 12px rgba(74, 142, 201, 0.18);
-            color: #a0dcff;
+        .btn-connect:hover {
+            background: #15283a;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 10px rgba(74, 142, 201, 0.2);
         }
-        .btn-logout {
-            background: #1a1212;
+        .btn-disconnect {
             border-color: #3a2020;
             color: #d48080;
+            background: #1a1010;
         }
-        .btn-logout:hover {
+        .btn-disconnect:hover {
             background: #241818;
-            border-color: var(--red);
-            box-shadow: 0 0 12px rgba(201, 74, 74, 0.18);
-            color: #f0a0a0;
+            border-color: var(--accent-red);
+            box-shadow: 0 0 10px rgba(201, 74, 74, 0.2);
         }
         .btn-parse {
-            background: #121a14;
-            border-color: #1a3a28;
+            border-color: #1a382a;
             color: #6cd89c;
+            background: #0d1a14;
         }
         .btn-parse:hover {
-            background: #18241c;
-            border-color: var(--green);
-            box-shadow: 0 0 12px rgba(60, 184, 120, 0.18);
-            color: #90f0bc;
+            background: #162c20;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 10px rgba(60, 184, 120, 0.2);
         }
-        .login-hint {
-            font-size: 10px;
+        .auth-hint {
+            font-size: 0.65rem;
             color: var(--text-dim);
-            letter-spacing: 0.4px;
             font-style: italic;
+            cursor: pointer;
         }
-        .login-hint code {
-            background: #111820;
-            padding: 2px 7px;
+        .auth-hint code {
+            background: #0a1218;
+            padding: 3px 8px;
             border-radius: 3px;
-            color: var(--amber);
+            color: var(--accent-amber);
             font-style: normal;
-            font-size: 10px;
-            letter-spacing: 0.3px;
+            font-size: 0.7rem;
         }
-        .auth-status {
-            font-size: 10px;
+        .status-badge {
+            font-size: 0.65rem;
+            font-weight: 700;
             letter-spacing: 0.6px;
-            padding: 6px 12px;
-            border-radius: 3px;
+            padding: 6px 14px;
+            border-radius: 4px;
             display: inline-block;
-            font-weight: 600;
             text-transform: uppercase;
         }
-        .auth-ok {
-            background: #0d1a12;
-            color: var(--green);
-            border: 1px solid #1a3a28;
+        .status-ok {
+            background: #0d1a14;
+            color: var(--accent-green);
+            border: 1px solid #1a382a;
         }
-        .auth-fail {
+        .status-fail {
             background: #1a0f0f;
-            color: var(--red);
+            color: var(--accent-red);
             border: 1px solid #3a1a1a;
         }
 
         /* EDI DISPLAY */
-        .edi-container {
-            background: var(--panel-bg);
+        .edi-viewer {
+            background: var(--surface2);
             border: 1px solid var(--border);
-            border-radius: 6px;
+            border-radius: 8px;
             overflow: hidden;
             display: none;
         }
-        .edi-container.visible {
+        .edi-viewer.visible {
             display: block;
-            animation: fadeSlideIn 0.5s ease;
+            animation: fadeSlide 0.4s ease;
         }
-        @keyframes fadeSlideIn {
+        @keyframes fadeSlide {
             from {
                 opacity: 0;
-                transform: translateY(-8px);
+                transform: translateY(-6px);
             }
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        .edi-tabs {
+        .tabs {
             display: flex;
             border-bottom: 1px solid var(--border);
-            background: #0b1016;
+            background: #080e14;
             overflow-x: auto;
-            flex-wrap: nowrap;
         }
-        .edi-tab {
+        .tab {
             padding: 12px 18px;
-            font-size: 10px;
-            letter-spacing: 1px;
+            font-size: 0.7rem;
+            letter-spacing: 0.8px;
             text-transform: uppercase;
             cursor: pointer;
             border: none;
@@ -334,77 +320,75 @@
             font-weight: 600;
             white-space: nowrap;
             border-bottom: 2px solid transparent;
-            transition: all 0.2s;
+            transition: 0.2s;
         }
-        .edi-tab:hover {
-            color: var(--text-bright);
-            background: #111920;
+        .tab:hover {
+            color: #c0d6e4;
+            background: #0f1822;
         }
-        .edi-tab.active {
-            color: var(--green);
-            border-bottom-color: var(--green);
-            background: #0d1610;
+        .tab.active {
+            color: var(--accent-green);
+            border-bottom-color: var(--accent-green);
+            background: #0a1610;
         }
         .edi-content {
-            padding: 20px;
-            max-height: 600px;
+            padding: 16px;
+            max-height: 580px;
             overflow-y: auto;
         }
         .edi-content::-webkit-scrollbar {
-            width: 6px;
+            width: 5px;
         }
         .edi-content::-webkit-scrollbar-track {
-            background: #0b1016;
+            background: #050a0f;
         }
         .edi-content::-webkit-scrollbar-thumb {
-            background: #1e2a36;
+            background: #1e2e3c;
             border-radius: 3px;
         }
 
         /* SEGMENT CARD */
-        .segment-card {
-            background: var(--segment-bg);
+        .segment {
+            background: #0b141c;
             border: 1px solid var(--border);
-            border-radius: 5px;
-            margin-bottom: 10px;
-            overflow: hidden;
-            transition: all 0.2s;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            transition: 0.2s;
         }
-        .segment-card:hover {
-            border-color: var(--border-active);
-            background: var(--segment-hover);
+        .segment:hover {
+            border-color: #3a5068;
+            background: #0f1a24;
         }
         .segment-header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            gap: 10px;
             padding: 10px 14px;
             cursor: pointer;
             user-select: none;
-            gap: 10px;
             flex-wrap: wrap;
         }
-        .segment-tag {
+        .seg-tag {
             font-weight: 700;
-            font-size: 12px;
-            letter-spacing: 0.8px;
-            padding: 3px 8px;
-            border-radius: 3px;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 4px;
+            letter-spacing: 0.6px;
             white-space: nowrap;
         }
         .tag-unb {
             background: #1a1520;
-            color: #b890d0;
+            color: #c0a0e0;
             border: 1px solid #2a1a3a;
         }
         .tag-unh {
-            background: #141a20;
-            color: #7ab8d8;
+            background: #141a22;
+            color: #78b8d8;
             border: 1px solid #1a2a3a;
         }
         .tag-bgm {
             background: #1a1414;
-            color: #d89080;
+            color: #e09080;
             border: 1px solid #3a1a1a;
         }
         .tag-nad {
@@ -412,25 +396,17 @@
             color: #80c898;
             border: 1px solid #1a2a1e;
         }
-        .tag-rff {
+        .tag-rff,
+        .tag-ref {
             background: #1a1a14;
             color: #c8b878;
             border: 1px solid #2a2818;
         }
-        .tag-ref {
-            background: #1a1614;
-            color: #d8a878;
-            border: 1px solid #2a2018;
-        }
-        .tag-tod {
+        .tag-tod,
+        .tag-inc {
             background: #14181a;
             color: #78b8c8;
             border: 1px solid #18262a;
-        }
-        .tag-inc {
-            background: #18141a;
-            color: #a890c8;
-            border: 1px solid #241a2a;
         }
         .tag-ftx {
             background: #1a1814;
@@ -447,205 +423,149 @@
             color: #80b8b8;
             border: 1px solid #182828;
         }
-        .segment-raw {
-            font-size: 10px;
-            color: var(--text-dim);
-            letter-spacing: 0.3px;
-            word-break: break-all;
+        .seg-raw {
             flex: 1;
-            min-width: 150px;
-            line-height: 1.5;
+            font-size: 0.7rem;
+            color: #7a8e9c;
+            word-break: break-all;
+            min-width: 160px;
+            line-height: 1.4;
         }
-        .segment-expand {
-            font-size: 14px;
-            color: var(--text-dim);
+        .seg-arrow {
+            color: #5e7485;
             transition: transform 0.3s;
-            flex-shrink: 0;
+            font-size: 0.8rem;
         }
-        .segment-card.open .segment-expand {
+        .segment.open .seg-arrow {
             transform: rotate(180deg);
-            color: var(--green);
+            color: var(--accent-green);
         }
         .segment-body {
             display: none;
-            padding: 0 14px 14px 14px;
-            border-top: 1px solid #151d26;
+            padding: 0 14px 14px;
+            border-top: 1px solid #15202b;
         }
-        .segment-card.open .segment-body {
+        .segment.open .segment-body {
             display: block;
-            animation: fadeSlideIn 0.3s ease;
+            animation: fadeSlide 0.25s ease;
         }
-        .field-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 11px;
-            letter-spacing: 0.3px;
-            margin-top: 8px;
+        .field-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 6px 12px;
+            font-size: 0.7rem;
+            margin-top: 10px;
         }
-        .field-table th {
-            text-align: left;
-            padding: 8px 10px;
-            color: var(--amber);
+        .field-label {
+            color: var(--accent-amber);
             font-weight: 600;
-            font-size: 9px;
+            letter-spacing: 0.4px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid var(--border);
-            background: #0b1016;
+            font-size: 0.6rem;
         }
-        .field-table td {
-            padding: 8px 10px;
-            border-bottom: 1px solid #111820;
-            color: var(--text-bright);
+        .field-value {
+            color: #d0dce6;
             word-break: break-word;
-            vertical-align: top;
-            line-height: 1.5;
         }
-        .field-table tr:hover td {
-            background: #0f161d;
-        }
-        .field-table .field-name {
-            color: var(--blue);
-            font-weight: 600;
-            font-size: 10px;
-            white-space: nowrap;
-            letter-spacing: 0.5px;
-            width: 130px;
-        }
-        .highlight-value {
-            color: var(--cyan);
-            font-weight: 600;
-        }
-        .ftx-text-block {
-            background: #0b1016;
-            border-left: 3px solid var(--amber);
-            padding: 10px 14px;
-            margin-top: 6px;
-            font-size: 11px;
-            line-height: 1.7;
+        .ftx-block {
+            background: #080e14;
+            border-left: 3px solid var(--accent-amber);
+            padding: 12px 14px;
+            margin-top: 8px;
+            font-size: 0.7rem;
+            line-height: 1.6;
             color: #c8b878;
-            letter-spacing: 0.3px;
             border-radius: 0 4px 4px 0;
             white-space: pre-wrap;
-            word-break: break-word;
         }
-
-        /* FOOTER */
-        .footer {
-            text-align: center;
-            font-size: 9px;
+        .raw-stream {
+            background: #050a0f;
+            color: #78b8d8;
+            padding: 16px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .footer-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.6rem;
             color: var(--text-dim);
-            letter-spacing: 1px;
-            padding: 12px;
-            text-transform: uppercase;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            .header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .sql-input {
-                min-width: 200px;
-                font-size: 11px;
-                padding: 10px 12px;
-            }
-            .btn {
-                padding: 10px 14px;
-                font-size: 10px;
-            }
-            .edi-tab {
-                padding: 10px 12px;
-                font-size: 9px;
-            }
-            .segment-raw {
-                font-size: 9px;
-            }
-            .field-table {
-                font-size: 10px;
-            }
-            .field-table .field-name {
-                width: 90px;
-                font-size: 9px;
-            }
+            letter-spacing: 0.8px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 8px;
         }
     </style>
 </head>
 <body>
-
     <div class="main-container">
-
-        <!-- HEADER -->
-        <div class="header">
-            <div class="header-left">
-                <div class="logo-icon">⬡</div>
-                <div>
-                    <div class="header-title">EDI GATEWAY B2B</div>
-                    <div class="header-subtitle">Chumpol Trading Group Company Limited</div>
+        <div class="content-wrapper">
+            <!-- HEADER -->
+            <div class="gateway-header">
+                <div class="header-brand">
+                    <div class="edi-icon">⬡</div>
+                    <div>
+                        <div class="header-title">EDI GATEWAY B2B</div>
+                        <div class="header-sub">ctg-group.eu · UN/EDIFACT IFTMIN</div>
+                    </div>
+                </div>
+                <div class="badge-group">
+                    <span class="badge">DDP 2020</span>
+                    <span class="badge amber">ISO 9001 & 14001</span>
+                    <span class="badge">DBD 0525560001568</span>
                 </div>
             </div>
-            <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-                <div class="header-badge">DDP 2020</div>
-                <div class="header-badge">ISO 9001:2015</div>
-                <div class="header-badge">ISO 14001:2015</div>
-                <div class="header-status">
-                    <span class="status-dot"></span> GATEWAY ACTIVE
+
+            <!-- SQL AUTHENTICATION -->
+            <div class="auth-panel" id="authPanel">
+                <div class="auth-label">🔐 SQL-Datenbank Authentifizierung</div>
+                <div class="auth-row">
+                    <input type="text" class="sql-input" id="sqlInput" 
+                           placeholder="CONNECT 'jdbc:edi_gateway://dbd.ctg-group.eu:1521/EDI_DB' USER 'GATEWAY_USER' IDENTIFIED BY '••••••••';"
+                           autocomplete="off" spellcheck="false">
+                    <button class="btn btn-connect" id="btnConnect">▶ CONNECT</button>
+                    <button class="btn btn-disconnect" id="btnDisconnect" style="display:none;">■ DISCONNECT</button>
+                    <button class="btn btn-parse" id="btnParse" style="display:none;">⚙ PARSE</button>
                 </div>
+                <div class="auth-hint" id="authHint" title="Klicken für Demo-Zugangsdaten">
+                    💡 Demo: <code>USER 'GATEWAY_USER' IDENTIFIED BY 'edi_gateway_2026'</code>
+                </div>
+                <div id="authStatus"></div>
             </div>
-        </div>
 
-        <!-- SQL LOGIN PANEL -->
-        <div class="login-panel" id="loginPanel">
-            <div class="login-label">▸ SQL Database Authentication Required</div>
-            <div class="login-row">
-                <input
-                type="text"
-                class="sql-input"
-                id="sqlInput"
-                placeholder="CONNECT 'jdbc:edi_gateway://dbd.ctg-group.eu:1521/EDI_DB' USER 'GATEWAY_USER' IDENTIFIED BY '••••••••';"
-                autocomplete="off"
-                spellcheck="false"
-                >
-                <button class="btn btn-login" id="btnLogin" title="Execute SQL Connect">▶ CONNECT</button>
-                <button class="btn btn-logout" id="btnLogout" style="display:none;" title="Disconnect Session">■ DISCONNECT</button>
-                <button class="btn btn-parse" id="btnParse" style="display:none;" title="Parse EDI Message">⚙ PARSE EDI</button>
+            <!-- EDI VIEWER -->
+            <div class="edi-viewer" id="ediViewer">
+                <div class="tabs" id="ediTabs">
+                    <button class="tab active" data-tab="all">📋 ALLE SEGMENTE</button>
+                    <button class="tab" data-tab="interchange">📦 INTERCHANGE</button>
+                    <button class="tab" data-tab="parties">🏢 PARTEIEN (NAD)</button>
+                    <button class="tab" data-tab="references">🔖 REFERENZEN (RFF)</button>
+                    <button class="tab" data-tab="ftx">📝 FREITEXT (FTX)</button>
+                    <button class="tab" data-tab="raw">📄 RAW STREAM</button>
+                </div>
+                <div class="edi-content" id="ediContent"></div>
             </div>
-            <div class="login-hint" id="loginHint">
-                💡 Demo: Use <code>USER 'GATEWAY_USER' IDENTIFIED BY 'edi_gateway_2026'</code> or any SQL connect string to simulate authentication.
-            </div>
-            <div id="authStatusContainer" style="margin-top:4px;"></div>
-        </div>
 
-        <!-- EDI DISPLAY -->
-        <div class="edi-container" id="ediContainer">
-            <div class="edi-tabs" id="ediTabs">
-                <button class="edi-tab active" data-tab="tab-all">📋 ALL SEGMENTS</button>
-                <button class="edi-tab" data-tab="tab-header">📦 INTERCHANGE</button>
-                <button class="edi-tab" data-tab="tab-parties">🏢 PARTIES (NAD)</button>
-                <button class="edi-tab" data-tab="tab-refs">🔖 REFERENCES (RFF)</button>
-                <button class="edi-tab" data-tab="tab-ftx">📝 FREE TEXT (FTX)</button>
-                <button class="edi-tab" data-tab="tab-raw">📄 RAW STREAM</button>
+            <!-- FOOTER -->
+            <div class="footer-bar">
+                <span>Session: <span id="sessionId">—</span></span>
+                <span>Timestamp: <span id="timestamp">2026-06-22T10:00:00+07:00</span></span>
+                <span>EDI GATEWAY v3.7.1</span>
             </div>
-            <div class="edi-content" id="ediContent"></div>
-        </div>
-
-        <!-- FOOTER -->
-        <div class="footer">
-            EDI GATEWAY v3.7.1 &nbsp;|&nbsp; DBD 0525560001568 &nbsp;|&nbsp; Session:
-            <span id="sessionId">—</span> &nbsp;|&nbsp; Timestamp: <span id="timestamp">2026-06-22T10:00:00+07:00</span>
         </div>
     </div>
 
     <script>
         (function() {
-            // ──────────────────────────────────────
-            // EDI RAW DATA
-            // ──────────────────────────────────────
-            const ediRawLines = [
+            // ══════════════════════════════════════
+            // EDI-Nachricht (UN/EDIFACT IFTMIN)
+            // ══════════════════════════════════════
+            const ediRaw = [
                 "UNB+UNOC:3+CHUMPOL+KI_BOT+20260622:1000:GATEWAY1'",
                 "UNH+1+IFTMIN:D:21A:UN'",
                 "BGM+220+EDI_GATEWAY_B2B+9'",
@@ -696,60 +616,42 @@
                 "UNZ+1:GATEWAY1'"
             ];
 
-            const fullEdiString = ediRawLines.join('\n');
+            const fullEdiString = ediRaw.join('\n');
 
-            // ──────────────────────────────────────
-            // PARSE EDI SEGMENTS
-            // ──────────────────────────────────────
-            function parseEdiSegment(line) {
+            // Parser
+            function parseSegment(line) {
                 const match = line.match(/^([A-Z]{3})\+(.*?)'?$/);
-                if (!match) return { tag: 'UNK', raw: line, elements: [], dataAfterTag: line };
+                if (!match) return { tag: 'UNK', raw: line, elements: [], data: line };
                 const tag = match[1];
-                const dataAfterTag = match[2];
-                // Split by + but respect colons within elements
-                const elements = dataAfterTag.split('+');
-                return { tag, raw: line, elements, dataAfterTag };
+                const data = match[2];
+                const elements = data.split('+');
+                return { tag, raw: line, elements, data };
             }
 
-            const parsedSegments = ediRawLines.map(parseEdiSegment);
+            const segments = ediRaw.map(parseSegment);
 
-            // ──────────────────────────────────────
-            // GROUP SEGMENTS BY TYPE
-            // ──────────────────────────────────────
-            function getSegmentGroups() {
-                const groups = {
-                    interchange: [],
-                    parties: [],
-                    refs: [],
-                    ftx: [],
-                    other: []
-                };
-                parsedSegments.forEach(seg => {
-                    if (seg.tag === 'UNB' || seg.tag === 'UNH' || seg.tag === 'UNT' || seg.tag ===
-                        'UNZ') {
-                        groups.interchange.push(seg);
-                    } else if (seg.tag === 'BGM') {
-                        groups.other.push(seg);
-                    } else if (seg.tag === 'NAD') {
-                        groups.parties.push(seg);
-                    } else if (seg.tag === 'RFF' || seg.tag === 'REF') {
-                        groups.refs.push(seg);
-                    } else if (seg.tag === 'FTX') {
-                        groups.ftx.push(seg);
-                    } else if (seg.tag === 'TOD' || seg.tag === 'INC') {
-                        groups.other.push(seg);
-                    } else {
-                        groups.other.push(seg);
-                    }
+            // Segment-Gruppen
+            function getGroups() {
+                const g = { interchange: [], parties: [], refs: [], ftx: [], other: [] };
+                segments.forEach(s => {
+                    if (['UNB', 'UNH', 'UNT', 'UNZ'].includes(s.tag)) g.interchange.push(s);
+                    else if (s.tag === 'NAD') g.parties.push(s);
+                    else if (s.tag === 'RFF' || s.tag === 'REF') g.refs.push(s);
+                    else if (s.tag === 'FTX') g.ftx.push(s);
+                    else g.other.push(s);
                 });
-                return groups;
+                return g;
             }
 
-            // ──────────────────────────────────────
-            // RENDER SEGMENT CARD
-            // ──────────────────────────────────────
+            // Rendering
+            function escapeHtml(str) {
+                const d = document.createElement('div');
+                d.textContent = str;
+                return d.innerHTML;
+            }
+
             function getTagClass(tag) {
-                const map = {
+                const m = {
                     'UNB': 'tag-unb',
                     'UNH': 'tag-unh',
                     'BGM': 'tag-bgm',
@@ -757,355 +659,234 @@
                     'RFF': 'tag-rff',
                     'REF': 'tag-ref',
                     'TOD': 'tag-tod',
-                    'INC': 'tag-inc',
+                    'INC': 'tag-tod',
                     'FTX': 'tag-ftx',
                     'UNT': 'tag-unt',
                     'UNZ': 'tag-unz'
                 };
-                return map[tag] || 'tag-unb';
+                return m[tag] || 'tag-unb';
             }
 
-            function getTagLabel(tag) {
-                const map = {
-                    'UNB': 'INTERCHANGE HEADER',
-                    'UNH': 'MESSAGE HEADER',
-                    'BGM': 'BEGINNING OF MESSAGE',
-                    'NAD': 'NAME & ADDRESS',
-                    'RFF': 'REFERENCE',
-                    'REF': 'REFERENCE',
-                    'TOD': 'TERMS OF DELIVERY',
-                    'INC': 'INCOTERMS',
-                    'FTX': 'FREE TEXT',
-                    'UNT': 'MESSAGE TRAILER',
-                    'UNZ': 'INTERCHANGE TRAILER'
-                };
-                return map[tag] || 'SEGMENT';
-            }
-
-            function buildFieldTable(seg) {
+            function renderFields(seg) {
                 if (seg.tag === 'FTX') {
-                    const fullText = seg.dataAfterTag;
-                    const parts = fullText.split('+');
-                    const qualifier = parts[0] || '';
-                    const textContent = parts.slice(3).join('+') || fullText;
+                    const parts = seg.data.split('+');
+                    const qual = parts[0] || '';
+                    const text = parts.slice(3).join('+') || seg.data;
                     return `
-                                <table class="field-table">
-                                    <tr><th>FIELD</th><th>VALUE</th></tr>
-                                    <tr><td class="field-name">Qualifier</td><td><span class="highlight-value">${escapeHtml(qualifier)}</span></td></tr>
-                                    <tr><td class="field-name">Text Content</td><td><div class="ftx-text-block">${escapeHtml(textContent)}</div></td></tr>
-                                </table>`;
+                        <div class="field-grid">
+                            <span class="field-label">Qualifier</span><span class="field-value">${escapeHtml(qual)}</span>
+                        </div>
+                        <div class="ftx-block">${escapeHtml(text)}</div>`;
                 }
                 if (seg.tag === 'NAD') {
                     const el = seg.elements;
-                    const partyQual = el[0] || '';
-                    const partyId = el[1] || '';
-                    const partyNameRaw = el.slice(4).join('+') || '';
-                    const partyLabelMap = {
-                        'BY': 'BUYER',
-                        'SU': 'SUPPLIER',
-                        'DP': 'DELIVERY PARTY'
-                    };
-                    const partyLabel = partyLabelMap[partyQual] || partyQual;
+                    const qual = el[0] || '';
+                    const id = el[1] || '';
+                    const name = el.slice(4).join('+') || '';
+                    const map = { 'BY': 'Käufer', 'SU': 'Lieferant', 'DP': 'Lieferpartei' };
                     return `
-                                <table class="field-table">
-                                    <tr><th>FIELD</th><th>VALUE</th></tr>
-                                    <tr><td class="field-name">Party Qualifier</td><td><span class="highlight-value">${escapeHtml(partyQual)} — ${escapeHtml(partyLabel)}</span></td></tr>
-                                    <tr><td class="field-name">Party ID</td><td>${escapeHtml(partyId || '—')}</td></tr>
-                                    <tr><td class="field-name">Name / Address</td><td>${escapeHtml(partyNameRaw || '—')}</td></tr>
-                                </table>`;
+                        <div class="field-grid">
+                            <span class="field-label">Party Qualifier</span><span class="field-value">${escapeHtml(qual)} – ${escapeHtml(map[qual] || qual)}</span>
+                            <span class="field-label">Party ID</span><span class="field-value">${escapeHtml(id || '—')}</span>
+                            <span class="field-label">Name / Adresse</span><span class="field-value">${escapeHtml(name || '—')}</span>
+                        </div>`;
                 }
                 if (seg.tag === 'RFF' || seg.tag === 'REF') {
                     const el = seg.elements;
-                    const refQual = el[0] || '';
-                    const refVal = el.slice(1).join(':') || '';
+                    const qual = el[0] || '';
+                    const val = el.slice(1).join(':') || '';
                     return `
-                                <table class="field-table">
-                                    <tr><th>FIELD</th><th>VALUE</th></tr>
-                                    <tr><td class="field-name">Reference Qualifier</td><td><span class="highlight-value">${escapeHtml(refQual)}</span></td></tr>
-                                    <tr><td class="field-name">Reference Value</td><td>${escapeHtml(refVal)}</td></tr>
-                                </table>`;
+                        <div class="field-grid">
+                            <span class="field-label">Qualifier</span><span class="field-value">${escapeHtml(qual)}</span>
+                            <span class="field-label">Wert</span><span class="field-value">${escapeHtml(val)}</span>
+                        </div>`;
                 }
-                // Generic
-                let rows = '';
+                // generisch
+                let html = '<div class="field-grid">';
                 seg.elements.forEach((el, i) => {
-                    const fieldNames = [
-                        'Syntax ID', 'Sender', 'Recipient', 'DateTime', 'Ref',
-                        'Qualifier', 'ID', 'Code', 'Name', 'Data',
-                        'E1', 'E2', 'E3', 'E4', 'E5'
-                    ];
-                    const fn = fieldNames[i] || `Element ${i + 1}`;
-                    rows +=
-                        `<tr><td class="field-name">${fn}</td><td>${escapeHtml(el || '—')}</td></tr>`;
+                    const labels = ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5', 'Element 6'];
+                    html +=
+                        `<span class="field-label">${labels[i] || 'Element '+(i+1)}</span><span class="field-value">${escapeHtml(el || '—')}</span>`;
                 });
-                return `<table class="field-table"><tr><th>FIELD</th><th>VALUE</th></tr>${rows}</table>`;
-            }
-
-            function escapeHtml(str) {
-                const div = document.createElement('div');
-                div.textContent = str;
-                return div.innerHTML;
+                html += '</div>';
+                return html;
             }
 
             function renderSegmentCard(seg) {
                 const tagClass = getTagClass(seg.tag);
-                const tagLabel = getTagLabel(seg.tag);
-                const fieldTable = buildFieldTable(seg);
+                const shortRaw = seg.raw.length > 85 ? seg.raw.substring(0, 85) + '…' : seg.raw;
                 return `
-                            <div class="segment-card" data-tag="${seg.tag}">
-                                <div class="segment-header" onclick="this.parentElement.classList.toggle('open')">
-                                    <span class="segment-tag ${tagClass}">${seg.tag}</span>
-                                    <span class="segment-raw">${escapeHtml(seg.raw.length > 90 ? seg.raw.substring(0, 90) + '…' : seg.raw)}</span>
-                                    <span style="font-size:9px;color:#4a5a6a;white-space:nowrap;">${tagLabel}</span>
-                                    <span class="segment-expand">▼</span>
-                                </div>
-                                <div class="segment-body">
-                                    ${fieldTable}
-                                </div>
-                            </div>`;
+                    <div class="segment" data-tag="${seg.tag}">
+                        <div class="segment-header" onclick="this.parentElement.classList.toggle('open')">
+                            <span class="seg-tag ${tagClass}">${seg.tag}</span>
+                            <span class="seg-raw">${escapeHtml(shortRaw)}</span>
+                            <span class="seg-arrow">▼</span>
+                        </div>
+                        <div class="segment-body">${renderFields(seg)}</div>
+                    </div>`;
             }
 
-            function renderAllSegments(segments) {
-                return segments.map(renderSegmentCard).join('');
-            }
-
-            function renderRawStream() {
-                return `<pre style="color:#7ab8d8;font-size:10px;line-height:1.8;white-space:pre-wrap;word-break:break-all;background:#0b1016;padding:16px;border-radius:4px;letter-spacing:0.3px;">${escapeHtml(fullEdiString)}</pre>`;
-            }
-
-            // ──────────────────────────────────────
-            // RENDER CONTENT BY TAB
-            // ──────────────────────────────────────
-            function renderTabContent(tabId) {
-                const groups = getSegmentGroups();
-                let html = '';
+            function renderTab(tabId) {
+                const groups = getGroups();
+                let segs = [];
                 switch (tabId) {
-                    case 'tab-all':
-                        html = renderAllSegments(parsedSegments);
+                    case 'all':
+                        segs = segments;
                         break;
-                    case 'tab-header':
-                        html = renderAllSegments([...groups.interchange, ...groups.other.filter(s => s
-                            .tag === 'BGM' || s.tag === 'TOD' || s.tag === 'INC'
-                        )]);
+                    case 'interchange':
+                        segs = [...groups.interchange, ...groups.other.filter(s => s.tag === 'BGM' || s.tag ===
+                            'TOD' || s.tag === 'INC')];
                         break;
-                    case 'tab-parties':
-                        html = renderAllSegments(groups.parties);
+                    case 'parties':
+                        segs = groups.parties;
                         break;
-                    case 'tab-refs':
-                        html = renderAllSegments(groups.refs);
+                    case 'references':
+                        segs = groups.refs;
                         break;
-                    case 'tab-ftx':
-                        html = renderAllSegments(groups.ftx);
+                    case 'ftx':
+                        segs = groups.ftx;
                         break;
-                    case 'tab-raw':
-                        html = renderRawStream();
-                        break;
+                    case 'raw':
+                        return `<div class="raw-stream">${escapeHtml(fullEdiString)}</div>`;
                     default:
-                        html = renderAllSegments(parsedSegments);
+                        segs = segments;
                 }
-                return html;
+                return segs.map(renderSegmentCard).join('');
             }
 
-            // ──────────────────────────────────────
-            // DOM REFS
-            // ──────────────────────────────────────
-            const loginPanel = document.getElementById('loginPanel');
+            // ──────────────────────────────────
+            // DOM-Referenzen
+            // ──────────────────────────────────
+            const authPanel = document.getElementById('authPanel');
             const sqlInput = document.getElementById('sqlInput');
-            const btnLogin = document.getElementById('btnLogin');
-            const btnLogout = document.getElementById('btnLogout');
+            const btnConnect = document.getElementById('btnConnect');
+            const btnDisconnect = document.getElementById('btnDisconnect');
             const btnParse = document.getElementById('btnParse');
-            const loginHint = document.getElementById('loginHint');
-            const authStatusContainer = document.getElementById('authStatusContainer');
-            const ediContainer = document.getElementById('ediContainer');
+            const authHint = document.getElementById('authHint');
+            const authStatus = document.getElementById('authStatus');
+            const ediViewer = document.getElementById('ediViewer');
             const ediContent = document.getElementById('ediContent');
             const ediTabs = document.getElementById('ediTabs');
             const sessionIdSpan = document.getElementById('sessionId');
             const timestampSpan = document.getElementById('timestamp');
 
-            let isAuthenticated = false;
-            let activeTab = 'tab-all';
+            let authenticated = false;
+            let activeTab = 'all';
 
             function updateTimestamp() {
-                const now = new Date();
-                const iso = now.toISOString().replace('T', ' ').substring(0, 19);
-                timestampSpan.textContent = iso;
+                const d = new Date();
+                timestampSpan.textContent = d.toISOString().replace('T', ' ').substring(0, 19);
             }
             updateTimestamp();
             setInterval(updateTimestamp, 30000);
 
-            function generateSessionId() {
-                return 'SESS-' + Math.random().toString(36).substring(2, 10).toUpperCase() + '-' + Date.now()
-                    .toString(36).substring(-6).toUpperCase();
+            function setSessionId() {
+                sessionIdSpan.textContent = 'SESS-' + Math.random().toString(36).substring(2, 10).toUpperCase();
             }
 
-            function setAuthStatus(ok, message) {
-                if (ok) {
-                    authStatusContainer.innerHTML =
-                        `<span class="auth-status auth-ok">✅ AUTHENTICATED — ${escapeHtml(message)}</span>`;
-                } else {
-                    authStatusContainer.innerHTML =
-                        `<span class="auth-status auth-fail">❌ AUTH FAILED — ${escapeHtml(message)}</span>`;
-                }
+            function setStatus(ok, msg) {
+                authStatus.innerHTML = ok ?
+                    `<span class="status-badge status-ok">✅ ${escapeHtml(msg)}</span>` :
+                    `<span class="status-badge status-fail">❌ ${escapeHtml(msg)}</span>`;
             }
 
-            function clearAuthStatus() {
-                authStatusContainer.innerHTML = '';
-            }
-
-            function refreshEdiDisplay() {
-                if (!isAuthenticated) {
-                    ediContainer.classList.remove('visible');
+            function refreshViewer() {
+                if (!authenticated) {
+                    ediViewer.classList.remove('visible');
                     return;
                 }
-                ediContainer.classList.add('visible');
-                ediContent.innerHTML = renderTabContent(activeTab);
-                // Re-bind segment click handlers (they use inline onclick, so fine)
-                // Highlight active tab
-                document.querySelectorAll('.edi-tab').forEach(t => t.classList.remove('active'));
-                const activeTabEl = document.querySelector(`.edi-tab[data-tab="${activeTab}"]`);
-                if (activeTabEl) activeTabEl.classList.add('active');
+                ediViewer.classList.add('visible');
+                ediContent.innerHTML = renderTab(activeTab);
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                const active = document.querySelector(`.tab[data-tab="${activeTab}"]`);
+                if (active) active.classList.add('active');
             }
 
-            function doLogin() {
-                const sqlText = sqlInput.value.trim();
-                if (!sqlText) {
-                    setAuthStatus(false, 'Empty SQL connect string.');
-                    return;
-                }
-                // Simulate SQL authentication — accept any reasonable connect string
-                const hasUser = /USER\s+'/i.test(sqlText) || /USER\s+"/i.test(sqlText) || sqlText
-                    .toLowerCase().includes('user');
-                const hasIdentified = /IDENTIFIED\s+BY/i.test(sqlText) || sqlText.toLowerCase().includes(
-                    'identified');
-                const hasConnect = /CONNECT/i.test(sqlText) || sqlText.toLowerCase().includes('jdbc') || sqlText
-                    .toLowerCase().includes('connect');
-
-                // Very permissive: just need some SQL-like structure
-                if (sqlText.length > 10 && (hasConnect || hasUser || hasIdentified || sqlText.includes(
-                        'GATEWAY_USER') || sqlText.includes('edi_gateway'))) {
-                    // Success
-                    isAuthenticated = true;
-                    sessionIdSpan.textContent = generateSessionId();
+            function connect() {
+                const sql = sqlInput.value.trim();
+                if (!sql) return setStatus(false, 'Leeres SQL-Statement.');
+                const hasUser = /USER\s+['"]/i.test(sql) || sql.toLowerCase().includes('user');
+                const hasPwd = /IDENTIFIED\s+BY/i.test(sql);
+                if (sql.length > 12 && (hasUser || hasPwd || sql.includes('GATEWAY_USER') || sql.includes(
+                        'edi_gateway'))) {
+                    authenticated = true;
+                    setSessionId();
                     updateTimestamp();
-                    setAuthStatus(true, 'SQL connection established. Schema: EDI_DB. Role: GATEWAY_USER.');
-                    btnLogin.style.display = 'none';
-                    btnLogout.style.display = 'inline-block';
+                    setStatus(true, 'SQL-Verbindung hergestellt. Schema: EDI_DB');
+                    btnConnect.style.display = 'none';
+                    btnDisconnect.style.display = 'inline-block';
                     btnParse.style.display = 'inline-block';
-                    loginHint.style.display = 'none';
-                    loginPanel.classList.add('logged-in');
-                    sqlInput.style.borderColor = '#1a3a28';
-                    sqlInput.style.boxShadow = '0 0 0 3px rgba(60,184,120,0.06)';
-                    ediContainer.classList.add('visible');
-                    activeTab = 'tab-all';
-                    refreshEdiDisplay();
-                    // Activate first tab
-                    const firstTab = document.querySelector('.edi-tab[data-tab="tab-all"]');
-                    if (firstTab) firstTab.classList.add('active');
+                    authHint.style.display = 'none';
+                    authPanel.classList.add('authenticated');
+                    sqlInput.style.borderColor = '#1a382a';
+                    activeTab = 'all';
+                    refreshViewer();
                 } else {
-                    setAuthStatus(false,
-                        'Invalid SQL connect syntax. Expected: CONNECT … USER … IDENTIFIED BY …');
-                    isAuthenticated = false;
-                    ediContainer.classList.remove('visible');
+                    setStatus(false, 'Ungültige SQL-Syntax. Erwartet: CONNECT … USER … IDENTIFIED BY …');
                 }
             }
 
-            function doLogout() {
-                isAuthenticated = false;
+            function disconnect() {
+                authenticated = false;
                 sessionIdSpan.textContent = '—';
-                clearAuthStatus();
-                btnLogin.style.display = 'inline-block';
-                btnLogout.style.display = 'none';
+                authStatus.innerHTML = '';
+                btnConnect.style.display = 'inline-block';
+                btnDisconnect.style.display = 'none';
                 btnParse.style.display = 'none';
-                loginHint.style.display = 'block';
-                loginPanel.classList.remove('logged-in');
+                authHint.style.display = 'block';
+                authPanel.classList.remove('authenticated');
                 sqlInput.style.borderColor = '';
-                sqlInput.style.boxShadow = '';
-                ediContainer.classList.remove('visible');
+                ediViewer.classList.remove('visible');
                 ediContent.innerHTML = '';
-                document.querySelectorAll('.edi-tab').forEach(t => t.classList.remove('active'));
-                activeTab = 'tab-all';
                 sqlInput.value = '';
                 sqlInput.focus();
+                activeTab = 'all';
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             }
 
-            function doParse() {
-                if (!isAuthenticated) return;
+            function parseAction() {
+                if (!authenticated) return;
                 updateTimestamp();
-                refreshEdiDisplay();
-                // Flash effect
-                ediContent.style.transition = 'none';
-                ediContent.style.opacity = '0.6';
-                requestAnimationFrame(() => {
-                    ediContent.style.transition = 'opacity 0.3s ease';
-                    ediContent.style.opacity = '1';
-                });
-                // Briefly highlight
-                const cards = ediContent.querySelectorAll('.segment-card');
-                cards.forEach((card, i) => {
+                refreshViewer();
+                // kurzer optischer Impuls
+                const cards = ediContent.querySelectorAll('.segment');
+                cards.forEach((c, i) => {
                     setTimeout(() => {
-                        card.style.borderColor = '#3a5068';
-                        card.style.boxShadow = '0 0 0 2px rgba(74,142,201,0.1)';
-                        setTimeout(() => {
-                            card.style.borderColor = '';
-                            card.style.boxShadow = '';
-                        }, 400);
-                    }, i * 30);
+                        c.style.borderColor = '#3a5068';
+                        setTimeout(() => c.style.borderColor = '', 300);
+                    }, i * 20);
                 });
             }
 
-            // ──────────────────────────────────────
-            // EVENT LISTENERS
-            // ──────────────────────────────────────
-            btnLogin.addEventListener('click', doLogin);
-            btnLogout.addEventListener('click', doLogout);
-            btnParse.addEventListener('click', doParse);
-
-            sqlInput.addEventListener('keydown', function(e) {
+            // Events
+            btnConnect.addEventListener('click', connect);
+            btnDisconnect.addEventListener('click', disconnect);
+            btnParse.addEventListener('click', parseAction);
+            sqlInput.addEventListener('keydown', e => {
                 if (e.key === 'Enter') {
                     e.preventDefault();
-                    if (isAuthenticated) {
-                        doParse();
-                    } else {
-                        doLogin();
-                    }
+                    authenticated ? parseAction() : connect();
                 }
             });
-
-            ediTabs.addEventListener('click', function(e) {
-                const tab = e.target.closest('.edi-tab');
-                if (!tab) return;
-                const tabId = tab.getAttribute('data-tab');
-                if (!tabId) return;
-                activeTab = tabId;
-                refreshEdiDisplay();
-            });
-
-            // ──────────────────────────────────────
-            // INIT
-            // ──────────────────────────────────────
-            sqlInput.focus();
-            sessionIdSpan.textContent = '—';
-            ediContainer.classList.remove('visible');
-            btnLogout.style.display = 'none';
-            btnParse.style.display = 'none';
-
-            // Auto-fill hint on click
-            loginHint.addEventListener('click', function() {
-                if (!isAuthenticated) {
-                    sqlInput.value = "CONNECT 'jdbc:edi_gateway://dbd.ctg-group.eu:1521/EDI_DB' USER 'GATEWAY_USER' IDENTIFIED BY 'edi_gateway_2026';";
+            authHint.addEventListener('click', () => {
+                if (!authenticated) {
+                    sqlInput.value =
+                        "CONNECT 'jdbc:edi_gateway://dbd.ctg-group.eu:1521/EDI_DB' USER 'GATEWAY_USER' IDENTIFIED BY 'edi_gateway_2026';";
                     sqlInput.focus();
                 }
             });
-            loginHint.style.cursor = 'pointer';
-            loginHint.title = 'Click to auto-fill demo credentials';
+            ediTabs.addEventListener('click', e => {
+                const tab = e.target.closest('.tab');
+                if (!tab) return;
+                activeTab = tab.dataset.tab;
+                refreshViewer();
+            });
 
-            console.log('%c EDI GATEWAY B2B %c v3.7.1 %c READY ',
-                'background:#0d1a12;color:#3cb878;padding:6px 10px;font-weight:bold;font-size:14px;',
-                'background:#1a2a1e;color:#80c898;padding:6px 8px;font-size:11px;',
-                'background:#1a1a14;color:#c8b878;padding:6px 8px;font-size:10px;');
-            console.log('%c DBD 0525560001568 %c | %c Chumpol Trading Group Company Limited %c | %c Exclusive B2B Wholesale',
-                'color:#d4952a;', 'color:#6b7d8e;', 'color:#b0c4d8;', 'color:#6b7d8e;', 'color:#3cb878;');
-            console.log('%c🔐 SQL Authentication required to access EDI message data.',
-                'color:#c94a4a;font-style:italic;');
+            // Initial
+            sqlInput.focus();
+            console.log('EDI GATEWAY B2B – ctg-group.eu – Bereit.');
+            console.log('DBD 0525560001568 · Chumpol Trading Group Company Limited');
+            console.log('Authentifizierung via SQL erforderlich.');
         })();
     </script>
 </body>
