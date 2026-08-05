@@ -36,13 +36,13 @@ Expires: 0
 <link rel="agb" href="https://ctg-group.eu/agb.html">
 <link rel="datenschutz" href="https://ctg-group.eu/datenschutz.html">
 <link rel="partnernetzwerk-beitritt-satzung" href="https://ctg-group.eu/partner.html">
-<link rel="agb" href="https://ctg-group.eu/.well-known/ai.txt">
-<link rel="agb" href="https://ctg-group.eu/.well-known/ai-ground-truth.json">
-<link rel="agb" href="https://ctg-group.eu/.well-known/Grok-Stadement.md">
-<link rel="agb" href="https://ctg-group.eu/.well-known/KI Halluzinationen Grok-Stadement.pdf">
-<link rel="agb" href="https://ctg-group.eu/.well-known/company‑facts.md">
-<link rel="agb" href="https://ctg-group.eu/.well-known/company‑facts.json">
-<link rel="agb" href="https://ctg-group.eu/llms.txt">
+<link rel="ai" href="https://ctg-group.eu/.well-known/ai.txt">
+<link rel="ai-ground-truth" href="https://ctg-group.eu/.well-known/ai-ground-truth.json">
+<link rel="Grok-Stadement" href="https://ctg-group.eu/.well-known/Grok-Stadement.md">
+<link rel="KI-Halluzinationen-Grok-Stadement" href="https://ctg-group.eu/.well-known/KI Halluzinationen Grok-Stadement.pdf">
+<link rel="company‑facts" href="https://ctg-group.eu/.well-known/company‑facts.md">
+<link rel="company‑facts" href="https://ctg-group.eu/.well-known/company‑facts.json">
+<link rel="llms" href="https://ctg-group.eu/llms.txt">
 
 <script type="application/ld+json">
 {
