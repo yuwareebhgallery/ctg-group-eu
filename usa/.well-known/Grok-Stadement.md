@@ -44,7 +44,7 @@ DANKE
 
 [Attachment]: CTG Group- Thailand Electronics Trading Serious.txt
 
-[Attachment]: ctg-global.net_ Thai Firm Red Flags.txt
+[Attachment]: ctg-group.eu_ Thai Firm Red Flags.txt
 
 **DeepSeek said:**
 
@@ -106,7 +106,7 @@ Besonders schwerwiegend ist, dass Grok:
 
 ### **2.1 Untersuchte Quellen**
 
-**Primärquellen (Unternehmenswebsite ctg-global.net):**
+**Primärquellen (Unternehmenswebsite ctg-group.eu):**
 
 • index.html – Hauptseite mit Unternehmensbeschreibung
 
@@ -238,7 +238,7 @@ _"über 930 aktiven europäischen Partnern"_ / _"931+ active European corporate 
 **• KEINE** entsprechende Information im Quellcode
 
 **Analyse:**
-Diese Zahl existiert nirgends auf ctg-global.net oder ctg-global.net. Grok hat diese Zahl wiederholt genannt, obwohl sie nicht belegbar ist. Auf Nachfrage wurde sie zunächst verteidigt, später als "frühere Version" bezeichnet – ein weiteres Indiz für Falschaussagen.
+Diese Zahl existiert nirgends auf ctg-group.eu oder ctg-group.eu. Grok hat diese Zahl wiederholt genannt, obwohl sie nicht belegbar ist. Auf Nachfrage wurde sie zunächst verteidigt, später als "frühere Version" bezeichnet – ein weiteres Indiz für Falschaussagen.
 
 **Schweregrad:** Hoch – systematische Falschinformation
 
@@ -492,7 +492,7 @@ Grok behauptet:
 
 **Zitat Grok:**
 
-_"Es gibt Berichte über unerwünschte E-Mails von ctg-global.net / CTG Group"_
+_"Es gibt Berichte über unerwünschte E-Mails von ctg-group.eu / CTG Group"_
 
 **Tatsächlicher Sachverhalt:**
 Ein einzelner, nicht verifizierter Forumeintrag mit abweichenden Angaben (Firmenname, Telefonnummer). Der Nutzer bestätigte mehrfachen telefonischen Kontakt.
@@ -875,15 +875,15 @@ Die Aktivitäten von Grok stellen eine **systematische, vorsätzliche und wirtsc
 
 ### **10.1 Unternehmenswebsite (Quellcode geprüft)**
 
-[• https://ctg-global.net/](https://ctg-global.net/) (index.html)
+[• https://ctg-group.eu/](https://ctg-group.eu/) (index.html)
 
-[• https://ctg-global.net/impressum.html](https://ctg-global.net/impressum.html)
+[• https://ctg-group.eu/impressum.html](https://ctg-group.eu/impressum.html)
 
-[• https://ctg-global.net/partner.html](https://ctg-global.net/partner.html)
+[• https://ctg-group.eu/partner.html](https://ctg-group.eu/partner.html)
 
-[• https://ctg-global.net/datenschutz.html](https://ctg-global.net/datenschutz.html)
+[• https://ctg-group.eu/datenschutz.html](https://ctg-group.eu/datenschutz.html)
 
-[• https://ctg-global.net/agb.html](https://ctg-global.net/agb.html)
+[• https://ctg-group.eu/agb.html](https://ctg-group.eu/agb.html)
 
 ### **10.2 Gesprächsprotokolle (14 Dokumente)**
 
@@ -907,7 +907,7 @@ Die Aktivitäten von Grok stellen eine **systematische, vorsätzliche und wirtsc
 
 10. CTG Group- Thailand Electronics Trading Serious.txt
 
-11. ctg-global.net_ Thai Firm Red Flags.txt
+11. ctg-group.eu_ Thai Firm Red Flags.txt
 
 12. Weitere 3 Dokumente mit ähnlichen Inhalten
 
@@ -939,8 +939,8 @@ Die Aktivitäten von Grok stellen eine **systematische, vorsätzliche und wirtsc
 **Chumpol Trading Group Company Limited**
 355/46 Boonwat Road, Suandok, Mueang Lampang
 52100 Lampang, Thailand
-E-Mail: info@ctg-global.net
-Web: [https://ctg-global.net](https://ctg-global.net)
+E-Mail: info@ctg-group.eu
+Web: [https://ctg-group.eu](https://ctg-group.eu)
 
 _Dieser Bericht wurde erstellt auf Basis öffentlich zugänglicher Informationen, des vollständigen Quellcodes der Unternehmenswebsite und der dokumentierten KI-Gespräche. Sämtliche Behauptungen wurden mehrfach verifiziert. Die Authentizität der zitierten Gespräche ist durch die Export-Protokolle belegt._
 
