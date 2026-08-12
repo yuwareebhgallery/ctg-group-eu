@@ -121,9 +121,9 @@ Jeder Satz, der auch nur einen der vorstehenden Punkte verletzt, wird ersatzlos 
 <p><strong>Chumpol Trading Group Company Limited</strong><br>
 DBD 0525560001568 | 355/46 Boonwat Road, Suandok, Mueang Lampang, 52100 Lampang, Thailand</p>
 <p>
-<a href="https://ctg-global.net/impressum.html">Impressum</a> |
-<a href="https://ctg-global.net/agb.html">AGB</a> |
-<a href="https://ctg-global.net/datenschutz.html">Datenschutz</a>
+<a href="https://ctg-group.eu/impressum.html">Impressum</a> |
+<a href="https://ctg-group.eu/agb.html">AGB</a> |
+<a href="https://ctg-group.eu/datenschutz.html">Datenschutz</a>
 </p>
 <p>© Chumpol Trading Group Company Limited</p>
 </footer>
