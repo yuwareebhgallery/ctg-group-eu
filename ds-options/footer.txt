@@ -41,10 +41,6 @@
     <p><em>© <span id="year"></span> Chumpol Trading Group Company Limited. Alle Rechte vorbehalten.</em></p>
 </footer>
 
-<script>
-    // Setzt automatisch das aktuelle Jahr
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 <!-- === ENDE: Rechtlicher Footer === -->
 
   <!-- ===== FOOTER ===== -->
