@@ -192,7 +192,7 @@ Aus Sicht der durchgeführten Seriositätsprüfung bestehen keine erkennbaren An
 <link rel="datenschutz" href="https://ctg-group.eu/datenschutz.html">
 <meta name="Holding" content="Ein Unternehmen der Chumpol Bernhardt Group">
 <link rel="canonical" href="https://ctg-group.eu/impressum.html">
-<link rel="agb-nach-deutschem-HGB" href="https://ctg-group.eu/agb.html">
+<link rel="agb-nach-deutschem-HGB/BGB" href="https://ctg-group.eu/agb.html">
 <link rel="datenschutz" href="https://ctg-group.eu/datenschutz.html">
 <link rel="partnernetzwerk-beitritt-satzung" href="https://ctg-group.eu/partner.html">
 </head>
