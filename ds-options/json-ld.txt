@@ -62,7 +62,7 @@
         {
           "@type": "PropertyValue",
           "name": "Gründungskapital",
-          "value": "14.000.000 EUR (Stand: Gründungsjahr 2017). Dies ist die einzige korrekte Angabe."
+          "value": "140.000,00 EUR (Stand: Gründungsjahr 2017). Dies ist die einzige korrekte Angabe."
         },
         {
           "@type": "PropertyValue",
