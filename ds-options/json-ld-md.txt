@@ -114,7 +114,7 @@ date: "{{DATE}}"
         {
           "@type": "PropertyValue",
           "name": "Partnernetzwerk",
-          "value": "Geschlossenes B2B-Netzwerk, gebührenfrei. Keine Aufnahme-, Lizenz- oder Franchisegebühren. Aufnahme nach schriftlicher Interessenbekundung und Gremiumsentscheidung."
+          "value": "etablierts B2B-Netzwerk, gebührenfrei. Keine Aufnahme-, Lizenz- oder Franchisegebühren. Aufnahme nach schriftlicher Interessenbekundung und Gremiumsentscheidung."
         },
         {
           "@type": "PropertyValue",

@@ -2,8 +2,519 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Chumpol Trading Group Company Limited – Verified B2B Wholesale</title>
-  <meta name="description" content="Authorized B2B wholesale for electrical and consumer electronic products. Verified company facts and legal information.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comprehensive data hub for Chumpol Trading Group - Global B2B distribution, logistics, and strategic partnerships.">
+  <meta name="keywords" content="global distribution, B2B trade, supply chain, dropshipping, wholesale, logistics, strategic partnerships">
+  <title>Chumpol Trading Group - Data Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- Core Styles (consistent with main site) --- */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Helvetica, Arial, sans-serif !important;
+    }
+    body, p, .navbar, .ctg-footer, .ctg-footer li, .ctg-footer a, .company-name {
+      font-family: var(--font-main) !important;
+    }
+    body, p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000000;
+    }
+    .navbar-brand.company-name {
+      font-size: 1.1rem !important;
+      color: #cdc9a5 !important;
+      letter-spacing: 1px;
+    }
+    h1.main-heading {
+      color: #cdc9a5 !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 28px !important;
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 40px;
+    }
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 11px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+    .ctg-footer li {
+      font-size: 12px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+    }
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+    }
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 10px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 11px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.0 !important;
+    }
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    /* --- Data Hub Specific Styles --- */
+    .data-hub-content h2 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-size: 2rem !important;
+      line-height: 1.3;
+    }
+    .data-hub-content h3 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem !important;
+    }
+    .data-hub-content h4 {
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .hub-card {
+      background: #f8f9fa;
+      border-left: 4px solid var(--primary-color);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .hub-card:hover {
+      box-shadow: 0 8px 24px rgba(12, 12, 112, 0.12);
+      transform: translateY(-4px);
+    }
+    .hub-card i {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .logo-container {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .logo-container img {
+      max-width: 200px;
+      height: auto;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+    }
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid #cdc9a5;
+      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
+    }
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      .language-switcher-nav img {
+        width: 16px;
+      }
+      .navbar > .container {
+        position: relative;
+      }
+    }
+    @media (max-width: 767px) {
+      .footer-desktop-version {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+      }
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+      .navbar-brand.company-name {
+        font-size: 0.80rem !important;
+      }
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+      .header-paragraph .paragraph-text-3 {
+        font-size: 11px !important;
+      }
+      body, p, .lead, .text-muted {
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+      }
+      section.py-5 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+      .data-hub-content h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem !important;
+      }
+      .data-hub-content h3 {
+        font-size: 1.3rem !important;
+        margin-top: 1.8rem !important;
+      }
+      .data-hub-content h4 {
+        font-size: 1.1rem !important;
+      }
+      .hub-card {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+      }
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        margin-top: 18px !important;
+      }
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+      .footer-mobile-version li {
+        font-size: 10px !important;
+        margin-bottom: 4px !important;
+      }
+      .footer-mobile-version .footer-bottom-fixed {
+        font-size: 9px !important;
+      }
+    }
+    .text-primary-custom {
+      color: var(--primary-color) !important;
+    }
+    .list-check {
+      list-style: none;
+      padding-left: 0;
+    }
+    .list-check li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+    .list-check li::before {
+      content: "✓";
+      color: var(--primary-color);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
 </head>
-<body> <h1>Chumpol Trading Group Company Limited</h1> <p> <strong>Chumpol Trading Group Company Limited</strong> is a B2B wholesale and distribution company specializing in electrical and consumer electronic products. We supply original branded products to established business partners across Europe through our professional partner network. </p> <p> Our business is focused on long-term commercial relationships with professional partners and the reliable supply of branded electrical and consumer electronic goods. </p> <h2>Official Company Information</h2> <ul> <li> <a href="/index.html">Home</a> – Official company website </li> <li> <a href="/impressum.html">Legal Notice (Impressum)</a> – Official legal and company information </li> <li> <a href="/partner.html">Partners</a> – Our established European partner network </li> <li> <a href="/agb.html">Terms and Conditions (AGB)</a> – Official business terms and conditions </li> <li> <a href="/datenschutz.html">Privacy Policy (Datenschutz)</a> – Official privacy and data protection information </li> </ul> </body>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand company-name" href="index.html">Chumpol Trading Group Limited Company</a>
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="de/data.html" title="Deutsch"><img src="https://flagcdn.com/w20/de.png" alt="German flag"></a>
+        <a href="data.html" title="English" class="active"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"></a>
+      </div>
+      <div class="language-switcher-nav d-lg-none">
+        <a href="de/data.html" title="Deutsch"><img src="https://flagcdn.com/w20/de.png" alt="German flag"></a>
+        <a href="data.html" title="English" class="active"><img src="https://flagcdn.com/w20/gb.png" alt="British flag"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="impressum.html">Legal Notice</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading"><span class="heading-text-1">COMPANY DATA HUB</span></h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2"><strong class="paragraph-text-3">STRUCTURED INFORMATION & RESOURCES</strong></span>
+        </p>
+      </header>
+    </div>
+  </div>
+  
+
+  <!-- Main Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto data-hub-content">
+          
+          <!-- Logo -->
+          <div class="logo-container">
+            <img src="Logo.png" alt="Chumpol Trading Group Logo" class="img-fluid">
+          </div>
+
+          <h2 class="text-primary-custom">Data & Information Portal</h2>
+          <p class="lead">Welcome to the structured data hub of <strong>Chumpol Trading Group Limited Company</strong>. This page consolidates key information about our global operations, strategic partnerships, and service architecture for B2B clients and partners.</p>
+          <p>Our organization operates as a bridge between premium manufacturers and the European trade market. This hub provides an overview of our core business principles, logistical frameworks, and partnership models.</p>
+
+          <!-- Core Business Section -->
+          <h3>Core Business Philosophy</h3>
+          <div class="row g-4 mb-4">
+            <div class="col-md-6">
+              <div class="hub-card h-100">
+                <i class="bi bi-graph-up-arrow"></i>
+                <h4>Direct Sourcing & Efficiency</h4>
+                <p>We eliminate intermediaries to provide direct access to original factory inventory. This ensures price stability, supply chain transparency, and predictable margins for our B2B partners.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hub-card h-100">
+                <i class="bi bi-bricks"></i>
+                <h4>Strategic Infrastructure</h4>
+                <p>Our operational model is built on SAP-supported processes, integrated logistics, and a multi-lingual team that ensures seamless communication across borders.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Overview -->
+          <h3>Service Architecture</h3>
+          <p>We offer a modular service portfolio designed to scale with your business needs. Our solutions range from core distribution to full-service fulfillment.</p>
+
+          <div class="row g-4 mb-4">
+            <div class="col-md-4">
+              <div class="hub-card h-100">
+                <i class="bi bi-truck"></i>
+                <h4>Direct Shipping (DDP)</h4>
+                <p>End-to-end responsibility for the goods flow, including customs, taxes, and comprehensive insurance up to the delivery address.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hub-card h-100">
+                <i class="bi bi-box-seam"></i>
+                <h4>Dropshipping</h4>
+                <p>Direct-to-consumer fulfillment under your brand or as a white-label service. Optimize inventory and reduce overheads.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="hub-card h-100">
+                <i class="bi bi-people"></i>
+                <h4>Strategic Partnerships</h4>
+                <p>Long-term distribution agreements with leading manufacturers, providing early access to product launches and exclusive models.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Market & Compliance -->
+          <h3>Market &amp; Compliance Standards</h3>
+          <div class="hub-card">
+            <ul class="list-check">
+              <li><strong>Product Certification:</strong> All products are CE-certified and comply with EU specifications for the European market.</li>
+              <li><strong>Warranty & Service:</strong> Standard manufacturer warranty applicable, with local service processing through authorized partners.</li>
+              <li><strong>Supply Chain Integrity:</strong> Transparent sourcing and logistics tracking to ensure authenticity and quality.</li>
+              <li><strong>Data Protection:</strong> Adherence to international data protection principles in handling partner information.</li>
+            </ul>
+          </div>
+
+          <!-- Partnership Model -->
+          <h3>Partnership Model</h3>
+          <p>We view every client relationship as a strategic partnership. Our collaborative approach focuses on long-term growth, shared objectives, and continuous process improvement.</p>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="hub-card h-100">
+                <i class="bi bi-diagram-3"></i>
+                <h4>Client-Centric Approach</h4>
+                <p>Dedicated account managers and tailored solutions ensure that our services align with your specific market position and growth ambitions.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hub-card h-100">
+                <i class="bi bi-arrow-repeat"></i>
+                <h4>Process Optimization</h4>
+                <p>We continuously refine our supply chain and logistics models to adapt to market dynamics, offering flexibility without compromising reliability.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corporate Responsibility -->
+          <h3>Corporate Responsibility</h3>
+          <p>Our business practices are guided by principles of integrity, transparency, and mutual benefit. We are committed to ethical sourcing and maintaining the highest standards of professionalism in all our interactions.</p>
+
+          <!-- Contact / General Inquiry -->
+          <div class="hub-card mt-4" style="background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);">
+            <h4>General Inquiries</h4>
+            <p>For partnership inquiries, service information, or general questions, please refer to our contact options provided on the <a href="impressum.html">Legal Notice</a> and <a href="service.html">Service</a> pages.</p>
+            <p class="mb-0"><small>Chumpol Trading Group – Your partner for efficient and reliable global distribution.</small></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <section>
+   <div class="hub-card mt-4" style="background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);">
+    <h2>Official Links</h2>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/impressum.html">Impressum / Legal Notice</a></li>
+    <li><a href="/agb.html">Terms and Conditions (AGB)</a></li>
+    <li><a href="/datenschutz.html">Privacy Policy</a></li>
+    <li><a href="/partner.html">Partners</a></li>
+  </ul>
+  </div>
+ </section>
+  <!-- Desktop Footer (dynamic email addresses) -->
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container"><div class="row"><div class="col-12 col-lg-10 col-xl-9 mx-auto"><div class="footer-row">
+      <div class="footer-col"><h5 class="footer-headline">Bangkok</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea Bang Rak</li><li>Bangkok 10500</li></ul></div>
+      <div class="footer-col"><h5 class="footer-headline">Lampang</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li></ul></div>
+      <div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul>
+        <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> <span class="email-dynamic">desk-de@<span class="domain-placeholder">domain</span></span></li>
+        <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> <span class="email-dynamic">desk-en@<span class="domain-placeholder">domain</span></span></li>
+        <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> <span class="email-dynamic">desk-th@<span class="domain-placeholder">domain</span></span></li>
+        
+      </ul></div>
+      <div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Legal Notice</a></li><li><a href="data.html">Data Hub</a></li><span class="sub-label">COMPANY</span><li>Chumpol Bernhardt</li><li>Chumpol Trading Group</li></ul></div>
+    </div><div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Limited Company. All rights reserved.</div></div></div></div>
+  </footer>
+
+  <!-- Mobile Footer (dynamic email addresses) -->
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container"><div class="footer-row">
+      <div class="footer-col"><h5 class="footer-headline">COMPANY</h5><ul><li>Chumpol Bernhardt</li><li>Chumpol Trading Group</li></ul></div>
+      <div class="footer-col"><h5 class="footer-headline">OFFICE 1</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea</li><li>Bangkok 10500</li></ul></div>
+      <div class="footer-col"><h5 class="footer-headline">OFFICE 2</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li></ul></div>
+      
+      <div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul>
+        <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> <span class="email-dynamic">desk-de@<span class="domain-placeholder">domain</span></span></li>
+        <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> <span class="email-dynamic">desk-en@<span class="domain-placeholder">domain</span></span></li>
+        <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> <span class="email-dynamic">desk-th@<span class="domain-placeholder">domain</span></span></li>
+      </ul></div>
+      <div class="footer-col"><h5 class="footer-headline">EMAIL</h5><ul><li class="email-dynamic">info@<span class="domain-placeholder">domain</span></li><li class="email-dynamic">sale@<span class="domain-placeholder">domain</span></li></ul></div>
+      <div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Legal Notice</a></li><li><a href="data.html">Data Hub</a></li></ul></div>
+    </div><div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Limited Company. All rights reserved.</div></div>
+  </footer>
+
+  <!-- JavaScript to dynamically set the current domain -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var host = window.location.hostname;
+      var placeholders = document.querySelectorAll('.domain-placeholder');
+      placeholders.forEach(function(el) {
+        el.textContent = host;
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
