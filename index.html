@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group – interner Distributionspartner für Mobile Devices, Consumer Electronics und Household Electronics. Kein Verkauf an Privatkunden, kein Online-Shop.">
+  <meta name="keywords" content="Distribution, Smartphones, Elektronik, CTG Group, B2B">
+  <title>Chumpol - Home</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Helvetica, Arial, sans-serif !important;
+    }
+    body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name { font-family: var(--font-main) !important; }
+    body, p { font-family: var(--font-main) !important; font-weight: 300; font-size: 14px; line-height: 1.5; color: #000000; }
+    .navbar-brand.company-name { font-size: 1.1rem !important; color: #cdc9a5 !important; letter-spacing: 1px; }
+    h1.main-heading { color: #cdc9a5 !important; text-transform: uppercase; letter-spacing: 1.9px !important; font-size: 22px !important; margin-top: -70px; text-align: center; }
+    .header-paragraph .paragraph-text-3 { color: #888 !important; font-size: 28px !important; letter-spacing: -0.1px !important; font-weight: 600 !important; line-height: 1.2 !important; margin-top: 10px !important; }
+    .transition-hover { border-right: 3px solid var(--primary-color) !important; border-bottom: 3px solid var(--primary-color) !important; transition: all 0.3s ease; }
+    /* Footer kleiner */
+    .ctg-footer { background-color: #000 !important; color: #ffffff !important; padding: 60px 0 20px 0; margin-top: 40px; }
+    .footer-row { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; margin: 0 !important; }
+    .footer-col { flex: 0 0 auto; min-width: 180px; padding: 0 !important; }
+    .footer-headline { color: #ffffff !important; font-size: 11px !important; font-weight: bold !important; text-transform: uppercase; display: block; margin-bottom: 20px; text-align: left !important; letter-spacing: 1.5px !important; }
+    .ctg-footer ul { list-style: none !important; padding: 0 !important; margin: 0 !important; text-align: left !important; }
+    .ctg-footer li { font-size: 12px !important; color: #aaa !important; margin-bottom: 7px !important; line-height: 1.4 !important; }
+    .ctg-footer a { color: #aaa !important; text-decoration: none !important; }
+    .sub-label { display: block !important; color: #666 !important; font-size: 10px !important; margin: 20px 0 8px 0 !important; text-align: left !important; }
+    .footer-bottom-fixed { text-align: center !important; color: #444 !important; font-size: 11px !important; margin-top: 40px !important; border-top: 1px solid #111 !important; padding-top: 20px !important; line-height: 1.0 !important; }
+    .footer-mobile-version { display: none !important; visibility: hidden !important; opacity: 0; height: 0; overflow: hidden; }
+    .ctg-master-list { list-style: none; padding: 0; margin: 20px 0 !important; }
+    .ctg-master-list li { display: flex; align-items: flex-start; margin-bottom: 15px !important; padding-left: 0; }
+    .ctg-master-list .bi-arrow-right-circle { color: var(--primary-color) !important; font-size: 1.4rem; margin-right: 12px; margin-top: 2px !important; flex-shrink: 0; line-height: 1.2; }
+    .ctg-master-list div { flex: 1; }
+    .ctg-master-list strong { color: var(--primary-dark); font-weight: 600; display: inline-block !important; margin-bottom: 5px !important; width: 100%; }
+    .ctg-master-list li strong:after { content: "" !important; display: block !important; margin-bottom: 5px; }
+    .card { border: none !important; border-radius: 8px !important; overflow: hidden; transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important; transform: translateY(0); background: white !important; }
+    .card:hover { transform: translateY(-6px) scale(1.02) !important; box-shadow: 0 12px 24px rgba(12, 12, 112, 0.15) !important; }
+    .card-icon-hover { transition: all 0.3s ease !important; color: var(--primary-color) !important; }
+    .card:hover .card-icon-hover { color: white !important; transform: scale(1.1) !important; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); }
+    .d-inline-block.p-3.rounded-circle.bg-light { background: linear-gradient(135deg, #f5f7ff 0%, #e8ecff 100%) !important; transition: all 0.3s ease !important; border: 2px solid rgba(12, 12, 112, 0.15) !important; width: 70px !important; height: 70px !important; display: flex !important; align-items: center !important; justify-content: center !important; margin: 0 auto 15px auto !important; }
+    .card:hover .d-inline-block.p-3.rounded-circle.bg-light { transform: scale(1.05) !important; background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important; border-color: var(--primary-color) !important; box-shadow: 0 6px 12px rgba(12, 12, 112, 0.2) !important; }
+    .mobile-separator-line { display: none; }
+    .desktop-separator-line { height: 1px !important; background-color: var(--primary-color); width: 100%; margin: 25px 0 !important; opacity: 0.5; }
+    .language-switcher-nav { display: flex; align-items: center; margin-left: auto; padding-right: 15px; }
+    .language-switcher-nav a { margin-left: 8px; text-decoration: none; border-bottom: none !important; display: inline-block; line-height: 1; }
+    .language-switcher-nav img { width: 20px; height: auto; border-radius: 1px; opacity: 0.8; transition: opacity 0.2s; border: 1px solid rgba(255, 255, 255, 0.2); }
+    .language-switcher-nav a:hover img { opacity: 1; border-color: rgba(255, 255, 255, 0.4); }
+    .language-switcher-nav a.active img { opacity: 1; border: 1px solid #cdc9a5; box-shadow: 0 0 3px rgba(205, 201, 165, 0.5); }
+    @media (max-width: 991px) {
+      .language-switcher-nav { position: absolute; right: 70px; top: 15px; }
+      .language-switcher-nav a { margin: 0 4px; }
+      .language-switcher-nav img { width: 16px; }
+      .navbar > .container { position: relative; }
+    }
+    @media (max-width: 767px) {
+      .footer-desktop-version { display: none !important; visibility: hidden !important; opacity: 0 !important; height: 0 !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; }
+      .footer-mobile-version { display: block !important; visibility: visible !important; opacity: 1 !important; height: auto !important; overflow: visible !important; }
+      h1.main-heading { margin-top: 15px !important; font-size: 16px !important; font-weight: 700 !important; letter-spacing: 1px !important; line-height: 1.2 !important; padding: 0 10px; color: #ffffff !important; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+      .header-paragraph .paragraph-text-3 { font-size: 11px !important; }
+      .navbar-brand.company-name { font-size: 0.80rem !important; }
+      body, p, .lead { font-size: 12px !important; line-height: 1.3 !important; font-weight: 300 !important; }
+      .transition-hover { border: none !important; }
+      .desktop-separator-line { display: none !important; }
+      .mobile-separator-line { display: block !important; height: 1px !important; background-color: var(--primary-color); width: calc(100% - 40px) !important; margin: 15px 20px !important; opacity: 0.3; }
+      .fs-2.fw-normal.text-start.mb-5 { text-align: left !important; padding-left: 0 !important; margin-left: 0 !important; width: 100%; margin-bottom: 30px !important; font-size: 1.4rem !important; }
+      .col-lg-12 p, .col-lg-12 .lead { text-align: left !important; padding-left: 0 !important; margin-left: 0 !important; width: 100%; }
+      .ctg-master-list .bi-arrow-right-circle { font-size: 1.0rem !important; margin-right: 8px !important; margin-top: 1px !important; }
+      .ctg-master-list li { margin-bottom: 12px !important; align-items: flex-start !important; }
+      .ctg-master-list strong { display: inline-block !important; margin-bottom: 3px !important; width: 100%; }
+      .ctg-master-list li strong:after { content: "" !important; display: block !important; margin-bottom: 3px; }
+      .footer-mobile-version.ctg-footer { padding: 25px 0 5px 0 !important; margin-top: 15px !important; }
+      .footer-mobile-version .footer-row { display: block !important; }
+      .footer-mobile-version .footer-col { width: 100% !important; margin-bottom: 15px !important; padding-left: 15px !important; }
+      .footer-mobile-version .footer-headline { font-size: 10px !important; margin-bottom: 8px !important; margin-top: 18px !important; }
+      .footer-mobile-version .footer-col:first-child .footer-headline { margin-top: 0 !important; }
+      .footer-mobile-version li { font-size: 10px !important; margin-bottom: 4px !important; }
+      .footer-mobile-version .footer-bottom-fixed { font-size: 9px !important; }
+      section.py-5 { padding-bottom: 0.5rem !important; }
+      .row.offer-row { display: none !important; }
+      .paragraph.lighter-p { display: none; }
+      .card { border: none !important; border-radius: 10px !important; overflow: hidden; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; margin-bottom: 12px !important; transform: translateY(0); }
+      .card:hover { transform: translateY(-5px) scale(1.02) !important; box-shadow: 0 10px 20px rgba(12, 12, 112, 0.2) !important; }
+      .card-body { padding: 1rem !important; background: white !important; text-align: center !important; }
+      .card-title { color: var(--primary-color) !important; font-weight: 700 !important; font-size: 16px !important; margin-bottom: 10px !important; text-align: center !important; }
+      .card-text-small { font-size: 12px !important; line-height: 1.5 !important; color: #555 !important; text-align: left !important; margin-top: 8px !important; }
+      .d-inline-block.p-3.rounded-circle.bg-light { width: 55px !important; height: 55px !important; margin: 0 auto 10px auto !important; }
+      .bi { font-size: 1.3rem !important; }
+      .row.g-4 { margin-top: 8px !important; gap: 0.5rem !important; }
+      .card { animation: subtleBounce 0.5s ease-out; }
+      @keyframes subtleBounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    }
+    .mb-4 { margin-bottom: 1.5rem !important; }
+    .mb-5 { margin-bottom: 2rem !important; }
+    .normal-text { font-family: var(--font-main) !important; font-weight: 300; font-size: 14px; line-height: 1.5; color: #333; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand company-name" href="index.html">Chumpol Trading Group Co. LTD.</a>
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="index.html" title="Deutsch" class="active"><img src="https://flagcdn.com/w20/de.png" alt="Deutsche Flagge"></a>
+        <a href="../index.html" title="English"><img src="https://flagcdn.com/w20/gb.png" alt="Britische Flagge"></a>
+      </div>
+      <div class="language-switcher-nav d-lg-none">
+        <a href="index.html" title="Deutsch" class="active"><img src="https://flagcdn.com/w20/de.png" alt="Deutsche Flagge"></a>
+        <a href="../index.html" title="English"><img src="https://flagcdn.com/w20/gb.png" alt="Britische Flagge"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row header-row"><div class="col-xs-12 column-5"><header class="container-fluid heading-highlight"><h1 class="main-heading"><span class="heading-text-1">IHR VERBINDLICHER DISTRIBUTIONSPARTNER</span></h1><p class="paragraph header-paragraph"><span class="paragraph-text-2"><strong class="paragraph-text-3">Chumpol Trading Group Co. LTD.</strong></span></p></header></div></div>
+
+  <section class="py-5" style="padding-bottom: 0.5rem !important;"><div class="container"><div class="row"><div class="col-12 col-lg-10 col-xl-9 mx-auto"><h1 class="fs-2 fw-normal text-start mb-5" style="color: #0c0c70 !important; line-height: 1.3;">Interne Distribution für unsere Firmengruppe – Mobile Devices, Consumer Electronics und Household Electronics.</h1><div class="row"><div class="col-lg-12"><p class="normal-text mb-4">Die <strong>Chumpol Trading Group Co. LTD.</strong> agiert als zentraler Distributor innerhalb unserer Firmengruppe. Wir beliefern ausschließlich unsere verbundenen Partnerunternehmen mit hochwertigen Mobile Devices, Consumer Electronics und Household Electronics. Unser Geschäftsmodell ist streng auf interne B2B-Strukturen ausgerichtet – es erfolgt kein Verkauf an private Endkunden, kein Betrieb von Online-Shops und keine öffentliche Akquise.</p><p class="normal-text mb-4">Unsere Kernaufgabe ist die zuverlässige und effiziente Verteilung von Elektronikprodukten an die Gesellschaften unserer Gruppe. Dadurch gewährleisten wir konsistente Lieferketten, optimierte Beschaffungsprozesse und eine strategische Warenverfügbarkeit für alle internen Partner.</p><p class="normal-text mb-4">Durch die Bündelung der Distribution innerhalb der Gruppe erzielen wir Skaleneffekte und schaffen eine transparente, schlanke Logistik. Unser Leistungsportfolio im Überblick:</p><ul class="ctg-master-list"><li><i class="bi bi-arrow-right-circle"></i><div><strong>Interne Gruppenbelieferung:</strong> Wir sind der exklusive Verteiler für alle Elektronikbedarfe unserer Firmengruppe. Die Belieferung erfolgt ausschließlich an unsere verbundenen Unternehmen – keine externen Dritten, keine Privatkunden, kein Direktvertrieb an Endverbraucher.</div></li><li><i class="bi bi-arrow-right-circle"></i><div><strong>Mobile Devices & Consumer Electronics:</strong> Unser Portfolio umfasst aktuelle Smartphones, Tablets, Wearables sowie Unterhaltungselektronik und Haushaltselektronik. Alle Produkte stammen aus etablierten Herstellerbeziehungen innerhalb der Gruppe.</div></li><li><i class="bi bi-arrow-right-circle"></i><div><strong>Kein öffentlicher Verkauf – reiner B2B-Verteiler:</strong> Wir unterhalten keinerlei Online-Shop, keine Verkaufsplattform und keine Verkaufsfläche für Verbraucher. Unsere Tätigkeit beschränkt sich auf die reine Distribution zwischen den Unternehmen unserer Gruppe.</div></li><li><i class="bi bi-arrow-right-circle"></i><div><strong>Optimierte Verteilungsprozesse:</strong> Die Abwicklung erfolgt über definierte interne Logistikwege. Wir nutzen standardisierte Verteilungsprotokolle, um eine termingerechte und sichere Anlieferung an unsere Gruppenpartner zu gewährleisten.</div></li><li><i class="bi bi-arrow-right-circle"></i><div><strong>Exklusive Partnerstruktur:</strong> Neue Geschäftsbeziehungen entstehen ausschließlich durch interne Vereinbarungen innerhalb der Firmengruppe. Es gibt keine öffentliche Ausschreibung, keine Werbung und keine Ansprache externer Interessenten.</div></li><li><i class="bi bi-arrow-right-circle"></i><div><strong>Full-Service für Gruppenpartner:</strong> Individuelle Abstimmung der Verteilungsmodalitäten, bedarfsgerechte Kontingentierung und persönliche Ansprechpartner für jede Gesellschaft der Gruppe.</div></li></ul><p class="normal-text mb-4">Unsere Verantwortung liegt in der Sicherstellung einer reibungslosen, rechtskonformen und effizienten Verteilung von Elektronikprodukten an die Einheiten unserer Gruppe. Wir agieren diskret und fokussiert – ohne öffentliches Erscheinungsbild im Endkundengeschäft.</p><p class="normal-text mb-4"><strong>Vertrauen Sie auf die Expertise der Chumpol Trading Group Co. LTD.</strong> – Ihr zuverlässiger interner Distributor für Mobile Devices, Consumer Electronics und Household Electronics innerhalb der Firmengruppe.</p><div class="bg-light p-4 rounded-3 border-start border-primary border-4 mb-4" style="border-left-color: #0c0c70 !important;"><p class="fw-bold mb-3">Unsere Distribution bietet unseren Gruppenpartnern:</p><ul class="list-unstyled mb-0"><li class="mb-2">► Zentrale Abwicklung aller Elektronik-Bedarfe</li><li class="mb-2">► Transparente und planbare Verteilungsprozesse</li><li class="mb-2">► Keine externen Abhängigkeiten – reine Gruppenlogistik</li><li class="mb-2">► Kein Privatkundengeschäft, kein Online-Shop</li><li>► Konsistente Qualitätsstandards durch interne Richtlinien</li></ul></div><div class="desktop-separator-line"></div></div></div></div></div></div></section>
+
+  <div class="mobile-separator-line"></div>
+
+  <section class="py-5"><div class="container"><div class="row"><div class="col-12 col-lg-10 col-xl-9 mx-auto"><div class="row g-4"><div class="col-md-4"><div class="card h-100 border-0 shadow-sm transition-hover p-2"><div class="card-body text-center"><div class="mb-3 d-inline-block p-3 rounded-circle bg-light"><i class="bi bi-truck card-icon-hover" style="font-size: 2rem;"></i></div><h5 class="card-title fw-bold mb-3">Interne Verteilung</h5><p class="card-text text-muted card-text-small">Wir organisieren die vollständige Verteilung von Mobile Devices und Elektronik ausschließlich an die Unternehmen unserer Gruppe. Keine externe Beteiligung – reine B2B-Gruppenlogistik.</p></div></div></div><div class="col-md-4"><div class="card h-100 border-0 shadow-sm transition-hover p-2"><div class="card-body text-center"><div class="mb-3 d-inline-block p-3 rounded-circle bg-light"><i class="bi bi-box-seam card-icon-hover" style="font-size: 2rem;"></i></div><h5 class="card-title fw-bold mb-3">Gruppen-Fulfillment</h5><p class="card-text text-muted card-text-small">Lagerhaltung, Kommissionierung und Versand an unsere verbundenen Partner erfolgen über definierte interne Strukturen. Kein Dropshipping an Endkunden – reine Gruppenversorgung.</p></div></div></div><div class="col-md-4"><div class="card h-100 border-0 shadow-sm transition-hover p-2"><div class="card-body text-center"><div class="mb-3 d-inline-block p-3 rounded-circle bg-light"><i class="bi bi-check-circle card-icon-hover" style="font-size: 2rem;"></i></div><h5 class="card-title fw-bold mb-3">Produktportfolio & Qualität</h5><p class="card-text text-muted card-text-small">Verteilung von aktuellen Smartphones, Consumer Electronics und Household Electronics aus zuverlässigen Quellen innerhalb der Gruppe. Kein Direktverkauf an Privatpersonen.</p></div></div></div><div class="col-md-4"><div class="card h-100 border-0 shadow-sm transition-hover p-2"><div class="card-body text-center"><div class="mb-3 d-inline-block p-3 rounded-circle bg-light"><i class="bi bi-receipt card-icon-hover" style="font-size: 2rem;"></i></div><h5 class="card-title fw-bold mb-3">Interne Incoterms</h5><p class="card-text text-muted card-text-small">Klare Regelungen für die Verteilung innerhalb der Gruppe. Fokus auf reibungslose Übergabe zwischen den Gesellschaften – ohne externe Komplexität.</p></div></div></div><div class="col-md-4"><div class="card h-100 border-0 shadow-sm transition-hover p-2"><div class="card-body text-center"><div class="mb-3 d-inline-block p-3 rounded-circle bg-light"><i class="bi bi-airplane card-icon-hover" style="font-size: 2rem;"></i></div><h5 class="card-title fw-bold mb-3">Zuverlässige Anlieferung</h5><p class="card-text text-muted card-text-small">Sichere und termingerechte Anlieferung an die Standorte unserer Gruppenpartner. Optimierte Routen und volle Kontrolle über die Verteilungswege.</p></div></div></div><div class="col-md-4"><div class="card h-100 border-0 shadow-sm transition-hover p-2"><div class="card-body text-center"><div class="mb-3 d-inline-block p-3 rounded-circle bg-light"><i class="bi bi-people card-icon-hover" style="font-size: 2rem;"></i></div><h5 class="card-title fw-bold mb-3">Exklusive Partnerschaft</h5><p class="card-text text-muted card-text-small">Die Geschäftsbeziehung beschränkt sich auf die Unternehmen unserer Gruppe. Keine externen Kunden, kein Online-Shop, keine Privatkunden – reine B2B-Distribution.</p></div></div></div></div></div></div></div></section>
+
+  <footer class="ctg-footer footer-desktop-version"><div class="container"><div class="row"><div class="col-12 col-lg-10 col-xl-9 mx-auto"><div class="footer-row"><div class="footer-col"><h5 class="footer-headline">BÜRO BANGKOK</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea Bang Rak</li><li>Bangkok 10500</li><span class="sub-label">TELEFON</span><li>☎ +66 (0) 88 777 0-244</li><li>☎ +66 (0) 88 777 0-344</li></ul></div><div class="footer-col"><h5 class="footer-headline">BÜRO LAMPANG</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li><span class="sub-label">E-MAIL</span><li>📧 info@ctg-global.net</li><li>📧 home@ctg-global.net</li></ul></div><div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul><li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-global.net</li><li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-global.net</li><li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-global.net</li><span class="sub-label">REGISTER</span><li>DBD: 0525560001568</li><li>Established: 2017</li></ul></div><div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Impressum</a></li><span class="sub-label">FIRMA</span><li>Chumpol Bernhardt</li><li>CTG Group Co. LTD.</li></ul></div></div><div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.</div></div></div></div></footer>
+
+  <footer class="ctg-footer footer-mobile-version"><div class="container"><div class="footer-row"><div class="footer-col"><h5 class="footer-headline">FIRMA</h5><ul><li>Chumpol Bernhardt</li><li>CTG Group Co. LTD.</li></ul></div><div class="footer-col"><h5 class="footer-headline">BÜRO BANGKOK</h5><ul><li>Kronos Sathorn Tower</li><li>46 Sathorn Nuea</li><li>Bangkok 10500</li></ul></div><div class="footer-col"><h5 class="footer-headline">BÜRO LAMPANG</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang</li></ul></div><div class="footer-col"><h5 class="footer-headline">REGISTER</h5><ul><li>DBD: 0525560001568</li><li>Established: 2017</li></ul></div><div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul><li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-de@ctg-global.net</li><li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-en@ctg-global.net</li><li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;"> desk-th@ctg-global.net</li></ul></div><div class="footer-col"><h5 class="footer-headline">E-MAIL</h5><ul><li>info@ctg-global.net</li><li>home@ctg-global.net</li></ul></div><div class="footer-col"><h5 class="footer-headline">TELEFON</h5><ul><li>☎ +66 (0) 88 777 0-244</li><li>☎ +66 (0) 88 777 0-344</li></ul></div><div class="footer-col"><h5 class="footer-headline">QUICK LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Impressum</a></li></ul></div></div><div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Co. LTD. All rights reserved.</div></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
