@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Impressum der Chumpol Trading Group Company Limited. Adresse, Kontaktdaten und rechtliche Hinweise.">
-<title>Impressum – Chumpol Trading Group Company Limited</title>
+<meta name="description" content="Datenschutzerklärung der Chumpol Trading Group Company Limited gemäß DSGVO.">
+<title>Datenschutz – Chumpol Trading Group Company Limited</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="css/wireframe-theme.min.css">
@@ -33,11 +33,9 @@
     .sub-label { display: block !important; color: #666 !important; font-size: 10px !important; margin: 20px 0 8px 0 !important; text-align: left !important; }
     .footer-bottom-fixed { text-align: center !important; color: #444 !important; font-size: 11px !important; margin-top: 40px !important; border-top: 1px solid #111 !important; padding-top: 20px !important; line-height: 1.0 !important; }
     .footer-mobile-version { display: none !important; visibility: hidden !important; opacity: 0; height: 0; overflow: hidden; }
-    .impressum-content h2 { color: var(--primary-color) !important; font-weight: 600; margin-bottom: 1.5rem; font-size: 2rem !important; line-height: 1.3; }
-    .impressum-content h3 { color: var(--primary-color); font-weight: 600; margin-bottom: 1rem; font-size: 1.4rem !important; }
-    .address-box { background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%); border-left: 4px solid var(--primary-color); padding: 1.2rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(12, 12, 112, 0.08); }
-    .data-list dt { font-weight: 600; color: var(--primary-color); margin-bottom: 0.4rem; }
-    .data-list dd { margin-bottom: 1.2rem; color: #555; }
+    .dsgvo-content h2 { color: var(--primary-color) !important; font-weight: 600; margin-bottom: 1.5rem; font-size: 2rem !important; line-height: 1.3; }
+    .dsgvo-content h3 { color: var(--primary-color); font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.8rem; font-size: 1.4rem !important; }
+    .dsgvo-box { background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%); border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(12, 12, 112, 0.08); }
     .text-primary-custom { color: var(--primary-color) !important; }
     @media (max-width: 767px) {
       .footer-desktop-version { display: none !important; visibility: hidden !important; opacity: 0 !important; height: 0 !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; }
@@ -47,9 +45,9 @@
       .header-paragraph .paragraph-text-3 { font-size: 11px !important; }
       body, p, .lead, .text-muted { font-size: 12px !important; line-height: 1.3 !important; }
       section.py-5 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
-      .impressum-content h2 { font-size: 1.6rem !important; margin-bottom: 1rem !important; }
-      .impressum-content h3 { font-size: 1.3rem !important; margin-bottom: 0.8rem !important; }
-      .address-box { padding: 1rem !important; margin: 1.5rem 0 !important; }
+      .dsgvo-content h2 { font-size: 1.6rem !important; margin-bottom: 1rem !important; }
+      .dsgvo-content h3 { font-size: 1.3rem !important; }
+      .dsgvo-box { padding: 1rem !important; margin: 1.5rem 0 !important; }
       .footer-mobile-version.ctg-footer { padding: 25px 0 5px 0 !important; margin-top: 15px !important; }
       .footer-mobile-version .footer-row { display: block !important; }
       .footer-mobile-version .footer-col { width: 100% !important; margin-bottom: 15px !important; padding-left: 15px !important; }
@@ -71,7 +69,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
-          <li class="nav-item"><a class="nav-link active" href="impressum.html">Impressum</a></li>
+          <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
           <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI-Gateway</a></li>
           <li class="nav-item"><a class="nav-link" href="partner.html">Partner</a></li>
         </ul>
@@ -82,8 +80,8 @@
   <div class="row header-row">
     <div class="col-xs-12 column-5">
       <header class="container-fluid heading-highlight">
-        <h1 class="main-heading"><span class="heading-text-1">IMPRESSUM</span></h1>
-        <p class="paragraph header-paragraph"><span class="paragraph-text-2"><strong class="paragraph-text-3">RECHTLICHE INFORMATIONEN</strong></span></p>
+        <h1 class="main-heading"><span class="heading-text-1">DATENSCHUTZ</span></h1>
+        <p class="paragraph header-paragraph"><span class="paragraph-text-2"><strong class="paragraph-text-3">DSGVO-KONFORME ERKLÄRUNG</strong></span></p>
       </header>
     </div>
   </div>
@@ -91,50 +89,48 @@
   <section class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-10 col-xl-9 mx-auto impressum-content">
-          <h2 class="text-primary-custom">Impressum</h2>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <h3 class="text-primary-custom">Anschriften</h3>
-              <div class="address-box"><p class="fw-bold mb-2 text-primary-custom">Hauptsitz</p><p class="mb-0">Mühlenstraße 37<br>27324 Eystrup<br>Deutschland</p></div>
-              <div class="address-box"><p class="fw-bold mb-2 text-primary-custom">Büro Lampang</p><p class="mb-0">355/46 Boonwat Road<br>Muang Lampang<br>52100 Lampang<br>Thailand</p></div>
-            </div>
-            <div class="col-md-6">
-              <h3 class="text-primary-custom">Firmendaten &amp; Kontakt</h3>
-              <dl class="data-list">
-                <dt>Telefon</dt><dd>0 9088 84831<br>0 9088 84832</dd>
-                <dt>E-Mail</dt><dd>info@ctg-group.eu<br>desk@ctg-group.eu</dd>
-                <dt>Register</dt><dd>DBD: 0525560001568<br>Established: 2017</dd>
-                <dt>Inhaber / CEO</dt><dd>Chumpol Bernhardt</dd>
-                <dt>Verantwortlich für den Inhalt</dt><dd>Chumpol Bernhardt<br>Mühlenstraße 37<br>27324 Eystrup</dd>
-              </dl>
-              <h3 class="text-primary-custom mt-4">Partnernetzwerk</h3>
-              <p>Die Chumpol Trading Group Company Limited betreibt ein internes B2B-Partnernetzwerk mit aktuell 932 Firmen. Die Mitgliedschaft ist offen für alle Unternehmen und kostenfrei. Weitere Informationen finden Sie auf unserer <a href="partner.html">Partnerseite</a>.</p>
-            </div>
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto dsgvo-content">
+          <h2 class="text-primary-custom">Datenschutzerklärung</h2>
+          <p><strong>gemäß Datenschutz-Grundverordnung (DSGVO)</strong></p>
+
+          <div class="dsgvo-box">
+            <h3>1. Verantwortlicher</h3>
+            <p>Verantwortlich für die Verarbeitung personenbezogener Daten ist:<br>
+            <strong>Chumpol Trading Group Company Limited</strong><br>
+            Mühlenstraße 37, 27324 Eystrup, Deutschland<br>
+            Telefon: 0 9088 84831<br>
+            E-Mail: <a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <footer class="ctg-footer footer-desktop-version">
-    <div class="container"><div class="row"><div class="col-12 col-lg-10 col-xl-9 mx-auto"><div class="footer-row">
-      <div class="footer-col"><h5 class="footer-headline">HAUPTSITZ</h5><ul><li>Mühlenstraße 37</li><li>27324 Eystrup</li><li>Deutschland</li><span class="sub-label">TELEFON</span><li>☎ 0 9088 84831</li><li>☎ 0 9088 84832</li></ul></div>
-      <div class="footer-col"><h5 class="footer-headline">BÜRO LAMPANG</h5><ul><li>355/46 Boonwat Road</li><li>Muang Lampang</li><li>52100 Lampang, Thailand</li><span class="sub-label">E-MAIL</span><li>📧 info@ctg-group.eu</li></ul></div>
-      <div class="footer-col"><h5 class="footer-headline">SUPPORT</h5><ul><li>📧 desk@ctg-group.eu</li><span class="sub-label">RECHTLICHES</span><li>HGB/BGB</li><li>Amtsgericht Eystrup</li></ul></div>
-      <div class="footer-col"><h5 class="footer-headline">LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="edi-gateway.html">EDI-Gateway</a></li><li><a href="partner.html">Partner</a></li><li><a href="agb.html">AGB</a></li><li><a href="datenschutz.html">Datenschutz</a></li><li><a href="facts.html">Facts</a></li></ul></div>
-    </div><div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.</div></div></div></div>
-  </footer>
+          <h3>2. Allgemeines zur Datenverarbeitung</h3>
+          <p>Wir erheben und verwenden personenbezogene Daten unserer Partner und Interessenten nur, soweit dies zur Bereitstellung unserer Dienstleistungen und zur Abwicklung der Geschäftsbeziehung erforderlich ist. Die Verarbeitung erfolgt auf Grundlage der DSGVO und des Bundesdatenschutzgesetzes (BDSG).</p>
 
-  <footer class="ctg-footer footer-mobile-version">
-    <div class="container"><div class="footer-row">
-      <div class="footer-col"><h5 class="footer-headline">HAUPTSITZ</h5><ul><li>Mühlenstraße 37</li><li>27324 Eystrup</li></ul></div>
-      <div class="footer-col"><h5 class="footer-headline">BÜRO LAMPANG</h5><ul><li>355/46 Boonwat Road</li><li>52100 Lampang</li></ul></div>
-      <div class="footer-col"><h5 class="footer-headline">KONTAKT</h5><ul><li>☎ 0 9088 84831</li><li>📧 info@ctg-group.eu</li></ul></div>
-      <div class="footer-col"><h5 class="footer-headline">LINKS</h5><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="edi-gateway.html">EDI-Gateway</a></li><li><a href="partner.html">Partner</a></li><li><a href="agb.html">AGB</a></li><li><a href="datenschutz.html">Datenschutz</a></li><li><a href="facts.html">Facts</a></li></ul></div>
-    </div><div class="footer-bottom-fixed">&copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.</div></div>
-  </footer>
+          <h3>3. Rechtsgrundlagen der Verarbeitung</h3>
+          <ul>
+            <li>Art. 6 Abs. 1 lit. a DSGVO – Einwilligung</li>
+            <li>Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung oder vorvertragliche Maßnahmen</li>
+            <li>Art. 6 Abs. 1 lit. c DSGVO – Rechtliche Verpflichtung</li>
+            <li>Art. 6 Abs. 1 lit. f DSGVO – Berechtigtes Interesse (z. B. IT-Sicherheit)</li>
+          </ul>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+          <h3>4. Art der verarbeiteten Daten</h3>
+          <ul>
+            <li>Bestandsdaten (Name, Adresse)</li>
+            <li>Kontaktdaten (Telefonnummer, E-Mail-Adresse)</li>
+            <li>Vertrags- und Geschäftsdaten</li>
+            <li>Zahlungsdaten</li>
+            <li>Kommunikationsdaten</li>
+          </ul>
+
+          <h3>5. Zwecke der Datenverarbeitung</h3>
+          <ul>
+            <li>Abwicklung von Partnerschaften und Verträgen</li>
+            <li>Bearbeitung von Anfragen</li>
+            <li>Erfüllung gesetzlicher Verpflichtungen</li>
+            <li>Sicherstellung der IT-Sicherheit</li>
+          </ul>
+
+          <h3>6. Weitergabe von Daten an Dritte</h3>
+          <p>Eine Weitergabe personenbezogener Daten erfolgt nur, wenn Sie eingewilligt haben, dies zur Vertragserfüllung erforderlich ist, eine gesetzliche Verpflichtung besteht oder ein berechtigtes Interesse vorliegt. Empfänger können sein: Zahlungsdienstleister, Logistik- und IT-Dienstleister, Steuerberater und Behörden.</p>
+
+          <h3>7. Cookies &amp; Tracking</
