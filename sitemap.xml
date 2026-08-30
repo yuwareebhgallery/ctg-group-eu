@@ -1,8 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Startseite (Homepage) -->
+  <url>
+    <loc>https://ctg-group.eu/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Ihre bestehende Unterseite -->
   <url>
     <loc>https://ctg-group.eu/data.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Impressum -->
+  <url>
+    <loc>https://ctg-group.eu/impressum.html</loc>
+    <!-- Impressum ändert sich selten, daher monthly oder yearly -->
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
