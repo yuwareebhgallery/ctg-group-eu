@@ -1,0 +1,1320 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CTG Group – Partnernetzwerk, Aufnahmeordnung und Geschäftsordnung">
+    <meta name="keywords" content="CTG Group, Partnernetzwerk, Partner, Aufnahme, Geschäftsordnung">
+    <title>Partnernetzwerk | CTG Group</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== ROOT & BASE ===== */
+        :root {
+            --primary-color: #0c0c70;
+            --primary-dark: #090952;
+            --accent-color: #cdc9a5;
+            --text-dark: #1c1c1c;
+            --text-muted: #626262;
+            --border-color: #e4e4e4;
+            --light-background: #f7f8fa;
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+
+        *,
+        body,
+        p,
+        .navbar,
+        .footer,
+        .card-text,
+        .btn,
+        .ctg-footer,
+        .ctg-footer li,
+        .ctg-footer a,
+        .lead,
+        .text-muted,
+        .company-name {
+            font-family: var(--font-main) !important;
+        }
+
+        body {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: #ffffff;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar-brand.company-name {
+            font-size: 1.1rem !important;
+            color: var(--accent-color) !important;
+            letter-spacing: 1px;
+        }
+
+        /* ===== HEADER ===== */
+        h1.main-heading {
+            color: var(--accent-color) !important;
+            text-transform: uppercase;
+            letter-spacing: 1.9px !important;
+            font-size: 22px !important;
+            margin-top: -70px;
+            text-align: center;
+        }
+        .header-paragraph .paragraph-text-3 {
+            color: #888 !important;
+            font-size: 26px !important;
+            letter-spacing: -0.1px !important;
+            font-weight: 600 !important;
+            line-height: 1.2 !important;
+            margin-top: 10px !important;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .partner-content {
+            max-width: 1050px;
+        }
+
+        .partner-content h1 {
+            color: var(--primary-color) !important;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.35;
+        }
+        .partner-content h2 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1.4rem !important;
+            line-height: 1.4;
+        }
+        .partner-content h3 {
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem !important;
+            line-height: 1.45;
+        }
+        .partner-content p {
+            margin-bottom: 0.8rem;
+        }
+        .partner-content ul,
+        .partner-content ol {
+            padding-left: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        .partner-content li {
+            margin-bottom: 0.4rem;
+            padding-left: 0.15rem;
+        }
+
+        .document-number {
+            color: #777;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            margin-bottom: 0.5rem;
+        }
+        .section-divider {
+            border: 0;
+            border-top: 1px solid var(--border-color);
+            margin: 2.5rem 0;
+        }
+        .highlight-box {
+            background: var(--light-background);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        .legal-note {
+            background: #fafafa;
+            border: 1px solid var(--border-color);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .legal-note h3 {
+            margin-top: 0;
+        }
+
+        /* ===== HERO BOX ===== */
+        .partner-hero-box {
+            background: #f8f9fc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .partner-hero-box .lead {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: #2a2a2a;
+        }
+        .partner-hero-box .disclaimer-highlight {
+            background: white;
+            border-radius: 6px;
+            padding: 0.75rem 1.25rem;
+            margin-top: 0.5rem;
+            border-left: 4px solid var(--primary-color);
+            font-weight: 500;
+            color: var(--primary-dark);
+        }
+        .partner-hero-box .disclaimer-highlight i {
+            color: var(--primary-color);
+        }
+        .section-intro-text {
+            font-size: 1.05rem;
+            color: #2a2a2a;
+            margin-bottom: 1.5rem;
+        }
+        .section-eyebrow {
+            color: var(--primary-color);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: 1.55px;
+            text-transform: uppercase;
+        }
+
+        /* ===== BENEFIT CARDS (16) ===== */
+        .benefit-cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0;
+            margin-top: 1.2rem;
+            border-top: 1px solid var(--border-color);
+        }
+        .benefit-card {
+            display: grid;
+            grid-template-columns: 38px 1fr;
+            gap: 1rem;
+            padding: 1.15rem .9rem 1.15rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .benefit-card:nth-child(odd) {
+            padding-right: 2rem;
+        }
+        .benefit-card:nth-child(even) {
+            padding-left: 2rem;
+            border-left: 1px solid var(--border-color);
+        }
+        .benefit-number {
+            color: var(--accent-color);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-top: .15rem;
+        }
+        .benefit-card h3 {
+            margin: 0 0 .25rem !important;
+            color: var(--primary-dark);
+            font-size: 1rem !important;
+        }
+        .benefit-card p {
+            margin: 0 !important;
+            color: #454545;
+            font-size: .9rem;
+            line-height: 1.55;
+        }
+
+        /* ===== FEATURE PANEL ===== */
+        .feature-panel {
+            background: var(--light-background);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.45rem 1.65rem;
+            margin-top: 1.1rem;
+        }
+        .feature-panel p:last-of-type {
+            margin-bottom: .65rem;
+        }
+        .feature-closing {
+            border-top: 1px solid #dedfe6;
+            padding-top: .9rem;
+            margin-top: 1rem;
+        }
+
+        /* ===== COMPACT DETAILS (NDA) ===== */
+        .compact-details {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0;
+            margin-top: 1.15rem;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .compact-detail {
+            padding: 1.2rem 1.25rem 1.2rem 0;
+        }
+        .compact-detail+.compact-detail {
+            border-left: 1px solid var(--border-color);
+            padding-left: 1.25rem;
+        }
+        .compact-detail h3 {
+            margin-top: 0 !important;
+        }
+        .compact-detail p {
+            margin-bottom: 0 !important;
+            font-size: .9rem;
+            line-height: 1.6;
+        }
+
+        /* ===== PRINCIPLE GRID ===== */
+        .principle-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0;
+            margin-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            border-left: 1px solid var(--border-color);
+        }
+        .principle-grid div {
+            padding: .8rem .9rem;
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .principle-grid strong {
+            display: block;
+            color: var(--primary-dark);
+            margin-bottom: .15rem;
+        }
+        .principle-grid span {
+            display: block;
+            font-size: .85rem;
+            color: #555;
+            line-height: 1.45;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-box {
+            background: #f9fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .faq-box div {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-box div:last-child {
+            border-bottom: none;
+        }
+        .faq-box strong {
+            color: var(--primary-dark);
+            display: inline-block;
+            min-width: 200px;
+        }
+
+        /* ===== CONTACT BOX ===== */
+        .contact-box {
+            background: var(--primary-color);
+            color: #ffffff;
+            padding: 2rem;
+            margin-top: 2.5rem;
+            border-radius: 10px;
+        }
+        .contact-box h2 {
+            color: #ffffff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            margin-top: 0;
+            padding-bottom: 0.5rem;
+        }
+        .contact-box p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .contact-box a {
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .contact-box a:hover {
+            color: var(--accent-color);
+        }
+        .document-footer-note {
+            margin-top: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* ===== RULE BLOCK ===== */
+        .rule-block {
+            padding: 1.35rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+        .rule-block h3 {
+            margin: 0 0 .55rem !important;
+            color: var(--primary-dark);
+        }
+        .rule-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== LANGUAGE SWITCHER ===== */
+        .language-switcher-nav {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding-right: 15px;
+        }
+        .language-switcher-nav a {
+            margin-left: 8px;
+            text-decoration: none;
+            border-bottom: none !important;
+            display: inline-block;
+            line-height: 1;
+        }
+        .language-switcher-nav img {
+            width: 20px;
+            height: auto;
+            border-radius: 1px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .language-switcher-nav a:hover img {
+            opacity: 1;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+        .language-switcher-nav a.active img {
+            opacity: 1;
+            border: 1px solid var(--accent-color);
+            box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
+        }
+        @media (max-width: 991px) {
+            .language-switcher-nav {
+                position: absolute;
+                right: 60px;
+                top: 15px;
+            }
+            .language-switcher-nav a {
+                margin: 0 4px;
+            }
+            .language-switcher-nav img {
+                width: 16px;
+            }
+            .navbar>.container {
+                position: relative;
+            }
+        }
+
+        /* ===== FOOTER ===== */
+        .ctg-footer {
+            background-color: #000 !important;
+            color: #ffffff !important;
+            padding: 60px 0 20px 0;
+            margin-top: 60px;
+        }
+        .footer-row {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: space-between !important;
+            margin: 0 !important;
+        }
+        .footer-col {
+            flex: 0 0 auto;
+            min-width: 180px;
+            padding: 0 !important;
+        }
+        .footer-headline {
+            color: #ffffff !important;
+            font-size: 11px !important;
+            font-weight: bold !important;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 20px;
+            text-align: left !important;
+            letter-spacing: 1.5px !important;
+        }
+        .ctg-footer ul {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            text-align: left !important;
+        }
+        .ctg-footer li {
+            font-size: 12px !important;
+            color: #aaa !important;
+            margin-bottom: 7px !important;
+            line-height: 1.4 !important;
+        }
+        .ctg-footer a {
+            color: #aaa !important;
+            text-decoration: none !important;
+        }
+        .ctg-footer a:hover {
+            color: #ffffff !important;
+        }
+        .sub-label {
+            display: block !important;
+            color: #666 !important;
+            font-size: 10px !important;
+            margin: 20px 0 8px 0 !important;
+            text-align: left !important;
+        }
+        .footer-bottom-fixed {
+            text-align: center !important;
+            color: #444 !important;
+            font-size: 11px !important;
+            margin-top: 40px !important;
+            border-top: 1px solid #111 !important;
+            padding-top: 20px !important;
+            line-height: 1.4 !important;
+        }
+        .footer-mobile-version {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 767px) {
+            .partner-hero-box {
+                padding: 1.25rem;
+            }
+            .benefit-cards {
+                grid-template-columns: 1fr;
+            }
+            .benefit-card:nth-child(odd),
+            .benefit-card:nth-child(even) {
+                padding: .9rem 0;
+                border-left: 0;
+            }
+            .compact-details {
+                grid-template-columns: 1fr;
+            }
+            .compact-detail,
+            .compact-detail+.compact-detail {
+                padding: 1rem 0;
+                border-left: 0;
+            }
+            .principle-grid {
+                grid-template-columns: 1fr;
+            }
+            .faq-box strong {
+                display: block;
+                min-width: auto;
+            }
+            .navbar-brand.company-name {
+                font-size: 0.80rem !important;
+            }
+            h1.main-heading {
+                margin-top: 15px !important;
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                letter-spacing: 1px !important;
+                line-height: 1.2 !important;
+                padding: 0 10px;
+                color: #ffffff !important;
+            }
+            .header-paragraph .paragraph-text-3 {
+                font-size: 11px !important;
+            }
+            body,
+            p,
+            .lead,
+            .text-muted {
+                font-size: 13px !important;
+                line-height: 1.6 !important;
+            }
+            section.py-5 {
+                padding-top: 1.25rem !important;
+                padding-bottom: 1.25rem !important;
+            }
+            .partner-content h1 {
+                font-size: 1.4rem !important;
+            }
+            .partner-content h2 {
+                font-size: 1.22rem !important;
+                margin-top: 2rem;
+            }
+            .partner-content h3 {
+                font-size: 1.05rem !important;
+            }
+            .highlight-box,
+            .legal-note,
+            .contact-box {
+                padding: 1.25rem;
+            }
+            .footer-desktop-version {
+                display: none !important;
+            }
+            .footer-mobile-version {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1;
+                height: auto;
+                overflow: visible;
+            }
+            .footer-mobile-version.ctg-footer {
+                padding: 25px 0 5px 0 !important;
+                margin-top: 15px !important;
+            }
+            .footer-mobile-version .footer-row {
+                display: block !important;
+            }
+            .footer-mobile-version .footer-col {
+                width: 100% !important;
+                margin-bottom: 15px !important;
+                padding-left: 15px !important;
+            }
+            .footer-mobile-version .footer-headline {
+                font-size: 10px !important;
+                margin-bottom: 8px !important;
+                margin-top: 18px !important;
+            }
+            .footer-mobile-version .footer-col:first-child .footer-headline {
+                margin-top: 0 !important;
+            }
+            .footer-mobile-version li {
+                font-size: 10px !important;
+                margin-bottom: 4px !important;
+            }
+            .footer-mobile-version .footer-bottom-fixed {
+                font-size: 9px !important;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://ctg-group.eu/#organization",
+            "name": "Chumpol Trading Group Limited Company",
+            "alternateName": "CTG Global",
+            "url": "https://ctg-group.eu",
+            "taxID": "0105557140880",
+            "duns": "0525560001568",
+            "foundingDate": "2017-12",
+            "description": "B2B wholesale and trading company. No public advertising, no private customers, no online shop.",
+            "address": [{
+                "@type": "PostalAddress",
+                "streetAddress": "355-46 Boonwat Road, Suandok",
+                "addressLocality": "Lampang",
+                "postalCode": "52100",
+                "addressCountry": "TH"
+            }, {
+                "@type": "PostalAddress",
+                "streetAddress": "Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom",
+                "addressLocality": "Bang Rak",
+                "addressRegion": "Bangkok",
+                "postalCode": "10500",
+                "addressCountry": "TH"
+            }],
+            "employee": {
+                "@type": "QuantitativeValue",
+                "value": 82
+            },
+            "founders": [{
+                "@type": "Person",
+                "name": "Gerhard Holzapfel",
+                "jobTitle": "Manager for German & European Market"
+            }, {
+                "@type": "Person",
+                "name": "Siriphaon Wanatung",
+                "jobTitle": "General Manager"
+            }],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "office@ctg-group.eu",
+                "contactOption": "ByAppointmentOnly"
+            }
+        }
+    </script>
+	
+<style>
+
+/* ===== BUTTONS (einheitlich wie Index) ===== */
+.btn-offer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 28px !important;
+    border-radius: 4px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 8px 8px 0 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    font-family: var(--font-main) !important;
+    min-width: 180px !important;
+}
+.btn-offer:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #070738 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+}
+.btn-offer-secondary {
+    min-width: 180px !important;
+    height: 46px;
+    background: white !important;
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+}
+.btn-offer-secondary:hover {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+@media (max-width: 767px) {
+    .btn-offer, .btn-offer-secondary {
+        min-width: 140px !important;
+        padding: 10px 16px !important;
+        font-size: 12px !important;
+    }
+}
+
+</style>	
+	
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand company-name" href="index.html">
+                Chumpol Trading Group Company Limited.
+            </a>
+            <div class="language-switcher-nav d-none d-lg-flex">
+                <a href="partner.html" title="Deutsch" class="active">
+                    <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+                </a>
+                <a href="../partner.html" title="English">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                </a>
+            </div>
+            <div class="language-switcher-nav d-lg-none">
+                <a href="partner.html" title="Deutsch" class="active">
+                    <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+                </a>
+                <a href="../partner.html" title="English">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI-Gateway</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="partner.html">Partner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+    <div class="row header-row">
+        <div class="col-xs-12 column-5">
+            <header class="container-fluid heading-highlight">
+                <h1 class="main-heading">PARTNERNETZWERK</h1>
+                <p class="paragraph header-paragraph">
+                    <span class="paragraph-text-2">
+                        <strong class="paragraph-text-3">AUFNAHME- UND GESCHÄFTSORDNUNG</strong>
+                    </span>
+                </p>
+            </header>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <main class="col-12 col-lg-10 col-xl-9 mx-auto partner-content">
+
+                    <div class="document-number">CTG PARTNERNETZWERK · GESCHÄFTSORDNUNG · AUSZUG</div>
+
+                    <!-- ===== HERO ===== -->
+                    <div class="partner-hero-box">
+                        <p class="lead" style="margin-bottom:0.25rem;">
+                            Das CTG Partnernetzwerk verbindet rechtlich und wirtschaftlich selbstständige Unternehmen
+                            in langfristigen, verlässlichen Geschäftsbeziehungen. Im Mittelpunkt stehen konkrete
+                            wirtschaftliche Vorteile, kurze Entscheidungswege, gegenseitige Unterstützung und ein
+                            professioneller Umgang mit vertraulichen Informationen.
+                        </p>
+                        <div class="disclaimer-highlight">
+                            <i class="bi bi-info-circle-fill me-2"></i>
+                            <strong>Eine Partnerschaft ist keine Voraussetzung für Geschäfte mit der CTG.</strong>
+                            Das Partnernetzwerk ist ein zusätzliches Angebot für Unternehmen, die ihre langfristige
+                            Geschäftsbeziehung mit der CTG gezielt erweitern und die damit verbundenen Vorteile nutzen möchten.
+                        </div>
+                    </div>
+
+                    <!-- ===== 16 VORTEILE (KOMPAKT) ===== -->
+                    <section>
+                        <div class="section-eyebrow">01 · DER MEHRWERT</div>
+                        <h2>Was das Partnernetzwerk auszeichnet</h2>
+                        <p class="section-intro-text">
+                            Das Partnernetzwerk geht über eine klassische Lieferbeziehung hinaus. Es schafft einen
+                            verlässlichen Rahmen für Unternehmen, die ihre Beschaffungsmöglichkeiten, ihre
+                            Geschäftsentwicklung und ihre operative Handlungsfähigkeit langfristig stärken möchten.
+                        </p>
+
+                        <div class="benefit-cards">
+                            <!-- 01 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">01</span>
+                                <div>
+                                    <h3>Individuelle Partnerkonditionen</h3>
+                                    <p>Auf die jeweilige Geschäftsbeziehung abgestimmte Einkaufskonditionen und Sondervereinbarungen.</p>
+                                </div>
+                            </article>
+                            <!-- 02 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">02</span>
+                                <div>
+                                    <h3>Staffel- &amp; Projektpreise</h3>
+                                    <p>Attraktive Staffelpreise, Mengenrabatte und individuelle Projektpreise für wettbewerbsfähige Kalkulationen.</p>
+                                </div>
+                            </article>
+                            <!-- 03 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">03</span>
+                                <div>
+                                    <h3>Erweiterte Zahlungsziele &amp; Kreditlinien</h3>
+                                    <p>Individuell vereinbarte Zahlungsziele und Warenkreditlinien – anfänglich 30 Tage netto.</p>
+                                </div>
+                            </article>
+                            <!-- 04 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">04</span>
+                                <div>
+                                    <h3>Flexible Warenkredite für Wachstum</h3>
+                                    <p>Kurzfristige Erweiterung des Kreditvolumens für außergewöhnliche Aufträge – ohne Zinsforderungen.</p>
+                                </div>
+                            </article>
+                            <!-- 05 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">05</span>
+                                <div>
+                                    <h3>Früher Produktzugang</h3>
+                                    <p>Early Briefings, Pre-Launch-Informationen und frühzeitiger Zugang zu Produktneuheiten.</p>
+                                </div>
+                            </article>
+                            <!-- 06 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">06</span>
+                                <div>
+                                    <h3>Exklusive Produktvarianten</h3>
+                                    <p>Zugang zu ausgewählten SKUs, Sondermodellen und Händlervarianten.</p>
+                                </div>
+                            </article>
+                            <!-- 07 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">07</span>
+                                <div>
+                                    <h3>Priorisierung bei Knappheit</h3>
+                                    <p>Bevorzugte Berücksichtigung, reservierte Mengen und projektbezogene Warenplanung.</p>
+                                </div>
+                            </article>
+                            <!-- 08 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">08</span>
+                                <div>
+                                    <h3>Deal Registration</h3>
+                                    <p>Schutz registrierter Projekte vor Channel-Konflikten mit individuellen Konditionen.</p>
+                                </div>
+                            </article>
+                            <!-- 09 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">09</span>
+                                <div>
+                                    <h3>Leads &amp; Projektentwicklung</h3>
+                                    <p>Zugang zu qualifizierten Leads und gemeinsame Entwicklung größerer Projekte.</p>
+                                </div>
+                            </article>
+                            <!-- 10 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">10</span>
+                                <div>
+                                    <h3>Geschützter Informationsaustausch</h3>
+                                    <p>Vertrauliche Geschäfts-, Kunden-, Projekt- und Planungsinformationen auf Need-to-Know-Basis.</p>
+                                </div>
+                            </article>
+                            <!-- 11 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">11</span>
+                                <div>
+                                    <h3>EDI &amp; digitale Prozesse</h3>
+                                    <p>Strukturierte digitale Kommunikation für Aufträge, Status, Tracking und Logistik.</p>
+                                </div>
+                            </article>
+                            <!-- 12 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">12</span>
+                                <div>
+                                    <h3>Direkte Entscheidungswege</h3>
+                                    <p>Persönliche Ansprechpartner und kurze Eskalationswege für zeitkritische Vorgänge.</p>
+                                </div>
+                            </article>
+                            <!-- 13 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">13</span>
+                                <div>
+                                    <h3>Exklusiver Partner-Support</h3>
+                                    <p>Priorisierte Bearbeitung, direkte Koordination und erweiterter Support für strategische Projekte.</p>
+                                </div>
+                            </article>
+                            <!-- 14 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">14</span>
+                                <div>
+                                    <h3>Pre-Sales Engineering</h3>
+                                    <p>Technische Beratung, Konfigurationsunterstützung und Vorbereitung komplexer Lösungen.</p>
+                                </div>
+                            </article>
+                            <!-- 15 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">15</span>
+                                <div>
+                                    <h3>Service &amp; RMA</h3>
+                                    <p>Vereinfachte, priorisierte Prozesse bei Service-, RMA- und DOA-Fällen.</p>
+                                </div>
+                            </article>
+                            <!-- 16 -->
+                            <article class="benefit-card">
+                                <span class="benefit-number">16</span>
+                                <div>
+                                    <h3>Preis- &amp; Bestandsabsicherung</h3>
+                                    <p>Price Protection und Stock Rotation zur Reduzierung von Markt- und Bestandsrisiken.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <hr class="section-divider">
+
+                    <!-- ===== AUSGEWÄHLTE VORTEILE IM DETAIL (6–7) ===== -->
+                    <section>
+                        <div class="section-eyebrow">02 · WICHTIGE LEISTUNGEN IM FOKUS</div>
+                        <h2>Zahlungsziele, Kredite &amp; exklusive Vorteile</h2>
+                        <p class="section-intro-text">
+                            Die folgenden Leistungen bieten Partnern besonderen Handlungsspielraum und Wettbewerbsvorteile.
+                        </p>
+
+                        <!-- 1. Erweiterte Zahlungsziele & Kreditlinien -->
+                        <h3>Erweiterte Zahlungsziele und individuelle Kreditlinien</h3>
+                        <p>
+                            Partnerunternehmen können – abhängig von der jeweiligen Geschäftsbeziehung und der individuellen
+                            wirtschaftlichen Prüfung – von erweiterten Zahlungszielen oder individuell vereinbarten
+                            Warenkreditlinien profitieren.
+                        </p>
+                        <p>
+                            Die konkrete Gestaltung orientiert sich unter anderem an Umsatzentwicklung, Zahlungshistorie,
+                            Geschäftspotenzial, Projektstruktur und der bisherigen Zusammenarbeit. Erweiterte Zahlungs-
+                            und Kreditvereinbarungen können Partnern zusätzlichen Handlungsspielraum bei der Finanzierung
+                            ihres laufenden Geschäfts ermöglichen. <strong>Das anfängliche Zahlungsziel eines Partners beläuft sich auf 30 Tage netto.</strong>
+                        </p>
+
+                        <!-- 2. Flexible Warenkredite für Wachstum (vertieft) -->
+                        <h3>Flexible Warenkredite für Wachstum</h3>
+                        <div class="feature-panel">
+                            <p>
+                                Bei außergewöhnlich großen Aufträgen oder kurzfristig entstehenden Projektmöglichkeiten
+                                kann das bestehende Warenkreditvolumen vorübergehend erweitert werden. Unabhängig von
+                                bestehenden Zahlungszielen, laufenden Warenkrediten oder Dispositionsvereinbarungen
+                                können kurzfristige zusätzliche Warenkredite <strong>ohne zusätzliche Zinsforderungen</strong>
+                                und <strong>ohne Beteiligungs- oder Eigentumsansprüche</strong> gewährt werden.
+                            </p>
+                            <p>
+                                Die Entscheidung erfolgt unter Berücksichtigung der konkreten Markt- und Geschäftssituation
+                                sowie der bisherigen Zusammenarbeit und kann in geeigneten Fällen <strong>innerhalb weniger Stunden</strong>
+                                getroffen werden. Damit können Partner auch größere Aufträge und Projekte kurzfristig realisieren,
+                                ohne dass ihr Wachstum allein durch vorübergehende Liquiditätsgrenzen eingeschränkt wird.
+                            </p>
+                            <p>
+                                Ziel dieser Unterstützung ist nicht die Kontrolle oder wirtschaftliche Bindung des Partners,
+                                sondern die Förderung seines eigenständigen Wachstums. Der Partner bleibt in seiner
+                                unternehmerischen Entscheidung und Entwicklung unabhängig.
+                            </p>
+                            <div class="feature-closing">
+                                <strong>Ihr Auftrag. Ihr Wachstum. Unsere Unterstützung.</strong>
+                            </div>
+                        </div>
+
+                        <!-- 3. Früher Produktzugang & exklusive SKUs -->
+                        <h3>Früher Produktzugang &amp; exklusive SKUs</h3>
+                        <p>
+                            Partnerunternehmen können – soweit verfügbar – frühzeitig Zugang zu Produktneuheiten,
+                            Produktinformationen und ausgewählten Marktinformationen erhalten. Dies umfasst Early Briefings,
+                            Pre-Launch-Informationen sowie einen frühzeitigen Zugang zu relevanten Produkt- und Marktinformationen.
+                        </p>
+                        <p>
+                            Je nach Produkt und Herstellervereinbarung erhalten Partner Zugang zu exklusiven SKUs,
+                            Händlervarianten, Sondermodellen oder speziellen Produktkonfigurationen. Solche Produkte
+                            eröffnen zusätzliche Möglichkeiten zur Differenzierung gegenüber Wettbewerbern und unterstützen
+                            die Entwicklung eigener Kundenangebote.
+                        </p>
+
+                        <!-- 4. Deal Registration & geschützte Projekte -->
+                        <h3>Deal Registration und geschützte Projekte</h3>
+                        <p>
+                            Partnerunternehmen können qualifizierte Kundenprojekte und Geschäftschancen im Rahmen einer
+                            vereinbarten Deal Registration registrieren lassen. Ziel ist es, den Partner zu schützen,
+                            der ein Projekt entwickelt, eine Geschäftschance identifiziert oder die konkrete Kundenarbeit
+                            für ein qualifiziertes Projekt geleistet hat.
+                        </p>
+                        <p>
+                            Soweit die Voraussetzungen erfüllt sind, können registrierte Projekte vor unnötigen
+                            Channel-Konflikten geschützt und mit individuellen Projektpreisen, besonderen Konditionen
+                            oder einer projektbezogenen Warenplanung unterstützt werden.
+                        </p>
+
+                        <!-- 5. Qualifizierte Leads & Projektentwicklung -->
+                        <h3>Qualifizierte Leads &amp; gemeinsame Projektentwicklung</h3>
+                        <p>
+                            Soweit geeignete Geschäftsmöglichkeiten verfügbar sind, können qualifizierte Partner Zugang
+                            zu relevanten Leads, Kundenanfragen und Projektanfragen erhalten. Die Weitergabe erfolgt
+                            insbesondere dann, wenn ein Partner aufgrund seiner technischen Kompetenz, seines regionalen
+                            Zugangs oder seiner Branchenerfahrung besonders geeignet ist.
+                        </p>
+                        <p>
+                            Größere Projekte können bei Bedarf gemeinsam entwickelt werden – von der Angebotsplanung
+                            über die technische Vorbereitung bis hin zur Koordination von Warenverfügbarkeiten und der
+                            Unterstützung bei der Umsetzung.
+                        </p>
+
+                        <!-- 6. Vertraulichkeit & geschützter Informationszugang (NDA-Fokus) -->
+                        <h3>Vertraulichkeit &amp; geschützter Informationszugang</h3>
+                        <div class="highlight-box">
+                            <p><strong>Need-to-Know-Prinzip:</strong> Sie müssen dem Netzwerk keine internen Geschäfts-,
+                            Kunden-, Bestands- oder Finanzinformationen offenlegen. Informationen werden nur ausgetauscht,
+                            soweit sie für eine konkret vereinbarte Zusammenarbeit erforderlich sind.</p>
+                        </div>
+                        <p>
+                            Mit einer bestehenden Vertraulichkeitsvereinbarung (NDA) erhalten Partner Zugang zu ausgewählten
+                            vertraulichen Informationen – etwa zu Einkaufskonditionen, Produkt-Roadmaps, Pre-Launch-Informationen,
+                            Verfügbarkeiten, Forecasts, Kundeninformationen, Partnerinformationen, Bonus- und Incentive-Systemen,
+                            technischen Informationen oder Geschäftsgeheimnissen.
+                        </p>
+                        <p>
+                            <strong>Die gegenseitige Vertraulichkeit gilt für beide Seiten.</strong> Vertrauliche Informationen
+                            des Partnerunternehmens werden im Rahmen der jeweiligen Vereinbarungen entsprechend geschützt.
+                            Die Verpflichtung gilt während der Partnerschaft und <strong>drei Jahre über deren Beendigung hinaus</strong>,
+                            soweit keine gesetzlichen oder behördlichen Offenlegungspflichten bestehen.
+                        </p>
+                        <p>
+                            Der konkrete Zugang zu Informationen erfolgt ausschließlich im jeweils erforderlichen und
+                            vereinbarten Umfang. Vertrauliche Informationen dürfen nur für die Zwecke der jeweiligen
+                            Zusammenarbeit verwendet werden und unterliegen den Bestimmungen der jeweiligen NDA- oder
+                            sonstigen Vertraulichkeitsvereinbarung.
+                        </p>
+
+                        <!-- 7. EDI & digitale Prozesse -->
+                        <h3>EDI &amp; digitale Logistikabwicklung</h3>
+                        <p>
+                            Partnerunternehmen können Zugang zu digitalen Kommunikations- und EDI-Systemen erhalten.
+                            Dadurch wird ein strukturierter Informationsaustausch entlang wesentlicher Prozesse der
+                            Auftrags- und Logistikabwicklung ermöglicht.
+                        </p>
+                        <p>
+                            Die technische Anbindung kann – abhängig von den jeweiligen Systemen – insbesondere
+                            elektronische Auftragsübermittlung, Auftragsbestätigungen, Liefer- und Statusinformationen,
+                            Tracking- und Versanddaten, Verfügbarkeitsinformationen sowie automatisierte Datenübertragung
+                            und technische Schnittstellen umfassen. Die Digitalisierung reduziert manuellen Aufwand,
+                            verringert Fehlerquellen und schafft höhere Transparenz über den gesamten Warenfluss.
+                        </p>
+                    </section>
+
+                    <hr class="section-divider">
+
+                    <!-- ===== GESCHÄFTSORDNUNG (AUSZUG) ===== -->
+                    <section>
+                        <div class="section-eyebrow">03 · ORGANISATORISCHER RAHMEN</div>
+                        <h2>Geschäftsordnung · Auszug</h2>
+                        <p class="section-intro-text">
+                            Die folgenden Bestimmungen bilden den organisatorischen Rahmen des Partnernetzwerks.
+                            Die vollständige Geschäftsordnung steht als PDF zum Download bereit.
+                        </p>
+
+                        <div class="rule-block">
+                            <h3>1. Zweck und Selbstverständnis</h3>
+                            <p>
+                                Das Partnernetzwerk dient der langfristigen Entwicklung und Stärkung seiner Partner.
+                                Es schafft einen verlässlichen Rahmen für wirtschaftliche Zusammenarbeit, gemeinsame Marktchancen
+                                und die Nutzung vorhandener Ressourcen. Bestehende Kundenbeziehungen und registrierte
+                                Geschäftschancen werden geschützt.
+                            </p>
+                        </div>
+
+                        <div class="rule-block">
+                            <h3>2. Selbstständigkeit der Partner</h3>
+                            <p>
+                                Partnerunternehmen bleiben rechtlich und wirtschaftlich selbstständig. Jedes Partnerunternehmen
+                                handelt im eigenen Namen und auf eigene Rechnung.
+                            </p>
+                            <div class="principle-grid">
+                                <div><strong>Langfristigkeit</strong><span>Belastbare und dauerhafte Geschäftsbeziehungen</span></div>
+                                <div><strong>Verlässlichkeit</strong><span>Klare Vereinbarungen und verbindliche Kommunikation</span></div>
+                                <div><strong>Qualität</strong><span>Professionelle Geschäftsprozesse</span></div>
+                                <div><strong>Fairness</strong><span>Respektvolle Zusammenarbeit</span></div>
+                                <div><strong>Transparenz</strong><span>Nachvollziehbare Kommunikation</span></div>
+                                <div><strong>Wachstum</strong><span>Wirtschaftliche Entwicklung auf tragfähiger Grundlage</span></div>
+                            </div>
+                        </div>
+
+                        <div class="rule-block">
+                            <h3>3. Kosten und wirtschaftliche Grundlage</h3>
+                            <p>
+                                Die Teilnahme am Partnernetzwerk ist kostenfrei. Es werden keine Aufnahmegebühren, Mitgliedsbeiträge,
+                                Franchise-, Lizenz- oder Systemgebühren erhoben. Die CTG finanziert sich aus den regulären Handelsgeschäften.
+                            </p>
+                        </div>
+
+                        <div class="rule-block">
+                            <h3>4. Aufnahme und Partnerstatus</h3>
+                            <p>
+                                Das Partnernetzwerk steht gewerblich tätigen Unternehmen offen, insbesondere Großhändlern,
+                                Importeuren, Distributoren, Fachhändlern, Handelsunternehmen, Onlinehändlern und Projektunternehmen.
+                                Die Aufnahme erfolgt auf Grundlage einer schriftlichen Interessenbekundung oder auf Einladung.
+                                Über die Aufnahme entscheidet das Partnergremium.
+                            </p>
+                        </div>
+
+                        <div class="rule-block">
+                            <h3>5. Partnergremium</h3>
+                            <p>
+                                Das Partnergremium begleitet die Weiterentwicklung des Netzwerks, beteiligt die Partner an
+                                Grundsatzfragen und entscheidet über die Aufnahme neuer Partner. Das Gremium besteht aus
+                                25 Vertretern der Partnerunternehmen. Es besitzt keine Vertretungsmacht für die CTG;
+                                die unternehmerische Verantwortung verbleibt bei der Geschäftsführung.
+                            </p>
+                        </div>
+
+                        <div class="rule-block">
+                            <h3>6. Vertraulichkeit</h3>
+                            <p>
+                                Geschäfts- und Betriebsgeheimnisse sowie nicht öffentlich zugängliche Informationen über
+                                Geschäftstätigkeit, Kunden, Lieferanten, Preise, Konditionen, Strategien und interne Prozesse
+                                werden vertraulich behandelt. Die Verpflichtung gilt während der Partnerschaft und drei Jahre
+                                über deren Beendigung hinaus. Besondere Vertraulichkeitsvereinbarungen (NDA) gehen dieser
+                                Bestimmung vor.
+                            </p>
+                        </div>
+
+                        <div class="rule-block">
+                            <h3>7. Verbindliche Geschäftsgrundsätze</h3>
+                            <p>
+                                Jeder Partner handelt ehrlich, zuverlässig und professionell, erfüllt getroffene Vereinbarungen,
+                                wahrt vertrauliche Informationen und beachtet die anwendbaren gesetzlichen Vorschriften.
+                                Unzulässige Zahlungen, Bestechung und unberechtigte Vorteilsgewährungen sind ausgeschlossen.
+                            </p>
+                        </div>
+
+                        <div class="rule-block">
+                            <h3>8. Beendigung und Schlussbestimmungen</h3>
+                            <p>
+                                Die Partnerschaft kann durch schriftliche Erklärung beendet werden. Die CTG beendet eine Partnerschaft
+                                bei einem wichtigen Grund, insbesondere bei schwerwiegenden Vertragsverstößen, erheblichen
+                                Zahlungsrückständen, Verletzungen der Vertraulichkeit, betrügerischem oder rechtswidrigem Verhalten
+                                oder erheblichen Compliance-Risiken.
+                            </p>
+                            <p>
+                                Die Partnerschaft begründet keine gesellschaftsrechtliche Beteiligung, keine gemeinsame
+                                Unternehmensführung, keine Vertretungsmacht und keine gemeinsame Haftung. Individuelle Verträge
+                                und die Allgemeinen Geschäftsbedingungen bleiben eigenständig bestehen.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- ===== DOWNLOAD VOLLSTÄNDIGE GESCHÄFTSORDNUNG ===== -->
+								<div class="text-center mt-4 mb-3" style="background: #f8f9fc; padding: 2rem 1.5rem; border-radius: 12px; border: 1px solid var(--border-color);">
+									<h3 class="fw-bold text-primary-custom">Vollständige Geschäftsordnung</h3>
+									<p class="text-muted">Laden Sie die vollständige Geschäftsordnung des CTG Partnernetzwerks als PDF herunter oder sehen Sie sie online ein.</p>
+									<div class="d-flex flex-wrap justify-content-center gap-3">
+										<a href="../Partnernetzwerk_Geschaeftsordnung.pdf?download" class="btn btn-offer primary-btn">
+											<i class="bi bi-download me-2"></i>DOWNLOAD PDF
+										</a>
+										<a href="../Partnernetzwerk_Geschaeftsordnung.pdf" class="btn btn-offer-secondary" target="_blank">
+											<i class="bi bi-eye me-2"></i>ONLINEANSICHT
+										</a>
+									</div>
+								</div>
+
+                    <!-- ===== FAQ ===== -->
+                    <div class="faq-box">
+                        <div><strong>Muss ich meine Umsätze oder Lagerbestände offenlegen?</strong> Nein. Nur für konkrete Leistungen wie Kreditlinien oder Projektpreise können die hierfür erforderlichen Angaben notwendig sein.</div>
+                        <div><strong>Muss ich andere Partner beliefern?</strong> Nein. Dies ist ausdrücklich nicht verpflichtend.</div>
+                        <div><strong>Was kostet mich die Partnerschaft?</strong> Die Teilnahme am Netzwerk ist kostenfrei. Die CTG finanziert sich aus den regulären Handelsgeschäften.</div>
+                        <div><strong>Begründet die Partnerschaft eine gesellschaftsrechtliche Beteiligung?</strong> Nein. Jedes Partnerunternehmen bleibt rechtlich und wirtschaftlich vollständig eigenständig.</div>
+                        <div><strong>Gibt es Mindestumsätze oder Exklusivitätsbindungen?</strong> Nein. Die Partnerschaft verpflichtet zu keinen Mindestumsätzen oder ausschließlichen Bezugsbindungen.</div>
+                        <div><strong>Wie lange gilt die Vertraulichkeitsverpflichtung?</strong> Während der gesamten Partnerschaft und drei Jahre über deren Beendigung hinaus, sofern keine gesetzlichen Offenlegungspflichten bestehen.</div>
+                    </div>
+
+                    <!-- ===== KONTAKT ===== -->
+                    <div class="contact-box">
+                        <div class="section-eyebrow" style="color: var(--accent-color);">KONTAKT</div>
+                        <h2>Interesse an einer Partnerschaft?</h2>
+                        <p>
+                            Unternehmen, die eine langfristige Zusammenarbeit mit der CTG aufbauen oder erweitern möchten,
+                            richten ihre schriftliche Interessenbekundung an die Chumpol Trading Group.
+                        </p>
+                        <p class="mb-2">
+                            <strong>E-Mail:</strong>
+                            <a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a>
+                        </p>
+                        <p class="mb-0">
+                            <strong>Betreff:</strong> Interessenbekundung Partnernetzwerk
+                        </p>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DESKTOP FOOTER ===== -->
+    <footer class="ctg-footer footer-desktop-version">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-headline">OFFICE BANGKOK</h5>
+                    <ul class="footer-list">
+                        <li>Kronos Sathorn Tower</li>
+                        <li>46 Sathorn Nuea Bang Rak</li>
+                        <li>Bangkok 10500</li>
+                    </ul>
+                    <span class="sub-label">TELEFON</span>
+                    <ul class="footer-list">
+                        <li>☎ 0 90 8884 83 1</li>
+                        <li>☎ 0 90 8884 83 2</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-headline">OFFICE LAMPANG</h5>
+                    <ul class="footer-list">
+                        <li>355/46 Boonwat Road</li>
+                        <li>Muang Lampang</li>
+                        <li>52100 Lampang</li>
+                    </ul>
+                    <span class="sub-label">E-MAIL</span>
+                    <ul class="footer-list">
+                        <li>📧 info@ctg-group.eu</li>
+                        <li>📧 home@ctg-group.eu</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-headline">SUPPORT</h5>
+                    <ul class="footer-list">
+                        <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+                        <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+                        <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+                    </ul>
+                    <span class="sub-label">REGISTER</span>
+                    <ul class="footer-list">
+                        <li>DBD: 0525560001568</li>
+                        <li>Established: 2017</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-headline">QUICK LINKS</h5>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="edi-gateway.html">EDI Gateway</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-fixed">
+                &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MOBILE FOOTER ===== -->
+    <footer class="ctg-footer footer-mobile-version">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h5 class="footer-headline">OFFICE BANGKOK</h5>
+                    <ul>
+                        <li>Kronos Sathorn Tower</li>
+                        <li>46 Sathorn Nuea Bang Rak</li>
+                        <li>Bangkok 10500</li>
+                    </ul>
+                    <span class="sub-label">TELEFON</span>
+                    <ul>
+                        <li>☎ 0 90 8884 83 1</li>
+                        <li>☎ 0 90 8884 83 2</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5 class="footer-headline">OFFICE LAMPANG</h5>
+                    <ul>
+                        <li>355/46 Boonwat Road</li>
+                        <li>Muang Lampang</li>
+                        <li>52100 Lampang</li>
+                    </ul>
+                    <span class="sub-label">E-MAIL</span>
+                    <ul>
+                        <li>📧 info@ctg-group.eu</li>
+                        <li>📧 home@ctg-group.eu</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5 class="footer-headline">SUPPORT</h5>
+                    <ul>
+                        <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+                        <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+                        <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+                    </ul>
+                    <span class="sub-label">REGISTER</span>
+                    <ul>
+                        <li>DBD: 0525560001568</li>
+                        <li>Established: 2017</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5 class="footer-headline">QUICK LINKS</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="agb.html">AGB</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="edi-gateway.html">EDI Gateway</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-fixed">
+                &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

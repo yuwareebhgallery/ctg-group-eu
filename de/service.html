@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group - Unsere Dienstleistungen">
+  <meta name="keywords" content="Service, Distribution, Dropshipping, CTG Group">
+  <title>Chumpol - Service</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Helvetica, Arial, sans-serif !important;
+    }
+    body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name {
+      font-family: var(--font-main) !important;
+    }
+    body, p {
+      font-family: var(--font-main) !important;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000000;
+    }
+    .navbar-brand.company-name {
+      font-size: 1.1rem !important;
+      color: #cdc9a5 !important;
+      letter-spacing: 1px;
+    }
+    h1.main-heading {
+      color: #cdc9a5 !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 28px !important;
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+
+    /* ===== FOOTER (aus index.html) ===== */
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 40px;
+    }
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 11px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+    .ctg-footer li {
+      font-size: 12px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+    }
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+    }
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 10px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 11px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.0 !important;
+    }
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    /* ===== SERVICE‑SPEZIFISCHE STYLES (einspaltig, ohne Kästen) ===== */
+    .service-content h1 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    .service-content h3 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      font-size: 1.6rem !important;
+    }
+    .service-content h4 {
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      font-size: 1.2rem !important;
+    }
+    .service-section {
+      margin-bottom: 2rem;
+    }
+    .service-section .icon-left {
+      display: inline-block;
+      width: 2rem;
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+    .service-section .block-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--primary-dark);
+      display: inline-block;
+      margin-bottom: 0.2rem;
+    }
+    .service-section .block-text {
+      margin-left: 2.5rem;  /* Einzug für den Text, damit Icon links steht */
+      color: #333;
+      line-height: 1.6;
+    }
+    .service-section .block-text p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Abwechselnder Hintergrund für manche Blöcke – dezent */
+    .bg-soft-light {
+      background-color: #f8faff;
+      padding: 1.5rem 1rem;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+    }
+    .bg-soft-light .icon-left {
+      color: var(--primary-color);
+    }
+
+    /* Trennlinie */
+    .section-divider {
+      border: 0;
+      border-top: 1px solid #e9ecf5;
+      margin: 2rem 0;
+    }
+
+    /* Listen mit Icons */
+    .icon-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    .icon-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0.8rem;
+    }
+    .icon-list li i {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-right: 0.8rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+    .icon-list li strong {
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    /* ===== SPRACHUMSCHALTER ===== */
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid #cdc9a5;
+      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
+    }
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      .language-switcher-nav img {
+        width: 16px;
+      }
+      .navbar > .container {
+        position: relative;
+      }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 767px) {
+      .footer-desktop-version { display: none !important; }
+      .footer-mobile-version { display: block !important; }
+      .navbar-brand.company-name { font-size: 0.80rem !important; }
+      h1.main-heading { margin-top: 15px !important; font-size: 16px !important; font-weight: 700 !important; letter-spacing: 1px !important; line-height: 1.2 !important; padding: 0 10px; color: #ffffff !important; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+      .header-paragraph .paragraph-text-3 { font-size: 11px !important; }
+      body, p, .lead, .text-muted { font-size: 12px !important; line-height: 1.3 !important; }
+      section.py-5 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+      .service-content h1 { font-size: 1.4rem !important; margin-bottom: 0.8rem !important; margin-top: 0.3rem !important; }
+      .service-content h3 { font-size: 1.3rem !important; }
+      .service-section .block-text { margin-left: 1.8rem; }
+      .footer-mobile-version.ctg-footer { padding: 25px 0 5px 0 !important; margin-top: 15px !important; }
+      .footer-mobile-version .footer-row { display: block !important; }
+      .footer-mobile-version .footer-col { width: 100% !important; margin-bottom: 15px !important; padding-left: 15px !important; }
+      .footer-mobile-version .footer-headline { font-size: 10px !important; margin-bottom: 8px !important; margin-top: 18px !important; }
+      .footer-mobile-version .footer-col:first-child .footer-headline { margin-top: 0 !important; }
+      .footer-mobile-version li { font-size: 10px !important; margin-bottom: 4px !important; }
+      .footer-mobile-version .footer-bottom-fixed { font-size: 9px !important; }
+    }
+    .text-primary-custom { color: var(--primary-color) !important; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://ctg-group.eu/#organization",
+    "name": "Chumpol Trading Group Limited Company",
+    "alternateName": "CTG Global",
+    "url": "https://ctg-group.eu",
+    "taxID": "0105557140880",
+    "duns": "0525560001568",
+    "foundingDate": "2017-12",
+    "description": "B2B wholesale and trading company. No public advertising, no private customers, no online shop. Business relationships are established through direct contact and professional referrals.",
+    "address": [
+      { "@type": "PostalAddress", "streetAddress": "355-46 Boonwat Road, Suandok", "addressLocality": "Lampang", "postalCode": "52100", "addressCountry": "TH" },
+      { "@type": "PostalAddress", "streetAddress": "Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom", "addressLocality": "Bang Rak", "addressRegion": "Bangkok", "postalCode": "10500", "addressCountry": "TH" }
+    ],
+    "employee": { "@type": "QuantitativeValue", "value": 82 },
+    "founders": [
+      { "@type": "Person", "name": "Gerhard Holzapfel", "jobTitle": "Manager for German & European Market" },
+      { "@type": "Person", "name": "Siriphaon Wanatung", "jobTitle": "General Manager" }
+    ],
+    "contactPoint": { "@type": "ContactPoint", "contactType": "customer service", "email": "office@ctg-group.eu", "contactOption": "ByAppointmentOnly" },
+    "additionalProperty": [
+      { "@type": "PropertyValue", "name": "hasOnlineShop", "value": "False" },
+      { "@type": "PropertyValue", "name": "sellsToPrivateCustomers", "value": "False" },
+      { "@type": "PropertyValue", "name": "registeredInThailand", "value": "True", "valueReference": "DBD registration 0525560001568" }
+    ],
+    "sameAs": [ "https://ctg-group.eu/", "https://ctg-group.eu/impressum", "https://ctg-group.eu/agb", "https://ctg-group.eu/de/" ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand company-name" href="index.html">Chumpol Trading Group Company Limited.</a>
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="service.html" title="Deutsch" class="active"><img src="https://flagcdn.com/w20/de.png" alt="Deutsche Flagge"></a>
+        <a href="../service.html" title="English"><img src="https://flagcdn.com/w20/gb.png" alt="Britische Flagge"></a>
+      </div>
+      <div class="language-switcher-nav d-lg-none">
+        <a href="service.html" title="Deutsch" class="active"><img src="https://flagcdn.com/w20/de.png" alt="Deutsche Flagge"></a>
+        <a href="../service.html" title="English"><img src="https://flagcdn.com/w20/gb.png" alt="Britische Flagge"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+          <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI-Gateway</a></li>
+          <li class="nav-item"><a class="nav-link" href="partner.html">Partner</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading"><span class="heading-text-1">UNSERE LEISTUNGSANSICHT</span></h1>
+        <p class="paragraph header-paragraph"><span class="paragraph-text-2"><strong class="paragraph-text-3">SERVICE UND LEISTUNGEN</strong></span></p>
+      </header>
+    </div>
+  </div>
+
+  <!-- HAUPTINHALT – EINSPALTIG, OHNE KÄSTCHEN ODER SPALTEN -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10 col-xl-9 mx-auto service-content">
+
+          <!-- EINLEITUNG -->
+          <h1 class="fs-2 fw-normal text-start mb-4"><strong>Unser Service</strong> – Ihr strategischer Vorsprung im globalen Markt</h1>
+          <p>Bei der Chumpol Trading Group (CTG) vereinen wir hochmoderne Logistiklösungen, exklusive Produktportfolios und ganzheitliche Full‑Service‑Konzepte. Wir verstehen uns nicht nur als Lieferant, sondern als strategischer Partner für Ihr nachhaltiges Wachstum.</p>
+
+          <hr class="section-divider">
+
+          <!-- 1. DIREKTVERSAND AB WERK DDP -->
+          <div class="service-section">
+            <h3 class="fw-bold text-primary-custom"><span class="icon-left bi bi-truck"></span>Direktversand ab Werk DDP</h3>
+            <div class="block-text">
+              <p>Maximale Sicherheit durch unsere <strong>DDP-Incoterms</strong> (Delivered Duty Paid). Wir übernehmen die volle Verantwortung für den gesamten Warenfluss ab Fabrik – inklusive Transport, Zollformalitäten, Steuern und lückenloser Warenversicherung bis zu Ihrer Lieferanschrift.</p>
+              <p class="text-muted small">Durch unsere Kooperation mit globalen Luftfracht‑Führern und der finalen Last‑Mile‑Zustellung durch <strong>DHL</strong> garantieren wir Planbarkeit in einer volatilen Branche.</p>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 2. EXKLUSIVE MARKENPARTNERSCHAFTEN -->
+          <div class="service-section bg-soft-light">
+            <h3 class="fw-bold text-primary-custom"><span class="icon-left bi bi-award"></span>Exklusive Markenpartnerschaften</h3>
+            <div class="block-text">
+              <p>Verschaffen Sie sich Zugriff auf die Premium‑Marken der Mobilfunkwelt: <strong>Apple, Samsung, Asus, Xiaomi</strong> und <strong>Huawei</strong>. Unser globales Sourcing‑Team sichert tägliche Bestandsaktualisierungen.</p>
+              <p class="text-muted small">Sie erhalten Zugriff auf die neuesten Flaggschiff‑Modelle und limitierte Editionen – stets fabrikneu, in Originalverpackung und vollständig CE‑zertifiziert für den europäischen Markt.</p>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 3. UNSERE STÄRKEN – aus dem Bild übernommen, als einzelne Blöcke -->
+          <h3 class="fw-bold text-primary-custom mb-3">Unsere Stärken</h3>
+          <p class="mb-4">Leistungen, die direkt auf Wachstum, Liefersicherheit und effiziente Geschäftsprozesse einzahlen.</p>
+
+          <!-- Stärke 1 -->
+          <div class="service-section">
+            <h4><span class="icon-left bi bi-globe2"></span><span class="block-title">Globales Sourcing &amp; direkter Marktzugang</span></h4>
+            <div class="block-text">
+              <p>Direkte Nähe zu Produktionsstandorten und Herstellerkontakten schafft kurze Entscheidungswege, aktuelle Marktinformationen und Zugang zu neuen Produkten.</p>
+            </div>
+          </div>
+
+          <!-- Stärke 2 -->
+          <div class="service-section bg-soft-light">
+            <h4><span class="icon-left bi bi-truck"></span><span class="block-title">Flexible Logistik &amp; Direktversand</span></h4>
+            <div class="block-text">
+              <p>Vom Direktversand ab Werk bis zu individuellen Dropshipping‑ und Fulfillment‑Lösungen gestalten wir die Warenbewegung passend zu Ihrem Geschäftsmodell.</p>
+            </div>
+          </div>
+
+          <!-- Stärke 3 -->
+          <div class="service-section">
+            <h4><span class="icon-left bi bi-graph-up-arrow"></span><span class="block-title">Partnerschaft für Wachstum</span></h4>
+            <div class="block-text">
+              <p>Individuelle Konditionen, flexible Warenkredite, geschützte Projekte und priorisierte Unterstützung schaffen zusätzlichen Spielraum für Wachstum.</p>
+            </div>
+          </div>
+
+          <!-- ===== HIER KOMMEN DIE PARTNER-VORTEILE (aus index.html) ALS ALLGEMEINE SERVICE-LEISTUNGEN ===== -->
+          <div class="service-section bg-soft-light">
+            <h4><span class="icon-left bi bi-credit-card"></span><span class="block-title">Flexible Warenkredite für Wachstum</span></h4>
+            <div class="block-text">
+              <p>Kurzfristig höhere Warenkreditvolumen für große Aufträge – schnell, unkompliziert und ohne zusätzliche Zinsforderungen oder Beteiligungshintergedanken. Unabhängig von bestehenden Regeln, laufenden Krediten und Zahlungszielen können bei Bedarf zinsfreie Zusatzkredite vergeben werden. Die Entscheidung ist marktgerecht und innerhalb weniger Stunden umsetzbar.</p>
+              <p><em>Ihr Auftrag. Ihr Wachstum. Unsere Unterstützung.</em></p>
+            </div>
+          </div>
+
+          <div class="service-section">
+            <h4><span class="icon-left bi bi-diagram-3"></span><span class="block-title">Professionelle EDI‑Anbindung &amp; Logistikabwicklung</span></h4>
+            <div class="block-text">
+              <p>Partner erhalten Zugang zu unserem EDI‑System und damit zu einer direkten digitalen Kommunikation entlang der gesamten Auftrags‑ und Logistikabwicklung. Von der Auftragsübermittlung über Lieferstatus und Tracking bis zur Zollabwicklung werden relevante Informationen schnell, transparent und professionell ausgetauscht – das reduziert manuellen Aufwand und schafft Transparenz.</p>
+            </div>
+          </div>
+
+          <div class="service-section bg-soft-light">
+            <h4><span class="icon-left bi bi-tags"></span><span class="block-title">Individuelle Partnerkonditionen</span></h4>
+            <div class="block-text">
+              <p>Attraktive, auf Umsatz, Produktgruppe und Volumen abgestimmte Konditionen – inklusive Staffel‑, Mengen‑ und individueller Projektpreise.</p>
+            </div>
+          </div>
+
+          <div class="service-section">
+            <h4><span class="icon-left bi bi-star"></span><span class="block-title">Exklusiver Produktzugang</span></h4>
+            <div class="block-text">
+              <p>Früherer Zugriff auf Neuheiten, Pre‑Launch‑Informationen und exklusive SKUs. So können Sie neue Produkte vor dem Wettbewerb platzieren.</p>
+            </div>
+          </div>
+
+          <div class="service-section bg-soft-light">
+            <h4><span class="icon-left bi bi-shield-check"></span><span class="block-title">Priorisierung bei knappen Produkten</span></h4>
+            <div class="block-text">
+              <p>Reservierte Mengen und bevorzugte Allokation bei Engpässen sorgen für höhere Liefersicherheit – gerade dann, wenn Produkte stark nachgefragt sind.</p>
+            </div>
+          </div>
+
+          <div class="service-section">
+            <h4><span class="icon-left bi bi-lock"></span><span class="block-title">Geschützte Projekte &amp; qualifizierte Leads</span></h4>
+            <div class="block-text">
+              <p>Deal Registration mit geschütztem Projektpreis sowie Weitergabe qualifizierter Leads und Projektanfragen. Gemeinsam werden größere Kunden und Projekte gezielt entwickelt.</p>
+            </div>
+          </div>
+
+          <div class="service-section bg-soft-light">
+            <h4><span class="icon-left bi bi-file-earmark-lock"></span><span class="block-title">Vertraulichkeit, Transparenz &amp; Zugang zu geschützten Informationen</span></h4>
+            <div class="block-text">
+              <p>Durch entsprechende NDA‑Regelungen erhalten Sie – im jeweils vereinbarten Umfang – Zugang zu vertraulichen Informationen wie Einkaufskonditionen, Herstellervereinbarungen, Produkt‑Roadmaps, Verfügbarkeiten, Allokationen, Projekt‑ und Kundendaten, Forecasts und strategischen Planungen. Ihre Daten und unsere Informationen werden umfassend vor Weitergabe an Dritte geschützt.</p>
+            </div>
+          </div>
+
+          <div class="service-section">
+            <h4><span class="icon-left bi bi-headset"></span><span class="block-title">Exklusiver Partner‑Support</span></h4>
+            <div class="block-text">
+              <p>Priorisierter Support, persönliche Ansprechpartner sowie Pre‑Sales Engineering und Konfigurationsberatung unterstützen Sie bei komplexen Projekten und erhöhen die Umsetzungsgeschwindigkeit.</p>
+            </div>
+          </div>
+
+          <div class="service-section bg-soft-light">
+            <h4><span class="icon-left bi bi-shield-plus"></span><span class="block-title">Preis‑ &amp; Bestandsabsicherung</span></h4>
+            <div class="block-text">
+              <p>Price Protection bei Preissenkungen auf Lagerware sowie Stock Rotation und Abverkaufsunterstützung reduzieren Ihr Bestands‑ und Preisrisiko.</p>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 4. STRATEGISCHE PARTNERSCHAFTEN & FULL-SERVICE (aus Bild) -->
+          <div class="service-section">
+            <h3 class="fw-bold text-primary-custom"><span class="icon-left bi bi-building"></span>Strategische Partnerschaften am Produktionsstandort</h3>
+            <div class="block-text">
+              <p>Unsere Präsenz an wichtigen Produktionsstandorten ermöglicht kurze Entscheidungswege sowie ein tiefes Verständnis für Produktionsprozesse, Qualitätskontrollen und Lieferketten. Diese Positionierung schafft Transparenz, direkten Zugang zu Neuprodukt‑Launches und die Fähigkeit, schnell auf Marktveränderungen zu reagieren.</p>
+            </div>
+          </div>
+
+          <div class="service-section bg-soft-light">
+            <h3 class="fw-bold text-primary-custom"><span class="icon-left bi bi-chat-dots"></span>Persönlicher Full‑Service‑Support</h3>
+            <div class="block-text">
+              <p>Unser Support‑Konzept geht über die reine Bestellabwicklung hinaus. Dazu gehören:</p>
+              <ul class="icon-list">
+                <li><i class="bi bi-check-lg"></i><span><strong>Tracking</strong> mit proaktiver Benachrichtigung bei Abweichungen</span></li>
+                <li><i class="bi bi-check-lg"></i><span><strong>Individuelle Preisstaffeln</strong> basierend auf Volumen und Potenzial</span></li>
+                <li><i class="bi bi-check-lg"></i><span><strong>After‑Sales‑Betreuung</strong> mit dedizierten Ansprechpartnern</span></li>
+                <li><i class="bi bi-check-lg"></i><span><strong>Prozessoptimierung</strong> Ihrer gesamten Supply Chain</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 5. WUNSCH-DROPSHIPPING & FULFILLMENT -->
+          <div class="service-section">
+            <h3 class="fw-bold text-primary-custom"><span class="icon-left bi bi-box-seam"></span>Wunsch‑Dropshipping &amp; Fulfillment</h3>
+            <div class="block-text">
+              <ul class="icon-list">
+                <li><i class="bi bi-check-lg"></i><span><strong>Kapitalschonung:</strong> Keine hohen Investitionen in eigenes Lagerpersonal oder Fläche.</span></li>
+                <li><i class="bi bi-check-lg"></i><span><strong>Geschwindigkeit:</strong> Automatisierte Prozesse verkürzen die Zeit von der Bestellung bis zur Zustellung.</span></li>
+                <li><i class="bi bi-check-lg"></i><span><strong>Keine Überbestände oder Abschreibungen</strong> – Sie reagieren flexibel auf Nachfrage und Marktveränderungen.</span></li>
+                <li><i class="bi bi-check-lg"></i><span>Korrekte Planungssicherheit: Ihre Logistik wird von einer fixen Kostenstruktur zu einer variablen, umsatzabhängigen Leistung.</span></li>
+                <li><i class="bi bi-check-lg"></i><span>Wettbewerbsvorteil: Ideal für E‑Commerce‑Plattformen, die ein breites Sortiment „Just‑in‑Time“ anbieten möchten.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="section-divider">
+
+          <!-- 6. ERWEITERTE LEISTUNGEN (bisherige Detail-Liste) -->
+          <div class="service-section bg-soft-light">
+            <h3 class="fw-bold text-primary-custom"><span class="icon-left bi bi-list-ul"></span>Unsere erweiterten Leistungen im Detail</h3>
+            <div class="block-text">
+              <ul class="icon-list">
+                <li><i class="bi bi-shield-check"></i><span><strong>Exklusive Direktpartnerschaften mit Herstellern:</strong> Als autorisierter Vertriebskanal etablierter Markenführer garantieren wir kontinuierliche Verfügbarkeit, marktkonforme Konditionen und exklusive Zugänge zu Neuprodukt‑Launches.</span></li>
+                <li><i class="bi bi-award"></i><span><strong>Vollständige Marktkonformität und Zertifizierung:</strong> Jedes Produkt ist Originalneuware, entspricht den EU‑Spezifikationen und CE‑Richtlinien und wird speziell für den deutschen Wirtschaftsraum gefertigt.</span></li>
+                <li><i class="bi bi-geo-alt"></i><span><strong>Lokale Garantieabwicklung und After‑Sales‑Support:</strong> Die Geräte unterliegen der standardmäßigen Herstellergarantie, die bei Bedarf direkt vor Ort im jeweiligen Land in Anspruch genommen werden kann.</span></li>
+                <li><i class="bi bi-truck"></i><span><strong>Integriertes Direktversand‑ und Dropshipping‑Management:</strong> Automatisierte Schnittstellen zu führenden Versanddienstleistern ermöglichen Just‑in‑Time‑Belieferung Ihrer Endkunden – unter Ihrem Brand oder neutral.</span></li>
+                <li><i class="bi bi-graph-up"></i><span><strong>Strategisches Portfolio‑ und Markenmanagement:</strong> Unser Analytics‑Team monitoriert Markttrends, Preisbewegungen und Produktlebenszyklen, um Ihre Wettbewerbsfähigkeit kontinuierlich zu stärken.</span></li>
+              </ul>
+            </div>
+          </div>
+		  
+		  <!-- NEU: Rechtssicherheit -->
+<div class="service-section">
+  <h3 class="fw-bold text-primary-custom"><span class="icon-left bi bi-shield-check"></span>Rechtssicherheit und Transparenz</h3>
+  <div class="block-text">
+    <p>Alle Verträge und Geschäftsbeziehungen mit CTG unterliegen dem deutschen materiellen Recht (BGB/HGB). Dies gibt Ihnen als Partner eine klare, verlässliche und international anerkannte rechtliche Grundlage – für eine langfristig vertrauensvolle Zusammenarbeit.</p>
+    <p class="text-muted small">Weitere Informationen finden Sie in unseren <a href="agb.html" style="color: var(--primary-color); font-weight:600;">Allgemeinen Geschäftsbedingungen</a>.</p>
+  </div>
+</div>
+<hr class="section-divider">
+
+          <hr class="section-divider">
+
+          <!-- 7. INDIVIDUELLE LÖSUNGEN (wie gewünscht) -->
+          <div class="special-feature-section" style="background: #f0f8ff; border-left: 4px solid #0c0c70; border-radius: 8px; padding: 1.5rem; margin: 2rem 0;">
+            <h3 class="fw-bold text-primary-custom">Individuelle Lösungen für Ihr Geschäftsmodell</h3>
+            <p>Wir verstehen, dass jeder Kunde einzigartige Anforderungen hat. Daher entwickeln wir maßgeschneiderte Lösungen, die genau auf Ihr Geschäftsmodell, Ihre Zielgruppe und Ihre Wachstumsziele abgestimmt sind. Ob Sie als etablierter Händler skalieren möchten oder als Start‑up im E‑Commerce durchstarten – wir finden die optimale Partnerschaftsstruktur für Ihren Erfolg.</p>
+            <p class="mb-0 text-muted">Kontaktieren Sie uns für eine persönliche Beratung, wie wir Ihre spezifischen Anforderungen in eine nachhaltige Wettbewerbsstrategie umwandeln können.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (identisch mit index.html) ===== -->
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul class="footer-list">
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+          <span class="sub-label">TELEFON</span>
+          <ul class="footer-list">
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul class="footer-list">
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+          <span class="sub-label">E-MAIL</span>
+          <ul class="footer-list">
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul class="footer-list">
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+          <span class="sub-label">REGISTER</span>
+          <ul class="footer-list">
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="agb.html">AGB</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FOOTER -->
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul>
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+          <span class="sub-label">TELEFON</span>
+          <ul>
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul>
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+          <span class="sub-label">E-MAIL</span>
+          <ul>
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul>
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+          <span class="sub-label">REGISTER</span>
+          <ul>
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="agb.html">AGB</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

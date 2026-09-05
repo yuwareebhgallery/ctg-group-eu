@@ -1,0 +1,927 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group – General Terms and Conditions (GTC)">
+  <meta name="keywords" content="CTG Group, GTC, General Terms and Conditions, B2B">
+
+  <title>GTC | CTG Group</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Exakt gleiche Styles wie in der deutschen Version (nur englische Begriffe) ===== */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --accent-color: #cdc9a5;
+      --text-dark: #1c1c1c;
+      --text-muted: #626262;
+      --border-color: #e4e4e4;
+      --light-background: #f7f8fa;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+
+    body,
+    p,
+    .navbar,
+    .footer,
+    .card-text,
+    .btn,
+    .ctg-footer,
+    .ctg-footer li,
+    .ctg-footer a,
+    .lead,
+    .text-muted,
+    .company-name {
+      font-family: var(--font-main) !important;
+    }
+
+    body {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-dark);
+      background: #ffffff;
+    }
+
+    .navbar-brand.company-name {
+      font-size: 1.1rem !important;
+      color: var(--accent-color) !important;
+      letter-spacing: 1px;
+    }
+
+    h1.main-heading {
+      color: var(--accent-color) !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 26px !important;
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+
+    .agb-content {
+      max-width: 1050px;
+    }
+
+    .agb-content h1 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      line-height: 1.35;
+    }
+
+    .agb-content h2 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-top: 3rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 1.3rem !important;
+      line-height: 1.4;
+    }
+
+    .agb-content h3 {
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem !important;
+      line-height: 1.45;
+    }
+
+    .agb-content p {
+      margin-bottom: 0.8rem;
+    }
+
+    .agb-content ul,
+    .agb-content ol {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .agb-content li {
+      margin-bottom: 0.4rem;
+    }
+
+    .agb-content .document-number {
+      color: #777;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      margin-bottom: 0.75rem;
+    }
+
+    .agb-content .preambel {
+      background: var(--light-background);
+      padding: 1.5rem 1.75rem;
+      border-left: 4px solid var(--primary-color);
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    .agb-content .preambel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-divider {
+      border: 0;
+      border-top: 1px solid var(--border-color);
+      margin: 3rem 0;
+    }
+
+    .agb-content .legal-note {
+      background: #fafafa;
+      border: 1px solid var(--border-color);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+
+    .agb-content .legal-note h3 {
+      margin-top: 0;
+    }
+
+    .agb-content .highlight-box {
+      background: var(--light-background);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .agb-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ================================
+       FOOTER (identisch)
+       ================================ */
+
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 60px;
+    }
+
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 11px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+
+    .ctg-footer li {
+      font-size: 12px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+    }
+
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+    }
+
+    .ctg-footer a:hover {
+      color: #ffffff !important;
+    }
+
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 10px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 11px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.4 !important;
+    }
+
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    /* ================================
+       LANGUAGE SWITCHER
+       ================================ */
+
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid var(--accent-color);
+      box-shadow: 0 0 3px rgba(205,201,165,0.5);
+    }
+
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      .language-switcher-nav img {
+        width: 16px;
+      }
+      .navbar > .container {
+        position: relative;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .footer-desktop-version {
+        display: none !important;
+      }
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+      }
+      .navbar-brand.company-name {
+        font-size: 0.80rem !important;
+      }
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+      }
+      .header-paragraph .paragraph-text-3 {
+        font-size: 11px !important;
+      }
+      body,
+      p,
+      .lead,
+      .text-muted {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+      }
+      section.py-5 {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+      }
+      .agb-content h1 {
+        font-size: 1.4rem !important;
+      }
+      .agb-content h2 {
+        font-size: 1.2rem !important;
+        margin-top: 2rem;
+      }
+      .agb-content h3 {
+        font-size: 1.0rem !important;
+      }
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        margin-top: 18px !important;
+      }
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+      .footer-mobile-version li {
+        font-size: 10px !important;
+        margin-bottom: 4px !important;
+      }
+      .footer-mobile-version .footer-bottom-fixed {
+        font-size: 9px !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://ctg-group.eu/#organization",
+    "name": "Chumpol Trading Group Limited Company",
+    "alternateName": "CTG Global",
+    "url": "https://ctg-group.eu",
+    "taxID": "0105557140880",
+    "duns": "0525560001568",
+    "foundingDate": "2017-12",
+    "description": "B2B wholesale and trading company. No public advertising, no private customers, no online shop.",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "355-46 Boonwat Road, Suandok",
+        "addressLocality": "Lampang",
+        "postalCode": "52100",
+        "addressCountry": "TH"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom",
+        "addressLocality": "Bang Rak",
+        "addressRegion": "Bangkok",
+        "postalCode": "10500",
+        "addressCountry": "TH"
+      }
+    ],
+    "employee": {
+      "@type": "QuantitativeValue",
+      "value": 82
+    },
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Gerhard Holzapfel",
+        "jobTitle": "Manager for German & European Market"
+      },
+      {
+        "@type": "Person",
+        "name": "Siriphaon Wanatung",
+        "jobTitle": "General Manager"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "office@ctg-group.eu",
+      "contactOption": "ByAppointmentOnly"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand company-name" href="index.html">
+        Chumpol Trading Group Company Limited.
+      </a>
+
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="de/agb.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+        </a>
+        <a href="agb.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English">
+        </a>
+      </div>
+
+      <div class="language-switcher-nav d-lg-none">
+        <a href="de/agb.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+        </a>
+        <a href="agb.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="impressum.html">Imprint</a></li>
+          <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI Gateway</a></li>
+          <li class="nav-item"><a class="nav-link" href="partner.html">Partner</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading">GENERAL TERMS AND CONDITIONS</h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2">
+            <strong class="paragraph-text-3">OF CHUMPOL TRADING GROUP</strong>
+          </span>
+        </p>
+      </header>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <main class="col-12 col-lg-10 col-xl-9 mx-auto agb-content">
+
+          <div class="document-number">CHUMPOL TRADING GROUP · GTC</div>
+
+          <h1>General Terms and Conditions (GTC)</h1>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><strong>Version:</strong> September 2026</p>
+
+          <!-- Preamble -->
+          <div class="preambel">
+            <h2 style="margin-top: 0; border-bottom: none; padding-bottom: 0; font-size: 1.3rem !important;">Preamble – Our understanding of a partnership‑based business relationship</h2>
+            <p>
+              Chumpol Trading Group Company Limited, hereinafter referred to as "CTG", is an internationally active company in B2B trading and the supply of goods to professional trade partners.
+            </p>
+            <p>
+              CTG maintains its international corporate and procurement structure in Asia and cooperates with trade partners in particular in the European Economic Area. In the interest of a transparent, reliable and customer‑oriented business relationship, CTG has deliberately chosen to structure its business relationships with European partners in accordance with German substantive law.
+            </p>
+            <p>
+              Thus, the contractual relationships – to the extent contractually agreed and legally permissible – are subject to the relevant provisions of German law, in particular the applicable regulations of the German Civil Code (BGB) and the German Commercial Code (HGB).
+            </p>
+            <p>
+              This decision reflects CTG's self‑image of combining international trade with a comprehensible and reliable legal basis for its partners. CTG does not regard a partnership‑based business relationship solely as the delivery of goods, but as long‑term cooperation based on transparency, personal communication and clear contractual framework conditions.
+            </p>
+            <p class="mb-0">
+              CTG is proud to be able to offer its partners – despite its international corporate structure – business processing on the basis of German substantive law. The application of German law is not merely a promotional feature, but an essential component of the partnership‑based business model deliberately chosen by CTG.
+            </p>
+          </div>
+
+          <!-- Section 1 -->
+          <h2>§ 1 Scope of Application and B2B Transactions</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>These General Terms and Conditions apply to all current and future business relationships between Chumpol Trading Group Company Limited, hereinafter "CTG", and its contractual partners, unless expressly agreed otherwise in individual cases.</li>
+            <li>These GTC apply exclusively to entrepreneurs within the meaning of § 14 of the German Civil Code (BGB), legal entities under public law and special public‑law assets.</li>
+            <li>CTG does not operate any sales to private consumers. Contractual partners within the business relationship are exclusively professional companies and commercial trading partners.</li>
+            <li>Conflicting, deviating or supplementary general terms and conditions of the contractual partner shall not become part of the contract unless CTG expressly agrees to their validity in text form.</li>
+            <li>Individual agreements between CTG and the contractual partner shall take precedence over these GTC to the extent that they have been expressly made as deviating individual arrangements.</li>
+          </ol>
+
+          <!-- Section 2 -->
+          <h2>§ 2 Contractual Partner and Definitions</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>"CTG" within the meaning of these GTC is Chumpol Trading Group Company Limited.</li>
+            <li>"Contractual partner" or "partner" is any company with which CTG maintains a business, trade, supply, service or partner relationship.</li>
+            <li>The term "partner" describes a business cooperation and does not in itself create a corporate connection, a power of representation, a franchise relationship, an employment relationship or an obligation to conclude further transactions.</li>
+            <li>The term "partner network" refers to the structure of business cooperation organised by CTG and may provide access to extended services, individual terms and other benefits.</li>
+          </ol>
+
+          <!-- Section 3 -->
+          <h2>§ 3 Partner Network and Business Relationship</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Admission to the partner network is generally based on an expression of interest and corresponding confirmation by CTG.</li>
+            <li>There is no entitlement to admission to the partner network.</li>
+            <li>Membership or cooperation in the partner network is voluntary and does not in principle create any obligation to conclude certain purchase contracts, to purchase certain goods or to achieve certain minimum turnover, unless a deviating agreement has been made in individual cases.</li>
+            <li>CTG may grant partners access to extended services, information, project opportunities, individual terms, trade credits, logistics services or other support measures within the framework of the respective business relationship.</li>
+            <li>The scope, prerequisites and availability of individual partner services depend on the specific business relationship and may in particular depend on turnover, creditworthiness, product group, project scope, product availability, previous cooperation and economic situation.</li>
+            <li>Unless individual advantages or services have been expressly and bindingly agreed, there is no entitlement to their permanent or future provision.</li>
+          </ol>
+
+          <!-- Section 4 -->
+          <h2>§ 4 Conclusion of Contract and Individual Transactions</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Offers, price lists and product overviews serve as guidance and are non‑binding unless they are expressly marked as binding. CTG endeavours to communicate price adjustments resulting from unforeseeable changes in procurement, transport or currency costs as early as possible and in a transparent manner. Upon request, CTG will confirm prices in writing as binding for a specific period – please do not hesitate to contact us in this regard.</li>
+            <li>A purchase contract or other individual contract is generally concluded by express order confirmation, written confirmation or by actual performance of the agreed service by CTG.</li>
+            <li>Orders placed by the contractual partner generally constitute a binding offer to conclude a contract.</li>
+            <li>CTG is entitled to accept or reject orders within a reasonable period of time.</li>
+            <li>The content and scope of the respective individual transaction are determined by the agreed order, the order confirmation, the invoice and any supplementary individual agreements.</li>
+            <li>CTG is committed to maintaining long‑term and reliable partnerships and will accept orders within the scope of its operational and economic possibilities. However, there is no legal obligation to accept future orders, as CTG must also respond to unforeseeable market developments, capacity bottlenecks or other circumstances. In such cases, CTG will inform the partner at an early stage and, if possible, suggest alternative solutions.</li>
+          </ol>
+
+          <!-- Section 5 -->
+          <h2>§ 5 Prices, Terms and Individual Agreements</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Prices, payment terms and other conditions are governed by the respective individual agreement.</li>
+            <li>Unless expressly stated otherwise, all prices are exclusive of any applicable taxes, duties, transport costs and other ancillary costs.</li>
+            <li>Depending on business volume, product group, project scope and other economic criteria, CTG may offer the contractual partner individual conditions, tiered prices, project prices or special conditions.</li>
+            <li>Individually agreed prices generally apply only to the respective individual transaction or the expressly agreed period.</li>
+            <li>Price indications for future deliveries are subject to changed procurement, transport, currency, insurance, customs or other economic framework conditions, unless an express binding price agreement has been made. CTG will inform the partner of foreseeable price changes as early as possible and, upon request, confirm binding prices for a specific period.</li>
+          </ol>
+
+          <!-- Section 6 -->
+          <h2>§ 6 Payment and Payment Terms</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Payments are due in accordance with the individually agreed payment terms.</li>
+            <li>The contractual partner is obliged to make payments in full and on time.</li>
+            <li>If an agreed payment deadline is exceeded, default in payment occurs in accordance with statutory provisions.</li>
+            <li>In the event of default in payment or concrete indications of a significant deterioration in solvency, CTG is entitled to make further deliveries conditional on advance payment, security or other appropriate payment protection.</li>
+            <li>Set‑off by the contractual partner is only permitted with undisputed or legally established claims, to the extent permitted by law.</li>
+          </ol>
+
+          <!-- Section 7 -->
+          <h2>§ 7 Trade Credits and Extended Payment Arrangements</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG may grant trade credits, payment targets or other individual payment arrangements within the framework of an existing business relationship.</li>
+            <li>The granting of a trade credit is subject to individual commercial and economic review.</li>
+            <li>There is no entitlement to the initial or future granting, increase or continuation of a trade credit, unless this has been expressly and bindingly agreed in the individual case. However, CTG will not reduce or terminate an granted trade credit without good reason. Should the partner's economic circumstances deteriorate significantly or should other material risks arise, CTG will seek dialogue and strive for an amicable solution before making any adjustments.</li>
+            <li>CTG may review trade credit lines, payment targets and other payment arrangements taking into account the economic development of the business relationship and adjust them for future transactions. Already confirmed orders remain unaffected by an adjustment unless mandatory legal reasons prevail.</li>
+            <li>Additional or interest‑free support measures may be offered by CTG in individual cases. This does not create any entitlement to permanent repetition or future provision.</li>
+            <li>The possibility of individual and flexible payment arrangements is part of CTG's partnership‑based business understanding. However, it is always subject to the respective economic and contractual framework conditions.</li>
+          </ol>
+
+          <!-- Section 8 -->
+          <h2>§ 8 Delivery, Logistics and Incoterms</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Delivery conditions arise from the respective individual agreement.</li>
+            <li>Where Incoterms are agreed, the Incoterms applicable at the time of conclusion of the contract shall apply in the respective agreed version.</li>
+            <li>Delivery dates and deadlines are binding if they have been confirmed by CTG in writing as binding. In all other cases, CTG endeavours to comply with the estimated delivery times communicated and will inform the partner without delay as soon as delays become apparent.</li>
+            <li>Delivery delays due to force majeure, official measures, transport problems, customs measures, strikes, production failures, international supply chain disruptions or other circumstances for which CTG is not responsible entitle CTG to extend the delivery period appropriately.</li>
+            <li>Partial deliveries are permissible provided they are reasonable for the partner and do not cause disproportionate additional costs. Before a partial delivery, CTG will inform the partner and – as far as possible – take their wishes into account.</li>
+            <li>CTG may use suitable service providers and vicarious agents to carry out transport, logistics, customs or delivery services.</li>
+          </ol>
+
+          <!-- Section 9 -->
+          <h2>§ 9 Direct Delivery and Delivery to Third Parties</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>On the basis of an individual agreement, CTG may deliver goods directly to a recipient or end customer named by the contractual partner.</li>
+            <li>In the case of direct deliveries, the contractual partner remains the contractual partner of CTG and is responsible for the obligations assumed by it towards its own customer, unless expressly agreed otherwise.</li>
+            <li>The contractual partner is responsible for providing CTG with all information required for the proper execution of the delivery completely and correctly.</li>
+            <li>The contractual partner bears the responsibility for being authorised to pass on recipient and delivery data.</li>
+          </ol>
+
+          <!-- Section 10 -->
+          <h2>§ 10 Product Availability and Allocation</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>The availability of certain products may fluctuate, in particular due to international market conditions, manufacturer allocations, production capacities and supply chains.</li>
+            <li>Information on stock levels and product availability is a snapshot and does not constitute a guarantee of future deliverability. CTG endeavours to ensure the availability of the offered goods and will inform the partner of foreseeable bottlenecks at an early stage.</li>
+            <li>If a shortage occurs, CTG will allocate the available quantities according to comprehensible and fair criteria – for example, taking into account previous cooperation, order size and urgency. Upon request, CTG will transparently explain the allocation decision to the partner.</li>
+            <li>CTG may offer long‑standing or strategically important partners preferential terms or allocations within the scope of available quantities, insofar as this is individually agreed.</li>
+          </ol>
+
+          <!-- Section 11 -->
+          <h2>§ 11 Transfer of Risk</h2>
+          <p>The transfer of risk of accidental loss or accidental deterioration of the goods is governed by the statutory provisions of German law and, where applicable, any agreed delivery clause or Incoterms rule.</p>
+
+          <!-- Section 12 -->
+          <h2>§ 12 Retention of Title</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Until full payment of all claims arising from the respective contractual relationship, the delivered goods remain the property of CTG to the extent and for as long as a retention of title can be effectively agreed under German law.</li>
+            <li>The contractual partner is obliged to handle goods subject to retention of title with care and to inform CTG without delay in the event of access by third parties.</li>
+            <li>Resale in the ordinary course of business is permitted provided that the contractual partner duly fulfils its obligations towards CTG.</li>
+            <li>Further provisions regarding retention of title may be agreed individually in individual cases.</li>
+          </ol>
+
+          <!-- Section 13 -->
+          <h2>§ 13 Obligation to Inspect and Give Notice of Defects</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>To the extent that the provisions of the German Commercial Code (HGB) apply to the business relationship, in particular in the case of mutual commercial transactions, the statutory obligations to inspect and give notice of defects apply.</li>
+            <li>The contractual partner must notify any identifiable defects, transport damage and other complaints without delay in accordance with statutory provisions.</li>
+            <li>In the event of transport damage, the contractual partner should take the necessary measures to preserve evidence and document the damage and must not jeopardise any existing claims against the respective transport service provider.</li>
+            <li>To facilitate compliance, CTG expressly points out that obvious defects or transport damage must be reported in writing without delay after receipt of the goods, usually within 5 working days. Hidden defects must be reported without delay after discovery. Upon request, CTG will provide the partner with a leaflet or checklist to help them meet the legal requirements in a practical manner.</li>
+          </ol>
+
+          <!-- Section 14 -->
+          <h2>§ 14 Warranty and Defect Rights</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>In principle, the statutory provisions of German law apply to claims for defects, unless otherwise provided in these GTC or in an individual agreement.</li>
+            <li>In B2B transactions, the relevant commercial obligations to inspect and give notice of defects apply in particular.</li>
+            <li>To the extent that CTG is obliged to remedy defects, CTG is entitled to decide on the appropriate type of remedy in accordance with statutory provisions.</li>
+            <li>The warranty does not cover damage or malfunctions resulting from improper use, unauthorised modifications, faulty installation or other circumstances outside CTG's area of responsibility.</li>
+          </ol>
+
+          <!-- Section 15 -->
+          <h2>§ 15 Manufacturer Warranties and Warranty Handling</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>A manufacturer's warranty exists only to the extent that it is actually granted by the respective manufacturer.</li>
+            <li>The scope, duration and conditions of a manufacturer's warranty are governed by the terms of the respective manufacturer.</li>
+            <li>To the extent that CTG provides support in handling a warranty claim in individual cases, this is done within the framework of the respective agreement and the actual manufacturer's warranty.</li>
+            <li>A manufacturer's warranty exists independently of statutory warranty rights, to the extent that these are applicable.</li>
+          </ol>
+
+          <!-- Section 16 -->
+          <h2>§ 16 EDI and Electronic Communication</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG may use electronic communication systems and EDI interfaces for the transmission of orders, order confirmations, delivery information, status messages, invoices and other business information.</li>
+            <li>The parties may use electronic documents and communications as binding means of communication within the framework of statutory provisions.</li>
+            <li>The contractual partner is responsible for the currency of the communication and contact data provided by them.</li>
+            <li>In the event of technical faults that are outside CTG's sphere of influence, CTG will arrange for the rectification of the fault within a reasonable period of time, to the extent that this is within its control.</li>
+          </ol>
+
+          <!-- Section 17 -->
+          <h2>§ 17 Confidentiality and Protection of Business Information</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>The parties undertake to treat confidential information of the other party confidentially.</li>
+            <li>Confidential information includes in particular non‑publicly known information about prices, terms, suppliers, sources of supply, projects, customers, business opportunities, trade credits, internal business processes and other business information.</li>
+            <li>Disclosure of confidential information to third parties is only permitted to the extent necessary for the execution of the business relationship or if there is a legal obligation to do so.</li>
+            <li>This obligation continues to apply after the termination of the business relationship to the extent that there is a legitimate interest in confidentiality.</li>
+          </ol>
+
+          <!-- Section 18 -->
+          <h2>§ 18 Individual Projects and Partner Services</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG may assign individual projects, customer inquiries, business opportunities or special conditions to a partner.</li>
+            <li>There is no legal entitlement to the referral of customers, projects or business opportunities, unless a binding agreement has been expressly made.</li>
+            <li>If CTG expressly confirms a project as protected or assigned to a partner, the scope and duration of such protection will be defined individually.</li>
+            <li>Individual partner services may in particular include project prices, preferential product availability, logistical support, EDI integration, special conditions or other support measures.</li>
+            <li>The scope and existence of these services are always subject to the respective specific agreement.</li>
+          </ol>
+
+          <!-- Section 19 -->
+          <h2>§ 19 Liability</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG is fully liable for damages resulting from intentional or grossly negligent breach of duty.</li>
+            <li>CTG is fully liable for damages resulting from injury to life, body or health.</li>
+            <li>In the case of slight negligent breach of material contractual obligations, CTG is liable, but limited to the foreseeable, contract‑typical damage. This limitation reflects the usual distribution of risk in commercial transactions and enables CTG to offer partners competitive terms.</li>
+            <li>For all other slightly negligent breaches of duty, liability is excluded to the extent permitted by law.</li>
+            <li>Mandatory statutory liability provisions remain unaffected.</li>
+            <li>The above liability provisions also apply in favour of CTG's legal representatives, employees and vicarious agents.</li>
+          </ol>
+
+          <!-- Section 20 -->
+          <h2>§ 20 Force Majeure and Extraordinary Events</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Events of force majeure and other extraordinary circumstances for which CTG is not responsible shall release CTG from its obligation to perform for the duration and to the extent of their effects.</li>
+            <li>These include in particular natural disasters, pandemics, warlike events, terrorist attacks, official measures, embargoes, international trade restrictions, strikes, significant disruptions to transport routes, failures of supply chains and comparable events.</li>
+            <li>CTG will inform the contractual partner in an appropriate manner about significant and recognisable effects on the performance of the contract.</li>
+          </ol>
+
+          <!-- Section 21 -->
+          <h2>§ 21 Term and Termination of the Partner Relationship</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Membership or cooperation in the partner network may exist for an indefinite period, unless otherwise agreed.</li>
+            <li>Both parties may terminate the partner relationship with effect for the future, unless special notice periods have been agreed.</li>
+            <li>Termination of the partner relationship does not affect individual contracts already concluded and not yet fully performed.</li>
+            <li>The right to extraordinary termination for good cause remains unaffected.</li>
+          </ol>
+
+          <!-- Section 22 -->
+          <h2>§ 22 Personal and Partnership‑Based Conflict Resolution</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG places great importance on direct and partnership‑based resolution of business disagreements.</li>
+            <li>Before initiating court proceedings, the parties should – to the extent possible and reasonable considering the nature and circumstances of the individual case – attempt to resolve the matter amicably through direct communication and factual negotiations.</li>
+            <li>CTG endeavours to enable personal and comprehensible communication with contractual partners in the event of business disagreements.</li>
+            <li>The obligation to communicate beforehand does not exclude access to judicial remedy and does not affect statutory deadlines.</li>
+          </ol>
+
+          <!-- Section 23 -->
+          <h2>§ 23 Choice of Law – German Law, BGB and HGB</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>The substantive law of the Federal Republic of Germany shall exclusively apply to all legal relationships between CTG and the contractual partner.</li>
+            <li>Depending on the nature of the respective legal transaction and the statutory requirements, this means in particular that the relevant provisions of the German Civil Code (BGB), the German Commercial Code (HGB) and other mandatory provisions of German substantive law apply.</li>
+            <li>CTG has deliberately chosen the application of German substantive law as the basis for its business relationships with its European partners.</li>
+            <li>This choice of law is intended to provide the contractual partners with a clear, comprehensible legal framework oriented towards business relationships in the German and European economic area, despite CTG's international corporate and procurement structure.</li>
+            <li>The application of the United Nations Convention on Contracts for the International Sale of Goods (CISG / UN Sales Law) is excluded. The parties agree that their contractual relationship is exclusively governed by German substantive law (BGB, HGB). To avoid misunderstandings, CTG expressly points out that for entrepreneurs the statutory obligations to inspect and give notice of defects under § 377 HGB apply. Upon request, CTG will provide separate information on this to partners.</li>
+            <li>Mandatory provisions of the law that would apply without the choice of law in accordance with the relevant conflict‑of‑law rules remain unaffected to the extent that they are mandatory.</li>
+          </ol>
+
+          <!-- Section 24 -->
+          <h2>§ 24 Place of Jurisdiction and Personal Accessibility</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG pursues the objective of not making disputes more difficult by requiring contractual partners to pursue their claims at a distant company location.</li>
+            <li>To the extent that a jurisdiction agreement can be legally permissible and effectively agreed, the place of jurisdiction for disputes arising from and in connection with the business relationship shall be the registered office of the contractual partner.</li>
+            <li>The local courts having jurisdiction for the registered office of the contractual partner shall therefore have local jurisdiction.</li>
+            <li>The substantive jurisdiction of the competent local court or regional court is governed by statutory provisions.</li>
+            <li>To the extent legally and organisationally appropriate, CTG may also seek direct contact with the contractual partner at its location for the personal clarification of a significant business dispute or disagreement.</li>
+            <li>This customer‑oriented regulation serves the objective of making the practical enforcement and clarification of disputes as transparent and comprehensible as possible for the contractual partner.</li>
+          </ol>
+
+          <!-- Section 25 -->
+          <h2>§ 25 Final Provisions</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Should individual provisions of these GTC be or become wholly or partially invalid or unenforceable, the validity of the remaining provisions shall remain unaffected.</li>
+            <li>The invalid or unenforceable provision shall be replaced by the statutory provisions.</li>
+            <li>Amendments and supplements to individual agreements require text form for evidentiary purposes; this does not affect the possibility of making short‑term arrangements by e‑mail, provided that both parties confirm this.</li>
+          </ol>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESKTOP FOOTER -->
+
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul class="footer-list">
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+
+          <span class="sub-label">PHONE</span>
+          <ul class="footer-list">
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul class="footer-list">
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+
+          <span class="sub-label">E-MAIL</span>
+          <ul class="footer-list">
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul class="footer-list">
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+
+          <span class="sub-label">REGISTER</span>
+          <ul class="footer-list">
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Imprint</a></li>
+            <li><a href="agb.html">GTC</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Privacy</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FOOTER -->
+
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul>
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+
+          <span class="sub-label">PHONE</span>
+          <ul>
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul>
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+
+          <span class="sub-label">E-MAIL</span>
+          <ul>
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul>
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+
+          <span class="sub-label">REGISTER</span>
+          <ul>
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Imprint</a></li>
+            <li><a href="agb.html">GTC</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Privacy</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,931 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group – Allgemeine Geschäftsbedingungen (AGB)">
+  <meta name="keywords" content="CTG Group, AGB, Allgemeine Geschäftsbedingungen, B2B">
+
+  <title>AGB | CTG Group</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Alle Styles exakt wie in partner.html (deutsche Version) ===== */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --accent-color: #cdc9a5;
+      --text-dark: #1c1c1c;
+      --text-muted: #626262;
+      --border-color: #e4e4e4;
+      --light-background: #f7f8fa;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+
+    body,
+    p,
+    .navbar,
+    .footer,
+    .card-text,
+    .btn,
+    .ctg-footer,
+    .ctg-footer li,
+    .ctg-footer a,
+    .lead,
+    .text-muted,
+    .company-name {
+      font-family: var(--font-main) !important;
+    }
+
+    body {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-dark);
+      background: #ffffff;
+    }
+
+    .navbar-brand.company-name {
+      font-size: 1.1rem !important;
+      color: var(--accent-color) !important;
+      letter-spacing: 1px;
+    }
+
+    h1.main-heading {
+      color: var(--accent-color) !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 26px !important;
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+
+    /* ================================
+       AGB CONTENT
+       ================================ */
+
+    .agb-content {
+      max-width: 1050px;
+    }
+
+    .agb-content h1 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      line-height: 1.35;
+    }
+
+    .agb-content h2 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-top: 3rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 1.3rem !important;
+      line-height: 1.4;
+    }
+
+    .agb-content h3 {
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem !important;
+      line-height: 1.45;
+    }
+
+    .agb-content p {
+      margin-bottom: 0.8rem;
+    }
+
+    .agb-content ul,
+    .agb-content ol {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .agb-content li {
+      margin-bottom: 0.4rem;
+    }
+
+    .agb-content .document-number {
+      color: #777;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      margin-bottom: 0.75rem;
+    }
+
+    .agb-content .preambel {
+      background: var(--light-background);
+      padding: 1.5rem 1.75rem;
+      border-left: 4px solid var(--primary-color);
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    .agb-content .preambel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-divider {
+      border: 0;
+      border-top: 1px solid var(--border-color);
+      margin: 3rem 0;
+    }
+
+    .agb-content .legal-note {
+      background: #fafafa;
+      border: 1px solid var(--border-color);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+
+    .agb-content .legal-note h3 {
+      margin-top: 0;
+    }
+
+    .agb-content .highlight-box {
+      background: var(--light-background);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .agb-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ================================
+       FOOTER (identisch)
+       ================================ */
+
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 60px;
+    }
+
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 11px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+
+    .ctg-footer li {
+      font-size: 12px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+    }
+
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+    }
+
+    .ctg-footer a:hover {
+      color: #ffffff !important;
+    }
+
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 10px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 11px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.4 !important;
+    }
+
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    /* ================================
+       LANGUAGE SWITCHER
+       ================================ */
+
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid var(--accent-color);
+      box-shadow: 0 0 3px rgba(205,201,165,0.5);
+    }
+
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      .language-switcher-nav img {
+        width: 16px;
+      }
+      .navbar > .container {
+        position: relative;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .footer-desktop-version {
+        display: none !important;
+      }
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+      }
+      .navbar-brand.company-name {
+        font-size: 0.80rem !important;
+      }
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+      }
+      .header-paragraph .paragraph-text-3 {
+        font-size: 11px !important;
+      }
+      body,
+      p,
+      .lead,
+      .text-muted {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+      }
+      section.py-5 {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+      }
+      .agb-content h1 {
+        font-size: 1.4rem !important;
+      }
+      .agb-content h2 {
+        font-size: 1.2rem !important;
+        margin-top: 2rem;
+      }
+      .agb-content h3 {
+        font-size: 1.0rem !important;
+      }
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        margin-top: 18px !important;
+      }
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+      .footer-mobile-version li {
+        font-size: 10px !important;
+        margin-bottom: 4px !important;
+      }
+      .footer-mobile-version .footer-bottom-fixed {
+        font-size: 9px !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://ctg-group.eu/#organization",
+    "name": "Chumpol Trading Group Limited Company",
+    "alternateName": "CTG Global",
+    "url": "https://ctg-group.eu",
+    "taxID": "0105557140880",
+    "duns": "0525560001568",
+    "foundingDate": "2017-12",
+    "description": "B2B wholesale and trading company. No public advertising, no private customers, no online shop.",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "355-46 Boonwat Road, Suandok",
+        "addressLocality": "Lampang",
+        "postalCode": "52100",
+        "addressCountry": "TH"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom",
+        "addressLocality": "Bang Rak",
+        "addressRegion": "Bangkok",
+        "postalCode": "10500",
+        "addressCountry": "TH"
+      }
+    ],
+    "employee": {
+      "@type": "QuantitativeValue",
+      "value": 82
+    },
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Gerhard Holzapfel",
+        "jobTitle": "Manager for German & European Market"
+      },
+      {
+        "@type": "Person",
+        "name": "Siriphaon Wanatung",
+        "jobTitle": "General Manager"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "office@ctg-group.eu",
+      "contactOption": "ByAppointmentOnly"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand company-name" href="index.html">
+        Chumpol Trading Group Company Limited.
+      </a>
+
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="agb.html" title="Deutsch" class="active">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+        </a>
+        <a href="../agb.html" title="English">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English">
+        </a>
+      </div>
+
+      <div class="language-switcher-nav d-lg-none">
+        <a href="agb.html" title="Deutsch" class="active">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+        </a>
+        <a href="../agb.html" title="English">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+          <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI-Gateway</a></li>
+          <li class="nav-item"><a class="nav-link" href="partner.html">Partner</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading">ALLGEMEINE GESCHÄFTSBEDINGUNGEN</h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2">
+            <strong class="paragraph-text-3">DER CHUMPOL TRADING GROUP</strong>
+          </span>
+        </p>
+      </header>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <main class="col-12 col-lg-10 col-xl-9 mx-auto agb-content">
+
+          <div class="document-number">CHUMPOL TRADING GROUP · AGB</div>
+
+          <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><strong>Stand:</strong> September 2026</p>
+
+          <!-- Präambel -->
+          <div class="preambel">
+            <h2 style="margin-top: 0; border-bottom: none; padding-bottom: 0; font-size: 1.3rem !important;">Präambel – Unser Verständnis einer partnerschaftlichen Geschäftsbeziehung</h2>
+            <p>
+              Die Chumpol Trading Group Company Limited, nachfolgend „CTG“, ist ein international tätiges Unternehmen im B2B-Handel und in der Warenversorgung professioneller Handelspartner.
+            </p>
+            <p>
+              CTG unterhält ihre internationale Unternehmens- und Beschaffungsstruktur in Asien und arbeitet mit Handelspartnern insbesondere im europäischen Wirtschaftsraum zusammen. Im Interesse einer transparenten, verlässlichen und kundenorientierten Geschäftsbeziehung hat sich CTG bewusst dafür entschieden, ihre Geschäftsbeziehungen mit europäischen Partnern nach Maßgabe des deutschen materiellen Rechts zu gestalten.
+            </p>
+            <p>
+              Damit unterliegen die Vertragsbeziehungen – soweit vertraglich vereinbart und rechtlich zulässig – den maßgeblichen Vorschriften des deutschen Rechts, insbesondere den einschlägigen Regelungen des Bürgerlichen Gesetzbuchs (BGB) und des Handelsgesetzbuchs (HGB).
+            </p>
+            <p>
+              Diese Entscheidung ist Ausdruck des Selbstverständnisses von CTG, internationalen Handel mit einer für ihre Partner nachvollziehbaren und verlässlichen rechtlichen Grundlage zu verbinden. CTG versteht eine partnerschaftliche Geschäftsbeziehung nicht allein als Warenlieferung, sondern als langfristige Zusammenarbeit auf der Grundlage von Transparenz, persönlicher Kommunikation und klaren vertraglichen Rahmenbedingungen.
+            </p>
+            <p class="mb-0">
+              CTG ist stolz darauf, ihren Partnern trotz internationaler Unternehmensstruktur eine Geschäftsabwicklung auf Grundlage des deutschen materiellen Rechts anbieten zu können. Die Anwendung des deutschen Rechts ist dabei kein bloßes werbliches Merkmal, sondern ein wesentlicher Bestandteil des von CTG bewusst gewählten partnerschaftlichen Geschäftsmodells.
+            </p>
+          </div>
+
+          <!-- § 1 -->
+          <h2>§ 1 Geltungsbereich und B2B-Geschäftsverkehr</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche gegenwärtigen und zukünftigen Geschäftsbeziehungen zwischen der Chumpol Trading Group Company Limited, nachfolgend „CTG“, und ihren Vertragspartnern, soweit nicht im Einzelfall ausdrücklich etwas anderes vereinbart wird.</li>
+            <li>Die AGB gelten ausschließlich gegenüber Unternehmern im Sinne des § 14 BGB, juristischen Personen des öffentlichen Rechts und öffentlich-rechtlichen Sondervermögen.</li>
+            <li>CTG unterhält keinen Vertrieb an private Verbraucher. Vertragspartner im Rahmen der Geschäftsbeziehung sind ausschließlich professionelle Unternehmen und gewerbliche Handelspartner.</li>
+            <li>Abweichende, entgegenstehende oder ergänzende Allgemeine Geschäftsbedingungen des Vertragspartners werden nicht Vertragsbestandteil, es sei denn, CTG stimmt ihrer Geltung ausdrücklich in Textform zu.</li>
+            <li>Individuelle Vereinbarungen zwischen CTG und dem Vertragspartner haben Vorrang vor diesen AGB, soweit sie ausdrücklich als abweichende Einzelvereinbarung getroffen wurden.</li>
+          </ol>
+
+          <!-- § 2 -->
+          <h2>§ 2 Vertragspartner und Begriffsbestimmungen</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>„CTG“ im Sinne dieser AGB ist die Chumpol Trading Group Company Limited.</li>
+            <li>„Vertragspartner“ oder „Partner“ ist jedes Unternehmen, mit dem CTG eine Geschäfts-, Handels-, Liefer-, Dienstleistungs- oder Partnerbeziehung unterhält.</li>
+            <li>Die Bezeichnung „Partner“ beschreibt eine geschäftliche Zusammenarbeit und begründet für sich allein weder eine gesellschaftsrechtliche Verbindung noch eine Vertretungsbefugnis, ein Franchiseverhältnis, ein Arbeitsverhältnis oder eine Verpflichtung zum Abschluss weiterer Geschäfte.</li>
+            <li>Der Begriff „Partnernetzwerk“ bezeichnet die von CTG organisierte Struktur geschäftlicher Zusammenarbeit und kann den Zugang zu erweiterten Leistungen, individuellen Konditionen und sonstigen Vorteilen ermöglichen.</li>
+          </ol>
+
+          <!-- § 3 -->
+          <h2>§ 3 Partnernetzwerk und Geschäftsbeziehung</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Die Aufnahme in das Partnernetzwerk erfolgt grundsätzlich nach einer Interessenbekundung und entsprechender Bestätigung durch CTG.</li>
+            <li>Ein Anspruch auf Aufnahme in das Partnernetzwerk besteht nicht.</li>
+            <li>Die Mitgliedschaft oder Zusammenarbeit im Partnernetzwerk ist freiwillig und begründet grundsätzlich keine Verpflichtung zum Abschluss bestimmter Kaufverträge, zum Bezug bestimmter Waren oder zur Erreichung bestimmter Mindestumsätze, soweit im Einzelfall keine abweichende Vereinbarung getroffen wurde.</li>
+            <li>CTG kann Partnern im Rahmen der jeweiligen Geschäftsbeziehung Zugang zu erweiterten Leistungen, Informationen, Projektmöglichkeiten, individuellen Konditionen, Warenkrediten, Logistikleistungen oder sonstigen Unterstützungsmaßnahmen ermöglichen.</li>
+            <li>Umfang, Voraussetzungen und Verfügbarkeit einzelner Partnerleistungen richten sich nach der konkreten Geschäftsbeziehung und können insbesondere von Umsatz, Bonität, Produktgruppe, Projektumfang, Warenverfügbarkeit, bisheriger Zusammenarbeit und wirtschaftlicher Situation abhängig gemacht werden.</li>
+            <li>Soweit einzelne Vorteile oder Leistungen nicht ausdrücklich verbindlich vereinbart wurden, besteht kein Anspruch auf deren dauerhafte oder zukünftige Gewährung.</li>
+          </ol>
+
+          <!-- § 4 -->
+          <h2>§ 4 Vertragsschluss und Einzelgeschäfte</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Angebote, Preislisten und Produktübersichten dienen der Orientierung und sind freibleibend, sofern sie nicht ausdrücklich als verbindlich gekennzeichnet sind. CTG ist bemüht, Preisanpassungen, die sich aus unvorhersehbaren Veränderungen der Beschaffungs-, Transport- oder Währungskosten ergeben, so früh wie möglich und in transparenter Form mitzuteilen. Auf Wunsch bestätigt CTG Preise für einen bestimmten Zeitraum schriftlich als verbindlich – sprechen Sie uns hierzu gerne an.</li>
+            <li>Ein Kaufvertrag oder sonstiger Einzelvertrag kommt grundsätzlich durch ausdrückliche Auftragsbestätigung, schriftliche Bestätigung oder durch tatsächliche Ausführung der vereinbarten Leistung durch CTG zustande.</li>
+            <li>Bestellungen des Vertragspartners stellen grundsätzlich ein verbindliches Angebot zum Abschluss eines Vertrages dar.</li>
+            <li>CTG ist berechtigt, Bestellungen innerhalb eines angemessenen Zeitraums anzunehmen oder abzulehnen.</li>
+            <li>Maßgeblich für Inhalt und Umfang des jeweiligen Einzelgeschäfts sind die vereinbarte Bestellung, die Auftragsbestätigung, die Rechnung sowie ergänzende individuelle Vereinbarungen.</li>
+            <li>CTG ist bestrebt, langfristige und verlässliche Partnerschaften zu pflegen, und wird Bestellungen im Rahmen der betrieblichen und wirtschaftlichen Möglichkeiten annehmen. Eine rechtliche Verpflichtung zur Annahme künftiger Bestellungen besteht jedoch nicht, da auch CTG auf unvorhersehbare Marktentwicklungen, Kapazitätsengpässe oder andere Umstände reagieren muss. In einem solchen Fall wird CTG den Partner frühzeitig informieren und nach Möglichkeit alternative Lösungen vorschlagen.</li>
+          </ol>
+
+          <!-- § 5 -->
+          <h2>§ 5 Preise, Konditionen und individuelle Vereinbarungen</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Preise, Zahlungsbedingungen und sonstige Konditionen richten sich nach der jeweiligen individuellen Vereinbarung.</li>
+            <li>Alle Preise verstehen sich, sofern nicht ausdrücklich anders angegeben, zuzüglich der jeweils anfallenden Steuern, Abgaben, Transportkosten und sonstigen Nebenkosten.</li>
+            <li>CTG kann dem Vertragspartner abhängig von Geschäftsvolumen, Produktgruppe, Projektumfang und sonstigen wirtschaftlichen Kriterien individuelle Konditionen, Staffelpreise, Projektpreise oder Sonderkonditionen anbieten.</li>
+            <li>Individuell vereinbarte Preise gelten grundsätzlich nur für das jeweilige Einzelgeschäft oder den ausdrücklich vereinbarten Zeitraum.</li>
+            <li>Preisangaben für zukünftige Lieferungen stehen unter dem Vorbehalt veränderter Beschaffungs-, Transport-, Währungs-, Versicherungs-, Zoll- oder sonstiger wirtschaftlicher Rahmenbedingungen, sofern keine ausdrücklich verbindliche Preisvereinbarung getroffen wurde. CTG wird den Partner über absehbare Preisänderungen so früh wie möglich informieren und auf Wunsch für einen bestimmten Zeitraum verbindliche Preise bestätigen.</li>
+          </ol>
+
+          <!-- § 6 -->
+          <h2>§ 6 Zahlung und Zahlungsbedingungen</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Zahlungen sind zu den individuell vereinbarten Zahlungsbedingungen fällig.</li>
+            <li>Der Vertragspartner ist verpflichtet, Zahlungen vollständig und fristgerecht zu leisten.</li>
+            <li>Bei Überschreitung eines vereinbarten Zahlungsziels tritt Zahlungsverzug nach Maßgabe der gesetzlichen Vorschriften ein.</li>
+            <li>CTG ist berechtigt, bei Zahlungsverzug oder bei konkreten Anhaltspunkten für eine wesentliche Verschlechterung der Zahlungsfähigkeit weitere Lieferungen von einer Vorauszahlung, Sicherheitsleistung oder anderweitigen geeigneten Zahlungsabsicherung abhängig zu machen.</li>
+            <li>Eine Aufrechnung durch den Vertragspartner ist nur mit unbestrittenen oder rechtskräftig festgestellten Forderungen zulässig, soweit gesetzlich zulässig.</li>
+          </ol>
+
+          <!-- § 7 -->
+          <h2>§ 7 Warenkredite und erweiterte Zahlungsvereinbarungen</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG kann im Rahmen einer bestehenden Geschäftsbeziehung Warenkredite, Zahlungsziele oder sonstige individuelle Zahlungsvereinbarungen gewähren.</li>
+            <li>Die Gewährung eines Warenkredits erfolgt nach individueller kaufmännischer und wirtschaftlicher Prüfung.</li>
+            <li>Ein Anspruch auf erstmalige oder zukünftige Gewährung, Erhöhung oder Fortführung eines Warenkredits besteht nicht, sofern dies nicht ausdrücklich im Einzelfall verbindlich vereinbart wurde. CTG wird einen eingeräumten Warenkredit jedoch nicht ohne sachlichen Grund reduzieren oder beenden. Sollten sich die wirtschaftlichen Verhältnisse des Partners wesentlich verschlechtern oder andere erhebliche Risiken auftreten, wird CTG das Gespräch suchen und eine einvernehmliche Lösung anstreben, bevor Anpassungen vorgenommen werden.</li>
+            <li>CTG kann Warenkreditlinien, Zahlungsziele und sonstige Zahlungsvereinbarungen unter Berücksichtigung der wirtschaftlichen Entwicklung der Geschäftsbeziehung überprüfen und für zukünftige Geschäfte anpassen. Bereits bestätigte Bestellungen bleiben von einer Anpassung unberührt, sofern nicht zwingende rechtliche Gründe entgegenstehen.</li>
+            <li>Zusätzliche oder zinsfreie Unterstützungsmaßnahmen können von CTG im Einzelfall angeboten werden. Auch hieraus entsteht kein Anspruch auf eine dauerhafte Wiederholung oder zukünftige Gewährung.</li>
+            <li>Die Möglichkeit individueller und flexibler Zahlungsvereinbarungen ist Bestandteil des partnerschaftlichen Geschäftsverständnisses von CTG. Sie erfolgt jedoch stets nach Maßgabe der jeweiligen wirtschaftlichen und vertraglichen Rahmenbedingungen.</li>
+          </ol>
+
+          <!-- § 8 -->
+          <h2>§ 8 Lieferung, Logistik und Incoterms</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Lieferbedingungen ergeben sich aus der jeweiligen Einzelvereinbarung.</li>
+            <li>Soweit Incoterms vereinbart werden, gelten die zum Zeitpunkt des Vertragsschlusses maßgeblichen Incoterms in der jeweils vereinbarten Fassung.</li>
+            <li>Liefertermine und Lieferfristen sind verbindlich, wenn sie von CTG schriftlich als verbindlich bestätigt wurden. In allen anderen Fällen bemüht sich CTG, die mitgeteilten voraussichtlichen Lieferzeiten einzuhalten, und informiert den Partner unverzüglich, sobald sich Verzögerungen abzeichnen.</li>
+            <li>Lieferverzögerungen aufgrund höherer Gewalt, behördlicher Maßnahmen, Transportproblemen, Zollmaßnahmen, Streiks, Produktionsausfällen, internationaler Störungen der Lieferkette oder sonstiger von CTG nicht zu vertretender Umstände berechtigen CTG, die Lieferfrist angemessen zu verlängern.</li>
+            <li>Teillieferungen sind zulässig, sofern sie für den Partner zumutbar sind und keine unverhältnismäßigen Mehrkosten verursachen. Vor einer Teillieferung wird CTG den Partner informieren und – soweit möglich – dessen Wünsche berücksichtigen.</li>
+            <li>CTG kann zur Durchführung von Transport-, Logistik-, Zoll- oder Lieferleistungen geeignete Dienstleister und Erfüllungsgehilfen einsetzen.</li>
+          </ol>
+
+          <!-- § 9 -->
+          <h2>§ 9 Direktlieferung und Lieferung an Dritte</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG kann auf Grundlage einer individuellen Vereinbarung Waren unmittelbar an einen vom Vertragspartner benannten Empfänger oder Endkunden liefern.</li>
+            <li>Bei Direktlieferungen bleibt grundsätzlich der Vertragspartner Vertragspartner von CTG und verantwortlich für die von ihm gegenüber seinem eigenen Kunden übernommenen Verpflichtungen, soweit nicht ausdrücklich etwas anderes vereinbart wurde.</li>
+            <li>Der Vertragspartner ist dafür verantwortlich, CTG sämtliche für die ordnungsgemäße Durchführung der Lieferung erforderlichen Angaben vollständig und korrekt zur Verfügung zu stellen.</li>
+            <li>Der Vertragspartner trägt die Verantwortung dafür, dass er zur Weitergabe von Empfänger- und Lieferdaten berechtigt ist.</li>
+          </ol>
+
+          <!-- § 10 -->
+          <h2>§ 10 Warenverfügbarkeit und Allokation</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Die Verfügbarkeit bestimmter Produkte kann insbesondere aufgrund internationaler Marktbedingungen, Herstellerallokationen, Produktionskapazitäten und Lieferketten schwanken.</li>
+            <li>Angaben zu Lagerbeständen und Warenverfügbarkeit sind Momentaufnahmen und begründen keine Garantie für eine zukünftige Lieferbarkeit. CTG ist bemüht, die Verfügbarkeit der angebotenen Waren sicherzustellen und wird den Partner über absehbare Engpässe frühzeitig informieren.</li>
+            <li>Kommt es zu einer Verknappung, wird CTG die verfügbaren Mengen nach nachvollziehbaren und fairen Kriterien zuteilen – etwa unter Berücksichtigung der bisherigen Zusammenarbeit, der Auftragsgröße und der Dringlichkeit. Auf Wunsch erläutert CTG dem Partner die Zuteilungsentscheidung transparent.</li>
+            <li>CTG kann langjährigen oder strategisch wichtigen Partnern im Rahmen der verfügbaren Mengen bevorzugte Konditionen oder Allokationen anbieten, soweit dies individuell vereinbart wird.</li>
+          </ol>
+
+          <!-- § 11 -->
+          <h2>§ 11 Gefahrübergang</h2>
+          <p>Der Übergang der Gefahr des zufälligen Untergangs oder der zufälligen Verschlechterung der Ware richtet sich nach den gesetzlichen Vorschriften des deutschen Rechts sowie nach einer gegebenenfalls vereinbarten Lieferklausel oder Incoterms-Regelung.</p>
+
+          <!-- § 12 -->
+          <h2>§ 12 Eigentumsvorbehalt</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Bis zur vollständigen Bezahlung sämtlicher Forderungen aus dem jeweiligen Vertragsverhältnis bleibt die gelieferte Ware Eigentum von CTG, soweit und solange ein Eigentumsvorbehalt nach deutschem Recht wirksam vereinbart werden kann.</li>
+            <li>Der Vertragspartner ist verpflichtet, Vorbehaltsware pfleglich zu behandeln und CTG bei Zugriffen Dritter unverzüglich zu informieren.</li>
+            <li>Eine Weiterveräußerung im ordnungsgemäßen Geschäftsverkehr ist zulässig, sofern der Vertragspartner seinen Verpflichtungen gegenüber CTG ordnungsgemäß nachkommt.</li>
+            <li>Weitergehende Regelungen zum Eigentumsvorbehalt können im Einzelfall individuell vereinbart werden.</li>
+          </ol>
+
+          <!-- § 13 -->
+          <h2>§ 13 Untersuchungs- und Rügepflichten</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Soweit auf die Geschäftsbeziehung die Vorschriften des Handelsgesetzbuchs Anwendung finden, insbesondere bei beiderseitigen Handelsgeschäften, gelten die gesetzlichen Untersuchungs- und Rügepflichten.</li>
+            <li>Der Vertragspartner hat erkennbare Mängel, Transportschäden und sonstige Beanstandungen unverzüglich nach Maßgabe der gesetzlichen Vorschriften anzuzeigen.</li>
+            <li>Bei Transportschäden soll der Vertragspartner die erforderlichen Maßnahmen zur Beweissicherung und Schadensdokumentation treffen und vorhandene Ansprüche gegenüber dem jeweiligen Transportdienstleister nicht gefährden.</li>
+            <li>Zur Erleichterung der Einhaltung weist CTG ausdrücklich darauf hin: Offensichtliche Mängel oder Transportschäden sind unverzüglich nach Erhalt der Ware, in der Regel innerhalb von 5 Werktagen, schriftlich anzuzeigen. Versteckte Mängel sind unverzüglich nach Entdeckung zu rügen. Auf Wunsch stellt CTG dem Partner ein Merkblatt oder eine Checkliste zur Verfügung, um die gesetzlichen Anforderungen praxisnah zu erfüllen.</li>
+          </ol>
+
+          <!-- § 14 -->
+          <h2>§ 14 Gewährleistung und Mängelrechte</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Für Mängelansprüche gelten grundsätzlich die gesetzlichen Vorschriften des deutschen Rechts, soweit in diesen AGB oder in einer individuellen Vereinbarung nichts anderes geregelt ist.</li>
+            <li>Im B2B-Geschäft gelten insbesondere die einschlägigen handelsrechtlichen Untersuchungs- und Rügepflichten.</li>
+            <li>Soweit CTG zur Nacherfüllung verpflichtet ist, ist CTG berechtigt, nach Maßgabe der gesetzlichen Vorschriften über die geeignete Art der Nacherfüllung zu entscheiden.</li>
+            <li>Die Gewährleistung bezieht sich nicht auf Schäden oder Funktionsstörungen, die auf unsachgemäße Verwendung, unzulässige Veränderungen, fehlerhafte Installation oder sonstige Umstände außerhalb des Verantwortungsbereichs von CTG zurückzuführen sind.</li>
+          </ol>
+
+          <!-- § 15 -->
+          <h2>§ 15 Herstellergarantien und Garantieabwicklung</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Eine Herstellergarantie besteht nur, soweit diese vom jeweiligen Hersteller tatsächlich gewährt wird.</li>
+            <li>Umfang, Dauer und Voraussetzungen einer Herstellergarantie richten sich nach den Bedingungen des jeweiligen Herstellers.</li>
+            <li>Soweit CTG im Einzelfall bei der Abwicklung eines Garantiefalls unterstützt, erfolgt dies im Rahmen der jeweiligen Vereinbarung und der tatsächlich bestehenden Herstellergarantie.</li>
+            <li>Eine Herstellergarantie besteht unabhängig von den gesetzlichen Gewährleistungsrechten, soweit diese anwendbar sind.</li>
+          </ol>
+
+          <!-- § 16 -->
+          <h2>§ 16 EDI und elektronische Kommunikation</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG kann elektronische Kommunikationssysteme und EDI-Schnittstellen zur Übermittlung von Bestellungen, Auftragsbestätigungen, Lieferinformationen, Statusmeldungen, Rechnungen und sonstigen geschäftlichen Informationen einsetzen.</li>
+            <li>Die Parteien können elektronische Dokumente und Mitteilungen im Rahmen der gesetzlichen Vorschriften als verbindliche Kommunikationsmittel verwenden.</li>
+            <li>Der Vertragspartner ist für die Aktualität der von ihm mitgeteilten Kommunikations- und Kontaktdaten verantwortlich.</li>
+            <li>Bei technischen Störungen, die außerhalb des Einflussbereichs von CTG liegen, wird CTG die Behebung der Störung innerhalb eines angemessenen Zeitraums veranlassen, soweit dies in ihrem Einflussbereich liegt.</li>
+          </ol>
+
+          <!-- § 17 -->
+          <h2>§ 17 Vertraulichkeit und Schutz von Geschäftsinformationen</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Die Parteien verpflichten sich, vertrauliche Informationen der jeweils anderen Partei vertraulich zu behandeln.</li>
+            <li>Als vertraulich gelten insbesondere nicht öffentlich bekannte Informationen über Preise, Konditionen, Lieferanten, Bezugsquellen, Projekte, Kunden, Geschäftsmöglichkeiten, Warenkredite, interne Geschäftsabläufe und sonstige geschäftliche Informationen.</li>
+            <li>Die Weitergabe vertraulicher Informationen an Dritte ist nur zulässig, soweit sie zur Durchführung der Geschäftsbeziehung erforderlich ist oder eine gesetzliche Verpflichtung hierzu besteht.</li>
+            <li>Diese Verpflichtung gilt auch nach Beendigung der Geschäftsbeziehung fort, soweit ein berechtigtes Interesse an der Vertraulichkeit besteht.</li>
+          </ol>
+
+          <!-- § 18 -->
+          <h2>§ 18 Individuelle Projekte und Partnerleistungen</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG kann einzelne Projekte, Kundenanfragen, Geschäftsmöglichkeiten oder Sonderkonditionen einem Partner zuordnen.</li>
+            <li>Ein rechtlicher Anspruch auf die Vermittlung von Kunden, Projekten oder Geschäftsmöglichkeiten besteht nicht, soweit nicht ausdrücklich eine verbindliche Vereinbarung getroffen wurde.</li>
+            <li>Soweit CTG ein Projekt ausdrücklich als geschützt oder einem Partner zugeordnet bestätigt, werden Umfang und Dauer eines solchen Schutzes individuell festgelegt.</li>
+            <li>Individuelle Partnerleistungen können insbesondere Projektpreise, bevorzugte Warenverfügbarkeit, logistische Unterstützung, EDI-Anbindung, Sonderkonditionen oder sonstige Unterstützungsmaßnahmen umfassen.</li>
+            <li>Umfang und Bestand dieser Leistungen richten sich stets nach der jeweiligen konkreten Vereinbarung.</li>
+          </ol>
+
+          <!-- § 19 -->
+          <h2>§ 19 Haftung</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG haftet unbeschränkt für Schäden, die auf vorsätzlicher oder grob fahrlässiger Pflichtverletzung beruhen.</li>
+            <li>CTG haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit.</li>
+            <li>Bei einfach fahrlässiger Verletzung wesentlicher Vertragspflichten haftet CTG, jedoch begrenzt auf den vertragstypischen, vorhersehbaren Schaden. Diese Begrenzung entspricht der üblichen Risikoverteilung im unternehmerischen Geschäftsverkehr und ermöglicht es CTG, dem Partner wettbewerbsfähige Konditionen anzubieten.</li>
+            <li>Für alle anderen einfach fahrlässigen Pflichtverletzungen ist die Haftung ausgeschlossen, soweit gesetzlich zulässig.</li>
+            <li>Zwingende gesetzliche Haftungsvorschriften bleiben unberührt.</li>
+            <li>Die vorstehenden Haftungsregelungen gelten auch zugunsten der gesetzlichen Vertreter, Mitarbeiter und Erfüllungsgehilfen von CTG.</li>
+          </ol>
+
+          <!-- § 20 -->
+          <h2>§ 20 Höhere Gewalt und außergewöhnliche Ereignisse</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Ereignisse höherer Gewalt und sonstige außergewöhnliche Umstände, die CTG nicht zu vertreten hat, befreien CTG für die Dauer und im Umfang ihrer Auswirkungen von der Verpflichtung zur Leistung.</li>
+            <li>Hierzu gehören insbesondere Naturkatastrophen, Pandemien, kriegerische Ereignisse, Terroranschläge, behördliche Maßnahmen, Embargos, internationale Handelsbeschränkungen, Streiks, erhebliche Störungen der Transportwege, Ausfälle von Lieferketten sowie vergleichbare Ereignisse.</li>
+            <li>CTG wird den Vertragspartner über wesentliche und erkennbare Auswirkungen auf die Vertragsdurchführung in angemessener Weise informieren.</li>
+          </ol>
+
+          <!-- § 21 -->
+          <h2>§ 21 Laufzeit und Beendigung der Partnerbeziehung</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Die Mitgliedschaft oder Zusammenarbeit im Partnernetzwerk kann auf unbestimmte Zeit bestehen, sofern nichts anderes vereinbart wurde.</li>
+            <li>Beide Parteien können die Partnerbeziehung mit Wirkung für die Zukunft beenden, soweit keine besonderen Kündigungsfristen vereinbart wurden.</li>
+            <li>Die Beendigung der Partnerbeziehung berührt bereits geschlossene und noch nicht vollständig abgewickelte Einzelverträge nicht.</li>
+            <li>Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt.</li>
+          </ol>
+
+          <!-- § 22 -->
+          <h2>§ 22 Persönliche und partnerschaftliche Konfliktlösung</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG legt Wert auf eine direkte und partnerschaftliche Klärung geschäftlicher Unstimmigkeiten.</li>
+            <li>Vor der Einleitung eines gerichtlichen Verfahrens sollen die Parteien, soweit dies nach Art und Umständen des Einzelfalls möglich und zumutbar ist, versuchen, die Angelegenheit durch direkte Kommunikation und sachliche Verhandlungen einvernehmlich zu klären.</li>
+            <li>CTG ist bestrebt, bei geschäftlichen Unstimmigkeiten mit Vertragspartnern eine persönliche und nachvollziehbare Kommunikation zu ermöglichen.</li>
+            <li>Die Verpflichtung zur vorherigen Kommunikation schließt den Zugang zu gerichtlichem Rechtsschutz nicht aus und lässt gesetzliche Fristen unberührt.</li>
+          </ol>
+
+          <!-- § 23 -->
+          <h2>§ 23 Rechtswahl – Deutsches Recht, BGB und HGB</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Für sämtliche Rechtsbeziehungen zwischen CTG und dem Vertragspartner gilt ausschließlich das materielle Recht der Bundesrepublik Deutschland.</li>
+            <li>Anwendung finden damit, abhängig von der Art des jeweiligen Rechtsgeschäfts und den gesetzlichen Voraussetzungen, insbesondere die einschlägigen Vorschriften des Bürgerlichen Gesetzbuchs (BGB), des Handelsgesetzbuchs (HGB) sowie sonstige zwingend anwendbare Vorschriften des deutschen materiellen Rechts.</li>
+            <li>CTG hat sich bewusst für die Anwendung des deutschen materiellen Rechts als Grundlage der Geschäftsbeziehungen mit ihren europäischen Partnern entschieden.</li>
+            <li>Diese Rechtswahl soll den Vertragspartnern trotz der internationalen Unternehmens- und Beschaffungsstruktur von CTG einen klaren, nachvollziehbaren und an den Geschäftsbeziehungen im deutschen und europäischen Wirtschaftsraum orientierten rechtlichen Rahmen bieten.</li>
+            <li>Die Anwendung des Übereinkommens der Vereinten Nationen über Verträge über den internationalen Warenkauf (CISG / UN-Kaufrecht) wird ausgeschlossen. Die Parteien sind sich darüber einig, dass auf ihre Vertragsbeziehung ausschließlich das deutsche materielle Recht (BGB, HGB) Anwendung findet. Um Missverständnisse zu vermeiden, weist CTG ausdrücklich darauf hin, dass für Unternehmer die gesetzlichen Untersuchungs- und Rügepflichten nach § 377 HGB gelten. CTG wird Partner auf Wunsch hierzu gesondert informieren.</li>
+            <li>Zwingende Vorschriften des Rechts, das ohne die Rechtswahl nach den einschlägigen Kollisionsnormen Anwendung finden würde, bleiben unberührt, soweit diese zwingend anzuwenden sind.</li>
+          </ol>
+
+          <!-- § 24 -->
+          <h2>§ 24 Gerichtsstand und persönliche Erreichbarkeit</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>CTG verfolgt das Ziel, Streitigkeiten nicht dadurch zu erschweren, dass Vertragspartner ihre Ansprüche an einem entfernten Unternehmensstandort verfolgen müssen.</li>
+            <li>Soweit eine Gerichtsstandsvereinbarung gesetzlich zulässig und wirksam vereinbart werden kann, ist für Streitigkeiten aus und im Zusammenhang mit der Geschäftsbeziehung der Sitz des Vertragspartners maßgeblich.</li>
+            <li>Örtlich zuständig sind damit die für den Sitz des Vertragspartners zuständigen Gerichte.</li>
+            <li>Die sachliche Zuständigkeit des jeweils zuständigen Amtsgerichts oder Landgerichts richtet sich nach den gesetzlichen Vorschriften.</li>
+            <li>CTG kann – soweit rechtlich und organisatorisch angemessen – zur persönlichen Klärung einer erheblichen geschäftlichen Streitigkeit oder Unstimmigkeit auch den direkten Kontakt mit dem Vertragspartner an dessen Standort suchen.</li>
+            <li>Diese kundenorientierte Regelung dient dem Ziel, die praktische Durchsetzung und Klärung von Streitigkeiten für den Vertragspartner möglichst transparent und nachvollziehbar zu gestalten.</li>
+          </ol>
+
+          <!-- § 25 -->
+          <h2>§ 25 Schlussbestimmungen</h2>
+          <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+            <li>Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam oder undurchführbar sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</li>
+            <li>An die Stelle der unwirksamen oder undurchführbaren Bestimmung treten die gesetzlichen Vorschriften.</li>
+            <li>Änderungen und Ergänzungen individueller Vereinbarungen bedürfen zu Beweiszwecken der Textform; hiervon unberührt bleibt die Möglichkeit, kurzfristige Absprachen per E-Mail zu treffen, sofern beide Seiten dies bestätigen.</li>
+          </ol>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESKTOP FOOTER -->
+
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul class="footer-list">
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+
+          <span class="sub-label">TELEFON</span>
+          <ul class="footer-list">
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul class="footer-list">
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+
+          <span class="sub-label">E-MAIL</span>
+          <ul class="footer-list">
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul class="footer-list">
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+
+          <span class="sub-label">REGISTER</span>
+          <ul class="footer-list">
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="agb.html">AGB</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FOOTER -->
+
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul>
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+
+          <span class="sub-label">TELEFON</span>
+          <ul>
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul>
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+
+          <span class="sub-label">E-MAIL</span>
+          <ul>
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul>
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+
+          <span class="sub-label">REGISTER</span>
+          <ul>
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="agb.html">AGB</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

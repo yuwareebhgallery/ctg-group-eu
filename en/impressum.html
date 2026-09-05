@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTG Group - Imprint and Privacy">
+  <meta name="keywords" content="Imprint, Privacy, CTG Group">
+  <title>Chumpol - Imprint</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Identische Styles wie deutsche Version (nur englische Begriffe) ===== */
+    :root {
+      --primary-color: #0c0c70;
+      --primary-dark: #090952;
+      --accent-color: #cdc9a5;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+
+    body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name {
+      font-family: var(--font-main) !important;
+    }
+
+    body {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #1c1c1c;
+      background: #ffffff;
+    }
+
+    .navbar-brand.company-name {
+      font-size: 1.1rem !important;
+      color: var(--accent-color) !important;
+      letter-spacing: 1px;
+    }
+
+    h1.main-heading {
+      color: var(--accent-color) !important;
+      text-transform: uppercase;
+      letter-spacing: 1.9px !important;
+      font-size: 22px !important;
+      margin-top: -70px;
+      text-align: center;
+    }
+
+    .header-paragraph .paragraph-text-3 {
+      color: #888 !important;
+      font-size: 26px !important;
+      letter-spacing: -0.1px !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-top: 10px !important;
+    }
+
+    .impressum-content {
+      max-width: 1050px;
+    }
+
+    .impressum-content h2 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-size: 2rem !important;
+      line-height: 1.3;
+    }
+
+    .impressum-content h3 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.4rem !important;
+    }
+
+    .address-box {
+      background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.08);
+    }
+
+    .highlight-box {
+      background: #f0f8ff;
+      border-left: 4px solid var(--primary-color);
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-box {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.1);
+    }
+
+    .data-list dt {
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 0.4rem;
+    }
+
+    .data-list dd {
+      margin-bottom: 1.2rem;
+      color: #555;
+    }
+
+    /* ===== FOOTER ===== */
+    .ctg-footer {
+      background-color: #000 !important;
+      color: #ffffff !important;
+      padding: 60px 0 20px 0;
+      margin-top: 60px;
+    }
+
+    .footer-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-between !important;
+      margin: 0 !important;
+    }
+
+    .footer-col {
+      flex: 0 0 auto;
+      min-width: 180px;
+      padding: 0 !important;
+    }
+
+    .footer-headline {
+      color: #ffffff !important;
+      font-size: 11px !important;
+      font-weight: bold !important;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left !important;
+      letter-spacing: 1.5px !important;
+    }
+
+    .ctg-footer ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+
+    .ctg-footer li {
+      font-size: 12px !important;
+      color: #aaa !important;
+      margin-bottom: 7px !important;
+      line-height: 1.4 !important;
+    }
+
+    .ctg-footer a {
+      color: #aaa !important;
+      text-decoration: none !important;
+    }
+
+    .ctg-footer a:hover {
+      color: #ffffff !important;
+    }
+
+    .sub-label {
+      display: block !important;
+      color: #666 !important;
+      font-size: 10px !important;
+      margin: 20px 0 8px 0 !important;
+      text-align: left !important;
+    }
+
+    .footer-bottom-fixed {
+      text-align: center !important;
+      color: #444 !important;
+      font-size: 11px !important;
+      margin-top: 40px !important;
+      border-top: 1px solid #111 !important;
+      padding-top: 20px !important;
+      line-height: 1.4 !important;
+    }
+
+    .footer-mobile-version {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    /* ===== LANGUAGE SWITCHER ===== */
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid var(--accent-color);
+      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
+    }
+
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+
+      .language-switcher-nav img {
+        width: 16px;
+      }
+
+      .navbar > .container {
+        position: relative;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .footer-desktop-version {
+        display: none !important;
+      }
+
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+      }
+
+      .navbar-brand.company-name {
+        font-size: 0.80rem !important;
+      }
+
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .header-paragraph .paragraph-text-3 {
+        font-size: 11px !important;
+      }
+
+      body, p, .lead, .text-muted {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+      }
+
+      section.py-5 {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+      }
+
+      .impressum-content h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 1rem !important;
+      }
+
+      .impressum-content h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 0.8rem !important;
+      }
+
+      .address-box, .privacy-box {
+        padding: 1rem !important;
+        margin: 1.5rem 0 !important;
+      }
+
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+
+      .footer-mobile-version .footer-headline {
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        margin-top: 18px !important;
+      }
+
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+
+      .footer-mobile-version li {
+        font-size: 10px !important;
+        margin-bottom: 4px !important;
+      }
+
+      .footer-mobile-version .footer-bottom-fixed {
+        font-size: 9px !important;
+      }
+    }
+
+    .text-primary-custom {
+      color: var(--primary-color) !important;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://ctg-group.eu/#organization",
+    "name": "Chumpol Trading Group Limited Company",
+    "alternateName": "CTG Global",
+    "url": "https://ctg-group.eu",
+    "taxID": "0105557140880",
+    "duns": "0525560001568",
+    "foundingDate": "2017-12",
+    "description": "B2B wholesale and trading company. No public advertising, no private customers, no online shop.",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "355-46 Boonwat Road, Suandok",
+        "addressLocality": "Lampang",
+        "postalCode": "52100",
+        "addressCountry": "TH"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom",
+        "addressLocality": "Bang Rak",
+        "addressRegion": "Bangkok",
+        "postalCode": "10500",
+        "addressCountry": "TH"
+      }
+    ],
+    "employee": {
+      "@type": "QuantitativeValue",
+      "value": 82
+    },
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Gerhard Holzapfel",
+        "jobTitle": "Managing Director Europe DACH"
+      },
+      {
+        "@type": "Person",
+        "name": "Chumpol Chalermwarangkul",
+        "jobTitle": "Managing Director Asia"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "office@ctg-group.eu",
+      "contactOption": "ByAppointmentOnly"
+    }
+  }
+  </script>
+
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand company-name" href="index.html">
+        Chumpol Trading Group Company Limited.
+      </a>
+
+      <div class="language-switcher-nav d-none d-lg-flex">
+        <a href="de/impressum.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+        </a>
+        <a href="impressum.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English">
+        </a>
+      </div>
+
+      <div class="language-switcher-nav d-lg-none">
+        <a href="de/impressum.html" title="Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
+        </a>
+        <a href="impressum.html" title="English" class="active">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link active" href="impressum.html">Imprint</a></li>
+          <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI Gateway</a></li>
+          <li class="nav-item"><a class="nav-link" href="partner.html">Partner</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="row header-row">
+    <div class="col-xs-12 column-5">
+      <header class="container-fluid heading-highlight">
+        <h1 class="main-heading">IMPRINT AND PRIVACY</h1>
+        <p class="paragraph header-paragraph">
+          <span class="paragraph-text-2">
+            <strong class="paragraph-text-3">ADDRESS · COMPANY DATA · IMPRINT</strong>
+          </span>
+        </p>
+      </header>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <main class="col-12 col-lg-10 col-xl-9 mx-auto impressum-content">
+
+          <h2 class="text-primary-custom">Imprint</h2>
+
+          <!-- B2B Notice -->
+          <div class="highlight-box">
+            <p class="mb-0"><strong>Notice:</strong> Our offering is exclusively directed at entrepreneurs and commercial trading partners within the meaning of the applicable legal provisions. Sales to consumers do not take place.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h3 class="text-primary-custom">Addresses</h3>
+
+              <div class="address-box">
+                <p class="fw-bold mb-2 text-primary-custom">Office Bangkok</p>
+                <p class="mb-0">Kronos Sathorn Tower<br>46 Sathorn Nuea Rd., Silom Subdistrict<br>Bang Rak<br>10500 Bangkok<br>Thailand</p>
+              </div>
+
+              <div class="address-box">
+                <p class="fw-bold mb-2 text-primary-custom">Office Lampang</p>
+                <p class="mb-0">355/46 Boonwat Road<br>Muang Lampang<br>52100 Lampang<br>Thailand</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="text-primary-custom">Company Data & Contact</h3>
+
+              <dl class="data-list">
+                <dt>Phone</dt>
+                <dd>☎ 0 90 8884 83 1<br>☎ 0 90 8884 83 2</dd>
+
+                <dt>E-Mail</dt>
+                <dd>info@ctg-group.eu<br>home@ctg-group.eu</dd>
+
+                <dt>Company Register</dt>
+                <dd>Department of Business Development (DBD), Thailand<br>Registration Number: 0525560001568<br>Year of Establishment: 2017</dd>
+
+                <dt>Management</dt>
+                <dd>Chumpol Chalermwarangkul (Managing Director Asia)<br>Gerhard Holzapfel (Managing Director Europe DACH)</dd>
+
+                <dt>Responsible for Content</dt>
+                <dd>Mr. Somsak Anatung<br>139 Soi Thong<br>10 Sukhumvit Rd.<br>Bangkok 10110</dd>
+              </dl>
+
+              <p class="small text-muted mt-3">A company of the Chumpol Bernhardt Group.</p>
+            </div>
+          </div>
+
+          <!-- Confidentiality & NDA -->
+          <div class="privacy-box" style="background: #f8faff; border-left: 4px solid var(--primary-color); margin: 2rem 0;">
+            <h3 class="text-primary-custom">Confidentiality and Protection of Trade Secrets (NDA)</h3>
+            <p>We place the highest value on the protection of confidential information within our business relationships. Standardized confidentiality agreements (Non-Disclosure Agreements – NDAs) apply to partnerships, project collaborations and the exchange of sensitive customer data.</p>
+            <p>These protect in particular pricing structures, supplier relationships, product roadmaps, customer projects, internal business processes as well as all business or technical information disclosed in the course of the cooperation. The confidentiality obligations continue beyond the term of the cooperation and ensure a trustworthy basis for long-term business relationships.</p>
+          </div>
+
+          <!-- Privacy Policy -->
+          <div class="privacy-box">
+            <h2 class="text-primary-custom">Privacy Policy</h2>
+            <div class="text-muted" style="line-height: 1.6;">
+
+              <p class="fw-bold mb-3">Privacy Policy in accordance with the General Data Protection Regulation (GDPR)</p>
+              <p class="mb-3">Protecting your personal data is of the utmost importance to us. We process personal data in Germany and the European Union in accordance with the General Data Protection Regulation (GDPR).</p>
+
+              <h5>1. Data Controller</h5>
+              <p class="mb-3">The controller responsible for the processing of personal data is:<br><strong>Chumpol Trading Group Co. LTD.</strong><br>355/46 Boonwat Road<br>52100 Lampang<br>Thailand<br>Phone: ☎ 0 90 8884 83 1<br>E-Mail: <a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></p>
+
+              <h5>2. General Information on Data Processing</h5>
+              <p class="mb-3">We generally collect and use personal data of our users only to the extent necessary for the provision of a functional website as well as our content and services. The collection and use of personal data regularly only takes place with the user's consent. An exception applies in cases where prior consent cannot be obtained for practical reasons and the processing of the data is permitted by law.</p>
+              <p class="mb-3"><strong>Special categories of personal data:</strong> We generally do not process special categories of personal data within the meaning of Art. 9 (1) GDPR (e.g. health data, religious affiliation).</p>
+              <p class="mb-3"><strong>Data sources:</strong> If we do not collect data directly from you, it may originate from publicly accessible sources (e.g. commercial registers) or have been transmitted to us by contractual partners for the purpose of fulfilling an order.</p>
+
+              <h5>3. Legal Bases for Processing</h5>
+              <ul class="mb-3">
+                <li>Art. 6 (1) lit. a GDPR – Consent</li>
+                <li>Art. 6 (1) lit. b GDPR – Performance of a contract or pre-contractual measures</li>
+                <li>Art. 6 (1) lit. c GDPR – Legal obligation</li>
+                <li>Art. 6 (1) lit. f GDPR – Legitimate interest (e.g. security of IT systems, direct marketing for own similar products/services in the context of existing customer marketing)</li>
+              </ul>
+
+              <h5>4. Types of Data Processed</h5>
+              <ul class="mb-3">
+                <li>Master data (name, address)</li>
+                <li>Contact details (telephone number, e-mail address)</li>
+                <li>Contract and business data</li>
+                <li>Payment data</li>
+                <li>Communication data</li>
+                <li>Technical data (IP address, browser, operating system)</li>
+              </ul>
+
+              <h5>5. Purposes of Data Processing</h5>
+              <ul class="mb-3">
+                <li>Processing of orders and contracts</li>
+                <li>Handling of inquiries</li>
+                <li>Provision of our services</li>
+                <li>Fulfilment of legal obligations (e.g. commercial and tax retention obligations)</li>
+                <li>Ensuring IT security and the proper operation of our website</li>
+                <li>Direct marketing for our own similar products or services (existing customer marketing), provided no objection has been raised. You may object at any time (e.g. by e-mail to info@ctg-group.eu with the subject "Objection to Advertising").</li>
+              </ul>
+
+              <h5>6. Disclosure of Data to Third Parties & Recipients</h5>
+              <p class="mb-3">Personal data is only disclosed if: you have expressly consented (Art. 6 (1) lit. a GDPR), it is necessary for contract performance (Art. 6 (1) lit. b GDPR), there is a legal obligation (Art. 6 (1) lit. c GDPR) or a legitimate interest exists and the interests of the data subject do not override it (Art. 6 (1) lit. f GDPR).</p>
+              <p class="mb-3"><strong>Specific recipient groups may include:</strong> Payment service providers, logistics and shipping service providers, IT service providers and hosting providers, tax advisors, auditors and public authorities.</p>
+              <p class="mb-3"><strong>Data transfer to third countries:</strong> In the context of international trade and the use of certain service providers, personal data may be transferred to third countries (outside the EU/EEA) without an adequate level of data protection. Such transfers are carried out exclusively in compliance with Art. 44 et seq. GDPR, in particular on the basis of adequacy decisions of the EU Commission, standard contractual clauses (SCCs) of the EU Commission or other appropriate guarantees. Upon request, we will provide you with the specific guarantees.</p>
+
+              <h5>7. Cookies, Tracking & Server Log Files</h5>
+              <p class="mb-3"><strong>Cookies:</strong> Our website uses cookies. Necessary cookies (technically required) are based on Art. 6 (1) lit. b or f GDPR. For non-necessary cookies, we obtain your active consent (Art. 6 (1) lit. a GDPR) before they are set.</p>
+              <p class="mb-3"><strong>Server log files:</strong> Our hosting provider automatically collects information in so-called server log files (e.g. IP address, date and time of access, browser type, referring website). This data is used for technical security and is deleted after no more than 30 days (legal basis: Art. 6 (1) lit. f GDPR).</p>
+
+              <h5>8. Storage Duration & Deletion</h5>
+              <p class="mb-3">Personal data is stored only as long as necessary to achieve the respective processing purposes or as required by statutory retention obligations. For contracts and accounting-related data, the statutory periods (6 to 10 years) apply.</p>
+
+              <h5>9. Rights of Data Subjects</h5>
+              <ul class="mb-3">
+                <li>Right of access (Art. 15 GDPR)</li>
+                <li>Right to rectification (Art. 16 GDPR)</li>
+                <li>Right to erasure (Art. 17 GDPR)</li>
+                <li>Right to restriction of processing (Art. 18 GDPR)</li>
+                <li>Right to data portability (Art. 20 GDPR)</li>
+                <li>Right to object (Art. 21 GDPR)</li>
+                <li>Right to withdraw consent (Art. 7 (3) GDPR)</li>
+              </ul>
+              <p class="mb-3">To exercise your rights, please contact: <a href="mailto:info@ctg-group.eu">info@ctg-group.eu</a></p>
+
+              <h5>10. Right to Lodge a Complaint</h5>
+              <p class="mb-3">You have the right to lodge a complaint with a data protection supervisory authority if you believe that the processing of your personal data violates the GDPR.</p>
+
+              <h5>11. Data Security</h5>
+              <p class="mb-3">We use technical and organisational security measures (TOMs) to protect your data against manipulation, loss, destruction or unauthorised access. This includes in particular the encryption of data transmission via SSL/TLS.</p>
+
+              <h5>12. Automated Decision-Making / Profiling</h5>
+              <p class="mb-3">We do not use fully automated decision-making within the meaning of Art. 22 GDPR that produces legal effects or similarly significantly affects you.</p>
+
+              <h5>13. Contacting Us</h5>
+              <p class="mb-3">When you contact us by e-mail or telephone, the personal data you provide will be processed solely for the purpose of handling your request. The processing is based on Art. 6 (1) lit. b GDPR (pre-contractual measures) or Art. 6 (1) lit. f GDPR (legitimate interest in the efficient processing of inquiries). The data will be deleted as soon as the processing of the request has been completed (usually no later than 6 months thereafter).</p>
+
+              <h5>14. Non-Use of Certain Services</h5>
+              <ul class="mb-3">
+                <li>No newsletter dispatch,</li>
+                <li>No tracking or analysis tools (e.g. Google Analytics),</li>
+                <li>No social media plugins or embedded social media content,</li>
+                <li>No contact form.</li>
+              </ul>
+
+              <h5>15. Data Protection Officer</h5>
+              <p class="mb-3">A data protection officer has not been appointed as the legal requirements under Art. 37 GDPR are not met.</p>
+
+              <h5>16. Data Processing of Minors</h5>
+              <p class="mb-3">Our website is exclusively directed at adults. We do not knowingly process personal data of children or minors under 16 years of age.</p>
+
+              <h5>17. Changes to this Privacy Policy</h5>
+              <p class="mb-0">We reserve the right to amend this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy. The current version is always available on our website.</p>
+
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESKTOP FOOTER -->
+  <footer class="ctg-footer footer-desktop-version">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul class="footer-list">
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+
+          <span class="sub-label">PHONE</span>
+          <ul class="footer-list">
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul class="footer-list">
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+
+          <span class="sub-label">E-MAIL</span>
+          <ul class="footer-list">
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul class="footer-list">
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+
+          <span class="sub-label">REGISTER</span>
+          <ul class="footer-list">
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Imprint</a></li>
+            <li><a href="agb.html">GTC</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Privacy</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FOOTER -->
+  <footer class="ctg-footer footer-mobile-version">
+    <div class="container">
+      <div class="footer-row">
+
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE BANGKOK</h5>
+          <ul>
+            <li>Kronos Sathorn Tower</li>
+            <li>46 Sathorn Nuea Bang Rak</li>
+            <li>Bangkok 10500</li>
+          </ul>
+
+          <span class="sub-label">PHONE</span>
+          <ul>
+            <li>☎ 0 90 8884 83 1</li>
+            <li>☎ 0 90 8884 83 2</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">OFFICE LAMPANG</h5>
+          <ul>
+            <li>355/46 Boonwat Road</li>
+            <li>Muang Lampang</li>
+            <li>52100 Lampang</li>
+          </ul>
+
+          <span class="sub-label">E-MAIL</span>
+          <ul>
+            <li>📧 info@ctg-group.eu</li>
+            <li>📧 home@ctg-group.eu</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">SUPPORT</h5>
+          <ul>
+            <li><img src="https://flagcdn.com/w20/de.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="DE"> desk-de@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/us.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="US"> desk-en@ctg-group.eu</li>
+            <li><img src="https://flagcdn.com/w20/th.png" style="width:18px;height:12px;margin-right:8px;vertical-align:middle;" alt="TH"> desk-th@ctg-group.eu</li>
+          </ul>
+
+          <span class="sub-label">REGISTER</span>
+          <ul>
+            <li>DBD: 0525560001568</li>
+            <li>Established: 2017</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-headline">QUICK LINKS</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="impressum.html">Imprint</a></li>
+            <li><a href="agb.html">GTC</a></li>
+            <li><a href="partner.html">Partner</a></li>
+            <li><a href="datenschutz.html">Privacy</a></li>
+            <li><a href="edi-gateway.html">EDI Gateway</a></li>
+            <li><a href="facts.html">Facts</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-fixed">
+        &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
