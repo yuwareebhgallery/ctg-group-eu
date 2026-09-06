@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CTG Group - Datenschutzerklärung">
+  <meta name="description" content="Datenschutzerklärung der Chumpol Trading Group Company Limited">
   <meta name="keywords" content="Datenschutz, DSGVO, CTG Group, Privacy">
-  <title>Chumpol - Datenschutz</title>
+  <title>Datenschutz – Chumpol Trading Group</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -14,13 +14,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* ===== Identische Styles wie impressum.html (deutsch) ===== */
     :root {
       --primary-color: #0c0c70;
       --primary-dark: #090952;
       --accent-color: #cdc9a5;
       --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      --border-color: #e4e4e4;
+      --light-background: #f7f8fa;
+      --text-muted: #626262;
     }
 
     body, p, .navbar, .footer, .card-text, .btn, .ctg-footer, .ctg-footer li, .ctg-footer a, .lead, .text-muted, .company-name {
@@ -59,67 +62,64 @@
       margin-top: 10px !important;
     }
 
-    .datenschutz-content {
-      max-width: 1050px;
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255,255,255,0.4);
+    }
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid var(--accent-color);
+      box-shadow: 0 0 3px rgba(205,201,165,0.5);
     }
 
-    .datenschutz-content h2 {
-      color: var(--primary-color) !important;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      font-size: 2rem !important;
-      line-height: 1.3;
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+      .language-switcher-nav a { margin: 0 4px; }
+      .language-switcher-nav img { width: 16px; }
+      .navbar > .container { position: relative; }
     }
 
-    .datenschutz-content h3 {
-      color: var(--primary-color);
-      font-weight: 600;
-      margin-bottom: 1rem;
-      font-size: 1.4rem !important;
+    @media (max-width: 767px) {
+      .navbar-brand.company-name { font-size: 0.80rem !important; }
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      }
+      .header-paragraph .paragraph-text-3 { font-size: 11px !important; }
+      body, p, .lead, .text-muted { font-size: 13px !important; line-height: 1.6 !important; }
     }
 
-    .datenschutz-content h4 {
-      color: var(--primary-dark);
-      font-weight: 600;
-      margin-top: 1.2rem;
-      margin-bottom: 0.6rem;
-      font-size: 1.1rem !important;
-    }
-
-    .highlight-box {
-      background: #f0f8ff;
-      border-left: 4px solid var(--primary-color);
-      padding: 1rem 1.5rem;
-      border-radius: 6px;
-      margin: 1.5rem 0;
-    }
-
-    .highlight-box p:last-child {
-      margin-bottom: 0;
-    }
-
-    .privacy-box {
-      background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);
-      border-left: 4px solid var(--primary-color);
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin: 2rem 0;
-      box-shadow: 0 4px 12px rgba(12, 12, 112, 0.1);
-    }
-
-    .nda-box {
-      background: #f8faff;
-      border-left: 4px solid var(--primary-dark);
-      padding: 1.2rem 1.5rem;
-      border-radius: 6px;
-      margin: 1.5rem 0;
-    }
-
-    .nda-box p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* ===== FOOTER ===== */
     .ctg-footer {
       background-color: #000 !important;
       color: #ffffff !important;
@@ -200,188 +200,160 @@
       overflow: hidden;
     }
 
-    /* ===== SPRACHUMSCHALTER ===== */
-    .language-switcher-nav {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      padding-right: 15px;
-    }
-
-    .language-switcher-nav a {
-      margin-left: 8px;
-      text-decoration: none;
-      border-bottom: none !important;
-      display: inline-block;
-      line-height: 1;
-    }
-
-    .language-switcher-nav img {
-      width: 20px;
-      height: auto;
-      border-radius: 1px;
-      opacity: 0.8;
-      transition: opacity 0.2s;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .language-switcher-nav a:hover img {
-      opacity: 1;
-      border-color: rgba(255, 255, 255, 0.4);
-    }
-
-    .language-switcher-nav a.active img {
-      opacity: 1;
-      border: 1px solid var(--accent-color);
-      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
-    }
-
-    @media (max-width: 991px) {
-      .language-switcher-nav {
-        position: absolute;
-        right: 60px;
-        top: 15px;
-      }
-      .language-switcher-nav a {
-        margin: 0 4px;
-      }
-      .language-switcher-nav img {
-        width: 16px;
-      }
-      .navbar > .container {
-        position: relative;
-      }
-    }
-
     @media (max-width: 767px) {
       .footer-desktop-version { display: none !important; }
-      .footer-mobile-version { display: block !important; }
-      .navbar-brand.company-name { font-size: 0.80rem !important; }
-      h1.main-heading {
-        margin-top: 15px !important;
-        font-size: 16px !important;
-        font-weight: 700 !important;
-        letter-spacing: 1px !important;
-        line-height: 1.2 !important;
-        padding: 0 10px;
-        color: #ffffff !important;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1;
+        height: auto;
+        overflow: visible;
       }
-      .header-paragraph .paragraph-text-3 { font-size: 11px !important; }
-      body, p, .lead, .text-muted { font-size: 13px !important; line-height: 1.6 !important; }
-      section.py-5 { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
-      .datenschutz-content h2 { font-size: 1.6rem !important; margin-bottom: 1rem !important; }
-      .datenschutz-content h3 { font-size: 1.3rem !important; margin-bottom: 0.8rem !important; }
-      .privacy-box { padding: 1rem !important; margin: 1.5rem 0 !important; }
       .footer-mobile-version.ctg-footer { padding: 25px 0 5px 0 !important; margin-top: 15px !important; }
       .footer-mobile-version .footer-row { display: block !important; }
-      .footer-mobile-version .footer-col { width: 100% !important; margin-bottom: 15px !important; padding-left: 15px !important; }
-      .footer-mobile-version .footer-headline { font-size: 10px !important; margin-bottom: 8px !important; margin-top: 18px !important; }
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        margin-top: 18px !important;
+      }
       .footer-mobile-version .footer-col:first-child .footer-headline { margin-top: 0 !important; }
       .footer-mobile-version li { font-size: 10px !important; margin-bottom: 4px !important; }
       .footer-mobile-version .footer-bottom-fixed { font-size: 9px !important; }
     }
-    .text-primary-custom { color: var(--primary-color) !important; }
-  </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://ctg-group.eu/#organization",
-    "name": "Chumpol Trading Group Limited Company",
-    "alternateName": "CTG Global",
-    "url": "https://ctg-group.eu",
-    "taxID": "0105557140880",
-    "duns": "0525560001568",
-    "foundingDate": "2017-12",
-    "description": "B2B wholesale and trading company. No public advertising, no private customers, no online shop.",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "355-46 Boonwat Road, Suandok",
-        "addressLocality": "Lampang",
-        "postalCode": "52100",
-        "addressCountry": "TH"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom",
-        "addressLocality": "Bang Rak",
-        "addressRegion": "Bangkok",
-        "postalCode": "10500",
-        "addressCountry": "TH"
-      }
-    ],
-    "employee": {
-      "@type": "QuantitativeValue",
-      "value": 82
-    },
-    "founders": [
-      {
-        "@type": "Person",
-        "name": "Gerhard Holzapfel",
-        "jobTitle": "Managing Director Europe DACH"
-      },
-      {
-        "@type": "Person",
-        "name": "Chumpol Chalermwarangkul",
-        "jobTitle": "Managing Director Asia"
-      }
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "email": "office@ctg-group.eu",
-      "contactOption": "ByAppointmentOnly"
+    .datenschutz-content {
+      max-width: 1050px;
     }
-  }
-  </script>
 
+    .datenschutz-content h1 {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      line-height: 1.35;
+      text-align: left !important;
+    }
+
+    .datenschutz-content h2 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.4rem !important;
+      line-height: 1.4;
+      text-align: left !important;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    .datenschutz-content h3 {
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.6rem;
+      font-size: 1.15rem !important;
+      line-height: 1.45;
+      text-align: left !important;
+    }
+
+    .datenschutz-content h4 {
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+      font-size: 1.05rem !important;
+      line-height: 1.4;
+      text-align: left !important;
+    }
+
+    .datenschutz-content p {
+      margin-bottom: 0.8rem;
+      text-align: left !important;
+    }
+
+    .datenschutz-content ul, .datenschutz-content ol {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+      text-align: left !important;
+    }
+
+    .datenschutz-content li {
+      margin-bottom: 0.4rem;
+      text-align: left !important;
+    }
+
+    .document-number {
+      color: #777;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      margin-bottom: 0.5rem;
+      text-align: left !important;
+    }
+
+    .highlight-box {
+      background: var(--light-background);
+      border-left: 4px solid var(--primary-color);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .nda-box {
+      background: #f0f4ff;
+      border-left: 4px solid var(--primary-dark);
+      padding: 1.25rem 1.5rem;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+    }
+
+    .nda-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-box {
+      background: var(--light-background);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+  </style>
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-
-      <a class="navbar-brand company-name" href="index.html">
-        Chumpol Trading Group Company Limited.
-      </a>
-
+      <a class="navbar-brand company-name" href="index.html">Chumpol Trading Group Company Limited.</a>
       <div class="language-switcher-nav d-none d-lg-flex">
-        <a href="datenschutz.html" title="Deutsch" class="active">
-          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
-        </a>
-        <a href="../datenschutz.html" title="English">
-          <img src="https://flagcdn.com/w20/gb.png" alt="English">
-        </a>
+        <a href="datenschutz.html" title="Deutsch" class="active"><img src="https://flagcdn.com/w20/de.png" alt="Deutsch"></a>
+        <a href="../datenschutz.html" title="English"><img src="https://flagcdn.com/w20/gb.png" alt="English"></a>
       </div>
-
       <div class="language-switcher-nav d-lg-none">
-        <a href="datenschutz.html" title="Deutsch" class="active">
-          <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
-        </a>
-        <a href="../datenschutz.html" title="English">
-          <img src="https://flagcdn.com/w20/gb.png" alt="English">
-        </a>
+        <a href="datenschutz.html" title="Deutsch" class="active"><img src="https://flagcdn.com/w20/de.png" alt="Deutsch"></a>
+        <a href="../datenschutz.html" title="English"><img src="https://flagcdn.com/w20/gb.png" alt="English"></a>
       </div>
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
           <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
-          <li class="nav-item"><a class="nav-link active" href="datenschutz.html">Datenschutz</a></li>
           <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI-Gateway</a></li>
           <li class="nav-item"><a class="nav-link" href="partner.html">Partner</a></li>
+          <li class="nav-item"><a class="nav-link" href="api-key.html">API-Key</a></li>
         </ul>
       </div>
-
     </div>
   </nav>
 
@@ -389,10 +361,12 @@
   <div class="row header-row">
     <div class="col-xs-12 column-5">
       <header class="container-fluid heading-highlight">
-        <h1 class="main-heading">DATENSCHUTZERKLÄRUNG</h1>
+        <h1 class="main-heading" style="letter-spacing: 1.9px; line-height: 1.15; font-weight: light; font-size: 22px; color: #cdc9a5;">
+          <span class="heading-text-1">Datenschutzerklärung</span>
+        </h1>
         <p class="paragraph header-paragraph">
           <span class="paragraph-text-2">
-            <strong class="paragraph-text-3">DATENSCHUTZ &amp; VERTRAULICHKEIT</strong>
+            <strong class="paragraph-text-3">Chumpol Trading Group Company Limited.</strong>
           </span>
         </p>
       </header>
@@ -405,7 +379,10 @@
       <div class="row">
         <main class="col-12 col-lg-10 col-xl-9 mx-auto datenschutz-content">
 
-          <h2 class="text-primary-custom">Datenschutzerklärung</h2>
+          <div class="document-number">CHUMPOL TRADING GROUP · DATENSCHUTZ</div>
+
+          <h1>Datenschutzerklärung</h1>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;"><strong>Stand:</strong> September 2026</p>
 
           <!-- B2B-Hinweis -->
           <div class="highlight-box">
@@ -418,7 +395,7 @@
 
             <h4>1. Verantwortlicher</h4>
             <p class="mb-3">Verantwortlich für die Verarbeitung personenbezogener Daten ist:<br>
-            <strong>Chumpol Trading Group Co. LTD.</strong><br>
+            <strong>Chumpol Trading Group Company Limited</strong><br>
             355/46 Boonwat Road<br>
             52100 Lampang<br>
             Thailand<br>
@@ -430,7 +407,7 @@
             <p class="mb-3"><strong>Besondere Kategorien personenbezogener Daten:</strong> Wir verarbeiten grundsätzlich keine besonderen Kategorien personenbezogener Daten im Sinne des Art. 9 Abs. 1 DSGVO (z. B. Gesundheitsdaten, Religionszugehörigkeit).</p>
             <p class="mb-3"><strong>Datenquellen:</strong> Sofern wir Daten nicht direkt bei Ihnen erheben, stammen diese ggf. aus öffentlich zugänglichen Quellen (z. B. Handelsregister) oder wurden uns von Vertragspartnern zur Erfüllung eines Auftrags übermittelt.</p>
 
-            <!-- ===== NDA-BLOCK (fest eingearbeitet) ===== -->
+            <!-- NDA-BLOCK (fest eingearbeitet) -->
             <h4>3. Vertraulichkeit und Schutz von Geschäftsgeheimnissen (NDA)</h4>
             <div class="nda-box">
               <p>Im Rahmen unserer Geschäftsbeziehungen legen wir größten Wert auf den Schutz vertraulicher Informationen. Für Partnerschaften, Projektzusammenarbeiten und den Austausch sensibler Kundendaten gelten standardisierte Vertraulichkeitsvereinbarungen (Non-Disclosure Agreements – NDA).</p>
@@ -529,7 +506,6 @@
   <footer class="ctg-footer footer-desktop-version">
     <div class="container">
       <div class="row g-4">
-
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-headline">OFFICE BANGKOK</h5>
           <ul class="footer-list">
@@ -543,7 +519,6 @@
             <li>☎ 0 90 8884 83 2</li>
           </ul>
         </div>
-
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-headline">OFFICE LAMPANG</h5>
           <ul class="footer-list">
@@ -557,7 +532,6 @@
             <li>📧 home@ctg-group.eu</li>
           </ul>
         </div>
-
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-headline">SUPPORT</h5>
           <ul class="footer-list">
@@ -571,7 +545,6 @@
             <li>Established: 2017</li>
           </ul>
         </div>
-
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-headline">QUICK LINKS</h5>
           <ul class="footer-list">
@@ -585,9 +558,7 @@
             <li><a href="facts.html">Facts</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="footer-bottom-fixed">
         &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
       </div>
@@ -598,7 +569,6 @@
   <footer class="ctg-footer footer-mobile-version">
     <div class="container">
       <div class="footer-row">
-
         <div class="footer-col">
           <h5 class="footer-headline">OFFICE BANGKOK</h5>
           <ul>
@@ -612,7 +582,6 @@
             <li>☎ 0 90 8884 83 2</li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h5 class="footer-headline">OFFICE LAMPANG</h5>
           <ul>
@@ -626,7 +595,6 @@
             <li>📧 home@ctg-group.eu</li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h5 class="footer-headline">SUPPORT</h5>
           <ul>
@@ -640,7 +608,6 @@
             <li>Established: 2017</li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h5 class="footer-headline">QUICK LINKS</h5>
           <ul>
@@ -654,9 +621,7 @@
             <li><a href="facts.html">Facts</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="footer-bottom-fixed">
         &copy; 2026 Chumpol Trading Group Company Limited. All rights reserved.
       </div>
@@ -664,6 +629,5 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>

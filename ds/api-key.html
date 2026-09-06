@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="API-Key für Partner – Chumpol Trading Group Company Limited">
-  <title>API-Key – Chumpol Trading Group Company Limited</title>
+  <!-- ★★★ METADATEN BITTE PRO SEITE ANPASSEN ★★★ -->
+  <meta name="description" content="CTG Group – Ihr globaler Direkt Distributionspartner">
+  <meta name="keywords" content="Distribution, Smartphones, Dropshipping, CTG Group">
+  <title>Chumpol Trading Group</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -13,8 +15,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* ===== Identische Styles wie in den anderen Seiten ===== */
+    /* ===== KONSISTENTE GRUNDLAGEN (wie index.html) ===== */
     :root {
       --primary-color: #0c0c70;
       --primary-dark: #090952;
@@ -58,89 +61,79 @@
       margin-top: 10px !important;
     }
 
-    .apikey-content {
-      max-width: 1050px;
+    /* ===== NAVIGATION ===== */
+    .language-switcher-nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding-right: 15px;
+    }
+    .language-switcher-nav a {
+      margin-left: 8px;
+      text-decoration: none;
+      border-bottom: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    .language-switcher-nav img {
+      width: 20px;
+      height: auto;
+      border-radius: 1px;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .language-switcher-nav a:hover img {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    .language-switcher-nav a.active img {
+      opacity: 1;
+      border: 1px solid var(--accent-color);
+      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
     }
 
-    .apikey-content h2 {
-      color: var(--primary-color) !important;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      font-size: 2rem !important;
-      line-height: 1.3;
+    @media (max-width: 991px) {
+      .language-switcher-nav {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+      }
+      .language-switcher-nav a {
+        margin: 0 4px;
+      }
+      .language-switcher-nav img {
+        width: 16px;
+      }
+      .navbar > .container {
+        position: relative;
+      }
     }
 
-    .apikey-content .form-group {
-      margin-bottom: 1.25rem;
+    @media (max-width: 767px) {
+      .navbar-brand.company-name {
+        font-size: 0.80rem !important;
+      }
+      h1.main-heading {
+        margin-top: 15px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+      .header-paragraph .paragraph-text-3 {
+        font-size: 11px !important;
+      }
+      body, p, .lead, .text-muted {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+      }
     }
 
-    .apikey-content label {
-      font-weight: 500;
-      color: var(--primary-dark);
-      display: block;
-      margin-bottom: 0.3rem;
-    }
-
-    .apikey-content input[type="text"] {
-      width: 100%;
-      max-width: 400px;
-      padding: 0.6rem 0.9rem;
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      font-size: 1rem;
-      background: #f9fafc;
-      transition: border-color 0.2s;
-    }
-
-    .apikey-content input[type="text"]:focus {
-      border-color: var(--primary-color);
-      outline: none;
-      background: #ffffff;
-      box-shadow: 0 0 0 3px rgba(12, 12, 112, 0.1);
-    }
-
-    .btn-primary-custom {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-      color: white;
-      border: none;
-      padding: 0.7rem 2.5rem;
-      border-radius: 4px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .btn-primary-custom:hover {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, #070738 100%);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-
-    .api-result {
-      margin-top: 2rem;
-      padding: 1.2rem 1.5rem;
-      border-radius: 6px;
-      background: #f8f9fc;
-      border-left: 4px solid var(--primary-color);
-    }
-    .api-result pre {
-      background: #fff;
-      padding: 0.8rem;
-      border-radius: 4px;
-      border: 1px solid #ddd;
-      overflow-x: auto;
-    }
-    .api-error {
-      border-left-color: #d32f2f;
-      background: #fef6f6;
-    }
-    .api-error .error-text {
-      color: #d32f2f;
-      font-weight: 500;
-    }
-
-    /* ===== FOOTER (einheitlich) ===== */
+    /* ===== FOOTER ===== */
     .ctg-footer {
       background-color: #000 !important;
       color: #ffffff !important;
@@ -221,146 +214,50 @@
       overflow: hidden;
     }
 
-    /* ===== SPRACHUMSCHALTER ===== */
-    .language-switcher-nav {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      padding-right: 15px;
-    }
-
-    .language-switcher-nav a {
-      margin-left: 8px;
-      text-decoration: none;
-      border-bottom: none !important;
-      display: inline-block;
-      line-height: 1;
-    }
-
-    .language-switcher-nav img {
-      width: 20px;
-      height: auto;
-      border-radius: 1px;
-      opacity: 0.8;
-      transition: opacity 0.2s;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .language-switcher-nav a:hover img {
-      opacity: 1;
-      border-color: rgba(255, 255, 255, 0.4);
-    }
-
-    .language-switcher-nav a.active img {
-      opacity: 1;
-      border: 1px solid var(--accent-color);
-      box-shadow: 0 0 3px rgba(205, 201, 165, 0.5);
-    }
-
-    @media (max-width: 991px) {
-      .language-switcher-nav {
-        position: absolute;
-        right: 60px;
-        top: 15px;
-      }
-      .language-switcher-nav a {
-        margin: 0 4px;
-      }
-      .language-switcher-nav img {
-        width: 16px;
-      }
-      .navbar > .container {
-        position: relative;
-      }
-    }
-
     @media (max-width: 767px) {
-      .footer-desktop-version { display: none !important; }
-      .footer-mobile-version { display: block !important; }
-      .navbar-brand.company-name { font-size: 0.80rem !important; }
-      h1.main-heading {
-        margin-top: 15px !important;
-        font-size: 16px !important;
-        font-weight: 700 !important;
-        letter-spacing: 1px !important;
-        line-height: 1.2 !important;
-        padding: 0 10px;
-        color: #ffffff !important;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      .footer-desktop-version {
+        display: none !important;
       }
-      .header-paragraph .paragraph-text-3 { font-size: 11px !important; }
-      body, p, .lead, .text-muted { font-size: 13px !important; line-height: 1.6 !important; }
-      section.py-5 { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
-      .apikey-content h2 { font-size: 1.6rem !important; margin-bottom: 1rem !important; }
-      .apikey-content input[type="text"] { max-width: 100%; }
-      .footer-mobile-version.ctg-footer { padding: 25px 0 5px 0 !important; margin-top: 15px !important; }
-      .footer-mobile-version .footer-row { display: block !important; }
-      .footer-mobile-version .footer-col { width: 100% !important; margin-bottom: 15px !important; padding-left: 15px !important; }
-      .footer-mobile-version .footer-headline { font-size: 10px !important; margin-bottom: 8px !important; margin-top: 18px !important; }
-      .footer-mobile-version .footer-col:first-child .footer-headline { margin-top: 0 !important; }
-      .footer-mobile-version li { font-size: 10px !important; margin-bottom: 4px !important; }
-      .footer-mobile-version .footer-bottom-fixed { font-size: 9px !important; }
+      .footer-mobile-version {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+      }
+      .footer-mobile-version.ctg-footer {
+        padding: 25px 0 5px 0 !important;
+        margin-top: 15px !important;
+      }
+      .footer-mobile-version .footer-row {
+        display: block !important;
+      }
+      .footer-mobile-version .footer-col {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+        padding-left: 15px !important;
+      }
+      .footer-mobile-version .footer-headline {
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        margin-top: 18px !important;
+      }
+      .footer-mobile-version .footer-col:first-child .footer-headline {
+        margin-top: 0 !important;
+      }
+      .footer-mobile-version li {
+        font-size: 10px !important;
+        margin-bottom: 4px !important;
+      }
+      .footer-mobile-version .footer-bottom-fixed {
+        font-size: 9px !important;
+      }
     }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://ctg-group.eu/#organization",
-    "name": "Chumpol Trading Group Limited Company",
-    "alternateName": "CTG Global",
-    "url": "https://ctg-group.eu",
-    "taxID": "0105557140880",
-    "duns": "0525560001568",
-    "foundingDate": "2017-12",
-    "description": "B2B wholesale and trading company. No public advertising, no private customers, no online shop.",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "355-46 Boonwat Road, Suandok",
-        "addressLocality": "Lampang",
-        "postalCode": "52100",
-        "addressCountry": "TH"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "Kronos Sathorn Tower, 46 Sathorn Nua Road, Silom",
-        "addressLocality": "Bang Rak",
-        "addressRegion": "Bangkok",
-        "postalCode": "10500",
-        "addressCountry": "TH"
-      }
-    ],
-    "employee": {
-      "@type": "QuantitativeValue",
-      "value": 82
-    },
-    "founders": [
-      {
-        "@type": "Person",
-        "name": "Gerhard Holzapfel-Somchai",
-        "jobTitle": "Managing Director Europe DACH"
-      },
-      {
-        "@type": "Person",
-        "name": "Chumpol Chalermwarangkul",
-        "jobTitle": "Managing Director Asia"
-      }
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "email": "office@ctg-group.eu",
-      "contactOption": "ByAppointmentOnly"
-    }
-  }
-  </script>
-
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- ===== NAVIGATION (DEUTSCH) ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
 
@@ -369,19 +266,18 @@
       </a>
 
       <div class="language-switcher-nav d-none d-lg-flex">
-        <a href="api-key.html" title="Deutsch" class="active">
+        <a href="index.html" title="Deutsch" class="active">
           <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
         </a>
-        <a href="../api-key.html" title="English">
+        <a href="../index.html" title="English">
           <img src="https://flagcdn.com/w20/gb.png" alt="English">
         </a>
       </div>
-
       <div class="language-switcher-nav d-lg-none">
-        <a href="api-key.html" title="Deutsch" class="active">
+        <a href="index.html" title="Deutsch" class="active">
           <img src="https://flagcdn.com/w20/de.png" alt="Deutsch">
         </a>
-        <a href="../api-key.html" title="English">
+        <a href="../index.html" title="English">
           <img src="https://flagcdn.com/w20/gb.png" alt="English">
         </a>
       </div>
@@ -397,21 +293,24 @@
           <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
           <li class="nav-item"><a class="nav-link" href="edi-gateway.html">EDI-Gateway</a></li>
           <li class="nav-item"><a class="nav-link" href="partner.html">Partner</a></li>
-          <li class="nav-item"><a class="nav-link active" href="api-key.html">API-Key</a></li>
+          <li class="nav-item"><a class="nav-link" href="api-key.html">API-Key</a></li>
         </ul>
       </div>
 
     </div>
   </nav>
 
-  <!-- HEADER -->
+  <!-- ===== HEADER-AUFMACHER ===== -->
   <div class="row header-row">
     <div class="col-xs-12 column-5">
       <header class="container-fluid heading-highlight">
-        <h1 class="main-heading">API-Key</h1>
+        <!-- ★★★ TITEL PRO SEITE ANPASSEN ★★★ -->
+        <h1 class="main-heading" style="letter-spacing: 1.9px; line-height: 1.15; font-weight: light; font-size: 22px; color: #cdc9a5;">
+          <span class="heading-text-1">API KEY - Für Ihr ERP‑System</h1>
+        <!-- ★★★ UNTERZEILE PRO SEITE ANPASSEN ★★★ -->
         <p class="paragraph header-paragraph">
           <span class="paragraph-text-2">
-            <strong class="paragraph-text-3">ZUGANG FÜR PARTNER</strong>
+            <strong class="paragraph-text-3">Chumpol Trading Group Company Limited.</strong>
           </span>
         </p>
       </header>
@@ -425,7 +324,7 @@
         <main class="col-12 col-lg-10 col-xl-9 mx-auto apikey-content">
 
           <h2 class="text-primary-custom">API-Key beantragen</h2>
-          <p>Geben Sie Ihre Kundennummer und Ihre Partnerkennung ein, um Ihren persönlichen API-Key zu generieren.</p>
+          <p>Geben Sie Ihre Kundennummer und Ihre Partnerkennung ein, um Ihren persönlichen API-Key zu erhalten.</p>
 
           <!-- Formular – submit an den Worker-Endpunkt /partner-login -->
           <form method="POST" action="/partner-login" class="mt-4">
