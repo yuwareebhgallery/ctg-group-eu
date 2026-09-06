@@ -380,7 +380,7 @@ body > .row.contact.header-row {
 }
 
 body > .row > [class*='col-xs-'].column-5 {
-  background-image: url('../images/DesignTitel.jpeg');
+  background-image: url('/images/DesignTitel.jpeg');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
