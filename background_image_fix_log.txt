@@ -1,0 +1,50 @@
+================================================================================
+HINTERGRUNDBILD-FIX LOG
+================================================================================
+Start: 2026-09-06 14:02:31
+Bild-Pfad: /images/DesignTitel.jpeg
+Basisordner: E:\! 123 - GitHUB\ctg-group-eu
+
+GEÄNDERTE DATEIEN:
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\agb.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\api-key.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\datenschutz.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\edi-gateway.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\impressum.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\index.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\partner.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\de\service.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\agb.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\api-key.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\datenschutz.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\edi-gateway.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\impressum.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\index.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\partner.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\en\service.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\agb.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\api-key.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\datenschutz.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\edi-gateway.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\impressum.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\index.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\partner.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\ds\service.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\agb.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\api-key.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\datenschutz.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\edi-gateway.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\impressum.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\index.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\partner.html
+[GEÄNDERT] E:\! 123 - GitHUB\ctg-group-eu\usa\service.html
+
+================================================================================
+ZUSAMMENFASSUNG
+================================================================================
+Dateien insgesamt:      32
+Geändert:               32
+Unverändert:            0
+Fehler:                 0
+
+Ende: 2026-09-06 14:02:32
