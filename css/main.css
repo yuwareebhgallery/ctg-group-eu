@@ -368,16 +368,15 @@ body > .row.about.header-row {
   background-image:         linear-gradient(180deg, rgba(18, 18, 18, 1) 0%, rgba(0, 0, 0, .54) 100%), url('../images/watch.jpg');
 }
 
-body > .row.contact.header-row {
-  background-image: -webkit-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(31, 31, 31, .78) 100%), url('../images/turnable.jpg');
-  background-image:    -moz-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(31, 31, 31, .78) 100%), url('../images/turnable.jpg');
-  background-image:      -o-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(31, 31, 31, .78) 100%), url('../images/turnable.jpg');
-  background-image:         linear-gradient(180deg, rgba(18, 18, 18, 1) 0%, rgba(31, 31, 31, .78) 100%), url('../images/turnable.jpg');
-  background-position: left top, center top;
+body > .row.header-row {
+  background-image: url('../images/rac.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body > .row > [class*='col-xs-'].column-5 {
-  background-image: url('/images/DesignTitel.jpeg');
+  
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
@@ -821,12 +820,16 @@ li.list-item a.nav-link:hover {
 
   /* Layout Elements */
 
-  body > .row.header-row {
-    background-image: -webkit-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, .15) 100%), url('../images/rac.jpg');
-    background-image:    -moz-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, .15) 100%), url('../images/rac.jpg');
-    background-image:      -o-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, .15) 100%), url('../images/rac.jpg');
-    background-image:         linear-gradient(180deg, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, .15) 100%), url('../images/rac.jpg');
-  }
+body > .row.header-row {
+  
+  background-image: url('../images/rac.jpg');
+  background-attachment: scroll;
+  background-position: center center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
   .container-fluid.heading-highlight {
     margin-top: 25vh;
