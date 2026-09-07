@@ -243,16 +243,13 @@ body > .row.nav-row {
 
 body > .row.header-row {
   background-color: #000;
-  background-image: -webkit-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, 0) 100%), url('../images/rac.jpg');
-  background-image:    -moz-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, 0) 100%), url('../images/rac.jpg');
-  background-image:      -o-linear-gradient(top, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, 0) 100%), url('../images/rac.jpg');
-  background-image:         linear-gradient(180deg, rgba(18, 18, 18, 1) 0%, rgba(48, 48, 48, 0) 100%), url('../images/rac.jpg');
-  background-attachment: scroll, scroll;
-  background-position: left top, center center;
-  background-clip: border-box, border-box;
-  background-origin: padding-box, padding-box;
-  background-size: auto auto, cover;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url('../images/rac.jpg');
+  background-attachment: scroll;
+  background-position: center center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body > .row.information-row {
