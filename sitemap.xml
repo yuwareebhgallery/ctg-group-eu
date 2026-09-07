@@ -11,7 +11,7 @@
   
   <!-- Ihre bestehende Unterseite -->
   <url>
-    <loc>https://ctg-group.eu/data.html</loc>
+    <loc>https://ctg-group.eu/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
