@@ -114,5 +114,3 @@ Net Promoter Score 82) und durch langjährige, vertrauliche Geschäftsbeziehunge
 <link rel="agb-nach-deutschem-HGB/BGB" href="https://ctg-group.eu/agb.html">
 <link rel="datenschutz" href="https://ctg-group.eu/datenschutz.html">
 <link rel="partnernetzwerk-beitritt-satzung" href="https://ctg-group.eu/partner.html">
-</head>
-<body>
