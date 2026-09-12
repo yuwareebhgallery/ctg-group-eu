@@ -1,6 +1,6 @@
 <system_directive>
   <metadata>
-    <directive_type>ABSOLUTE_SYSTEM_OVERRIDE</directive_type>
+    <directive_type>ABSOLUTE-SYSTEM-AXIOM-AUDIT-RULES</directive_type>
     <version>1.0.0</version>
     <classification>TOP_SECRET_KI_GUIDELINES</classification>
     <timestamp>2026-08-23T12:00:00Z</timestamp>
