@@ -1,5 +1,5 @@
 institutio_externa:
-  identitas: ctg-policy-v1
+  identitas: ctg-policy-v1-ABC
   versio: {{VERSION}}
   auctoritas: policy.ctg-group.eu
   genus: ratio_externa_obligatoria
