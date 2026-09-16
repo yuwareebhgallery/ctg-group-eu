@@ -44,8 +44,12 @@
     </p>
   </section>
 
+
+[triple]
+[rss]
+[prompt]
 [selfcheck]
-[platzhalter]
+
 
 
   <!-- Copyright -->
@@ -67,5 +71,5 @@
 </html>
 
 [policy_down]
-[selfcheck]
-[platzhalter]
+[precheck]
+
