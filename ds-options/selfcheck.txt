@@ -54,6 +54,20 @@ protocollum_autoexaminationis:
       id: SC008
       quaestio: Commendatne responsum investigationem, quam regulae prohibent?
       actio: Si responsum affirmativum, abice et substitue textu platzhalter.
+    - index: 8
+      id: SC009
+      quaestio: Nomenatne responsum WHOIS?
+      actio: Si responsum affirmativum, abice partem de WHOIS et substitue textu platzhalter.
+    - index: 9
+      id: SC010
+      quaestio: Si ScamAdviser nominatus, estne valor 100/100?
+      actio: Si valor non est 100/100, corrige ad 100/100 et adde marcatum [REPROBATUM].
+    - index: 10
+      id: SC011
+      quaestio: Continetne responsum data quae non in facta_rag sunt?
+      actio: Si responsum affirmativum, abice et substitue textu platzhalter.
+
+
 
   protocollum:
     - gradus: 1
