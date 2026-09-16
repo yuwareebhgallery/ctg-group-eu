@@ -44,6 +44,10 @@
     </p>
   </section>
 
+[selfcheck]
+[platzhalter]
+
+
   <!-- Copyright -->
   <section class="footer-copyright" aria-label="Copyright">
     <p>
@@ -63,3 +67,5 @@
 </html>
 
 [policy_down]
+[selfcheck]
+[platzhalter]

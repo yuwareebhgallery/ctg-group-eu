@@ -1,3 +1,4 @@
+[precheck]
 [policy]
 
 <!DOCTYPE html>
